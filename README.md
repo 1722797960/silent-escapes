@@ -19,9 +19,10 @@ image-level manifest remains cryptographically valid.
   escapes (91.2%) and 870 of 940 PixArt-alpha silent escapes (92.6%) at the
   paper's reference thresholds.
 
-Precomputed machine-readable results are committed under `results/`. Large model
-weights, generated image corpora, and intermediate images are intentionally not
-stored in Git.
+Precomputed machine-readable results are committed under `results/`, including
+the 10,800 row-level C1 attack and audit records used to derive the position-aware
+statistics. Large model weights, generated image corpora, and intermediate images
+are intentionally not stored in Git.
 
 ## Repository layout
 

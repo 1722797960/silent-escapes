@@ -41,6 +41,8 @@ def main() -> int:
         "results/summary_500.json",
         "results/regional_v2/summary.json",
         "results/regional_v2_pixart/summary.json",
+        "results/c1_v1/full/attack_manifest.jsonl",
+        "results/c1_v1/full/audit_rows.jsonl",
         "results/c1_v1/full/summary.json",
         "results/threshold_sensitivity_v1/threshold_sensitivity.json",
     ]
@@ -64,6 +66,18 @@ def main() -> int:
     c1 = load("results/c1_v1/full/summary.json")["summary"]
     close(c1_value(c1, "center", 0.4, "escape_rate_pct"), 17.0)
     close(c1_value(c1, "mask_aware", 0.4, "escape_rate_pct"), 55.0)
+
+    expected_jsonl_rows = {
+        "results/c1_v1/pilot/attack_manifest.jsonl": 360,
+        "results/c1_v1/pilot/audit_rows.jsonl": 360,
+        "results/c1_v1/full/attack_manifest.jsonl": 10_800,
+        "results/c1_v1/full/audit_rows.jsonl": 10_800,
+    }
+    for relative, expected in expected_jsonl_rows.items():
+        with (ROOT / relative).open(encoding="utf-8") as handle:
+            observed = sum(1 for line in handle if line.strip())
+        if observed != expected:
+            raise AssertionError(f"{relative}: expected {expected} rows, observed {observed}")
 
     sensitivity = load(
         "results/threshold_sensitivity_v1/threshold_sensitivity.json"

@@ -8,7 +8,7 @@ corpora, signed intermediate assets, or detector caches.
 
 - Aggregate and per-condition JSON/CSV results used by the paper.
 - Regional escape-curve summaries for SDXL and PixArt-alpha.
-- Position-aware crop summaries and plots.
+- Position-aware crop row-level attack/audit records, summaries, and plots.
 - Region-aware defense audit tables and threshold-sensitivity results.
 
 ## Excluded

@@ -19,7 +19,7 @@ rates from the committed JSON files. It requires only the Python standard librar
 | Global WAM/PixelSeal baselines | `scripts/run_a_stage2.sh` and `legacy_pixel_seal/` | `results/summary_500.json` |
 | SDXL regional escape curve | `experiments/regional_v2.py` | `results/regional_v2/summary.json` |
 | PixArt-alpha regional escape curve | `experiments/regional_v2.py` | `results/regional_v2_pixart/summary.json` |
-| Fixed-area position-aware stress test | `experiments/c1_attack_suite_v1.py`, `c1_audit_v1.py`, `c1_summarize_v1.py` | `results/c1_v1/full/summary.json` |
+| Fixed-area position-aware stress test | `experiments/c1_attack_suite_v1.py`, `c1_audit_v1.py`, `c1_summarize_v1.py` | `results/c1_v1/full/{attack_manifest,audit_rows}.jsonl`, `summary.json` |
 | End-to-end region-aware defense, SDXL | `experiments/defense_e2e_run.py`, then `recompute_region_retention.py` | `results/defense_e2e/audit_retention.json` |
 | End-to-end region-aware defense, PixArt-alpha | same pipeline | `results/defense_e2e_pixart/audit_retention.json` |
 | Defense threshold sensitivity | `experiments/threshold_sensitivity_v1.py` | `results/threshold_sensitivity_v1/threshold_sensitivity.json` |
@@ -41,6 +41,11 @@ rates from the committed JSON files. It requires only the Python standard librar
 The effective configuration written by each run is retained beside the result
 summary. Historical absolute machine paths have been replaced with repository-
 relative paths in the public artifacts; metric values are unchanged.
+
+The full C1 release contains 10,800 attack rows and 10,800 corresponding audit
+rows. The pilot contains 360 rows of each type. The mask-aware policy is derived
+from the four recorded edge-anchor alternatives rather than stored as a seventh
+independent crop, so these counts are expected.
 
 ## 4. Dataset preparation
 
