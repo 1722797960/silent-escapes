@@ -1,0 +1,23 @@
+integrity-clash-wam 目录重组清单 (2026-09-13) — 所有操作均为 mv，零删除
+=====================================================================
+旧路径                                → 新路径
+outputs/original/*.png (50张)         → data/originals_500/
+outputs_n500/*.png (450张)            → data/originals_500/
+outputs/original/sampled_prompts.tsv  → data/originals_500/sampled_prompts.tsv
+outputs_n500/sampled_prompts.tsv      → data/originals_500/sampled_prompts_50_499.tsv
+outputs/{其余13个子目录}              → data/derived/
+outputs_500                           → data/derived/outputs_500
+outputs_500_ps                        → data/derived/outputs_500_ps
+outputs_500_ps_attack_* (3个)         → data/derived/
+outputs_500_wam                       → data/derived/outputs_500_wam
+outputs_500_wam_attack_* (3个)        → data/derived/
+outputs_500_wam_signed_* (5个)        → data/derived/
+results_500/*                         → results/
+regional_experiments/*                → results/
+PAPER_DRAFT.md DRAFT_AB.md            → docs/
+CANDIDATE_REFERENCES.md README_WAM.md → docs/
+根目录 *.log (11个)                   → logs/
+run_a_remaining.sh run_a_stage2.sh    → scripts/
+scripts/watermark_attack_copy.py      → scripts/_deprecated_watermark_attack_copy.py
+原地不动: certs/ manifests/ ckpts/ paper/ scripts/ 其余脚本
+新建: data/ results/(扩充) docs/ logs/ experiments/ RESTRUCTURE_MANIFEST.txt

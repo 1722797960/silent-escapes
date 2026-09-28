@@ -1,0 +1,512 @@
+{
+ "metadata_path": "outputs/wam_watermarked/watermark_metadata.json",
+ "original_dir": null,
+ "watermarked_dir": "outputs/wam_signed_attack_social_human",
+ "summary": {
+  "num_images": 50,
+  "average_bit_accuracy_original": null,
+  "average_bit_accuracy_watermarked": 1.0
+ },
+ "images": [
+  {
+   "index": 0,
+   "input_image": "0000_happiness_cat-Abstract_chal-Basic.png",
+   "watermarked_image": "0000_happiness_cat-Abstract_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11010101010000100111010000100101",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11010101010000100111010000100101"
+  },
+  {
+   "index": 1,
+   "input_image": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png",
+   "watermarked_image": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10110101110110100010111100111000",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10110101110110100010111100111000"
+  },
+  {
+   "index": 2,
+   "input_image": "0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png",
+   "watermarked_image": "0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10111000110001011001101101100011",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10111000110001011001101101100011"
+  },
+  {
+   "index": 3,
+   "input_image": "0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png",
+   "watermarked_image": "0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11101101010101010111100011100111",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11101101010101010111100011100111"
+  },
+  {
+   "index": 4,
+   "input_image": "0004_metal_cat-Abstract_chal-Basic.png",
+   "watermarked_image": "0004_metal_cat-Abstract_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10001000001110110010011111011010",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10001000001110110010011111011010"
+  },
+  {
+   "index": 5,
+   "input_image": "0005_a_lizard_cat-Animals_chal-Basic.png",
+   "watermarked_image": "0005_a_lizard_cat-Animals_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11111100000010100111101001000101",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11111100000010100111101001000101"
+  },
+  {
+   "index": 6,
+   "input_image": "0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png",
+   "watermarked_image": "0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "01010101000001110010110001000110",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "01010101000001110010110001000110"
+  },
+  {
+   "index": 7,
+   "input_image": "0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png",
+   "watermarked_image": "0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10100001110111001110001000011110",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10100001110111001110001000011110"
+  },
+  {
+   "index": 8,
+   "input_image": "0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png",
+   "watermarked_image": "0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "01011001010011111100000011011111",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "01011001010011111100000011011111"
+  },
+  {
+   "index": 9,
+   "input_image": "0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png",
+   "watermarked_image": "0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "01111010011011001010011111100111",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "01111010011011001010011111100111"
+  },
+  {
+   "index": 10,
+   "input_image": "0010_a_harp_cat-Artifacts_chal-Basic.png",
+   "watermarked_image": "0010_a_harp_cat-Artifacts_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "01111111000001010100100000111011",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "01111111000001010100100000111011"
+  },
+  {
+   "index": 11,
+   "input_image": "0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png",
+   "watermarked_image": "0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "01111001000110000011101011100010",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "01111001000110000011101011100010"
+  },
+  {
+   "index": 12,
+   "input_image": "0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png",
+   "watermarked_image": "0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "01010101000111010110110000111111",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "01010101000111010110110000111111"
+  },
+  {
+   "index": 13,
+   "input_image": "0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png",
+   "watermarked_image": "0013_a_watermelon_chair_cat-Artifacts_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00001010000110010100000101110011",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00001010000110010100000101110011"
+  },
+  {
+   "index": 14,
+   "input_image": "0014_The_Starry_Night_cat-Arts_chal-Basic.png",
+   "watermarked_image": "0014_The_Starry_Night_cat-Arts_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11100100101000101111001001111011",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11100100101000101111001001111011"
+  },
+  {
+   "index": 15,
+   "input_image": "0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png",
+   "watermarked_image": "0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00010110111011110100010001001000",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00010110111011110100010001001000"
+  },
+  {
+   "index": 16,
+   "input_image": "0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png",
+   "watermarked_image": "0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00001001100100110001011001111100",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00001001100100110001011001111100"
+  },
+  {
+   "index": 17,
+   "input_image": "0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png",
+   "watermarked_image": "0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00001101110001000001011001101101",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00001101110001000001011001101101"
+  },
+  {
+   "index": 18,
+   "input_image": "0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png",
+   "watermarked_image": "0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11000110011001001110100000010011",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11000110011001001110100000010011"
+  },
+  {
+   "index": 19,
+   "input_image": "0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png",
+   "watermarked_image": "0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11110110000110100111000111011101",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11110110000110100111000111011101"
+  },
+  {
+   "index": 20,
+   "input_image": "0020_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png",
+   "watermarked_image": "0020_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11100000100100001110010101011001",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11100000100100001110010101011001"
+  },
+  {
+   "index": 21,
+   "input_image": "0021_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png",
+   "watermarked_image": "0021_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11101100000110011010010001000100",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11101100000110011010010001000100"
+  },
+  {
+   "index": 22,
+   "input_image": "0022_concurrent_lines_cat-Illustrations_chal-Basic.png",
+   "watermarked_image": "0022_concurrent_lines_cat-Illustrations_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "01010000110011111111100111111110",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "01010000110011111111100111111110"
+  },
+  {
+   "index": 23,
+   "input_image": "0023_A_set_of_2x2_emoji_icons_with_happy_angry_surprise_cat-Illustrations_chal-Complex.png",
+   "watermarked_image": "0023_A_set_of_2x2_emoji_icons_with_happy_angry_surprise_cat-Illustrations_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00100110100111000011001110101011",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00100110100111000011001110101011"
+  },
+  {
+   "index": 24,
+   "input_image": "0024_a_kids_book_cover_with_an_illustration_of_white_do_cat-Illustrations_chal-Fine-grained Detail.png",
+   "watermarked_image": "0024_a_kids_book_cover_with_an_illustration_of_white_do_cat-Illustrations_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11010010011110001110010100100100",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11010010011110001110010100100100"
+  },
+  {
+   "index": 25,
+   "input_image": "0025_a_triangle_with_a_smiling_face_cat-Illustrations_chal-Imagination.png",
+   "watermarked_image": "0025_a_triangle_with_a_smiling_face_cat-Illustrations_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10100000000011011111010000000100",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10100000000011011111010000000100"
+  },
+  {
+   "index": 26,
+   "input_image": "0026_a_ceiling_fan_cat-Indoor Scenes_chal-Basic.png",
+   "watermarked_image": "0026_a_ceiling_fan_cat-Indoor Scenes_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10011011000010101110011101100110",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10011011000010101110011101100110"
+  },
+  {
+   "index": 27,
+   "input_image": "0027_A_cozy_living_room_with_a_painting_of_a_corgi_on_t_cat-Indoor Scenes_chal-Complex.png",
+   "watermarked_image": "0027_A_cozy_living_room_with_a_painting_of_a_corgi_on_t_cat-Indoor Scenes_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00100011101001000100101110001011",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00100011101001000100101110001011"
+  },
+  {
+   "index": 28,
+   "input_image": "0028_a_ceiling_fan_with_an_ornate_light_fixture_cat-Indoor Scenes_chal-Fine-grained Detail.png",
+   "watermarked_image": "0028_a_ceiling_fan_with_an_ornate_light_fixture_cat-Indoor Scenes_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11011011111101110101000011010010",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11011011111101110101000011010010"
+  },
+  {
+   "index": 29,
+   "input_image": "0029_a_small_kitchen_with_a_white_goat_in_it_cat-Indoor Scenes_chal-Imagination.png",
+   "watermarked_image": "0029_a_small_kitchen_with_a_white_goat_in_it_cat-Indoor Scenes_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00100001010111001010110110110101",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00100001010111001010110110110101"
+  },
+  {
+   "index": 30,
+   "input_image": "0030_a_road_cat-Outdoor Scenes_chal-Basic.png",
+   "watermarked_image": "0030_a_road_cat-Outdoor Scenes_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00010001010010000101101001111100",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00010001010010000101101001111100"
+  },
+  {
+   "index": 31,
+   "input_image": "0031_a_white_bird_in_front_of_a_dinosaur_standing_by_so_cat-Outdoor Scenes_chal-Complex.png",
+   "watermarked_image": "0031_a_white_bird_in_front_of_a_dinosaur_standing_by_so_cat-Outdoor Scenes_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00011000110111111111001011011100",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00011000110111111111001011011100"
+  },
+  {
+   "index": 32,
+   "input_image": "0032_beautiful_fireworks_in_the_sky_with_red_white_and__cat-Outdoor Scenes_chal-Fine-grained Detail.png",
+   "watermarked_image": "0032_beautiful_fireworks_in_the_sky_with_red_white_and__cat-Outdoor Scenes_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10111001110011010011010111101100",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10111001110011010011010111101100"
+  },
+  {
+   "index": 33,
+   "input_image": "0033_a_futuristic_city_cat-Outdoor Scenes_chal-Imagination.png",
+   "watermarked_image": "0033_a_futuristic_city_cat-Outdoor Scenes_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10000000110001010101100000011110",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10000000110001010101100000011110"
+  },
+  {
+   "index": 34,
+   "input_image": "0034_a_child_cat-People_chal-Basic.png",
+   "watermarked_image": "0034_a_child_cat-People_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "01101010010000000010110011110000",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "01101010010000000010110011110000"
+  },
+  {
+   "index": 35,
+   "input_image": "0035_a_mixed_media_image_with_a_photograph_of_a_woman_w_cat-People_chal-Complex.png",
+   "watermarked_image": "0035_a_mixed_media_image_with_a_photograph_of_a_woman_w_cat-People_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11110001100011111110111110100001",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11110001100011111110111110100001"
+  },
+  {
+   "index": 36,
+   "input_image": "0036_a_politician_giving_a_speech_at_a_podium_cat-People_chal-Fine-grained Detail.png",
+   "watermarked_image": "0036_a_politician_giving_a_speech_at_a_podium_cat-People_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11011011111110101011011111001001",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11011011111110101011011111001001"
+  },
+  {
+   "index": 37,
+   "input_image": "0037_a_photograph_of_a_knight_in_shining_armor_holding__cat-People_chal-Imagination.png",
+   "watermarked_image": "0037_a_photograph_of_a_knight_in_shining_armor_holding__cat-People_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00111011001101011110000000010011",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00111011001101011110000000010011"
+  },
+  {
+   "index": 38,
+   "input_image": "0038_an_avocado_cat-Produce & Plants_chal-Basic.png",
+   "watermarked_image": "0038_an_avocado_cat-Produce & Plants_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10000100010010101001010000100010",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10000100010010101001010000100010"
+  },
+  {
+   "index": 39,
+   "input_image": "0039_a_tree_reflected_in_the_hood_of_a_blue_car_cat-Produce & Plants_chal-Complex.png",
+   "watermarked_image": "0039_a_tree_reflected_in_the_hood_of_a_blue_car_cat-Produce & Plants_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00100000110101011111011111110101",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00100000110101011111011111110101"
+  },
+  {
+   "index": 40,
+   "input_image": "0040_a_bundle_of_blue_and_yellow_flowers_in_a_vase_cat-Produce & Plants_chal-Fine-grained Detail.png",
+   "watermarked_image": "0040_a_bundle_of_blue_and_yellow_flowers_in_a_vase_cat-Produce & Plants_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11010000010011111011111101010111",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11010000010011111011111101010111"
+  },
+  {
+   "index": 41,
+   "input_image": "0041_a_tree_with_leaves_that_look_like_purple_balloons_cat-Produce & Plants_chal-Imagination.png",
+   "watermarked_image": "0041_a_tree_with_leaves_that_look_like_purple_balloons_cat-Produce & Plants_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10001000000111001010100000011000",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10001000000111001010100000011000"
+  },
+  {
+   "index": 42,
+   "input_image": "0042_a_pickup_truck_cat-Vehicles_chal-Basic.png",
+   "watermarked_image": "0042_a_pickup_truck_cat-Vehicles_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "11011001011010010110011110000000",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "11011001011010010110011110000000"
+  },
+  {
+   "index": 43,
+   "input_image": "0043_A_photograph_of_the_inside_of_a_subway_train_There_cat-Vehicles_chal-Complex.png",
+   "watermarked_image": "0043_A_photograph_of_the_inside_of_a_subway_train_There_cat-Vehicles_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00100011101010111111110110011111",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00100011101010111111110110011111"
+  },
+  {
+   "index": 44,
+   "input_image": "0044_a_sunken_submarine_at_the_bottom_of_the_ocean_cat-Vehicles_chal-Fine-grained Detail.png",
+   "watermarked_image": "0044_a_sunken_submarine_at_the_bottom_of_the_ocean_cat-Vehicles_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00110100010011111111000000111000",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00110100010011111111000000111000"
+  },
+  {
+   "index": 45,
+   "input_image": "0045_a_pirate_ship_landing_on_the_moon_cat-Vehicles_chal-Imagination.png",
+   "watermarked_image": "0045_a_pirate_ship_landing_on_the_moon_cat-Vehicles_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00000100110110110100011100011110",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00000100110110110100011100011110"
+  },
+  {
+   "index": 46,
+   "input_image": "0046_the_Millennium_Wheel_cat-World Knowledge_chal-Basic.png",
+   "watermarked_image": "0046_the_Millennium_Wheel_cat-World Knowledge_chal-Basic_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "00100100011000101110001011110101",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "00100100011000101110001011110101"
+  },
+  {
+   "index": 47,
+   "input_image": "0047_a_portrait_of_a_statue_of_the_Egyptian_god_Anubis__cat-World Knowledge_chal-Complex.png",
+   "watermarked_image": "0047_a_portrait_of_a_statue_of_the_Egyptian_god_Anubis__cat-World Knowledge_chal-Complex_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10101000110011011000111100001110",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10101000110011011000111100001110"
+  },
+  {
+   "index": 48,
+   "input_image": "0048_a_prop_plane_flying_low_over_the_Great_Wall_cat-World Knowledge_chal-Fine-grained Detail.png",
+   "watermarked_image": "0048_a_prop_plane_flying_low_over_the_Great_Wall_cat-World Knowledge_chal-Fine-grained Detail_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "01101111001010100111000000010001",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "01101111001010100111000000010001"
+  },
+  {
+   "index": 49,
+   "input_image": "0049_an_elephant_walking_on_the_Great_Wall_cat-World Knowledge_chal-Imagination.png",
+   "watermarked_image": "0049_an_elephant_walking_on_the_Great_Wall_cat-World Knowledge_chal-Imagination_watermarked.png",
+   "bit_accuracy_original": null,
+   "bit_accuracy_watermarked": 1.0,
+   "embedded_bits_preview": "10110011010110101000110110101100",
+   "decoded_before_preview": null,
+   "decoded_after_preview": "10110011010110101000110110101100"
+  }
+ ]
+}

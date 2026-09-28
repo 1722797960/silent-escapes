@@ -1,0 +1,604 @@
+{
+ "rows": [
+  {
+   "image": "0000_happiness_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2519073486328125
+  },
+  {
+   "image": "0000_happiness_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3912353515625
+  },
+  {
+   "image": "0000_happiness_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.698760986328125
+  },
+  {
+   "image": "0000_happiness_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0000_happiness_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.5625,
+   "mask_coverage": 0.0
+  },
+  {
+   "image": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.249847412109375
+  },
+  {
+   "image": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.391082763671875
+  },
+  {
+   "image": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.693634033203125
+  },
+  {
+   "image": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.53125,
+   "mask_coverage": 0.0294342041015625
+  },
+  {
+   "image": "0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2496337890625
+  },
+  {
+   "image": "0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3871917724609375
+  },
+  {
+   "image": "0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.6866455078125
+  },
+  {
+   "image": "0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.5625,
+   "mask_coverage": 0.001861572265625
+  },
+  {
+   "image": "0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2482452392578125
+  },
+  {
+   "image": "0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.387542724609375
+  },
+  {
+   "image": "0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.6890869140625
+  },
+  {
+   "image": "0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.40625,
+   "mask_coverage": 0.0160064697265625
+  },
+  {
+   "image": "0004_metal_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2495574951171875
+  },
+  {
+   "image": "0004_metal_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.38671875
+  },
+  {
+   "image": "0004_metal_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.693359375
+  },
+  {
+   "image": "0004_metal_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0004_metal_cat-Abstract_chal-Basic.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.46875,
+   "mask_coverage": 0.0
+  },
+  {
+   "image": "0005_a_lizard_cat-Animals_chal-Basic.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2502899169921875
+  },
+  {
+   "image": "0005_a_lizard_cat-Animals_chal-Basic.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3910064697265625
+  },
+  {
+   "image": "0005_a_lizard_cat-Animals_chal-Basic.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.683135986328125
+  },
+  {
+   "image": "0005_a_lizard_cat-Animals_chal-Basic.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.965423583984375
+  },
+  {
+   "image": "0005_a_lizard_cat-Animals_chal-Basic.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.625,
+   "mask_coverage": 0.1697998046875
+  },
+  {
+   "image": "0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2416229248046875
+  },
+  {
+   "image": "0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3563079833984375
+  },
+  {
+   "image": "0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.6591033935546875
+  },
+  {
+   "image": "0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.8480377197265625
+  },
+  {
+   "image": "0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.5,
+   "mask_coverage": 0.0424652099609375
+  },
+  {
+   "image": "0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2412567138671875
+  },
+  {
+   "image": "0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.369140625
+  },
+  {
+   "image": "0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.649688720703125
+  },
+  {
+   "image": "0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.9044647216796875
+  },
+  {
+   "image": "0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.4375,
+   "mask_coverage": 0.001068115234375
+  },
+  {
+   "image": "0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.249847412109375
+  },
+  {
+   "image": "0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.378570556640625
+  },
+  {
+   "image": "0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.6376190185546875
+  },
+  {
+   "image": "0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.9055023193359375
+  },
+  {
+   "image": "0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.5,
+   "mask_coverage": 0.000335693359375
+  },
+  {
+   "image": "0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2505645751953125
+  },
+  {
+   "image": "0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.387908935546875
+  },
+  {
+   "image": "0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.695404052734375
+  },
+  {
+   "image": "0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 0.96875,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.4375,
+   "mask_coverage": 0.0136260986328125
+  },
+  {
+   "image": "0010_a_harp_cat-Artifacts_chal-Basic.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2478485107421875
+  },
+  {
+   "image": "0010_a_harp_cat-Artifacts_chal-Basic.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.38873291015625
+  },
+  {
+   "image": "0010_a_harp_cat-Artifacts_chal-Basic.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.69549560546875
+  },
+  {
+   "image": "0010_a_harp_cat-Artifacts_chal-Basic.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0010_a_harp_cat-Artifacts_chal-Basic.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.4375,
+   "mask_coverage": 0.0157928466796875
+  },
+  {
+   "image": "0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2517852783203125
+  },
+  {
+   "image": "0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3936614990234375
+  },
+  {
+   "image": "0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.698272705078125
+  },
+  {
+   "image": "0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.40625,
+   "mask_coverage": 0.03106689453125
+  },
+  {
+   "image": "0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2501068115234375
+  },
+  {
+   "image": "0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3914642333984375
+  },
+  {
+   "image": "0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.6936492919921875
+  },
+  {
+   "image": "0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.40625,
+   "mask_coverage": 0.0722503662109375
+  },
+  {
+   "image": "0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.249359130859375
+  },
+  {
+   "image": "0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3906707763671875
+  },
+  {
+   "image": "0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.6567230224609375
+  },
+  {
+   "image": "0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.9512786865234375
+  },
+  {
+   "image": "0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.40625,
+   "mask_coverage": 0.0
+  },
+  {
+   "image": "0014_The_Starry_Night_cat-Arts_chal-Basic.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.24530029296875
+  },
+  {
+   "image": "0014_The_Starry_Night_cat-Arts_chal-Basic.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.378082275390625
+  },
+  {
+   "image": "0014_The_Starry_Night_cat-Arts_chal-Basic.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.6701202392578125
+  },
+  {
+   "image": "0014_The_Starry_Night_cat-Arts_chal-Basic.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.952880859375
+  },
+  {
+   "image": "0014_The_Starry_Night_cat-Arts_chal-Basic.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.5625,
+   "mask_coverage": 0.0210418701171875
+  },
+  {
+   "image": "0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.248687744140625
+  },
+  {
+   "image": "0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.342987060546875
+  },
+  {
+   "image": "0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.5186614990234375
+  },
+  {
+   "image": "0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.5758056640625
+  },
+  {
+   "image": "0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.46875,
+   "mask_coverage": 0.04052734375
+  },
+  {
+   "image": "0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2497406005859375
+  },
+  {
+   "image": "0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3217010498046875
+  },
+  {
+   "image": "0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.5446624755859375
+  },
+  {
+   "image": "0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.689697265625
+  },
+  {
+   "image": "0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.46875,
+   "mask_coverage": 0.0
+  },
+  {
+   "image": "0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2472686767578125
+  },
+  {
+   "image": "0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3883819580078125
+  },
+  {
+   "image": "0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.692230224609375
+  },
+  {
+   "image": "0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 0.96875,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.4375,
+   "mask_coverage": 0.060760498046875
+  },
+  {
+   "image": "0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2515716552734375
+  },
+  {
+   "image": "0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3922576904296875
+  },
+  {
+   "image": "0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.6956634521484375
+  },
+  {
+   "image": "0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.375,
+   "mask_coverage": 0.0
+  },
+  {
+   "image": "0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png",
+   "crop_frac": 0.0,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.2499847412109375
+  },
+  {
+   "image": "0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png",
+   "crop_frac": 0.1,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.3910675048828125
+  },
+  {
+   "image": "0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png",
+   "crop_frac": 0.2,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 0.692779541015625
+  },
+  {
+   "image": "0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png",
+   "crop_frac": 0.3,
+   "bit_accuracy": 1.0,
+   "mask_coverage": 1.0
+  },
+  {
+   "image": "0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png",
+   "crop_frac": 0.4,
+   "bit_accuracy": 0.5625,
+   "mask_coverage": 0.110076904296875
+  }
+ ]
+}

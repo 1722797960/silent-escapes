@@ -1,0 +1,306 @@
+{
+ "input_dir": "outputs/wam_signed_attack_jpeg_q80_human",
+ "num_files": 50,
+ "results": [
+  {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0000_happiness_cat-Abstract_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0004_metal_cat-Abstract_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0004_metal_cat-Abstract_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0005_a_lizard_cat-Animals_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0005_a_lizard_cat-Animals_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0010_a_harp_cat-Artifacts_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0010_a_harp_cat-Artifacts_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0013_a_watermelon_chair_cat-Artifacts_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0013_a_watermelon_chair_cat-Artifacts_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0014_The_Starry_Night_cat-Arts_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0014_The_Starry_Night_cat-Arts_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0020_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0020_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0021_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0021_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0022_concurrent_lines_cat-Illustrations_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0022_concurrent_lines_cat-Illustrations_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0023_A_set_of_2x2_emoji_icons_with_happy_angry_surprise_cat-Illustrations_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0023_A_set_of_2x2_emoji_icons_with_happy_angry_surprise_cat-Illustrations_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0024_a_kids_book_cover_with_an_illustration_of_white_do_cat-Illustrations_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0024_a_kids_book_cover_with_an_illustration_of_white_do_cat-Illustrations_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0025_a_triangle_with_a_smiling_face_cat-Illustrations_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0025_a_triangle_with_a_smiling_face_cat-Illustrations_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0026_a_ceiling_fan_cat-Indoor Scenes_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0026_a_ceiling_fan_cat-Indoor Scenes_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0027_A_cozy_living_room_with_a_painting_of_a_corgi_on_t_cat-Indoor Scenes_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0027_A_cozy_living_room_with_a_painting_of_a_corgi_on_t_cat-Indoor Scenes_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0028_a_ceiling_fan_with_an_ornate_light_fixture_cat-Indoor Scenes_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0028_a_ceiling_fan_with_an_ornate_light_fixture_cat-Indoor Scenes_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0029_a_small_kitchen_with_a_white_goat_in_it_cat-Indoor Scenes_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0029_a_small_kitchen_with_a_white_goat_in_it_cat-Indoor Scenes_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0030_a_road_cat-Outdoor Scenes_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0030_a_road_cat-Outdoor Scenes_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0031_a_white_bird_in_front_of_a_dinosaur_standing_by_so_cat-Outdoor Scenes_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0031_a_white_bird_in_front_of_a_dinosaur_standing_by_so_cat-Outdoor Scenes_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0032_beautiful_fireworks_in_the_sky_with_red_white_and__cat-Outdoor Scenes_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0032_beautiful_fireworks_in_the_sky_with_red_white_and__cat-Outdoor Scenes_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0033_a_futuristic_city_cat-Outdoor Scenes_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0033_a_futuristic_city_cat-Outdoor Scenes_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0034_a_child_cat-People_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0034_a_child_cat-People_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0035_a_mixed_media_image_with_a_photograph_of_a_woman_w_cat-People_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0035_a_mixed_media_image_with_a_photograph_of_a_woman_w_cat-People_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0036_a_politician_giving_a_speech_at_a_podium_cat-People_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0036_a_politician_giving_a_speech_at_a_podium_cat-People_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0037_a_photograph_of_a_knight_in_shining_armor_holding__cat-People_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0037_a_photograph_of_a_knight_in_shining_armor_holding__cat-People_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0038_an_avocado_cat-Produce & Plants_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0038_an_avocado_cat-Produce & Plants_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0039_a_tree_reflected_in_the_hood_of_a_blue_car_cat-Produce & Plants_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0039_a_tree_reflected_in_the_hood_of_a_blue_car_cat-Produce & Plants_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0040_a_bundle_of_blue_and_yellow_flowers_in_a_vase_cat-Produce & Plants_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0040_a_bundle_of_blue_and_yellow_flowers_in_a_vase_cat-Produce & Plants_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0041_a_tree_with_leaves_that_look_like_purple_balloons_cat-Produce & Plants_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0041_a_tree_with_leaves_that_look_like_purple_balloons_cat-Produce & Plants_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0042_a_pickup_truck_cat-Vehicles_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0042_a_pickup_truck_cat-Vehicles_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0043_A_photograph_of_the_inside_of_a_subway_train_There_cat-Vehicles_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0043_A_photograph_of_the_inside_of_a_subway_train_There_cat-Vehicles_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0044_a_sunken_submarine_at_the_bottom_of_the_ocean_cat-Vehicles_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0044_a_sunken_submarine_at_the_bottom_of_the_ocean_cat-Vehicles_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0045_a_pirate_ship_landing_on_the_moon_cat-Vehicles_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0045_a_pirate_ship_landing_on_the_moon_cat-Vehicles_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0046_the_Millennium_Wheel_cat-World Knowledge_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0046_the_Millennium_Wheel_cat-World Knowledge_chal-Basic_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0047_a_portrait_of_a_statue_of_the_Egyptian_god_Anubis__cat-World Knowledge_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0047_a_portrait_of_a_statue_of_the_Egyptian_god_Anubis__cat-World Knowledge_chal-Complex_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0048_a_prop_plane_flying_low_over_the_Great_Wall_cat-World Knowledge_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0048_a_prop_plane_flying_low_over_the_Great_Wall_cat-World Knowledge_chal-Fine-grained Detail_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0049_an_elephant_walking_on_the_Great_Wall_cat-World Knowledge_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "path": "outputs/wam_signed_attack_jpeg_q80_human/0049_an_elephant_walking_on_the_Great_Wall_cat-World Knowledge_chal-Imagination_watermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  }
+ ]
+}

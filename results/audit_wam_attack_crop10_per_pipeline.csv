@@ -1,0 +1,5 @@
+pipeline,num_images,c2pa_validation_rate,mean_bit_accuracy,min_bit_accuracy,expected_quadrant,pct_in_expected_quadrant
+P0,500,0.0000,0.496563,0.281250,SILENT,1.0000
+P1,500,0.0000,0.999875,0.968750,FRAGILE_PROVENANCE,1.0000
+P1b,500,1.0000,0.999875,0.968750,CONSISTENT_SYNTHETIC,1.0000
+P2,500,1.0000,0.998938,0.656250,INTEGRITY_CLASH,0.9980

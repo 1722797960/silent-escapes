@@ -1,0 +1,70 @@
+{
+ "wam_audit": {
+  "P0": {
+   "mean": 0.4966,
+   "expected": "SILENT",
+   "pct": 0.996
+  },
+  "P1": {
+   "mean": 0.999875,
+   "expected": "FRAGILE_PROVENANCE",
+   "pct": 1.0
+  },
+  "P1b": {
+   "mean": 0.999875,
+   "expected": "CONSISTENT_SYNTHETIC",
+   "pct": 1.0
+  },
+  "P2": {
+   "mean": 0.999875,
+   "expected": "INTEGRITY_CLASH",
+   "pct": 1.0
+  },
+  "metrics": {
+   "TPR": 1.0,
+   "FPR": 0.0,
+   "accuracy": 1.0
+  }
+ },
+ "wam_attacks_500": {
+  "jpeg_q80": {
+   "mean": 0.9998,
+   "min": 0.9375,
+   "detected": "500/500"
+  },
+  "crop10": {
+   "mean": 0.9989,
+   "min": 0.6562,
+   "detected": "499/500"
+  },
+  "social": {
+   "mean": 0.9999,
+   "min": 0.9688,
+   "detected": "500/500"
+  }
+ },
+ "pixelseal_500": {
+  "original_mean": 0.4996,
+  "original_min": 0.4023,
+  "baseline": {
+   "mean": 0.9991,
+   "min": 0.9453,
+   "detected": "500/500"
+  },
+  "jpeg": {
+   "mean": 0.9976,
+   "min": 0.9336,
+   "detected": "500/500"
+  },
+  "crop10": {
+   "mean": 0.9967,
+   "min": 0.8711,
+   "detected": "500/500"
+  },
+  "social": {
+   "mean": 0.9917,
+   "min": 0.9258,
+   "detected": "500/500"
+  }
+ }
+}

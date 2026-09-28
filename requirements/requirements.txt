@@ -1,0 +1,38 @@
+# requirements (pinned to the versions actually used in the paper's experiments)
+#
+# Install the CUDA build of torch FIRST (see ../setup_env.sh for index-url
+# guidance per platform), then either:
+#     pip install -r requirements.txt          # direct deps only
+#     pip install -r requirements-lock.txt     # full freeze of the reference env
+#
+# reference environment: Python 3.10, CUDA 12.4 driver, Linux x86_64
+
+# --- core DL stack (torch installed separately to control CUDA build) ---
+torch==2.6.0
+torchvision==0.21.0
+diffusers==0.40.0
+transformers>=4.46
+accelerate==1.14.0
+datasets==5.0.1
+safetensors
+
+# --- C2PA provenance (SDK; c2pa-python 0.37.10 required — the numeric-array
+# assertion serialization BUG that shapes the CSV bitmap encoding is fixed
+# behavior in this version) ---
+c2pa-python==0.37.10
+cryptography
+
+# --- watermarking: videoseal ships PixelSeal (install from GitHub tarball,
+# see ../setup_env.sh); WAM code is vendored in third_party/watermark-anything ---
+
+# --- WAM / SAM inference deps ---
+omegaconf
+scikit-learn      # DBSCAN import in WAM inference_utils
+scikit-image      # psnr helper in WAM inference_utils
+segment-anything==1.0  # SAM ViT-B automatic mask generation
+
+# --- plotting / misc ---
+matplotlib
+numpy
+Pillow
+jupyterlab

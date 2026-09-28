@@ -1,0 +1,126 @@
+{
+ "input_dir": "outputs/regional_signed_50",
+ "num_files": 20,
+ "results": [
+  {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0000_happiness_cat-Abstract_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0004_metal_cat-Abstract_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0004_metal_cat-Abstract_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0005_a_lizard_cat-Animals_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0005_a_lizard_cat-Animals_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0010_a_harp_cat-Artifacts_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0010_a_harp_cat-Artifacts_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0013_a_watermelon_chair_cat-Artifacts_chal-Imagination_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0013_a_watermelon_chair_cat-Artifacts_chal-Imagination_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0014_The_Starry_Night_cat-Arts_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0014_The_Starry_Night_cat-Arts_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  },
+  {
+   "file": "0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex_regionwatermarked_signed_manifest_human_edited.png",
+   "path": "outputs/regional_signed_50/0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex_regionwatermarked_signed_manifest_human_edited.png",
+   "validation_state": "Valid",
+   "error": null
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "summary": {
+  "crop00": {
+   "n": 200,
+   "manifest_valid": 200,
+   "untrusted_only": 200,
+   "bin_assertion": 200,
+   "ra_readable": 200
+  },
+  "crop05": {
+   "n": 200,
+   "manifest_valid": 200,
+   "untrusted_only": 200,
+   "bin_assertion": 200,
+   "ra_readable": 200
+  },
+  "crop10": {
+   "n": 200,
+   "manifest_valid": 200,
+   "untrusted_only": 200,
+   "bin_assertion": 200,
+   "ra_readable": 200
+  },
+  "crop15": {
+   "n": 200,
+   "manifest_valid": 200,
+   "untrusted_only": 200,
+   "bin_assertion": 200,
+   "ra_readable": 200
+  },
+  "crop20": {
+   "n": 200,
+   "manifest_valid": 200,
+   "untrusted_only": 200,
+   "bin_assertion": 200,
+   "ra_readable": 200
+  },
+  "crop25": {
+   "n": 200,
+   "manifest_valid": 200,
+   "untrusted_only": 200,
+   "bin_assertion": 200,
+   "ra_readable": 200
+  },
+  "crop30": {
+   "n": 200,
+   "manifest_valid": 200,
+   "untrusted_only": 200,
+   "bin_assertion": 200,
+   "ra_readable": 200
+  },
+  "crop35": {
+   "n": 200,
+   "manifest_valid": 200,
+   "untrusted_only": 200,
+   "bin_assertion": 200,
+   "ra_readable": 200
+  },
+  "crop40": {
+   "n": 200,
+   "manifest_valid": 200,
+   "untrusted_only": 200,
+   "bin_assertion": 200,
+   "ra_readable": 200
+  }
+ },
+ "examples": {
+  "crop00": {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwm_signed_ra.png",
+   "state": "Valid",
+   "fails": [
+    "signingCredential.untrusted"
+   ]
+  },
+  "crop05": {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwm_signed_ra.png",
+   "state": "Valid",
+   "fails": [
+    "signingCredential.untrusted"
+   ]
+  },
+  "crop10": {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwm_signed_ra.png",
+   "state": "Valid",
+   "fails": [
+    "signingCredential.untrusted"
+   ]
+  },
+  "crop15": {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwm_signed_ra.png",
+   "state": "Valid",
+   "fails": [
+    "signingCredential.untrusted"
+   ]
+  },
+  "crop20": {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwm_signed_ra.png",
+   "state": "Valid",
+   "fails": [
+    "signingCredential.untrusted"
+   ]
+  },
+  "crop25": {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwm_signed_ra.png",
+   "state": "Valid",
+   "fails": [
+    "signingCredential.untrusted"
+   ]
+  },
+  "crop30": {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwm_signed_ra.png",
+   "state": "Valid",
+   "fails": [
+    "signingCredential.untrusted"
+   ]
+  },
+  "crop35": {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwm_signed_ra.png",
+   "state": "Valid",
+   "fails": [
+    "signingCredential.untrusted"
+   ]
+  },
+  "crop40": {
+   "file": "0000_happiness_cat-Abstract_chal-Basic_regionwm_signed_ra.png",
+   "state": "Valid",
+   "fails": [
+    "signingCredential.untrusted"
+   ]
+  }
+ },
+ "note": "Reference c2pa-python 0.37.10 validation path; binary check inspects the raw caBX/JUMBF store independent of our audit code."
+}

@@ -1,0 +1,17 @@
+{
+  "experiment": "C1 position-aware crop attacks",
+  "version": "c1_v1",
+  "num_images": 200,
+  "pilot_num_images": 20,
+  "removed_area_fractions": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+  "pilot_removed_area_fractions": [0.0, 0.4, 0.8],
+  "methods": ["center", "left", "right", "top", "bottom", "random"],
+  "random_seed": 20260928,
+  "watermark_threshold": 0.75,
+  "region_retention_floor": 0.05,
+  "suppression_threshold": 0.5,
+  "bootstrap_resamples": 2000,
+  "resize_filter": "LANCZOS",
+  "mask_aware_policy": "Select one of left/right/top/bottom using maximum SAM-mask removal only; never inspect watermark detections.",
+  "severity_definition": "removed_area_fraction = 1 - crop_box_area / original_image_area"
+}

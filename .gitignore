@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venvs/
+.venv/
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Credentials: generate locally with tools/generate_demo_credentials.py
+certs/*.pem
+certs/*.key
+certs/*.crt
+
+# Model weights and caches
+ckpts/**
+!ckpts/README.md
+.cache/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Generated datasets and intermediate images
+data/**
+!data/README.md
+outputs*/
+
+# Large experiment artifacts. Curated summaries already committed remain tracked.
+results/**/watermarked/
+results/**/attack*/
+results/**/signed*/
+results/**/masks/
+results/**/logs/
+*.log
+*.log.tmp
+tmp/
+
+# Local environment overrides
+.env
+.env.*
+!.env.example
