@@ -43,7 +43,54 @@ credential theft: all credentials are self-signed research keys.
 - The pilot uses ten deterministic coverage quantiles. It validates the
   pipeline but is not an estimator for the full 200-image attack rate.
 
+## Benign edit controls (`benign_controls_v1`)
+
+### Measurement goal
+
+This experiment separates two costs that should not be conflated. The **benign
+region false-flag rate** is the fraction of honestly described, watermarked
+benign edits that receive `TAMPERED_REGION` or `WATERMARK_SUPPRESSED`. The
+**clean detector false-positive rate** is measured separately on paired,
+unwatermarked images with an honest AI manifest and no regional-watermark
+assertion.
+
+### Conditions and invariants
+
+- `identity_resave`: PNG decode/encode and honest re-signing control.
+- `jpeg_q90`: JPEG quality 90, 4:4:4 round trip, then PNG and honest re-signing.
+- `resize_90`: LANCZOS downscale to 90% and restore to 1024 square pixels.
+- `safe_crop_1pct`: remove 1% from the side with maximum signed-mask retention,
+  chosen from geometry alone, then resize to the original dimensions.
+- `clean_negative`: paired generated original with no embedded watermark and no
+  regional claim.
+
+All watermarked edits carry the original payload hash and signed 64x64 region
+bitmap in a manifest that truthfully records both AI generation and subsequent
+editing. The crop policy never reads detector outputs. Manifest validity,
+assertion presence, and payload binding are treated as pipeline invariants, not
+as statistical outcomes.
+
+### Interpretation boundary
+
+The released run contains 200 assets per condition and reports Wilson intervals
+for every proportion. Strict rates retain all sources; baseline-qualified rates
+exclude a source only when its no-edit reference audit already fails. These
+edits are intentionally mild and do not estimate false flags for arbitrary user
+editing or independently calibrate deployment thresholds.
+
 ## Change history
+
+### 2026-09-30 - Publish full benign-control evaluation
+
+**Change:** Added the benign suite at 200 assets per condition, released 1,000
+per-asset audit rows, and documented strict and baseline-qualified false-flag
+estimands.
+
+**Reason:** Quantify the audit's cost on honest edits and separate it from the
+watermark detector's behavior on clean, unwatermarked images.
+
+**Impact:** Adds the paper's benign-control table and threshold-grid evidence;
+the attack and LaMa result sets are unchanged.
 
 ### 2026-09-29 - Add isolated LaMa inpainting experiment
 

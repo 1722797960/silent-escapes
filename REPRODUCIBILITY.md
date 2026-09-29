@@ -25,6 +25,7 @@ rates from the committed JSON files. It requires only the Python standard librar
 | Defense threshold sensitivity | `experiments/threshold_sensitivity_v1.py` | `results/threshold_sensitivity_v1/threshold_sensitivity.json` |
 | Independent C2PA SDK verification | `experiments/independent_verify.py` | `results/defense_e2e/independent_verification.json` |
 | Exact-mask LaMa inpainting | `experiments/inpainting_lama_v1.py`, `inpainting_resign_v1.py`, `inpainting_audit_v1.py`, `summarize_inpainting_v1.py` | `results/inpainting_e2e_v1/audit.csv`, `summary.json` |
+| Benign edits and clean negatives | `experiments/benign_controls_generate_v1.py`, `benign_controls_resign_v1.py`, `benign_controls_audit_v1.py`, `summarize_benign_controls_v1.py` | `results/benign_controls_v1/audit.csv`, `audit.json`, `summary.json`, `contact_sheet_sample.png` |
 
 ## 3. Fixed experimental settings
 
@@ -39,6 +40,8 @@ rates from the committed JSON files. It requires only the Python standard librar
 - Region logit-mean threshold: `0.5`
 - Resize filter: LANCZOS
 - LaMa condition: `big-lama`, exact signed SAM mask, zero dilation
+- Benign edits: PNG re-save, JPEG Q90, 90% resize round trip, and a 1% geometry-only safe crop
+- Benign sample size: 200 assets per edit plus 200 paired clean negatives
 
 The effective configuration written by each run is retained beside the result
 summary. Historical absolute machine paths have been replaced with repository-
@@ -155,3 +158,32 @@ signed source. The committed `audit.csv` contains all 200 per-asset rows;
 `summary.json` contains the Wilson intervals and headline counts. Raw images,
 contact sheets, checkpoints, and metadata containing machine-local paths are
 excluded from the public release.
+
+## 9. Benign edits and clean negatives
+
+Generate four honestly described edits for each of the 200 watermarked assets,
+plus 200 paired unwatermarked controls. Then re-sign, audit, and summarize them:
+
+```bash
+python experiments/benign_controls_generate_v1.py \
+  --output-dir results/benign_controls_v1 \
+  --pilot-count 200
+python experiments/benign_controls_resign_v1.py \
+  --experiment-dir results/benign_controls_v1 \
+  --c2pa-python /path/to/c2pa/python
+python experiments/benign_controls_audit_v1.py \
+  --experiment-dir results/benign_controls_v1 \
+  --c2pa-python /path/to/c2pa/python \
+  --device cuda:0
+python experiments/summarize_benign_controls_v1.py \
+  --experiment-dir results/benign_controls_v1
+```
+
+The strict false-flag denominator includes every source asset. The summary also
+reports a baseline-qualified denominator that excludes any source already
+failing the no-edit reference audit; both are retained to make the conditioning
+choice explicit. Clean negatives have no region assertion, so their detector
+false-positive rate is reported separately from the final audit verdict. The
+public result directory contains all 1,000 per-asset rows, the threshold grid,
+and a compact sample contact sheet, but excludes signed images and machine-local
+run metadata.

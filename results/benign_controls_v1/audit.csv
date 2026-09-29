@@ -1,0 +1,1001 @@
+image,condition,watermarked,manifest_valid,region_assertion_present,payload_hash_ok,region_retention,bit_accuracy_before,bit_accuracy_after,logit_in_region_before,logit_in_region_after,decoder_miss,detector_false_positive,benign_region_false_flag,verdict,crop_side
+0000_happiness_cat-Abstract_chal-Basic.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.8789,0.8789,False,False,False,CONSISTENT_SYNTHETIC,
+0000_happiness_cat-Abstract_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,0.9688,0.9688,0.8789,0.8837,False,False,False,CONSISTENT_SYNTHETIC,
+0000_happiness_cat-Abstract_chal-Basic.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.8789,0.8785,False,False,False,CONSISTENT_SYNTHETIC,
+0000_happiness_cat-Abstract_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.9688,0.8789,0.8742,False,False,False,CONSISTENT_SYNTHETIC,left
+0000_happiness_cat-Abstract_chal-Basic.png,clean_negative,False,True,False,,,0.9688,0.5625,0.8789,0.0579,True,False,False,NO_REGION_CLAIM,
+0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9845,0.9845,False,False,False,CONSISTENT_SYNTHETIC,
+0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9845,0.9842,False,False,False,CONSISTENT_SYNTHETIC,
+0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9845,0.9845,False,False,False,CONSISTENT_SYNTHETIC,
+0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9845,0.9766,False,False,False,CONSISTENT_SYNTHETIC,left
+0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5312,0.9845,0.0025,True,False,False,NO_REGION_CLAIM,
+0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9436,0.9436,False,False,False,CONSISTENT_SYNTHETIC,
+0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9436,0.9365,False,False,False,CONSISTENT_SYNTHETIC,
+0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9436,0.9438,False,False,False,CONSISTENT_SYNTHETIC,
+0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9436,0.9401,False,False,False,CONSISTENT_SYNTHETIC,left
+0002_Pneumonoultramicroscopicsilicovolcanoconiosis_cat-Abstract_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.5312,0.9436,0.0334,True,False,False,NO_REGION_CLAIM,
+0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.98,0.98,False,False,False,CONSISTENT_SYNTHETIC,
+0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.98,0.9803,False,False,False,CONSISTENT_SYNTHETIC,
+0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.98,0.9801,False,False,False,CONSISTENT_SYNTHETIC,
+0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.98,0.9731,False,False,False,CONSISTENT_SYNTHETIC,left
+0003_Oil_painting_generated_by_artificial_intelligence_cat-Abstract_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.375,0.98,0.0004,True,False,False,NO_REGION_CLAIM,
+0004_metal_cat-Abstract_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9836,0.9836,False,False,False,CONSISTENT_SYNTHETIC,
+0004_metal_cat-Abstract_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9836,0.9839,False,False,False,CONSISTENT_SYNTHETIC,
+0004_metal_cat-Abstract_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9836,0.9836,False,False,False,CONSISTENT_SYNTHETIC,
+0004_metal_cat-Abstract_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9836,0.981,False,False,False,CONSISTENT_SYNTHETIC,left
+0004_metal_cat-Abstract_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.4688,0.9836,0.0054,True,False,False,NO_REGION_CLAIM,
+0005_a_lizard_cat-Animals_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.897,0.897,False,False,False,CONSISTENT_SYNTHETIC,
+0005_a_lizard_cat-Animals_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.897,0.8967,False,False,False,CONSISTENT_SYNTHETIC,
+0005_a_lizard_cat-Animals_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.897,0.897,False,False,False,CONSISTENT_SYNTHETIC,
+0005_a_lizard_cat-Animals_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.897,0.8906,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0005_a_lizard_cat-Animals_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5312,0.897,0.0001,True,False,False,NO_REGION_CLAIM,
+0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.9048,0.9048,False,False,False,CONSISTENT_SYNTHETIC,
+0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,0.9688,0.9688,0.9048,0.9057,False,False,False,CONSISTENT_SYNTHETIC,
+0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.9048,0.9051,False,False,False,CONSISTENT_SYNTHETIC,
+0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.7812,0.9048,0.8866,False,False,False,CONSISTENT_SYNTHETIC,top
+0006_a_blue_cow_is_standing_next_to_a_tree_with_red_lea_cat-Animals_chal-Complex.png,clean_negative,False,True,False,,,0.9688,0.5312,0.9048,0.0002,True,False,False,NO_REGION_CLAIM,
+0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.7944,0.7944,False,False,False,CONSISTENT_SYNTHETIC,
+0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.7944,0.792,False,False,False,CONSISTENT_SYNTHETIC,
+0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.7944,0.7948,False,False,False,CONSISTENT_SYNTHETIC,
+0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.7944,0.7811,False,False,False,CONSISTENT_SYNTHETIC,left
+0007_a_tall_horse_next_to_a_red_car_cat-Animals_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.4375,0.7944,0.0003,True,False,False,NO_REGION_CLAIM,
+0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9877,0.9877,False,False,False,CONSISTENT_SYNTHETIC,
+0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9877,0.9877,False,False,False,CONSISTENT_SYNTHETIC,
+0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9877,0.9878,False,False,False,CONSISTENT_SYNTHETIC,
+0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png,safe_crop_1pct,True,True,True,True,0.9756627553237722,1.0,0.9688,0.9877,0.9895,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0008_a_pig_face_with_an_eye_patch_cat-Animals_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4688,0.9877,0.0002,True,False,False,NO_REGION_CLAIM,
+0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9831,0.9831,False,False,False,CONSISTENT_SYNTHETIC,
+0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9831,0.9828,False,False,False,CONSISTENT_SYNTHETIC,
+0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9831,0.983,False,False,False,CONSISTENT_SYNTHETIC,
+0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.875,0.9831,0.9783,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0009_The_mouse_the_cat_watches_is_jumping_in_the_air_cat-Animals_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.375,0.9831,0.0002,True,False,False,NO_REGION_CLAIM,
+0010_a_harp_cat-Artifacts_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9617,0.9617,False,False,False,CONSISTENT_SYNTHETIC,
+0010_a_harp_cat-Artifacts_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9617,0.961,False,False,False,CONSISTENT_SYNTHETIC,
+0010_a_harp_cat-Artifacts_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9617,0.9615,False,False,False,CONSISTENT_SYNTHETIC,
+0010_a_harp_cat-Artifacts_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9617,0.9463,False,False,False,CONSISTENT_SYNTHETIC,left
+0010_a_harp_cat-Artifacts_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.4062,0.9617,0.0009,True,False,False,NO_REGION_CLAIM,
+0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,identity_resave,True,True,True,True,1.0,0.9375,0.9375,0.9385,0.9385,False,False,False,CONSISTENT_SYNTHETIC,
+0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,0.9375,0.9375,0.9385,0.9376,False,False,False,CONSISTENT_SYNTHETIC,
+0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,resize_90,True,True,True,True,1.0,0.9375,0.9375,0.9385,0.9384,False,False,False,CONSISTENT_SYNTHETIC,
+0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,0.9375,0.9062,0.9385,0.9184,False,False,False,CONSISTENT_SYNTHETIC,left
+0011_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,clean_negative,False,True,False,,,0.9375,0.5312,0.9385,0.0012,True,False,False,NO_REGION_CLAIM,
+0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9644,0.9644,False,False,False,CONSISTENT_SYNTHETIC,
+0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9644,0.965,False,False,False,CONSISTENT_SYNTHETIC,
+0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9644,0.9644,False,False,False,CONSISTENT_SYNTHETIC,
+0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9644,0.9579,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0012_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.4688,0.9644,0.0001,True,False,False,NO_REGION_CLAIM,
+0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9322,0.9322,False,False,False,CONSISTENT_SYNTHETIC,
+0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9322,0.9352,False,False,False,CONSISTENT_SYNTHETIC,
+0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9322,0.9325,False,False,False,CONSISTENT_SYNTHETIC,
+0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9322,0.9312,False,False,False,CONSISTENT_SYNTHETIC,top
+0013_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4062,0.9322,0.0004,True,False,False,NO_REGION_CLAIM,
+0014_The_Starry_Night_cat-Arts_chal-Basic.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.9764,0.9764,False,False,False,CONSISTENT_SYNTHETIC,
+0014_The_Starry_Night_cat-Arts_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,0.9688,0.9688,0.9764,0.9756,False,False,False,CONSISTENT_SYNTHETIC,
+0014_The_Starry_Night_cat-Arts_chal-Basic.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.9764,0.9764,False,False,False,CONSISTENT_SYNTHETIC,
+0014_The_Starry_Night_cat-Arts_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.9688,0.9764,0.9734,False,False,False,CONSISTENT_SYNTHETIC,right
+0014_The_Starry_Night_cat-Arts_chal-Basic.png,clean_negative,False,True,False,,,0.9688,0.5,0.9764,0.0001,True,False,False,NO_REGION_CLAIM,
+0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8277,0.8277,False,False,False,CONSISTENT_SYNTHETIC,
+0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8277,0.8103,False,False,False,CONSISTENT_SYNTHETIC,
+0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8277,0.826,False,False,False,CONSISTENT_SYNTHETIC,
+0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.8125,0.8277,0.6079,False,False,False,CONSISTENT_SYNTHETIC,left
+0015_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5625,0.8277,0.0,True,False,False,NO_REGION_CLAIM,
+0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9815,0.9815,False,False,False,CONSISTENT_SYNTHETIC,
+0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9815,0.9813,False,False,False,CONSISTENT_SYNTHETIC,
+0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9815,0.9815,False,False,False,CONSISTENT_SYNTHETIC,
+0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,0.9912854030501089,1.0,1.0,0.9815,0.98,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0016_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.4688,0.9815,0.0002,True,False,False,NO_REGION_CLAIM,
+0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9678,0.9678,False,False,False,CONSISTENT_SYNTHETIC,
+0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9678,0.9677,False,False,False,CONSISTENT_SYNTHETIC,
+0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9678,0.9679,False,False,False,CONSISTENT_SYNTHETIC,
+0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9678,0.9718,False,False,False,CONSISTENT_SYNTHETIC,left
+0017_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5,0.9678,0.0001,True,False,False,NO_REGION_CLAIM,
+0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9779,0.9779,False,False,False,CONSISTENT_SYNTHETIC,
+0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9779,0.9777,False,False,False,CONSISTENT_SYNTHETIC,
+0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9779,0.9779,False,False,False,CONSISTENT_SYNTHETIC,
+0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9779,0.974,False,False,False,CONSISTENT_SYNTHETIC,top
+0018_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.375,0.9779,0.0001,True,False,False,NO_REGION_CLAIM,
+0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.9712,0.9712,False,False,False,CONSISTENT_SYNTHETIC,
+0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,0.9688,1.0,0.9712,0.9707,False,False,False,CONSISTENT_SYNTHETIC,
+0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.9712,0.9711,False,False,False,CONSISTENT_SYNTHETIC,
+0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.5,0.9712,0.9366,True,False,False,BENIGN_NO_FLAG,left
+0019_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,clean_negative,False,True,False,,,0.9688,0.5,0.9712,0.0009,True,False,False,NO_REGION_CLAIM,
+0020_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9933,0.9933,False,False,False,CONSISTENT_SYNTHETIC,
+0020_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9933,0.9932,False,False,False,CONSISTENT_SYNTHETIC,
+0020_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9933,0.9933,False,False,False,CONSISTENT_SYNTHETIC,
+0020_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9933,0.9903,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0020_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.5,0.9933,0.0008,True,False,False,NO_REGION_CLAIM,
+0021_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9655,0.9655,False,False,False,CONSISTENT_SYNTHETIC,
+0021_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9655,0.9652,False,False,False,CONSISTENT_SYNTHETIC,
+0021_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9655,0.9655,False,False,False,CONSISTENT_SYNTHETIC,
+0021_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9655,0.9622,False,False,False,CONSISTENT_SYNTHETIC,top
+0021_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5,0.9655,0.0,True,False,False,NO_REGION_CLAIM,
+0022_concurrent_lines_cat-Illustrations_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9824,0.9824,False,False,False,CONSISTENT_SYNTHETIC,
+0022_concurrent_lines_cat-Illustrations_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9824,0.9824,False,False,False,CONSISTENT_SYNTHETIC,
+0022_concurrent_lines_cat-Illustrations_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9824,0.9824,False,False,False,CONSISTENT_SYNTHETIC,
+0022_concurrent_lines_cat-Illustrations_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9824,0.9812,False,False,False,CONSISTENT_SYNTHETIC,right
+0022_concurrent_lines_cat-Illustrations_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.4062,0.9824,0.0018,True,False,False,NO_REGION_CLAIM,
+0023_A_set_of_2x2_emoji_icons_with_happy_angry_surprise_cat-Illustrations_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9477,0.9477,False,False,False,CONSISTENT_SYNTHETIC,
+0023_A_set_of_2x2_emoji_icons_with_happy_angry_surprise_cat-Illustrations_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9477,0.9479,False,False,False,CONSISTENT_SYNTHETIC,
+0023_A_set_of_2x2_emoji_icons_with_happy_angry_surprise_cat-Illustrations_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9477,0.9477,False,False,False,CONSISTENT_SYNTHETIC,
+0023_A_set_of_2x2_emoji_icons_with_happy_angry_surprise_cat-Illustrations_chal-Complex.png,safe_crop_1pct,True,True,True,True,0.9634448574969021,1.0,0.9688,0.9477,0.9371,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0023_A_set_of_2x2_emoji_icons_with_happy_angry_surprise_cat-Illustrations_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.625,0.9477,0.0003,True,False,False,NO_REGION_CLAIM,
+0024_a_kids_book_cover_with_an_illustration_of_white_do_cat-Illustrations_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,0.9062,0.9062,0.909,0.909,False,False,False,CONSISTENT_SYNTHETIC,
+0024_a_kids_book_cover_with_an_illustration_of_white_do_cat-Illustrations_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,0.9062,0.875,0.909,0.9094,False,False,False,CONSISTENT_SYNTHETIC,
+0024_a_kids_book_cover_with_an_illustration_of_white_do_cat-Illustrations_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,0.9062,0.9062,0.909,0.9095,False,False,False,CONSISTENT_SYNTHETIC,
+0024_a_kids_book_cover_with_an_illustration_of_white_do_cat-Illustrations_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,0.9062,0.875,0.909,0.8933,False,False,False,CONSISTENT_SYNTHETIC,left
+0024_a_kids_book_cover_with_an_illustration_of_white_do_cat-Illustrations_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,0.9062,0.625,0.909,0.0001,True,False,False,NO_REGION_CLAIM,
+0025_a_triangle_with_a_smiling_face_cat-Illustrations_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9695,0.9695,False,False,False,CONSISTENT_SYNTHETIC,
+0025_a_triangle_with_a_smiling_face_cat-Illustrations_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9695,0.9664,False,False,False,CONSISTENT_SYNTHETIC,
+0025_a_triangle_with_a_smiling_face_cat-Illustrations_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9695,0.9694,False,False,False,CONSISTENT_SYNTHETIC,
+0025_a_triangle_with_a_smiling_face_cat-Illustrations_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9062,0.9695,0.9657,False,False,False,CONSISTENT_SYNTHETIC,left
+0025_a_triangle_with_a_smiling_face_cat-Illustrations_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4375,0.9695,0.0009,True,False,False,NO_REGION_CLAIM,
+0026_a_ceiling_fan_cat-Indoor Scenes_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9777,0.9777,False,False,False,CONSISTENT_SYNTHETIC,
+0026_a_ceiling_fan_cat-Indoor Scenes_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9777,0.9792,False,False,False,CONSISTENT_SYNTHETIC,
+0026_a_ceiling_fan_cat-Indoor Scenes_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9777,0.978,False,False,False,CONSISTENT_SYNTHETIC,
+0026_a_ceiling_fan_cat-Indoor Scenes_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9777,0.9742,False,False,False,CONSISTENT_SYNTHETIC,right
+0026_a_ceiling_fan_cat-Indoor Scenes_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.375,0.9777,0.002,True,False,False,NO_REGION_CLAIM,
+0027_A_cozy_living_room_with_a_painting_of_a_corgi_on_t_cat-Indoor Scenes_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9721,0.9721,False,False,False,CONSISTENT_SYNTHETIC,
+0027_A_cozy_living_room_with_a_painting_of_a_corgi_on_t_cat-Indoor Scenes_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9721,0.9734,False,False,False,CONSISTENT_SYNTHETIC,
+0027_A_cozy_living_room_with_a_painting_of_a_corgi_on_t_cat-Indoor Scenes_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9721,0.9722,False,False,False,CONSISTENT_SYNTHETIC,
+0027_A_cozy_living_room_with_a_painting_of_a_corgi_on_t_cat-Indoor Scenes_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9721,0.9692,False,False,False,CONSISTENT_SYNTHETIC,left
+0027_A_cozy_living_room_with_a_painting_of_a_corgi_on_t_cat-Indoor Scenes_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4375,0.9721,0.0001,True,False,False,NO_REGION_CLAIM,
+0028_a_ceiling_fan_with_an_ornate_light_fixture_cat-Indoor Scenes_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9688,0.9688,False,False,False,CONSISTENT_SYNTHETIC,
+0028_a_ceiling_fan_with_an_ornate_light_fixture_cat-Indoor Scenes_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9688,0.9674,False,False,False,CONSISTENT_SYNTHETIC,
+0028_a_ceiling_fan_with_an_ornate_light_fixture_cat-Indoor Scenes_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9688,0.9685,False,False,False,CONSISTENT_SYNTHETIC,
+0028_a_ceiling_fan_with_an_ornate_light_fixture_cat-Indoor Scenes_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9688,0.9641,False,False,False,CONSISTENT_SYNTHETIC,left
+0028_a_ceiling_fan_with_an_ornate_light_fixture_cat-Indoor Scenes_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.5625,0.9688,0.0049,True,False,False,NO_REGION_CLAIM,
+0029_a_small_kitchen_with_a_white_goat_in_it_cat-Indoor Scenes_chal-Imagination.png,identity_resave,True,True,True,True,1.0,0.9375,0.9375,0.66,0.66,False,False,False,CONSISTENT_SYNTHETIC,
+0029_a_small_kitchen_with_a_white_goat_in_it_cat-Indoor Scenes_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,0.9375,0.9375,0.66,0.6622,False,False,False,CONSISTENT_SYNTHETIC,
+0029_a_small_kitchen_with_a_white_goat_in_it_cat-Indoor Scenes_chal-Imagination.png,resize_90,True,True,True,True,1.0,0.9375,0.9375,0.66,0.6604,False,False,False,CONSISTENT_SYNTHETIC,
+0029_a_small_kitchen_with_a_white_goat_in_it_cat-Indoor Scenes_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,0.9375,0.5,0.66,0.6093,True,False,False,BENIGN_NO_FLAG,left
+0029_a_small_kitchen_with_a_white_goat_in_it_cat-Indoor Scenes_chal-Imagination.png,clean_negative,False,True,False,,,0.9375,0.4688,0.66,0.0001,True,False,False,NO_REGION_CLAIM,
+0030_a_road_cat-Outdoor Scenes_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9926,0.9926,False,False,False,CONSISTENT_SYNTHETIC,
+0030_a_road_cat-Outdoor Scenes_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9926,0.9927,False,False,False,CONSISTENT_SYNTHETIC,
+0030_a_road_cat-Outdoor Scenes_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9926,0.9926,False,False,False,CONSISTENT_SYNTHETIC,
+0030_a_road_cat-Outdoor Scenes_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9926,0.9919,False,False,False,CONSISTENT_SYNTHETIC,right
+0030_a_road_cat-Outdoor Scenes_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.4375,0.9926,0.0006,True,False,False,NO_REGION_CLAIM,
+0031_a_white_bird_in_front_of_a_dinosaur_standing_by_so_cat-Outdoor Scenes_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9176,0.9176,False,False,False,CONSISTENT_SYNTHETIC,
+0031_a_white_bird_in_front_of_a_dinosaur_standing_by_so_cat-Outdoor Scenes_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9176,0.9176,False,False,False,CONSISTENT_SYNTHETIC,
+0031_a_white_bird_in_front_of_a_dinosaur_standing_by_so_cat-Outdoor Scenes_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9176,0.9177,False,False,False,CONSISTENT_SYNTHETIC,
+0031_a_white_bird_in_front_of_a_dinosaur_standing_by_so_cat-Outdoor Scenes_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9176,0.9072,False,False,False,CONSISTENT_SYNTHETIC,left
+0031_a_white_bird_in_front_of_a_dinosaur_standing_by_so_cat-Outdoor Scenes_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.3125,0.9176,0.0002,True,False,False,NO_REGION_CLAIM,
+0032_beautiful_fireworks_in_the_sky_with_red_white_and__cat-Outdoor Scenes_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9146,0.9146,False,False,False,CONSISTENT_SYNTHETIC,
+0032_beautiful_fireworks_in_the_sky_with_red_white_and__cat-Outdoor Scenes_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9146,0.9153,False,False,False,CONSISTENT_SYNTHETIC,
+0032_beautiful_fireworks_in_the_sky_with_red_white_and__cat-Outdoor Scenes_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9146,0.9141,False,False,False,CONSISTENT_SYNTHETIC,
+0032_beautiful_fireworks_in_the_sky_with_red_white_and__cat-Outdoor Scenes_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9146,0.918,False,False,False,CONSISTENT_SYNTHETIC,left
+0032_beautiful_fireworks_in_the_sky_with_red_white_and__cat-Outdoor Scenes_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.4062,0.9146,0.0001,True,False,False,NO_REGION_CLAIM,
+0033_a_futuristic_city_cat-Outdoor Scenes_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9782,0.9782,False,False,False,CONSISTENT_SYNTHETIC,
+0033_a_futuristic_city_cat-Outdoor Scenes_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9782,0.9782,False,False,False,CONSISTENT_SYNTHETIC,
+0033_a_futuristic_city_cat-Outdoor Scenes_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9782,0.9782,False,False,False,CONSISTENT_SYNTHETIC,
+0033_a_futuristic_city_cat-Outdoor Scenes_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9782,0.9771,False,False,False,CONSISTENT_SYNTHETIC,left
+0033_a_futuristic_city_cat-Outdoor Scenes_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.375,0.9782,0.0001,True,False,False,NO_REGION_CLAIM,
+0034_a_child_cat-People_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9755,0.9755,False,False,False,CONSISTENT_SYNTHETIC,
+0034_a_child_cat-People_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9755,0.9753,False,False,False,CONSISTENT_SYNTHETIC,
+0034_a_child_cat-People_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9755,0.9756,False,False,False,CONSISTENT_SYNTHETIC,
+0034_a_child_cat-People_chal-Basic.png,safe_crop_1pct,True,True,True,True,0.9965108164689462,1.0,1.0,0.9755,0.9665,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0034_a_child_cat-People_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5,0.9755,0.0051,True,False,False,NO_REGION_CLAIM,
+0035_a_mixed_media_image_with_a_photograph_of_a_woman_w_cat-People_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9471,0.9471,False,False,False,CONSISTENT_SYNTHETIC,
+0035_a_mixed_media_image_with_a_photograph_of_a_woman_w_cat-People_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9471,0.9476,False,False,False,CONSISTENT_SYNTHETIC,
+0035_a_mixed_media_image_with_a_photograph_of_a_woman_w_cat-People_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9471,0.9469,False,False,False,CONSISTENT_SYNTHETIC,
+0035_a_mixed_media_image_with_a_photograph_of_a_woman_w_cat-People_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9471,0.9394,False,False,False,CONSISTENT_SYNTHETIC,right
+0035_a_mixed_media_image_with_a_photograph_of_a_woman_w_cat-People_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4688,0.9471,0.0002,True,False,False,NO_REGION_CLAIM,
+0036_a_politician_giving_a_speech_at_a_podium_cat-People_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,0.875,0.875,0.944,0.944,False,False,False,CONSISTENT_SYNTHETIC,
+0036_a_politician_giving_a_speech_at_a_podium_cat-People_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,0.875,0.9375,0.944,0.9416,False,False,False,CONSISTENT_SYNTHETIC,
+0036_a_politician_giving_a_speech_at_a_podium_cat-People_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,0.875,0.875,0.944,0.9445,False,False,False,CONSISTENT_SYNTHETIC,
+0036_a_politician_giving_a_speech_at_a_podium_cat-People_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,0.875,0.875,0.944,0.9459,False,False,False,CONSISTENT_SYNTHETIC,right
+0036_a_politician_giving_a_speech_at_a_podium_cat-People_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,0.875,0.4375,0.944,0.0263,True,False,False,NO_REGION_CLAIM,
+0037_a_photograph_of_a_knight_in_shining_armor_holding__cat-People_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9312,0.9312,False,False,False,CONSISTENT_SYNTHETIC,
+0037_a_photograph_of_a_knight_in_shining_armor_holding__cat-People_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9312,0.9315,False,False,False,CONSISTENT_SYNTHETIC,
+0037_a_photograph_of_a_knight_in_shining_armor_holding__cat-People_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9312,0.9313,False,False,False,CONSISTENT_SYNTHETIC,
+0037_a_photograph_of_a_knight_in_shining_armor_holding__cat-People_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9312,0.9179,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0037_a_photograph_of_a_knight_in_shining_armor_holding__cat-People_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4375,0.9312,0.0005,True,False,False,NO_REGION_CLAIM,
+0038_an_avocado_cat-Produce & Plants_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.6992,0.6992,False,False,False,CONSISTENT_SYNTHETIC,
+0038_an_avocado_cat-Produce & Plants_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.6992,0.6932,False,False,False,CONSISTENT_SYNTHETIC,
+0038_an_avocado_cat-Produce & Plants_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.6992,0.7032,False,False,False,CONSISTENT_SYNTHETIC,
+0038_an_avocado_cat-Produce & Plants_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.875,0.6992,0.5828,False,False,False,CONSISTENT_SYNTHETIC,left
+0038_an_avocado_cat-Produce & Plants_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.4062,0.6992,0.0014,True,False,False,NO_REGION_CLAIM,
+0039_a_tree_reflected_in_the_hood_of_a_blue_car_cat-Produce & Plants_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9017,0.9017,False,False,False,CONSISTENT_SYNTHETIC,
+0039_a_tree_reflected_in_the_hood_of_a_blue_car_cat-Produce & Plants_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9017,0.9398,False,False,False,CONSISTENT_SYNTHETIC,
+0039_a_tree_reflected_in_the_hood_of_a_blue_car_cat-Produce & Plants_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9017,0.8977,False,False,False,CONSISTENT_SYNTHETIC,
+0039_a_tree_reflected_in_the_hood_of_a_blue_car_cat-Produce & Plants_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9017,0.8971,False,False,False,CONSISTENT_SYNTHETIC,right
+0039_a_tree_reflected_in_the_hood_of_a_blue_car_cat-Produce & Plants_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5,0.9017,0.0,True,False,False,NO_REGION_CLAIM,
+0040_a_bundle_of_blue_and_yellow_flowers_in_a_vase_cat-Produce & Plants_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9759,0.9759,False,False,False,CONSISTENT_SYNTHETIC,
+0040_a_bundle_of_blue_and_yellow_flowers_in_a_vase_cat-Produce & Plants_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9759,0.9757,False,False,False,CONSISTENT_SYNTHETIC,
+0040_a_bundle_of_blue_and_yellow_flowers_in_a_vase_cat-Produce & Plants_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9759,0.9757,False,False,False,CONSISTENT_SYNTHETIC,
+0040_a_bundle_of_blue_and_yellow_flowers_in_a_vase_cat-Produce & Plants_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9062,0.9759,0.9704,False,False,False,CONSISTENT_SYNTHETIC,left
+0040_a_bundle_of_blue_and_yellow_flowers_in_a_vase_cat-Produce & Plants_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.6875,0.9759,0.0001,True,False,False,NO_REGION_CLAIM,
+0041_a_tree_with_leaves_that_look_like_purple_balloons_cat-Produce & Plants_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9719,0.9719,False,False,False,CONSISTENT_SYNTHETIC,
+0041_a_tree_with_leaves_that_look_like_purple_balloons_cat-Produce & Plants_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9719,0.9718,False,False,False,CONSISTENT_SYNTHETIC,
+0041_a_tree_with_leaves_that_look_like_purple_balloons_cat-Produce & Plants_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9719,0.9719,False,False,False,CONSISTENT_SYNTHETIC,
+0041_a_tree_with_leaves_that_look_like_purple_balloons_cat-Produce & Plants_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9719,0.9623,False,False,False,CONSISTENT_SYNTHETIC,right
+0041_a_tree_with_leaves_that_look_like_purple_balloons_cat-Produce & Plants_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5312,0.9719,0.0002,True,False,False,NO_REGION_CLAIM,
+0042_a_pickup_truck_cat-Vehicles_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9734,0.9734,False,False,False,CONSISTENT_SYNTHETIC,
+0042_a_pickup_truck_cat-Vehicles_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9734,0.9741,False,False,False,CONSISTENT_SYNTHETIC,
+0042_a_pickup_truck_cat-Vehicles_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9734,0.9734,False,False,False,CONSISTENT_SYNTHETIC,
+0042_a_pickup_truck_cat-Vehicles_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9734,0.9676,False,False,False,CONSISTENT_SYNTHETIC,left
+0042_a_pickup_truck_cat-Vehicles_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5938,0.9734,0.0015,True,False,False,NO_REGION_CLAIM,
+0043_A_photograph_of_the_inside_of_a_subway_train_There_cat-Vehicles_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.7884,0.7884,False,False,False,CONSISTENT_SYNTHETIC,
+0043_A_photograph_of_the_inside_of_a_subway_train_There_cat-Vehicles_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.7884,0.7711,False,False,False,CONSISTENT_SYNTHETIC,
+0043_A_photograph_of_the_inside_of_a_subway_train_There_cat-Vehicles_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.7884,0.7873,False,False,False,CONSISTENT_SYNTHETIC,
+0043_A_photograph_of_the_inside_of_a_subway_train_There_cat-Vehicles_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.7884,0.7663,False,False,False,CONSISTENT_SYNTHETIC,left
+0043_A_photograph_of_the_inside_of_a_subway_train_There_cat-Vehicles_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4062,0.7884,0.0002,True,False,False,NO_REGION_CLAIM,
+0044_a_sunken_submarine_at_the_bottom_of_the_ocean_cat-Vehicles_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9619,0.9619,False,False,False,CONSISTENT_SYNTHETIC,
+0044_a_sunken_submarine_at_the_bottom_of_the_ocean_cat-Vehicles_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9619,0.9612,False,False,False,CONSISTENT_SYNTHETIC,
+0044_a_sunken_submarine_at_the_bottom_of_the_ocean_cat-Vehicles_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9619,0.962,False,False,False,CONSISTENT_SYNTHETIC,
+0044_a_sunken_submarine_at_the_bottom_of_the_ocean_cat-Vehicles_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9619,0.952,False,False,False,CONSISTENT_SYNTHETIC,right
+0044_a_sunken_submarine_at_the_bottom_of_the_ocean_cat-Vehicles_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.5312,0.9619,0.0002,True,False,False,NO_REGION_CLAIM,
+0045_a_pirate_ship_landing_on_the_moon_cat-Vehicles_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9405,0.9405,False,False,False,CONSISTENT_SYNTHETIC,
+0045_a_pirate_ship_landing_on_the_moon_cat-Vehicles_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9405,0.9125,False,False,False,CONSISTENT_SYNTHETIC,
+0045_a_pirate_ship_landing_on_the_moon_cat-Vehicles_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9405,0.9399,False,False,False,CONSISTENT_SYNTHETIC,
+0045_a_pirate_ship_landing_on_the_moon_cat-Vehicles_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9405,0.9064,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0045_a_pirate_ship_landing_on_the_moon_cat-Vehicles_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.625,0.9405,0.0006,True,False,False,NO_REGION_CLAIM,
+0046_the_Millennium_Wheel_cat-World Knowledge_chal-Basic.png,identity_resave,True,True,True,True,1.0,0.7188,0.7188,0.862,0.862,True,False,False,BENIGN_NO_FLAG,
+0046_the_Millennium_Wheel_cat-World Knowledge_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,0.7188,0.6875,0.862,0.8671,True,False,False,BENIGN_NO_FLAG,
+0046_the_Millennium_Wheel_cat-World Knowledge_chal-Basic.png,resize_90,True,True,True,True,1.0,0.7188,0.7188,0.862,0.857,True,False,False,BENIGN_NO_FLAG,
+0046_the_Millennium_Wheel_cat-World Knowledge_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,0.7188,0.6562,0.862,0.8397,True,False,False,BENIGN_NO_FLAG,left
+0046_the_Millennium_Wheel_cat-World Knowledge_chal-Basic.png,clean_negative,False,True,False,,,0.7188,0.4688,0.862,0.027,True,False,False,NO_REGION_CLAIM,
+0047_a_portrait_of_a_statue_of_the_Egyptian_god_Anubis__cat-World Knowledge_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9806,0.9806,False,False,False,CONSISTENT_SYNTHETIC,
+0047_a_portrait_of_a_statue_of_the_Egyptian_god_Anubis__cat-World Knowledge_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9806,0.9809,False,False,False,CONSISTENT_SYNTHETIC,
+0047_a_portrait_of_a_statue_of_the_Egyptian_god_Anubis__cat-World Knowledge_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9806,0.9807,False,False,False,CONSISTENT_SYNTHETIC,
+0047_a_portrait_of_a_statue_of_the_Egyptian_god_Anubis__cat-World Knowledge_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9806,0.982,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0047_a_portrait_of_a_statue_of_the_Egyptian_god_Anubis__cat-World Knowledge_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5938,0.9806,0.0016,True,False,False,NO_REGION_CLAIM,
+0048_a_prop_plane_flying_low_over_the_Great_Wall_cat-World Knowledge_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9791,0.9791,False,False,False,CONSISTENT_SYNTHETIC,
+0048_a_prop_plane_flying_low_over_the_Great_Wall_cat-World Knowledge_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9791,0.9793,False,False,False,CONSISTENT_SYNTHETIC,
+0048_a_prop_plane_flying_low_over_the_Great_Wall_cat-World Knowledge_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9791,0.9791,False,False,False,CONSISTENT_SYNTHETIC,
+0048_a_prop_plane_flying_low_over_the_Great_Wall_cat-World Knowledge_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9791,0.9707,False,False,False,CONSISTENT_SYNTHETIC,right
+0048_a_prop_plane_flying_low_over_the_Great_Wall_cat-World Knowledge_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.3125,0.9791,0.0001,True,False,False,NO_REGION_CLAIM,
+0049_an_elephant_walking_on_the_Great_Wall_cat-World Knowledge_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8061,0.8061,False,False,False,CONSISTENT_SYNTHETIC,
+0049_an_elephant_walking_on_the_Great_Wall_cat-World Knowledge_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8061,0.8058,False,False,False,CONSISTENT_SYNTHETIC,
+0049_an_elephant_walking_on_the_Great_Wall_cat-World Knowledge_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8061,0.8068,False,False,False,CONSISTENT_SYNTHETIC,
+0049_an_elephant_walking_on_the_Great_Wall_cat-World Knowledge_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8061,0.7986,False,False,False,CONSISTENT_SYNTHETIC,left
+0049_an_elephant_walking_on_the_Great_Wall_cat-World Knowledge_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4062,0.8061,0.0003,True,False,False,NO_REGION_CLAIM,
+0050_Portrait_of_a_gecko_wearing_a_train_conductors_hat_cat-Animals_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.928,0.928,False,False,False,CONSISTENT_SYNTHETIC,
+0050_Portrait_of_a_gecko_wearing_a_train_conductors_hat_cat-Animals_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.928,0.923,False,False,False,CONSISTENT_SYNTHETIC,
+0050_Portrait_of_a_gecko_wearing_a_train_conductors_hat_cat-Animals_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.928,0.9279,False,False,False,CONSISTENT_SYNTHETIC,
+0050_Portrait_of_a_gecko_wearing_a_train_conductors_hat_cat-Animals_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.928,0.9177,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0050_Portrait_of_a_gecko_wearing_a_train_conductors_hat_cat-Animals_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.4688,0.928,0.041,True,False,False,NO_REGION_CLAIM,
+0051_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9584,0.9584,False,False,False,CONSISTENT_SYNTHETIC,
+0051_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9584,0.9582,False,False,False,CONSISTENT_SYNTHETIC,
+0051_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9584,0.9583,False,False,False,CONSISTENT_SYNTHETIC,
+0051_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9584,0.9543,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0051_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.5625,0.9584,0.0033,True,False,False,NO_REGION_CLAIM,
+0052_a_Tyrannosaurus_Rex_cat-Animals_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9677,0.9677,False,False,False,CONSISTENT_SYNTHETIC,
+0052_a_Tyrannosaurus_Rex_cat-Animals_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9677,0.9669,False,False,False,CONSISTENT_SYNTHETIC,
+0052_a_Tyrannosaurus_Rex_cat-Animals_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9677,0.9675,False,False,False,CONSISTENT_SYNTHETIC,
+0052_a_Tyrannosaurus_Rex_cat-Animals_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9677,0.9441,False,False,False,CONSISTENT_SYNTHETIC,left
+0052_a_Tyrannosaurus_Rex_cat-Animals_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5625,0.9677,0.04,True,False,False,NO_REGION_CLAIM,
+0053_a_real_flamingo_reading_a_large_open_book_a_big_st_cat-Animals_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9404,0.9404,False,False,False,CONSISTENT_SYNTHETIC,
+0053_a_real_flamingo_reading_a_large_open_book_a_big_st_cat-Animals_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9404,0.9391,False,False,False,CONSISTENT_SYNTHETIC,
+0053_a_real_flamingo_reading_a_large_open_book_a_big_st_cat-Animals_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9404,0.9404,False,False,False,CONSISTENT_SYNTHETIC,
+0053_a_real_flamingo_reading_a_large_open_book_a_big_st_cat-Animals_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9404,0.9303,False,False,False,CONSISTENT_SYNTHETIC,right
+0053_a_real_flamingo_reading_a_large_open_book_a_big_st_cat-Animals_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.625,0.9404,0.0001,True,False,False,NO_REGION_CLAIM,
+0054_A_smiling_sloth_wearing_a_leather_jacket_a_cowboy__cat-Animals_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.984,0.984,False,False,False,CONSISTENT_SYNTHETIC,
+0054_A_smiling_sloth_wearing_a_leather_jacket_a_cowboy__cat-Animals_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.984,0.9838,False,False,False,CONSISTENT_SYNTHETIC,
+0054_A_smiling_sloth_wearing_a_leather_jacket_a_cowboy__cat-Animals_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.984,0.9841,False,False,False,CONSISTENT_SYNTHETIC,
+0054_A_smiling_sloth_wearing_a_leather_jacket_a_cowboy__cat-Animals_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,0.9972862957937585,1.0,1.0,0.984,0.9816,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0054_A_smiling_sloth_wearing_a_leather_jacket_a_cowboy__cat-Animals_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.5625,0.984,0.0004,True,False,False,NO_REGION_CLAIM,
+0055_a_rabbit_wearing_a_black_tophat_and_monocle_cat-Animals_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9636,0.9636,False,False,False,CONSISTENT_SYNTHETIC,
+0055_a_rabbit_wearing_a_black_tophat_and_monocle_cat-Animals_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9636,0.9655,False,False,False,CONSISTENT_SYNTHETIC,
+0055_a_rabbit_wearing_a_black_tophat_and_monocle_cat-Animals_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9636,0.9634,False,False,False,CONSISTENT_SYNTHETIC,
+0055_a_rabbit_wearing_a_black_tophat_and_monocle_cat-Animals_chal-Imagination.png,safe_crop_1pct,True,True,True,True,0.9971112181030333,1.0,1.0,0.9636,0.9707,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0055_a_rabbit_wearing_a_black_tophat_and_monocle_cat-Animals_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4688,0.9636,0.0485,True,False,False,NO_REGION_CLAIM,
+0056_a_horse_without_a_rider_cat-Animals_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9816,0.9816,False,False,False,CONSISTENT_SYNTHETIC,
+0056_a_horse_without_a_rider_cat-Animals_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9816,0.9811,False,False,False,CONSISTENT_SYNTHETIC,
+0056_a_horse_without_a_rider_cat-Animals_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9816,0.9816,False,False,False,CONSISTENT_SYNTHETIC,
+0056_a_horse_without_a_rider_cat-Animals_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9816,0.9791,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0056_a_horse_without_a_rider_cat-Animals_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.5312,0.9816,0.0004,True,False,False,NO_REGION_CLAIM,
+0057_a_top_down_view_of_a_horse_running_in_a_field_cat-Animals_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.6982,0.6982,False,False,False,CONSISTENT_SYNTHETIC,
+0057_a_top_down_view_of_a_horse_running_in_a_field_cat-Animals_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.6982,0.6313,False,False,False,CONSISTENT_SYNTHETIC,
+0057_a_top_down_view_of_a_horse_running_in_a_field_cat-Animals_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.6982,0.6982,False,False,False,CONSISTENT_SYNTHETIC,
+0057_a_top_down_view_of_a_horse_running_in_a_field_cat-Animals_chal-Perspective.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.8125,0.6982,0.6792,False,False,False,CONSISTENT_SYNTHETIC,left
+0057_a_top_down_view_of_a_horse_running_in_a_field_cat-Animals_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.5312,0.6982,0.0005,True,False,False,NO_REGION_CLAIM,
+0058_7_dogs_sitting_around_a_poker_table_two_of_which_a_cat-Animals_chal-Quantity.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.8356,0.8356,False,False,False,CONSISTENT_SYNTHETIC,
+0058_7_dogs_sitting_around_a_poker_table_two_of_which_a_cat-Animals_chal-Quantity.png,jpeg_q90,True,True,True,True,1.0,0.9688,0.9688,0.8356,0.8335,False,False,False,CONSISTENT_SYNTHETIC,
+0058_7_dogs_sitting_around_a_poker_table_two_of_which_a_cat-Animals_chal-Quantity.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.8356,0.8384,False,False,False,CONSISTENT_SYNTHETIC,
+0058_7_dogs_sitting_around_a_poker_table_two_of_which_a_cat-Animals_chal-Quantity.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.9688,0.8356,0.8376,False,False,False,CONSISTENT_SYNTHETIC,left
+0058_7_dogs_sitting_around_a_poker_table_two_of_which_a_cat-Animals_chal-Quantity.png,clean_negative,False,True,False,,,0.9688,0.5,0.8356,0.0001,True,False,False,NO_REGION_CLAIM,
+0059_a_cat_jumping_in_the_air_to_get_onto_a_table_cat-Animals_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8972,0.8972,False,False,False,CONSISTENT_SYNTHETIC,
+0059_a_cat_jumping_in_the_air_to_get_onto_a_table_cat-Animals_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8972,0.8928,False,False,False,CONSISTENT_SYNTHETIC,
+0059_a_cat_jumping_in_the_air_to_get_onto_a_table_cat-Animals_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8972,0.897,False,False,False,CONSISTENT_SYNTHETIC,
+0059_a_cat_jumping_in_the_air_to_get_onto_a_table_cat-Animals_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8972,0.8472,False,False,False,CONSISTENT_SYNTHETIC,left
+0059_a_cat_jumping_in_the_air_to_get_onto_a_table_cat-Animals_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.625,0.8972,0.0003,True,False,False,NO_REGION_CLAIM,
+0060_A_soft_beam_of_light_shines_down_on_an_armored_gra_cat-Animals_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.9763,0.9763,False,False,False,CONSISTENT_SYNTHETIC,
+0060_A_soft_beam_of_light_shines_down_on_an_armored_gra_cat-Animals_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,0.9688,0.9688,0.9763,0.9761,False,False,False,CONSISTENT_SYNTHETIC,
+0060_A_soft_beam_of_light_shines_down_on_an_armored_gra_cat-Animals_chal-Style & Format.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.9763,0.9766,False,False,False,CONSISTENT_SYNTHETIC,
+0060_A_soft_beam_of_light_shines_down_on_an_armored_gra_cat-Animals_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.9688,0.9763,0.9746,False,False,False,CONSISTENT_SYNTHETIC,right
+0060_A_soft_beam_of_light_shines_down_on_an_armored_gra_cat-Animals_chal-Style & Format.png,clean_negative,False,True,False,,,0.9688,0.5312,0.9763,0.0005,True,False,False,NO_REGION_CLAIM,
+0061_a_cat_sitting_on_a_box_with_a_drawing_of_an_elepha_cat-Animals_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9572,0.9572,False,False,False,CONSISTENT_SYNTHETIC,
+0061_a_cat_sitting_on_a_box_with_a_drawing_of_an_elepha_cat-Animals_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9572,0.9565,False,False,False,CONSISTENT_SYNTHETIC,
+0061_a_cat_sitting_on_a_box_with_a_drawing_of_an_elepha_cat-Animals_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9572,0.9569,False,False,False,CONSISTENT_SYNTHETIC,
+0061_a_cat_sitting_on_a_box_with_a_drawing_of_an_elepha_cat-Animals_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9572,0.9461,False,False,False,CONSISTENT_SYNTHETIC,left
+0061_a_cat_sitting_on_a_box_with_a_drawing_of_an_elepha_cat-Animals_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.5,0.9572,0.0003,True,False,False,NO_REGION_CLAIM,
+0062_a_rabbit_cat-Animals_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.964,0.964,False,False,False,CONSISTENT_SYNTHETIC,
+0062_a_rabbit_cat-Animals_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.964,0.9635,False,False,False,CONSISTENT_SYNTHETIC,
+0062_a_rabbit_cat-Animals_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.964,0.9642,False,False,False,CONSISTENT_SYNTHETIC,
+0062_a_rabbit_cat-Animals_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9062,0.964,0.9529,False,False,False,CONSISTENT_SYNTHETIC,left
+0062_a_rabbit_cat-Animals_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.3125,0.964,0.0,True,False,False,NO_REGION_CLAIM,
+0063_a_photograph_of_an_ostrich_wearing_a_fedora_and_si_cat-Animals_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9589,0.9589,False,False,False,CONSISTENT_SYNTHETIC,
+0063_a_photograph_of_an_ostrich_wearing_a_fedora_and_si_cat-Animals_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9589,0.9583,False,False,False,CONSISTENT_SYNTHETIC,
+0063_a_photograph_of_an_ostrich_wearing_a_fedora_and_si_cat-Animals_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9589,0.959,False,False,False,CONSISTENT_SYNTHETIC,
+0063_a_photograph_of_an_ostrich_wearing_a_fedora_and_si_cat-Animals_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9589,0.9644,False,False,False,CONSISTENT_SYNTHETIC,left
+0063_a_photograph_of_an_ostrich_wearing_a_fedora_and_si_cat-Animals_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5,0.9589,0.0002,True,False,False,NO_REGION_CLAIM,
+0064_a_Tyrannosaurus_Rex_roaring_in_front_of_a_palm_tre_cat-Animals_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9416,0.9416,False,False,False,CONSISTENT_SYNTHETIC,
+0064_a_Tyrannosaurus_Rex_roaring_in_front_of_a_palm_tre_cat-Animals_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9416,0.9418,False,False,False,CONSISTENT_SYNTHETIC,
+0064_a_Tyrannosaurus_Rex_roaring_in_front_of_a_palm_tre_cat-Animals_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9416,0.9417,False,False,False,CONSISTENT_SYNTHETIC,
+0064_a_Tyrannosaurus_Rex_roaring_in_front_of_a_palm_tre_cat-Animals_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9416,0.9296,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0064_a_Tyrannosaurus_Rex_roaring_in_front_of_a_palm_tre_cat-Animals_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.2812,0.9416,0.0001,True,False,False,NO_REGION_CLAIM,
+0065_a_panda_bear_with_aviator_glasses_on_its_head_cat-Animals_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9834,0.9834,False,False,False,CONSISTENT_SYNTHETIC,
+0065_a_panda_bear_with_aviator_glasses_on_its_head_cat-Animals_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9834,0.9827,False,False,False,CONSISTENT_SYNTHETIC,
+0065_a_panda_bear_with_aviator_glasses_on_its_head_cat-Animals_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9834,0.9833,False,False,False,CONSISTENT_SYNTHETIC,
+0065_a_panda_bear_with_aviator_glasses_on_its_head_cat-Animals_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9834,0.9833,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0065_a_panda_bear_with_aviator_glasses_on_its_head_cat-Animals_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5312,0.9834,0.0145,True,False,False,NO_REGION_CLAIM,
+0066_Four_deer_surrounding_a_moose_cat-Animals_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9719,0.9719,False,False,False,CONSISTENT_SYNTHETIC,
+0066_Four_deer_surrounding_a_moose_cat-Animals_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9719,0.9718,False,False,False,CONSISTENT_SYNTHETIC,
+0066_Four_deer_surrounding_a_moose_cat-Animals_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9719,0.9721,False,False,False,CONSISTENT_SYNTHETIC,
+0066_Four_deer_surrounding_a_moose_cat-Animals_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9719,0.9664,False,False,False,CONSISTENT_SYNTHETIC,top
+0066_Four_deer_surrounding_a_moose_cat-Animals_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.5,0.9719,0.0023,True,False,False,NO_REGION_CLAIM,
+0067_an_ostrichs_face_cat-Animals_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.981,0.981,False,False,False,CONSISTENT_SYNTHETIC,
+0067_an_ostrichs_face_cat-Animals_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.981,0.982,False,False,False,CONSISTENT_SYNTHETIC,
+0067_an_ostrichs_face_cat-Animals_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.981,0.981,False,False,False,CONSISTENT_SYNTHETIC,
+0067_an_ostrichs_face_cat-Animals_chal-Perspective.png,safe_crop_1pct,True,True,True,True,0.9862475442043221,1.0,0.9375,0.981,0.9755,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0067_an_ostrichs_face_cat-Animals_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.5312,0.981,0.0002,True,False,False,NO_REGION_CLAIM,
+0068_7_dogs_sitting_around_a_poker_table_cat-Animals_chal-Quantity.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9347,0.9347,False,False,False,CONSISTENT_SYNTHETIC,
+0068_7_dogs_sitting_around_a_poker_table_cat-Animals_chal-Quantity.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9347,0.9346,False,False,False,CONSISTENT_SYNTHETIC,
+0068_7_dogs_sitting_around_a_poker_table_cat-Animals_chal-Quantity.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9347,0.9348,False,False,False,CONSISTENT_SYNTHETIC,
+0068_7_dogs_sitting_around_a_poker_table_cat-Animals_chal-Quantity.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9347,0.9334,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0068_7_dogs_sitting_around_a_poker_table_cat-Animals_chal-Quantity.png,clean_negative,False,True,False,,,1.0,0.4375,0.9347,0.001,True,False,False,NO_REGION_CLAIM,
+0069_a_cat_jumps_over_a_baby_gate_cat-Animals_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9692,0.9692,False,False,False,CONSISTENT_SYNTHETIC,
+0069_a_cat_jumps_over_a_baby_gate_cat-Animals_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9692,0.9689,False,False,False,CONSISTENT_SYNTHETIC,
+0069_a_cat_jumps_over_a_baby_gate_cat-Animals_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9692,0.9692,False,False,False,CONSISTENT_SYNTHETIC,
+0069_a_cat_jumps_over_a_baby_gate_cat-Animals_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9692,0.9662,False,False,False,CONSISTENT_SYNTHETIC,top
+0069_a_cat_jumps_over_a_baby_gate_cat-Animals_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.5312,0.9692,0.0007,True,False,False,NO_REGION_CLAIM,
+0070_a_cartoon_of_a_bear_birthday_party_cat-Animals_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,0.9062,0.9062,0.9667,0.9667,False,False,False,CONSISTENT_SYNTHETIC,
+0070_a_cartoon_of_a_bear_birthday_party_cat-Animals_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,0.9062,0.9062,0.9667,0.967,False,False,False,CONSISTENT_SYNTHETIC,
+0070_a_cartoon_of_a_bear_birthday_party_cat-Animals_chal-Style & Format.png,resize_90,True,True,True,True,1.0,0.9062,0.9062,0.9667,0.9666,False,False,False,CONSISTENT_SYNTHETIC,
+0070_a_cartoon_of_a_bear_birthday_party_cat-Animals_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,0.9062,0.9062,0.9667,0.9659,False,False,False,CONSISTENT_SYNTHETIC,left
+0070_a_cartoon_of_a_bear_birthday_party_cat-Animals_chal-Style & Format.png,clean_negative,False,True,False,,,0.9062,0.5938,0.9667,0.0011,True,False,False,NO_REGION_CLAIM,
+0071_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9749,0.9749,False,False,False,CONSISTENT_SYNTHETIC,
+0071_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9749,0.9741,False,False,False,CONSISTENT_SYNTHETIC,
+0071_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9749,0.9748,False,False,False,CONSISTENT_SYNTHETIC,
+0071_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9749,0.9727,False,False,False,CONSISTENT_SYNTHETIC,left
+0071_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.6562,0.9749,0.0177,True,False,False,NO_REGION_CLAIM,
+0072_a_chimpanzee_cat-Animals_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9857,0.9857,False,False,False,CONSISTENT_SYNTHETIC,
+0072_a_chimpanzee_cat-Animals_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9857,0.9858,False,False,False,CONSISTENT_SYNTHETIC,
+0072_a_chimpanzee_cat-Animals_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9857,0.9857,False,False,False,CONSISTENT_SYNTHETIC,
+0072_a_chimpanzee_cat-Animals_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9857,0.9828,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0072_a_chimpanzee_cat-Animals_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5,0.9857,0.0056,True,False,False,NO_REGION_CLAIM,
+0073_A_high-contrast_photo_of_a_panda_riding_a_horse_Th_cat-Animals_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.959,0.959,False,False,False,CONSISTENT_SYNTHETIC,
+0073_A_high-contrast_photo_of_a_panda_riding_a_horse_Th_cat-Animals_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.959,0.9579,False,False,False,CONSISTENT_SYNTHETIC,
+0073_A_high-contrast_photo_of_a_panda_riding_a_horse_Th_cat-Animals_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.959,0.959,False,False,False,CONSISTENT_SYNTHETIC,
+0073_A_high-contrast_photo_of_a_panda_riding_a_horse_Th_cat-Animals_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.959,0.9571,False,False,False,CONSISTENT_SYNTHETIC,top
+0073_A_high-contrast_photo_of_a_panda_riding_a_horse_Th_cat-Animals_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5312,0.959,0.0,True,False,False,NO_REGION_CLAIM,
+0074_a_light_shining_on_a_giraffe_in_a_street_cat-Animals_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9736,0.9736,False,False,False,CONSISTENT_SYNTHETIC,
+0074_a_light_shining_on_a_giraffe_in_a_street_cat-Animals_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9736,0.9744,False,False,False,CONSISTENT_SYNTHETIC,
+0074_a_light_shining_on_a_giraffe_in_a_street_cat-Animals_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9736,0.9735,False,False,False,CONSISTENT_SYNTHETIC,
+0074_a_light_shining_on_a_giraffe_in_a_street_cat-Animals_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.875,0.9736,0.9524,False,False,False,CONSISTENT_SYNTHETIC,left
+0074_a_light_shining_on_a_giraffe_in_a_street_cat-Animals_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.4375,0.9736,0.0401,True,False,False,NO_REGION_CLAIM,
+0075_a_turkey_walking_in_the_kitchen_cat-Animals_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9487,0.9487,False,False,False,CONSISTENT_SYNTHETIC,
+0075_a_turkey_walking_in_the_kitchen_cat-Animals_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9487,0.9485,False,False,False,CONSISTENT_SYNTHETIC,
+0075_a_turkey_walking_in_the_kitchen_cat-Animals_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9487,0.9488,False,False,False,CONSISTENT_SYNTHETIC,
+0075_a_turkey_walking_in_the_kitchen_cat-Animals_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9487,0.9428,False,False,False,CONSISTENT_SYNTHETIC,right
+0075_a_turkey_walking_in_the_kitchen_cat-Animals_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.625,0.9487,0.0002,True,False,False,NO_REGION_CLAIM,
+0076_The_rat_the_cat_the_dog_bit_chased_escaped_cat-Animals_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9517,0.9517,False,False,False,CONSISTENT_SYNTHETIC,
+0076_The_rat_the_cat_the_dog_bit_chased_escaped_cat-Animals_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9517,0.9514,False,False,False,CONSISTENT_SYNTHETIC,
+0076_The_rat_the_cat_the_dog_bit_chased_escaped_cat-Animals_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9517,0.9518,False,False,False,CONSISTENT_SYNTHETIC,
+0076_The_rat_the_cat_the_dog_bit_chased_escaped_cat-Animals_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9517,0.9494,False,False,False,CONSISTENT_SYNTHETIC,top
+0076_The_rat_the_cat_the_dog_bit_chased_escaped_cat-Animals_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.5625,0.9517,0.0005,True,False,False,NO_REGION_CLAIM,
+0077_a_corgis_head_cat-Animals_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9599,0.9599,False,False,False,CONSISTENT_SYNTHETIC,
+0077_a_corgis_head_cat-Animals_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9599,0.961,False,False,False,CONSISTENT_SYNTHETIC,
+0077_a_corgis_head_cat-Animals_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9599,0.9601,False,False,False,CONSISTENT_SYNTHETIC,
+0077_a_corgis_head_cat-Animals_chal-Perspective.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9599,0.9541,False,False,False,CONSISTENT_SYNTHETIC,left
+0077_a_corgis_head_cat-Animals_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.5,0.9599,0.0001,True,False,False,NO_REGION_CLAIM,
+0078_Four_dragons_surrounding_a_dinosaur_cat-Animals_chal-Quantity.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.944,0.944,False,False,False,CONSISTENT_SYNTHETIC,
+0078_Four_dragons_surrounding_a_dinosaur_cat-Animals_chal-Quantity.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.944,0.9439,False,False,False,CONSISTENT_SYNTHETIC,
+0078_Four_dragons_surrounding_a_dinosaur_cat-Animals_chal-Quantity.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.944,0.944,False,False,False,CONSISTENT_SYNTHETIC,
+0078_Four_dragons_surrounding_a_dinosaur_cat-Animals_chal-Quantity.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.944,0.9431,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0078_Four_dragons_surrounding_a_dinosaur_cat-Animals_chal-Quantity.png,clean_negative,False,True,False,,,1.0,0.5312,0.944,0.0121,True,False,False,NO_REGION_CLAIM,
+0079_a_horse_reading_a_book_cat-Animals_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9025,0.9025,False,False,False,CONSISTENT_SYNTHETIC,
+0079_a_horse_reading_a_book_cat-Animals_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9025,0.9027,False,False,False,CONSISTENT_SYNTHETIC,
+0079_a_horse_reading_a_book_cat-Animals_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9025,0.9029,False,False,False,CONSISTENT_SYNTHETIC,
+0079_a_horse_reading_a_book_cat-Animals_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9025,0.8958,False,False,False,CONSISTENT_SYNTHETIC,top
+0079_a_horse_reading_a_book_cat-Animals_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.5938,0.9025,0.001,True,False,False,NO_REGION_CLAIM,
+0080_a_capybara_made_of_voxels_sitting_in_a_field_cat-Animals_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.7754,0.7754,False,False,False,CONSISTENT_SYNTHETIC,
+0080_a_capybara_made_of_voxels_sitting_in_a_field_cat-Animals_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.7754,0.7695,False,False,False,CONSISTENT_SYNTHETIC,
+0080_a_capybara_made_of_voxels_sitting_in_a_field_cat-Animals_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.7754,0.7747,False,False,False,CONSISTENT_SYNTHETIC,
+0080_a_capybara_made_of_voxels_sitting_in_a_field_cat-Animals_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.7754,0.8068,False,False,False,CONSISTENT_SYNTHETIC,left
+0080_a_capybara_made_of_voxels_sitting_in_a_field_cat-Animals_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.4688,0.7754,0.0008,True,False,False,NO_REGION_CLAIM,
+0081_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8972,0.8972,False,False,False,CONSISTENT_SYNTHETIC,
+0081_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8972,0.8779,False,False,False,CONSISTENT_SYNTHETIC,
+0081_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8972,0.8978,False,False,False,CONSISTENT_SYNTHETIC,
+0081_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8972,0.8718,False,False,False,CONSISTENT_SYNTHETIC,left
+0081_Portrait_of_a_tiger_wearing_a_train_conductors_hat_cat-Animals_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.5938,0.8972,0.0084,True,False,False,NO_REGION_CLAIM,
+0082_a_koi_fish_cat-Animals_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9402,0.9402,False,False,False,CONSISTENT_SYNTHETIC,
+0082_a_koi_fish_cat-Animals_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9402,0.9379,False,False,False,CONSISTENT_SYNTHETIC,
+0082_a_koi_fish_cat-Animals_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9402,0.9365,False,False,False,CONSISTENT_SYNTHETIC,
+0082_a_koi_fish_cat-Animals_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9402,0.9191,False,False,False,CONSISTENT_SYNTHETIC,left
+0082_a_koi_fish_cat-Animals_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5625,0.9402,0.0011,True,False,False,NO_REGION_CLAIM,
+0083_a_racoon_detective_using_a_microscope_while_riding_cat-Animals_chal-Complex.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.9381,0.9381,False,False,False,CONSISTENT_SYNTHETIC,
+0083_a_racoon_detective_using_a_microscope_while_riding_cat-Animals_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,0.9688,0.9688,0.9381,0.9402,False,False,False,CONSISTENT_SYNTHETIC,
+0083_a_racoon_detective_using_a_microscope_while_riding_cat-Animals_chal-Complex.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.9381,0.9377,False,False,False,CONSISTENT_SYNTHETIC,
+0083_a_racoon_detective_using_a_microscope_while_riding_cat-Animals_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.9688,0.9381,0.9325,False,False,False,CONSISTENT_SYNTHETIC,right
+0083_a_racoon_detective_using_a_microscope_while_riding_cat-Animals_chal-Complex.png,clean_negative,False,True,False,,,0.9688,0.4688,0.9381,0.0001,True,False,False,NO_REGION_CLAIM,
+0084_a_harp_cat-Artifacts_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9279,0.9279,False,False,False,CONSISTENT_SYNTHETIC,
+0084_a_harp_cat-Artifacts_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9279,0.9218,False,False,False,CONSISTENT_SYNTHETIC,
+0084_a_harp_cat-Artifacts_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9279,0.9276,False,False,False,CONSISTENT_SYNTHETIC,
+0084_a_harp_cat-Artifacts_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9279,0.9004,False,False,False,CONSISTENT_SYNTHETIC,left
+0084_a_harp_cat-Artifacts_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.4375,0.9279,0.0019,True,False,False,NO_REGION_CLAIM,
+0085_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9197,0.9197,False,False,False,CONSISTENT_SYNTHETIC,
+0085_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9197,0.9187,False,False,False,CONSISTENT_SYNTHETIC,
+0085_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9197,0.9198,False,False,False,CONSISTENT_SYNTHETIC,
+0085_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9197,0.9168,False,False,False,CONSISTENT_SYNTHETIC,top
+0085_a_paranoid_android_freaking_out_and_jumping_into_t_cat-Artifacts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4688,0.9197,0.0012,True,False,False,NO_REGION_CLAIM,
+0086_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.7986,0.7986,False,False,False,CONSISTENT_SYNTHETIC,
+0086_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.7986,0.79,False,False,False,CONSISTENT_SYNTHETIC,
+0086_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.7986,0.7992,False,False,False,CONSISTENT_SYNTHETIC,
+0086_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,0.9906313645621181,1.0,1.0,0.7986,0.7683,False,False,False,CONSISTENT_SYNTHETIC,right
+0086_cash_on_a_wooden_table_cat-Artifacts_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.4688,0.7986,0.0002,True,False,False,NO_REGION_CLAIM,
+0087_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.99,0.99,False,False,False,CONSISTENT_SYNTHETIC,
+0087_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.99,0.99,False,False,False,CONSISTENT_SYNTHETIC,
+0087_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.99,0.99,False,False,False,CONSISTENT_SYNTHETIC,
+0087_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.99,0.9842,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0087_a_watermelon_chair_cat-Artifacts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4062,0.99,0.0033,True,False,False,NO_REGION_CLAIM,
+0088_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9775,0.9775,False,False,False,CONSISTENT_SYNTHETIC,
+0088_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9775,0.9774,False,False,False,CONSISTENT_SYNTHETIC,
+0088_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9775,0.9775,False,False,False,CONSISTENT_SYNTHETIC,
+0088_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9775,0.9737,False,False,False,CONSISTENT_SYNTHETIC,left
+0088_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.5,0.9775,0.0001,True,False,False,NO_REGION_CLAIM,
+0089_view_from_below_of_a_tall_white_ladder_with_just_o_cat-Artifacts_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9912,0.9912,False,False,False,CONSISTENT_SYNTHETIC,
+0089_view_from_below_of_a_tall_white_ladder_with_just_o_cat-Artifacts_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9912,0.9914,False,False,False,CONSISTENT_SYNTHETIC,
+0089_view_from_below_of_a_tall_white_ladder_with_just_o_cat-Artifacts_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9912,0.9912,False,False,False,CONSISTENT_SYNTHETIC,
+0089_view_from_below_of_a_tall_white_ladder_with_just_o_cat-Artifacts_chal-Perspective.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9912,0.9901,False,False,False,CONSISTENT_SYNTHETIC,right
+0089_view_from_below_of_a_tall_white_ladder_with_just_o_cat-Artifacts_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.375,0.9912,0.0001,True,False,False,NO_REGION_CLAIM,
+0090_a_circular_brown_trash_bin_in_front_of_a_brick_wal_cat-Artifacts_chal-Properties & Positioning.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9834,0.9834,False,False,False,CONSISTENT_SYNTHETIC,
+0090_a_circular_brown_trash_bin_in_front_of_a_brick_wal_cat-Artifacts_chal-Properties & Positioning.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9834,0.983,False,False,False,CONSISTENT_SYNTHETIC,
+0090_a_circular_brown_trash_bin_in_front_of_a_brick_wal_cat-Artifacts_chal-Properties & Positioning.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9834,0.9834,False,False,False,CONSISTENT_SYNTHETIC,
+0090_a_circular_brown_trash_bin_in_front_of_a_brick_wal_cat-Artifacts_chal-Properties & Positioning.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9834,0.9798,False,False,False,CONSISTENT_SYNTHETIC,top
+0090_a_circular_brown_trash_bin_in_front_of_a_brick_wal_cat-Artifacts_chal-Properties & Positioning.png,clean_negative,False,True,False,,,1.0,0.5312,0.9834,0.0002,True,False,False,NO_REGION_CLAIM,
+0091_a_full_bookshelf_with_three_shelves_cat-Artifacts_chal-Quantity.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8723,0.8723,False,False,False,CONSISTENT_SYNTHETIC,
+0091_a_full_bookshelf_with_three_shelves_cat-Artifacts_chal-Quantity.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8723,0.8726,False,False,False,CONSISTENT_SYNTHETIC,
+0091_a_full_bookshelf_with_three_shelves_cat-Artifacts_chal-Quantity.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8723,0.8724,False,False,False,CONSISTENT_SYNTHETIC,
+0091_a_full_bookshelf_with_three_shelves_cat-Artifacts_chal-Quantity.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8723,0.8506,False,False,False,CONSISTENT_SYNTHETIC,left
+0091_a_full_bookshelf_with_three_shelves_cat-Artifacts_chal-Quantity.png,clean_negative,False,True,False,,,1.0,0.5,0.8723,0.0013,True,False,False,NO_REGION_CLAIM,
+0092_a_milk_container_on_a_table_cat-Artifacts_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9745,0.9745,False,False,False,CONSISTENT_SYNTHETIC,
+0092_a_milk_container_on_a_table_cat-Artifacts_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9745,0.9745,False,False,False,CONSISTENT_SYNTHETIC,
+0092_a_milk_container_on_a_table_cat-Artifacts_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9745,0.9746,False,False,False,CONSISTENT_SYNTHETIC,
+0092_a_milk_container_on_a_table_cat-Artifacts_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9745,0.9643,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0092_a_milk_container_on_a_table_cat-Artifacts_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.5938,0.9745,0.0162,True,False,False,NO_REGION_CLAIM,
+0093_Oil_painting_of_a_giant_robot_made_of_sushi_holdin_cat-Artifacts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9799,0.9799,False,False,False,CONSISTENT_SYNTHETIC,
+0093_Oil_painting_of_a_giant_robot_made_of_sushi_holdin_cat-Artifacts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9799,0.98,False,False,False,CONSISTENT_SYNTHETIC,
+0093_Oil_painting_of_a_giant_robot_made_of_sushi_holdin_cat-Artifacts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9799,0.9798,False,False,False,CONSISTENT_SYNTHETIC,
+0093_Oil_painting_of_a_giant_robot_made_of_sushi_holdin_cat-Artifacts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9799,0.9756,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0093_Oil_painting_of_a_giant_robot_made_of_sushi_holdin_cat-Artifacts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5,0.9799,0.0001,True,False,False,NO_REGION_CLAIM,
+0094_a_white_towel_with_a_cartoon_of_a_cat_on_it_cat-Artifacts_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9546,0.9546,False,False,False,CONSISTENT_SYNTHETIC,
+0094_a_white_towel_with_a_cartoon_of_a_cat_on_it_cat-Artifacts_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9546,0.9564,False,False,False,CONSISTENT_SYNTHETIC,
+0094_a_white_towel_with_a_cartoon_of_a_cat_on_it_cat-Artifacts_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9546,0.9545,False,False,False,CONSISTENT_SYNTHETIC,
+0094_a_white_towel_with_a_cartoon_of_a_cat_on_it_cat-Artifacts_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9546,0.9535,False,False,False,CONSISTENT_SYNTHETIC,left
+0094_a_white_towel_with_a_cartoon_of_a_cat_on_it_cat-Artifacts_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.5,0.9546,0.0013,True,False,False,NO_REGION_CLAIM,
+0095_a_screwdriver_cat-Artifacts_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9028,0.9028,False,False,False,CONSISTENT_SYNTHETIC,
+0095_a_screwdriver_cat-Artifacts_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,0.9688,0.9028,0.8775,False,False,False,CONSISTENT_SYNTHETIC,
+0095_a_screwdriver_cat-Artifacts_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9028,0.9017,False,False,False,CONSISTENT_SYNTHETIC,
+0095_a_screwdriver_cat-Artifacts_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9062,0.9028,0.8935,False,False,False,CONSISTENT_SYNTHETIC,left
+0095_a_screwdriver_cat-Artifacts_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5625,0.9028,0.0004,True,False,False,NO_REGION_CLAIM,
+0096_a_basketball_to_the_left_of_two_soccer_balls_on_a__cat-Artifacts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8766,0.8766,False,False,False,CONSISTENT_SYNTHETIC,
+0096_a_basketball_to_the_left_of_two_soccer_balls_on_a__cat-Artifacts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8766,0.8744,False,False,False,CONSISTENT_SYNTHETIC,
+0096_a_basketball_to_the_left_of_two_soccer_balls_on_a__cat-Artifacts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8766,0.8771,False,False,False,CONSISTENT_SYNTHETIC,
+0096_a_basketball_to_the_left_of_two_soccer_balls_on_a__cat-Artifacts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8766,0.876,False,False,False,CONSISTENT_SYNTHETIC,left
+0096_a_basketball_to_the_left_of_two_soccer_balls_on_a__cat-Artifacts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4062,0.8766,0.0005,True,False,False,NO_REGION_CLAIM,
+0097_a_black_baseball_hat_with_a_flame_decal_on_it_cat-Artifacts_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9614,0.9614,False,False,False,CONSISTENT_SYNTHETIC,
+0097_a_black_baseball_hat_with_a_flame_decal_on_it_cat-Artifacts_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9614,0.9608,False,False,False,CONSISTENT_SYNTHETIC,
+0097_a_black_baseball_hat_with_a_flame_decal_on_it_cat-Artifacts_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9614,0.9614,False,False,False,CONSISTENT_SYNTHETIC,
+0097_a_black_baseball_hat_with_a_flame_decal_on_it_cat-Artifacts_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,0.9735755573905863,1.0,1.0,0.9614,0.9629,False,False,False,CONSISTENT_SYNTHETIC,left
+0097_a_black_baseball_hat_with_a_flame_decal_on_it_cat-Artifacts_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.625,0.9614,0.0013,True,False,False,NO_REGION_CLAIM,
+0098_a_sword_slicing_through_a_loaf_of_bread_cat-Artifacts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9694,0.9694,False,False,False,CONSISTENT_SYNTHETIC,
+0098_a_sword_slicing_through_a_loaf_of_bread_cat-Artifacts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9694,0.9688,False,False,False,CONSISTENT_SYNTHETIC,
+0098_a_sword_slicing_through_a_loaf_of_bread_cat-Artifacts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9694,0.9696,False,False,False,CONSISTENT_SYNTHETIC,
+0098_a_sword_slicing_through_a_loaf_of_bread_cat-Artifacts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9694,0.9676,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0098_a_sword_slicing_through_a_loaf_of_bread_cat-Artifacts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.6562,0.9694,0.0002,True,False,False,NO_REGION_CLAIM,
+0099_a_harp_without_any_strings_cat-Artifacts_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8794,0.8794,False,False,False,CONSISTENT_SYNTHETIC,
+0099_a_harp_without_any_strings_cat-Artifacts_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8794,0.8827,False,False,False,CONSISTENT_SYNTHETIC,
+0099_a_harp_without_any_strings_cat-Artifacts_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8794,0.8795,False,False,False,CONSISTENT_SYNTHETIC,
+0099_a_harp_without_any_strings_cat-Artifacts_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8794,0.8778,False,False,False,CONSISTENT_SYNTHETIC,top
+0099_a_harp_without_any_strings_cat-Artifacts_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.5625,0.8794,0.0005,True,False,False,NO_REGION_CLAIM,
+0100_long_shards_of_a_broken_mirror_reflecting_the_eyes_cat-Artifacts_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9798,0.9798,False,False,False,CONSISTENT_SYNTHETIC,
+0100_long_shards_of_a_broken_mirror_reflecting_the_eyes_cat-Artifacts_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9798,0.9788,False,False,False,CONSISTENT_SYNTHETIC,
+0100_long_shards_of_a_broken_mirror_reflecting_the_eyes_cat-Artifacts_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9798,0.9798,False,False,False,CONSISTENT_SYNTHETIC,
+0100_long_shards_of_a_broken_mirror_reflecting_the_eyes_cat-Artifacts_chal-Perspective.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9798,0.9617,False,False,False,CONSISTENT_SYNTHETIC,left
+0100_long_shards_of_a_broken_mirror_reflecting_the_eyes_cat-Artifacts_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.5625,0.9798,0.0001,True,False,False,NO_REGION_CLAIM,
+0101_several_red_lego_blocks_and_one_blue_one_cat-Artifacts_chal-Properties & Positioning.png,identity_resave,True,True,True,True,1.0,0.875,0.875,0.8755,0.8755,False,False,False,CONSISTENT_SYNTHETIC,
+0101_several_red_lego_blocks_and_one_blue_one_cat-Artifacts_chal-Properties & Positioning.png,jpeg_q90,True,True,True,True,1.0,0.875,0.8438,0.8755,0.8734,False,False,False,CONSISTENT_SYNTHETIC,
+0101_several_red_lego_blocks_and_one_blue_one_cat-Artifacts_chal-Properties & Positioning.png,resize_90,True,True,True,True,1.0,0.875,0.875,0.8755,0.875,False,False,False,CONSISTENT_SYNTHETIC,
+0101_several_red_lego_blocks_and_one_blue_one_cat-Artifacts_chal-Properties & Positioning.png,safe_crop_1pct,True,True,True,True,1.0,0.875,0.375,0.8755,0.7861,True,False,False,BENIGN_NO_FLAG,left
+0101_several_red_lego_blocks_and_one_blue_one_cat-Artifacts_chal-Properties & Positioning.png,clean_negative,False,True,False,,,0.875,0.5625,0.8755,0.0006,True,False,False,NO_REGION_CLAIM,
+0102_two_beat-up_baseballs_on_either_side_of_a_yellow_b_cat-Artifacts_chal-Quantity.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9602,0.9602,False,False,False,CONSISTENT_SYNTHETIC,
+0102_two_beat-up_baseballs_on_either_side_of_a_yellow_b_cat-Artifacts_chal-Quantity.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9602,0.9599,False,False,False,CONSISTENT_SYNTHETIC,
+0102_two_beat-up_baseballs_on_either_side_of_a_yellow_b_cat-Artifacts_chal-Quantity.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9602,0.9601,False,False,False,CONSISTENT_SYNTHETIC,
+0102_two_beat-up_baseballs_on_either_side_of_a_yellow_b_cat-Artifacts_chal-Quantity.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9602,0.9546,False,False,False,CONSISTENT_SYNTHETIC,top
+0102_two_beat-up_baseballs_on_either_side_of_a_yellow_b_cat-Artifacts_chal-Quantity.png,clean_negative,False,True,False,,,1.0,0.4375,0.9602,0.0,True,False,False,NO_REGION_CLAIM,
+0103_a_flag_furling_in_the_wind_cat-Artifacts_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9738,0.9738,False,False,False,CONSISTENT_SYNTHETIC,
+0103_a_flag_furling_in_the_wind_cat-Artifacts_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9738,0.9706,False,False,False,CONSISTENT_SYNTHETIC,
+0103_a_flag_furling_in_the_wind_cat-Artifacts_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9738,0.9738,False,False,False,CONSISTENT_SYNTHETIC,
+0103_a_flag_furling_in_the_wind_cat-Artifacts_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9738,0.9596,False,False,False,CONSISTENT_SYNTHETIC,left
+0103_a_flag_furling_in_the_wind_cat-Artifacts_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.5312,0.9738,0.0138,True,False,False,NO_REGION_CLAIM,
+0104_A_castle_made_of_cardboard_cat-Artifacts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9718,0.9718,False,False,False,CONSISTENT_SYNTHETIC,
+0104_A_castle_made_of_cardboard_cat-Artifacts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9718,0.9718,False,False,False,CONSISTENT_SYNTHETIC,
+0104_A_castle_made_of_cardboard_cat-Artifacts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9718,0.9718,False,False,False,CONSISTENT_SYNTHETIC,
+0104_A_castle_made_of_cardboard_cat-Artifacts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9718,0.9661,False,False,False,CONSISTENT_SYNTHETIC,left
+0104_A_castle_made_of_cardboard_cat-Artifacts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5,0.9718,0.0001,True,False,False,NO_REGION_CLAIM,
+0105_a_coffee_mug_with_an_ankh_symbol_on_it_cat-Artifacts_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9852,0.9852,False,False,False,CONSISTENT_SYNTHETIC,
+0105_a_coffee_mug_with_an_ankh_symbol_on_it_cat-Artifacts_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9852,0.9845,False,False,False,CONSISTENT_SYNTHETIC,
+0105_a_coffee_mug_with_an_ankh_symbol_on_it_cat-Artifacts_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9852,0.9852,False,False,False,CONSISTENT_SYNTHETIC,
+0105_a_coffee_mug_with_an_ankh_symbol_on_it_cat-Artifacts_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9852,0.9822,False,False,False,CONSISTENT_SYNTHETIC,top
+0105_a_coffee_mug_with_an_ankh_symbol_on_it_cat-Artifacts_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.5938,0.9852,0.0,True,False,False,NO_REGION_CLAIM,
+0106_a_t-shirt_cat-Artifacts_chal-Basic.png,identity_resave,True,True,True,True,1.0,0.9062,0.9062,0.9077,0.9077,False,False,False,CONSISTENT_SYNTHETIC,
+0106_a_t-shirt_cat-Artifacts_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,0.9062,0.9062,0.9077,0.9053,False,False,False,CONSISTENT_SYNTHETIC,
+0106_a_t-shirt_cat-Artifacts_chal-Basic.png,resize_90,True,True,True,True,1.0,0.9062,0.9062,0.9077,0.9083,False,False,False,CONSISTENT_SYNTHETIC,
+0106_a_t-shirt_cat-Artifacts_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,0.9062,0.7188,0.9077,0.8813,True,False,False,BENIGN_NO_FLAG,left
+0106_a_t-shirt_cat-Artifacts_chal-Basic.png,clean_negative,False,True,False,,,0.9062,0.5625,0.9077,0.0001,True,False,False,NO_REGION_CLAIM,
+0107_a_propaganda_poster_depicting_a_cat_dressed_as_fre_cat-Artifacts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9184,0.9184,False,False,False,CONSISTENT_SYNTHETIC,
+0107_a_propaganda_poster_depicting_a_cat_dressed_as_fre_cat-Artifacts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9184,0.9172,False,False,False,CONSISTENT_SYNTHETIC,
+0107_a_propaganda_poster_depicting_a_cat_dressed_as_fre_cat-Artifacts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9184,0.9187,False,False,False,CONSISTENT_SYNTHETIC,
+0107_a_propaganda_poster_depicting_a_cat_dressed_as_fre_cat-Artifacts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9184,0.9365,False,False,False,CONSISTENT_SYNTHETIC,left
+0107_a_propaganda_poster_depicting_a_cat_dressed_as_fre_cat-Artifacts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5,0.9184,0.0003,True,False,False,NO_REGION_CLAIM,
+0108_a_white_pawn_attacking_a_black_bishop_cat-Artifacts_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.6445,0.6445,False,False,False,CONSISTENT_SYNTHETIC,
+0108_a_white_pawn_attacking_a_black_bishop_cat-Artifacts_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,0.9688,0.9688,0.6445,0.6358,False,False,False,CONSISTENT_SYNTHETIC,
+0108_a_white_pawn_attacking_a_black_bishop_cat-Artifacts_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.6445,0.6445,False,False,False,CONSISTENT_SYNTHETIC,
+0108_a_white_pawn_attacking_a_black_bishop_cat-Artifacts_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.9688,0.6445,0.6424,False,False,False,CONSISTENT_SYNTHETIC,right
+0108_a_white_pawn_attacking_a_black_bishop_cat-Artifacts_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,0.9688,0.5312,0.6445,0.0006,True,False,False,NO_REGION_CLAIM,
+0109_a_clock_with_no_hands_cat-Artifacts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9652,0.9652,False,False,False,CONSISTENT_SYNTHETIC,
+0109_a_clock_with_no_hands_cat-Artifacts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9652,0.967,False,False,False,CONSISTENT_SYNTHETIC,
+0109_a_clock_with_no_hands_cat-Artifacts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9652,0.9651,False,False,False,CONSISTENT_SYNTHETIC,
+0109_a_clock_with_no_hands_cat-Artifacts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9652,0.9607,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0109_a_clock_with_no_hands_cat-Artifacts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4688,0.9652,0.0103,True,False,False,NO_REGION_CLAIM,
+0110_a_laptop_no_letters_on_its_keyboard_cat-Artifacts_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.9662,0.9662,False,False,False,CONSISTENT_SYNTHETIC,
+0110_a_laptop_no_letters_on_its_keyboard_cat-Artifacts_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,0.9688,0.9688,0.9662,0.9659,False,False,False,CONSISTENT_SYNTHETIC,
+0110_a_laptop_no_letters_on_its_keyboard_cat-Artifacts_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.9662,0.9661,False,False,False,CONSISTENT_SYNTHETIC,
+0110_a_laptop_no_letters_on_its_keyboard_cat-Artifacts_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.9688,0.9662,0.9648,False,False,False,CONSISTENT_SYNTHETIC,left
+0110_a_laptop_no_letters_on_its_keyboard_cat-Artifacts_chal-Linguistic Structures.png,clean_negative,False,True,False,,,0.9688,0.625,0.9662,0.0007,True,False,False,NO_REGION_CLAIM,
+0111_view_of_a_clock_tower_from_above_cat-Artifacts_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9719,0.9719,False,False,False,CONSISTENT_SYNTHETIC,
+0111_view_of_a_clock_tower_from_above_cat-Artifacts_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9719,0.9726,False,False,False,CONSISTENT_SYNTHETIC,
+0111_view_of_a_clock_tower_from_above_cat-Artifacts_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9719,0.972,False,False,False,CONSISTENT_SYNTHETIC,
+0111_view_of_a_clock_tower_from_above_cat-Artifacts_chal-Perspective.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9719,0.9693,False,False,False,CONSISTENT_SYNTHETIC,left
+0111_view_of_a_clock_tower_from_above_cat-Artifacts_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.5312,0.9719,0.0,True,False,False,NO_REGION_CLAIM,
+0112_a_white_flag_with_a_red_circle_next_to_a_solid_blu_cat-Artifacts_chal-Properties & Positioning.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9618,0.9618,False,False,False,CONSISTENT_SYNTHETIC,
+0112_a_white_flag_with_a_red_circle_next_to_a_solid_blu_cat-Artifacts_chal-Properties & Positioning.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9618,0.9603,False,False,False,CONSISTENT_SYNTHETIC,
+0112_a_white_flag_with_a_red_circle_next_to_a_solid_blu_cat-Artifacts_chal-Properties & Positioning.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9618,0.9618,False,False,False,CONSISTENT_SYNTHETIC,
+0112_a_white_flag_with_a_red_circle_next_to_a_solid_blu_cat-Artifacts_chal-Properties & Positioning.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9618,0.9516,False,False,False,CONSISTENT_SYNTHETIC,left
+0112_a_white_flag_with_a_red_circle_next_to_a_solid_blu_cat-Artifacts_chal-Properties & Positioning.png,clean_negative,False,True,False,,,1.0,0.5625,0.9618,0.0024,True,False,False,NO_REGION_CLAIM,
+0113_a_comic_about_two_cats_doing_research_cat-Artifacts_chal-Quantity.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9801,0.9801,False,False,False,CONSISTENT_SYNTHETIC,
+0113_a_comic_about_two_cats_doing_research_cat-Artifacts_chal-Quantity.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9801,0.9801,False,False,False,CONSISTENT_SYNTHETIC,
+0113_a_comic_about_two_cats_doing_research_cat-Artifacts_chal-Quantity.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9801,0.9792,False,False,False,CONSISTENT_SYNTHETIC,
+0113_a_comic_about_two_cats_doing_research_cat-Artifacts_chal-Quantity.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9801,0.9752,False,False,False,CONSISTENT_SYNTHETIC,left
+0113_a_comic_about_two_cats_doing_research_cat-Artifacts_chal-Quantity.png,clean_negative,False,True,False,,,1.0,0.5625,0.9801,0.0001,True,False,False,NO_REGION_CLAIM,
+0114_a_yellow_diamond-shaped_sign_cat-Artifacts_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.918,0.918,False,False,False,CONSISTENT_SYNTHETIC,
+0114_a_yellow_diamond-shaped_sign_cat-Artifacts_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.918,0.9151,False,False,False,CONSISTENT_SYNTHETIC,
+0114_a_yellow_diamond-shaped_sign_cat-Artifacts_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.918,0.918,False,False,False,CONSISTENT_SYNTHETIC,
+0114_a_yellow_diamond-shaped_sign_cat-Artifacts_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.918,0.9041,False,False,False,CONSISTENT_SYNTHETIC,left
+0114_a_yellow_diamond-shaped_sign_cat-Artifacts_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.5938,0.918,0.0005,True,False,False,NO_REGION_CLAIM,
+0115_a_comic_about_a_friendly_car_in_the_city_cat-Artifacts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8386,0.8386,False,False,False,CONSISTENT_SYNTHETIC,
+0115_a_comic_about_a_friendly_car_in_the_city_cat-Artifacts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8386,0.8382,False,False,False,CONSISTENT_SYNTHETIC,
+0115_a_comic_about_a_friendly_car_in_the_city_cat-Artifacts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8386,0.8387,False,False,False,CONSISTENT_SYNTHETIC,
+0115_a_comic_about_a_friendly_car_in_the_city_cat-Artifacts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9062,0.8386,0.7985,False,False,False,CONSISTENT_SYNTHETIC,left
+0115_a_comic_about_a_friendly_car_in_the_city_cat-Artifacts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5312,0.8386,0.0019,True,False,False,NO_REGION_CLAIM,
+0116_a_sweatshirt_with_Batch_Norm_written_on_it_cat-Artifacts_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9899,0.9899,False,False,False,CONSISTENT_SYNTHETIC,
+0116_a_sweatshirt_with_Batch_Norm_written_on_it_cat-Artifacts_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9899,0.9894,False,False,False,CONSISTENT_SYNTHETIC,
+0116_a_sweatshirt_with_Batch_Norm_written_on_it_cat-Artifacts_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9899,0.9893,False,False,False,CONSISTENT_SYNTHETIC,
+0116_a_sweatshirt_with_Batch_Norm_written_on_it_cat-Artifacts_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9899,0.9851,False,False,False,CONSISTENT_SYNTHETIC,left
+0116_a_sweatshirt_with_Batch_Norm_written_on_it_cat-Artifacts_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.5312,0.9899,0.0175,True,False,False,NO_REGION_CLAIM,
+0117_a_laptop_screen_cat-Artifacts_chal-Basic.png,identity_resave,True,True,True,True,1.0,0.5312,0.5312,0.2641,0.2641,True,False,True,WATERMARK_SUPPRESSED,
+0117_a_laptop_screen_cat-Artifacts_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,0.5312,0.5312,0.2641,0.2801,True,False,True,WATERMARK_SUPPRESSED,
+0117_a_laptop_screen_cat-Artifacts_chal-Basic.png,resize_90,True,True,True,True,1.0,0.5312,0.5312,0.2641,0.2625,True,False,True,WATERMARK_SUPPRESSED,
+0117_a_laptop_screen_cat-Artifacts_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,0.5312,0.5312,0.2641,0.2377,True,False,True,WATERMARK_SUPPRESSED,left
+0117_a_laptop_screen_cat-Artifacts_chal-Basic.png,clean_negative,False,True,False,,,0.5312,0.5312,0.2641,0.0531,True,False,False,NO_REGION_CLAIM,
+0118_a_brown_trash_bin_with_a_green_compost_bin_on_its__cat-Artifacts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9167,0.9167,False,False,False,CONSISTENT_SYNTHETIC,
+0118_a_brown_trash_bin_with_a_green_compost_bin_on_its__cat-Artifacts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9167,0.9159,False,False,False,CONSISTENT_SYNTHETIC,
+0118_a_brown_trash_bin_with_a_green_compost_bin_on_its__cat-Artifacts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9167,0.9168,False,False,False,CONSISTENT_SYNTHETIC,
+0118_a_brown_trash_bin_with_a_green_compost_bin_on_its__cat-Artifacts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9167,0.9133,False,False,False,CONSISTENT_SYNTHETIC,top
+0118_a_brown_trash_bin_with_a_green_compost_bin_on_its__cat-Artifacts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.3438,0.9167,0.0001,True,False,False,NO_REGION_CLAIM,
+0119_a_chess_queen_to_the_right_of_a_chess_knight_cat-Artifacts_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9512,0.9512,False,False,False,CONSISTENT_SYNTHETIC,
+0119_a_chess_queen_to_the_right_of_a_chess_knight_cat-Artifacts_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9512,0.9509,False,False,False,CONSISTENT_SYNTHETIC,
+0119_a_chess_queen_to_the_right_of_a_chess_knight_cat-Artifacts_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9512,0.9512,False,False,False,CONSISTENT_SYNTHETIC,
+0119_a_chess_queen_to_the_right_of_a_chess_knight_cat-Artifacts_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9512,0.9497,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0119_a_chess_queen_to_the_right_of_a_chess_knight_cat-Artifacts_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.5312,0.9512,0.0303,True,False,False,NO_REGION_CLAIM,
+0120_an_espresso_machine_that_makes_coffee_from_human_s_cat-Artifacts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9152,0.9152,False,False,False,CONSISTENT_SYNTHETIC,
+0120_an_espresso_machine_that_makes_coffee_from_human_s_cat-Artifacts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9152,0.9213,False,False,False,CONSISTENT_SYNTHETIC,
+0120_an_espresso_machine_that_makes_coffee_from_human_s_cat-Artifacts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9152,0.9154,False,False,False,CONSISTENT_SYNTHETIC,
+0120_an_espresso_machine_that_makes_coffee_from_human_s_cat-Artifacts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9152,0.9314,False,False,False,CONSISTENT_SYNTHETIC,left
+0120_an_espresso_machine_that_makes_coffee_from_human_s_cat-Artifacts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.3125,0.9152,0.0125,True,False,False,NO_REGION_CLAIM,
+0121_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9568,0.9568,False,False,False,CONSISTENT_SYNTHETIC,
+0121_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9568,0.9554,False,False,False,CONSISTENT_SYNTHETIC,
+0121_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9568,0.9568,False,False,False,CONSISTENT_SYNTHETIC,
+0121_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9568,0.9552,False,False,False,CONSISTENT_SYNTHETIC,top
+0121_The_sculpture_rolled_off_the_shelf_because_it_wasn_cat-Artifacts_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.5312,0.9568,0.001,True,False,False,NO_REGION_CLAIM,
+0122_a_close-up_of_the_keys_of_a_piano_cat-Artifacts_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9002,0.9002,False,False,False,CONSISTENT_SYNTHETIC,
+0122_a_close-up_of_the_keys_of_a_piano_cat-Artifacts_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9002,0.902,False,False,False,CONSISTENT_SYNTHETIC,
+0122_a_close-up_of_the_keys_of_a_piano_cat-Artifacts_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9002,0.9,False,False,False,CONSISTENT_SYNTHETIC,
+0122_a_close-up_of_the_keys_of_a_piano_cat-Artifacts_chal-Perspective.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9002,0.8908,False,False,False,CONSISTENT_SYNTHETIC,right
+0122_a_close-up_of_the_keys_of_a_piano_cat-Artifacts_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.4375,0.9002,0.0002,True,False,False,NO_REGION_CLAIM,
+0123_a_brown_trash_bin_to_the_left_of_a_blue_recycling__cat-Artifacts_chal-Properties & Positioning.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9606,0.9606,False,False,False,CONSISTENT_SYNTHETIC,
+0123_a_brown_trash_bin_to_the_left_of_a_blue_recycling__cat-Artifacts_chal-Properties & Positioning.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9606,0.9601,False,False,False,CONSISTENT_SYNTHETIC,
+0123_a_brown_trash_bin_to_the_left_of_a_blue_recycling__cat-Artifacts_chal-Properties & Positioning.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9606,0.9607,False,False,False,CONSISTENT_SYNTHETIC,
+0123_a_brown_trash_bin_to_the_left_of_a_blue_recycling__cat-Artifacts_chal-Properties & Positioning.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9606,0.9591,False,False,False,CONSISTENT_SYNTHETIC,top
+0123_a_brown_trash_bin_to_the_left_of_a_blue_recycling__cat-Artifacts_chal-Properties & Positioning.png,clean_negative,False,True,False,,,1.0,0.5625,0.9606,0.002,True,False,False,NO_REGION_CLAIM,
+0124_two_red_balls_on_a_table_cat-Artifacts_chal-Quantity.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9948,0.9948,False,False,False,CONSISTENT_SYNTHETIC,
+0124_two_red_balls_on_a_table_cat-Artifacts_chal-Quantity.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9948,0.9948,False,False,False,CONSISTENT_SYNTHETIC,
+0124_two_red_balls_on_a_table_cat-Artifacts_chal-Quantity.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9948,0.9947,False,False,False,CONSISTENT_SYNTHETIC,
+0124_two_red_balls_on_a_table_cat-Artifacts_chal-Quantity.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9948,0.9944,False,False,False,CONSISTENT_SYNTHETIC,right
+0124_two_red_balls_on_a_table_cat-Artifacts_chal-Quantity.png,clean_negative,False,True,False,,,1.0,0.3438,0.9948,0.0005,True,False,False,NO_REGION_CLAIM,
+0125_a_screwdriver_on_a_table_cat-Artifacts_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9715,0.9715,False,False,False,CONSISTENT_SYNTHETIC,
+0125_a_screwdriver_on_a_table_cat-Artifacts_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9715,0.9715,False,False,False,CONSISTENT_SYNTHETIC,
+0125_a_screwdriver_on_a_table_cat-Artifacts_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9715,0.9715,False,False,False,CONSISTENT_SYNTHETIC,
+0125_a_screwdriver_on_a_table_cat-Artifacts_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9715,0.9663,False,False,False,CONSISTENT_SYNTHETIC,top
+0125_a_screwdriver_on_a_table_cat-Artifacts_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.3438,0.9715,0.0012,True,False,False,NO_REGION_CLAIM,
+0126_The_Starry_Night_cat-Arts_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8892,0.8892,False,False,False,CONSISTENT_SYNTHETIC,
+0126_The_Starry_Night_cat-Arts_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,0.9688,0.8892,0.8644,False,False,False,CONSISTENT_SYNTHETIC,
+0126_The_Starry_Night_cat-Arts_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8892,0.8911,False,False,False,CONSISTENT_SYNTHETIC,
+0126_The_Starry_Night_cat-Arts_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8892,0.8847,False,False,False,CONSISTENT_SYNTHETIC,left
+0126_The_Starry_Night_cat-Arts_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5,0.8892,0.0003,True,False,False,NO_REGION_CLAIM,
+0127_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9719,0.9719,False,False,False,CONSISTENT_SYNTHETIC,
+0127_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9719,0.9716,False,False,False,CONSISTENT_SYNTHETIC,
+0127_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9719,0.9719,False,False,False,CONSISTENT_SYNTHETIC,
+0127_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9719,0.9645,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0127_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.625,0.9719,0.0003,True,False,False,NO_REGION_CLAIM,
+0128_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9898,0.9898,False,False,False,CONSISTENT_SYNTHETIC,
+0128_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9898,0.9897,False,False,False,CONSISTENT_SYNTHETIC,
+0128_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9898,0.9898,False,False,False,CONSISTENT_SYNTHETIC,
+0128_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,0.9933252427184466,1.0,1.0,0.9898,0.9857,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0128_a_young_badger_delicately_sniffing_a_yellow_rose_r_cat-Arts_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.5938,0.9898,0.0003,True,False,False,NO_REGION_CLAIM,
+0129_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9451,0.9451,False,False,False,CONSISTENT_SYNTHETIC,
+0129_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9451,0.9461,False,False,False,CONSISTENT_SYNTHETIC,
+0129_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9451,0.945,False,False,False,CONSISTENT_SYNTHETIC,
+0129_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9451,0.9448,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0129_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5312,0.9451,0.0017,True,False,False,NO_REGION_CLAIM,
+0130_an_impressionistic_painting_of_tree_and_a_building_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9606,0.9606,False,False,False,CONSISTENT_SYNTHETIC,
+0130_an_impressionistic_painting_of_tree_and_a_building_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9606,0.9609,False,False,False,CONSISTENT_SYNTHETIC,
+0130_an_impressionistic_painting_of_tree_and_a_building_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9606,0.9605,False,False,False,CONSISTENT_SYNTHETIC,
+0130_an_impressionistic_painting_of_tree_and_a_building_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9606,0.9576,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0130_an_impressionistic_painting_of_tree_and_a_building_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5312,0.9606,0.003,True,False,False,NO_REGION_CLAIM,
+0131_an_oil_surrealist_painting_of_a_dreamworld_on_a_se_cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9757,0.9757,False,False,False,CONSISTENT_SYNTHETIC,
+0131_an_oil_surrealist_painting_of_a_dreamworld_on_a_se_cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9757,0.9762,False,False,False,CONSISTENT_SYNTHETIC,
+0131_an_oil_surrealist_painting_of_a_dreamworld_on_a_se_cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9757,0.9757,False,False,False,CONSISTENT_SYNTHETIC,
+0131_an_oil_surrealist_painting_of_a_dreamworld_on_a_se_cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9757,0.9734,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0131_an_oil_surrealist_painting_of_a_dreamworld_on_a_se_cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4688,0.9757,0.0017,True,False,False,NO_REGION_CLAIM,
+0132_a_super_math_wizard_cat_richly_textured_oil_painti_cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.7621,0.7621,False,False,False,CONSISTENT_SYNTHETIC,
+0132_a_super_math_wizard_cat_richly_textured_oil_painti_cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.7621,0.7617,False,False,False,CONSISTENT_SYNTHETIC,
+0132_a_super_math_wizard_cat_richly_textured_oil_painti_cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.7621,0.762,False,False,False,CONSISTENT_SYNTHETIC,
+0132_a_super_math_wizard_cat_richly_textured_oil_painti_cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.7188,0.7621,0.7477,True,False,False,BENIGN_NO_FLAG,left
+0132_a_super_math_wizard_cat_richly_textured_oil_painti_cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4688,0.7621,0.002,True,False,False,NO_REGION_CLAIM,
+0133_a_painting_of_a_sport_car_in_the_style_of_Monet_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9858,0.9858,False,False,False,CONSISTENT_SYNTHETIC,
+0133_a_painting_of_a_sport_car_in_the_style_of_Monet_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9858,0.9862,False,False,False,CONSISTENT_SYNTHETIC,
+0133_a_painting_of_a_sport_car_in_the_style_of_Monet_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9858,0.9858,False,False,False,CONSISTENT_SYNTHETIC,
+0133_a_painting_of_a_sport_car_in_the_style_of_Monet_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9858,0.9825,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0133_a_painting_of_a_sport_car_in_the_style_of_Monet_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5625,0.9858,0.0592,True,False,False,NO_REGION_CLAIM,
+0134_a_painting_of_an_ornate_treasure_chest_with_a_broa_cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8953,0.8953,False,False,False,CONSISTENT_SYNTHETIC,
+0134_a_painting_of_an_ornate_treasure_chest_with_a_broa_cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8953,0.6468,False,False,False,CONSISTENT_SYNTHETIC,
+0134_a_painting_of_an_ornate_treasure_chest_with_a_broa_cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8953,0.897,False,False,False,CONSISTENT_SYNTHETIC,
+0134_a_painting_of_an_ornate_treasure_chest_with_a_broa_cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8953,0.8949,False,False,False,CONSISTENT_SYNTHETIC,right
+0134_a_painting_of_an_ornate_treasure_chest_with_a_broa_cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5312,0.8953,0.0008,True,False,False,NO_REGION_CLAIM,
+0135_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9315,0.9315,False,False,False,CONSISTENT_SYNTHETIC,
+0135_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9315,0.9314,False,False,False,CONSISTENT_SYNTHETIC,
+0135_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9315,0.9316,False,False,False,CONSISTENT_SYNTHETIC,
+0135_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.5625,0.9315,0.9339,True,False,False,BENIGN_NO_FLAG,left
+0135_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.3125,0.9315,0.0002,True,False,False,NO_REGION_CLAIM,
+0136_portrait_of_a_well-dressed_raccoon_oil_painting_in_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9607,0.9607,False,False,False,CONSISTENT_SYNTHETIC,
+0136_portrait_of_a_well-dressed_raccoon_oil_painting_in_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9607,0.9613,False,False,False,CONSISTENT_SYNTHETIC,
+0136_portrait_of_a_well-dressed_raccoon_oil_painting_in_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9607,0.9606,False,False,False,CONSISTENT_SYNTHETIC,
+0136_portrait_of_a_well-dressed_raccoon_oil_painting_in_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9607,0.9563,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0136_portrait_of_a_well-dressed_raccoon_oil_painting_in_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5625,0.9607,0.0001,True,False,False,NO_REGION_CLAIM,
+0137_A_solitary_figure_shrouded_in_mists_peers_up_from__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8625,0.8625,False,False,False,CONSISTENT_SYNTHETIC,
+0137_A_solitary_figure_shrouded_in_mists_peers_up_from__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8625,0.8398,False,False,False,CONSISTENT_SYNTHETIC,
+0137_A_solitary_figure_shrouded_in_mists_peers_up_from__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8625,0.8625,False,False,False,CONSISTENT_SYNTHETIC,
+0137_A_solitary_figure_shrouded_in_mists_peers_up_from__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8625,0.8718,False,False,False,CONSISTENT_SYNTHETIC,right
+0137_A_solitary_figure_shrouded_in_mists_peers_up_from__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.6562,0.8625,0.0001,True,False,False,NO_REGION_CLAIM,
+0138_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,0.875,0.875,0.9383,0.9383,False,False,False,CONSISTENT_SYNTHETIC,
+0138_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,0.875,0.875,0.9383,0.9357,False,False,False,CONSISTENT_SYNTHETIC,
+0138_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,0.875,0.875,0.9383,0.9383,False,False,False,CONSISTENT_SYNTHETIC,
+0138_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,0.875,0.875,0.9383,0.9323,False,False,False,CONSISTENT_SYNTHETIC,right
+0138_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,0.875,0.4375,0.9383,0.0004,True,False,False,NO_REGION_CLAIM,
+0139_an_abstract_painting_of_three_triangles_in_blue_ye_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9647,0.9647,False,False,False,CONSISTENT_SYNTHETIC,
+0139_an_abstract_painting_of_three_triangles_in_blue_ye_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9647,0.9644,False,False,False,CONSISTENT_SYNTHETIC,
+0139_an_abstract_painting_of_three_triangles_in_blue_ye_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9647,0.9648,False,False,False,CONSISTENT_SYNTHETIC,
+0139_an_abstract_painting_of_three_triangles_in_blue_ye_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9647,0.9564,False,False,False,CONSISTENT_SYNTHETIC,left
+0139_an_abstract_painting_of_three_triangles_in_blue_ye_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.4688,0.9647,0.0005,True,False,False,NO_REGION_CLAIM,
+0140_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8781,0.8781,False,False,False,CONSISTENT_SYNTHETIC,
+0140_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8781,0.8743,False,False,False,CONSISTENT_SYNTHETIC,
+0140_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8781,0.8771,False,False,False,CONSISTENT_SYNTHETIC,
+0140_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8781,0.8623,False,False,False,CONSISTENT_SYNTHETIC,left
+0140_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.25,0.8781,0.0,True,False,False,NO_REGION_CLAIM,
+0141_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9521,0.9521,False,False,False,CONSISTENT_SYNTHETIC,
+0141_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9521,0.952,False,False,False,CONSISTENT_SYNTHETIC,
+0141_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9521,0.9524,False,False,False,CONSISTENT_SYNTHETIC,
+0141_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9521,0.9364,False,False,False,CONSISTENT_SYNTHETIC,left
+0141_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4375,0.9521,0.0001,True,False,False,NO_REGION_CLAIM,
+0142_an_abstract_painting_with_blue_red_and_black_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9882,0.9882,False,False,False,CONSISTENT_SYNTHETIC,
+0142_an_abstract_painting_with_blue_red_and_black_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9882,0.9877,False,False,False,CONSISTENT_SYNTHETIC,
+0142_an_abstract_painting_with_blue_red_and_black_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9882,0.9882,False,False,False,CONSISTENT_SYNTHETIC,
+0142_an_abstract_painting_with_blue_red_and_black_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9882,0.9826,False,False,False,CONSISTENT_SYNTHETIC,right
+0142_an_abstract_painting_with_blue_red_and_black_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5312,0.9882,0.0003,True,False,False,NO_REGION_CLAIM,
+0143_Painting_of_a_panic-stricken_creature_simultaneous_cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9719,0.9719,False,False,False,CONSISTENT_SYNTHETIC,
+0143_Painting_of_a_panic-stricken_creature_simultaneous_cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9719,0.9715,False,False,False,CONSISTENT_SYNTHETIC,
+0143_Painting_of_a_panic-stricken_creature_simultaneous_cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9719,0.9719,False,False,False,CONSISTENT_SYNTHETIC,
+0143_Painting_of_a_panic-stricken_creature_simultaneous_cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9719,0.9668,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0143_Painting_of_a_panic-stricken_creature_simultaneous_cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.625,0.9719,0.0,True,False,False,NO_REGION_CLAIM,
+0144_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9135,0.9135,False,False,False,CONSISTENT_SYNTHETIC,
+0144_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9135,0.9151,False,False,False,CONSISTENT_SYNTHETIC,
+0144_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9135,0.9138,False,False,False,CONSISTENT_SYNTHETIC,
+0144_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9135,0.9034,False,False,False,CONSISTENT_SYNTHETIC,left
+0144_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4375,0.9135,0.0005,True,False,False,NO_REGION_CLAIM,
+0145_an_abstract_painting_of_three_squares_in_blue_yell_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9901,0.9901,False,False,False,CONSISTENT_SYNTHETIC,
+0145_an_abstract_painting_of_three_squares_in_blue_yell_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9901,0.9902,False,False,False,CONSISTENT_SYNTHETIC,
+0145_an_abstract_painting_of_three_squares_in_blue_yell_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9901,0.9903,False,False,False,CONSISTENT_SYNTHETIC,
+0145_an_abstract_painting_of_three_squares_in_blue_yell_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9901,0.9909,False,False,False,CONSISTENT_SYNTHETIC,left
+0145_an_abstract_painting_of_three_squares_in_blue_yell_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5938,0.9901,0.0002,True,False,False,NO_REGION_CLAIM,
+0146_An_oil_painting_of_two_rabbits_in_the_style_of_Ame_cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9608,0.9608,False,False,False,CONSISTENT_SYNTHETIC,
+0146_An_oil_painting_of_two_rabbits_in_the_style_of_Ame_cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9608,0.9611,False,False,False,CONSISTENT_SYNTHETIC,
+0146_An_oil_painting_of_two_rabbits_in_the_style_of_Ame_cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9608,0.9608,False,False,False,CONSISTENT_SYNTHETIC,
+0146_An_oil_painting_of_two_rabbits_in_the_style_of_Ame_cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9608,0.9538,False,False,False,CONSISTENT_SYNTHETIC,top
+0146_An_oil_painting_of_two_rabbits_in_the_style_of_Ame_cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4688,0.9608,0.0002,True,False,False,NO_REGION_CLAIM,
+0147_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,0.75,0.75,0.779,0.779,False,False,False,CONSISTENT_SYNTHETIC,
+0147_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,0.75,0.75,0.779,0.782,False,False,False,CONSISTENT_SYNTHETIC,
+0147_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,0.75,0.75,0.779,0.779,False,False,False,CONSISTENT_SYNTHETIC,
+0147_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,0.75,0.5312,0.779,0.8245,True,False,False,BENIGN_NO_FLAG,left
+0147_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,0.75,0.5938,0.779,0.0,True,False,False,NO_REGION_CLAIM,
+0148_a_painting_of_a_house_on_a_mountain_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9906,0.9906,False,False,False,CONSISTENT_SYNTHETIC,
+0148_a_painting_of_a_house_on_a_mountain_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9906,0.9908,False,False,False,CONSISTENT_SYNTHETIC,
+0148_a_painting_of_a_house_on_a_mountain_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9906,0.9906,False,False,False,CONSISTENT_SYNTHETIC,
+0148_a_painting_of_a_house_on_a_mountain_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9906,0.9886,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0148_a_painting_of_a_house_on_a_mountain_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5938,0.9906,0.0007,True,False,False,NO_REGION_CLAIM,
+0149_A_raccoon_wearing_formal_clothes_wearing_a_top_hat_cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9509,0.9509,False,False,False,CONSISTENT_SYNTHETIC,
+0149_A_raccoon_wearing_formal_clothes_wearing_a_top_hat_cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9509,0.9515,False,False,False,CONSISTENT_SYNTHETIC,
+0149_A_raccoon_wearing_formal_clothes_wearing_a_top_hat_cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9509,0.9505,False,False,False,CONSISTENT_SYNTHETIC,
+0149_A_raccoon_wearing_formal_clothes_wearing_a_top_hat_cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.6875,0.9509,0.3772,True,False,True,WATERMARK_SUPPRESSED,left
+0149_A_raccoon_wearing_formal_clothes_wearing_a_top_hat_cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5938,0.9509,0.0003,True,False,False,NO_REGION_CLAIM,
+0150_An_oil_painting_of_a_two-story_house_lifting_off_t_cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.973,0.973,False,False,False,CONSISTENT_SYNTHETIC,
+0150_An_oil_painting_of_a_two-story_house_lifting_off_t_cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.973,0.9729,False,False,False,CONSISTENT_SYNTHETIC,
+0150_An_oil_painting_of_a_two-story_house_lifting_off_t_cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.973,0.973,False,False,False,CONSISTENT_SYNTHETIC,
+0150_An_oil_painting_of_a_two-story_house_lifting_off_t_cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.973,0.9711,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0150_An_oil_painting_of_a_two-story_house_lifting_off_t_cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.625,0.973,0.0006,True,False,False,NO_REGION_CLAIM,
+0151_light_and_happiness_throughout_and_finding_its_way_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,0.8438,0.8438,0.462,0.462,False,False,False,CONSISTENT_SYNTHETIC,
+0151_light_and_happiness_throughout_and_finding_its_way_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,0.8438,0.875,0.462,0.4917,False,False,False,CONSISTENT_SYNTHETIC,
+0151_light_and_happiness_throughout_and_finding_its_way_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,0.8438,0.8438,0.462,0.4529,False,False,False,CONSISTENT_SYNTHETIC,
+0151_light_and_happiness_throughout_and_finding_its_way_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,0.8438,0.75,0.462,0.3208,False,False,False,CONSISTENT_SYNTHETIC,left
+0151_light_and_happiness_throughout_and_finding_its_way_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,0.8438,0.75,0.462,0.0018,False,True,False,NO_REGION_CLAIM,
+0152_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9409,0.9409,False,False,False,CONSISTENT_SYNTHETIC,
+0152_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9409,0.9439,False,False,False,CONSISTENT_SYNTHETIC,
+0152_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9409,0.941,False,False,False,CONSISTENT_SYNTHETIC,
+0152_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9409,0.9291,False,False,False,CONSISTENT_SYNTHETIC,left
+0152_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4375,0.9409,0.0002,True,False,False,NO_REGION_CLAIM,
+0153_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9884,0.9884,False,False,False,CONSISTENT_SYNTHETIC,
+0153_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9884,0.9882,False,False,False,CONSISTENT_SYNTHETIC,
+0153_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9884,0.9884,False,False,False,CONSISTENT_SYNTHETIC,
+0153_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9884,0.9754,False,False,False,CONSISTENT_SYNTHETIC,left
+0153_A_tornado_made_of_bees_crashing_into_a_skyscraper__cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.6562,0.9884,0.0,True,False,False,NO_REGION_CLAIM,
+0154_a_watercolor_painting_of_a_snowy_owl_standing_in_a_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9745,0.9745,False,False,False,CONSISTENT_SYNTHETIC,
+0154_a_watercolor_painting_of_a_snowy_owl_standing_in_a_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9745,0.9741,False,False,False,CONSISTENT_SYNTHETIC,
+0154_a_watercolor_painting_of_a_snowy_owl_standing_in_a_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9745,0.9745,False,False,False,CONSISTENT_SYNTHETIC,
+0154_a_watercolor_painting_of_a_snowy_owl_standing_in_a_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9745,0.9663,False,False,False,CONSISTENT_SYNTHETIC,left
+0154_a_watercolor_painting_of_a_snowy_owl_standing_in_a_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.4688,0.9745,0.0001,True,False,False,NO_REGION_CLAIM,
+0155_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9881,0.9881,False,False,False,CONSISTENT_SYNTHETIC,
+0155_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9881,0.9881,False,False,False,CONSISTENT_SYNTHETIC,
+0155_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9881,0.9881,False,False,False,CONSISTENT_SYNTHETIC,
+0155_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,0.9892231701841042,1.0,0.9688,0.9881,0.9858,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0155_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4688,0.9881,0.0001,True,False,False,NO_REGION_CLAIM,
+0156_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9938,0.9938,False,False,False,CONSISTENT_SYNTHETIC,
+0156_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9938,0.9937,False,False,False,CONSISTENT_SYNTHETIC,
+0156_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9938,0.9938,False,False,False,CONSISTENT_SYNTHETIC,
+0156_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9938,0.9873,False,False,False,CONSISTENT_SYNTHETIC,left
+0156_A_tornado_made_of_sharks_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5938,0.9938,0.0003,True,False,False,NO_REGION_CLAIM,
+0157_a_watercolor_painting_of_a_tree_and_a_building_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9811,0.9811,False,False,False,CONSISTENT_SYNTHETIC,
+0157_a_watercolor_painting_of_a_tree_and_a_building_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9811,0.9808,False,False,False,CONSISTENT_SYNTHETIC,
+0157_a_watercolor_painting_of_a_tree_and_a_building_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9811,0.9811,False,False,False,CONSISTENT_SYNTHETIC,
+0157_a_watercolor_painting_of_a_tree_and_a_building_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9811,0.9786,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0157_a_watercolor_painting_of_a_tree_and_a_building_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.4375,0.9811,0.0004,True,False,False,NO_REGION_CLAIM,
+0158_Oil-on-canvas_painting_of_a_blue_night_sky_with_ro_cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9433,0.9433,False,False,False,CONSISTENT_SYNTHETIC,
+0158_Oil-on-canvas_painting_of_a_blue_night_sky_with_ro_cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9433,0.9435,False,False,False,CONSISTENT_SYNTHETIC,
+0158_Oil-on-canvas_painting_of_a_blue_night_sky_with_ro_cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9433,0.9439,False,False,False,CONSISTENT_SYNTHETIC,
+0158_Oil-on-canvas_painting_of_a_blue_night_sky_with_ro_cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9433,0.9382,False,False,False,CONSISTENT_SYNTHETIC,left
+0158_Oil-on-canvas_painting_of_a_blue_night_sky_with_ro_cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4688,0.9433,0.0003,True,False,False,NO_REGION_CLAIM,
+0159_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8694,0.8694,False,False,False,CONSISTENT_SYNTHETIC,
+0159_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8694,0.8723,False,False,False,CONSISTENT_SYNTHETIC,
+0159_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8694,0.8692,False,False,False,CONSISTENT_SYNTHETIC,
+0159_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.75,0.8694,0.7805,False,False,False,CONSISTENT_SYNTHETIC,left
+0159_A_tornado_made_of_tigers_crashing_into_a_skyscrape_cat-Arts_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.4062,0.8694,0.0005,True,False,False,NO_REGION_CLAIM,
+0160_a_painting_of_a_peaceful_lakeside_landscape_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9892,0.9892,False,False,False,CONSISTENT_SYNTHETIC,
+0160_a_painting_of_a_peaceful_lakeside_landscape_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9892,0.9889,False,False,False,CONSISTENT_SYNTHETIC,
+0160_a_painting_of_a_peaceful_lakeside_landscape_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9892,0.9891,False,False,False,CONSISTENT_SYNTHETIC,
+0160_a_painting_of_a_peaceful_lakeside_landscape_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9892,0.9887,False,False,False,CONSISTENT_SYNTHETIC,right
+0160_a_painting_of_a_peaceful_lakeside_landscape_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.4062,0.9892,0.0001,True,False,False,NO_REGION_CLAIM,
+0161_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8296,0.8296,False,False,False,CONSISTENT_SYNTHETIC,
+0161_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8296,0.8253,False,False,False,CONSISTENT_SYNTHETIC,
+0161_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8296,0.8303,False,False,False,CONSISTENT_SYNTHETIC,
+0161_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.7188,0.8296,0.7198,True,False,False,BENIGN_NO_FLAG,left
+0161_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5625,0.8296,0.0,True,False,False,NO_REGION_CLAIM,
+0162_an_abstract_painting_of_a_spaceship_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9154,0.9154,False,False,False,CONSISTENT_SYNTHETIC,
+0162_an_abstract_painting_of_a_spaceship_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9154,0.9162,False,False,False,CONSISTENT_SYNTHETIC,
+0162_an_abstract_painting_of_a_spaceship_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9154,0.915,False,False,False,CONSISTENT_SYNTHETIC,
+0162_an_abstract_painting_of_a_spaceship_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9154,0.932,False,False,False,CONSISTENT_SYNTHETIC,left
+0162_an_abstract_painting_of_a_spaceship_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.4375,0.9154,0.0,True,False,False,NO_REGION_CLAIM,
+0163_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8228,0.8228,False,False,False,CONSISTENT_SYNTHETIC,
+0163_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8228,0.8215,False,False,False,CONSISTENT_SYNTHETIC,
+0163_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8228,0.8227,False,False,False,CONSISTENT_SYNTHETIC,
+0163_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,0.9919148936170212,1.0,1.0,0.8228,0.8186,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0163_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5625,0.8228,0.0019,True,False,False,NO_REGION_CLAIM,
+0164_an_oil_painting_of_a_cat_playing_checkers_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.945,0.945,False,False,False,CONSISTENT_SYNTHETIC,
+0164_an_oil_painting_of_a_cat_playing_checkers_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.945,0.9434,False,False,False,CONSISTENT_SYNTHETIC,
+0164_an_oil_painting_of_a_cat_playing_checkers_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.945,0.945,False,False,False,CONSISTENT_SYNTHETIC,
+0164_an_oil_painting_of_a_cat_playing_checkers_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.945,0.9396,False,False,False,CONSISTENT_SYNTHETIC,left
+0164_an_oil_painting_of_a_cat_playing_checkers_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.4375,0.945,0.0001,True,False,False,NO_REGION_CLAIM,
+0165_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8378,0.8378,False,False,False,CONSISTENT_SYNTHETIC,
+0165_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8378,0.8402,False,False,False,CONSISTENT_SYNTHETIC,
+0165_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8378,0.8397,False,False,False,CONSISTENT_SYNTHETIC,
+0165_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.875,0.8378,0.8247,False,False,False,CONSISTENT_SYNTHETIC,left
+0165_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5625,0.8378,0.0,True,False,False,NO_REGION_CLAIM,
+0166_a_painting_of_a_cute_owl_on_a_box_cat-Arts_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9935,0.9935,False,False,False,CONSISTENT_SYNTHETIC,
+0166_a_painting_of_a_cute_owl_on_a_box_cat-Arts_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9935,0.9935,False,False,False,CONSISTENT_SYNTHETIC,
+0166_a_painting_of_a_cute_owl_on_a_box_cat-Arts_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9935,0.9936,False,False,False,CONSISTENT_SYNTHETIC,
+0166_a_painting_of_a_cute_owl_on_a_box_cat-Arts_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,0.9747215081405313,1.0,1.0,0.9935,0.9872,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0166_a_painting_of_a_cute_owl_on_a_box_cat-Arts_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.3438,0.9935,0.0002,True,False,False,NO_REGION_CLAIM,
+0167_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8608,0.8608,False,False,False,CONSISTENT_SYNTHETIC,
+0167_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8608,0.8597,False,False,False,CONSISTENT_SYNTHETIC,
+0167_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8608,0.8607,False,False,False,CONSISTENT_SYNTHETIC,
+0167_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.8608,0.8893,False,False,False,CONSISTENT_SYNTHETIC,left
+0167_A_raccoon_wearing_formal_clothes_wearing_a_tophat__cat-Arts_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.5312,0.8608,0.0001,True,False,False,NO_REGION_CLAIM,
+0168_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9378,0.9378,False,False,False,CONSISTENT_SYNTHETIC,
+0168_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9378,0.9291,False,False,False,CONSISTENT_SYNTHETIC,
+0168_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9378,0.9377,False,False,False,CONSISTENT_SYNTHETIC,
+0168_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9378,0.9347,False,False,False,CONSISTENT_SYNTHETIC,top
+0168_A_bowl_of_Pho_cat-Food & Beverage_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.4688,0.9378,0.0,True,False,False,NO_REGION_CLAIM,
+0169_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,identity_resave,True,True,True,True,1.0,0.9375,0.9375,0.842,0.842,False,False,False,CONSISTENT_SYNTHETIC,
+0169_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,0.9375,0.9375,0.842,0.8393,False,False,False,CONSISTENT_SYNTHETIC,
+0169_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,resize_90,True,True,True,True,1.0,0.9375,0.9375,0.842,0.8418,False,False,False,CONSISTENT_SYNTHETIC,
+0169_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,0.9375,0.8125,0.842,0.784,False,False,False,CONSISTENT_SYNTHETIC,left
+0169_A_photo_of_a_hamburger_fighting_a_hot_dog_in_a_box_cat-Food & Beverage_chal-Complex.png,clean_negative,False,True,False,,,0.9375,0.5,0.842,0.0002,True,False,False,NO_REGION_CLAIM,
+0170_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9723,0.9723,False,False,False,CONSISTENT_SYNTHETIC,
+0170_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9723,0.9726,False,False,False,CONSISTENT_SYNTHETIC,
+0170_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9723,0.9724,False,False,False,CONSISTENT_SYNTHETIC,
+0170_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9723,0.9691,False,False,False,CONSISTENT_SYNTHETIC,top
+0170_a_can_of_Spam_on_an_elegant_plate_cat-Food & Beverage_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.5625,0.9723,0.0001,True,False,False,NO_REGION_CLAIM,
+0171_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9462,0.9462,False,False,False,CONSISTENT_SYNTHETIC,
+0171_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9462,0.9442,False,False,False,CONSISTENT_SYNTHETIC,
+0171_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9462,0.9462,False,False,False,CONSISTENT_SYNTHETIC,
+0171_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9462,0.9274,False,False,False,CONSISTENT_SYNTHETIC,left
+0171_A_bowl_of_soup_that_looks_like_a_monster_knitted_o_cat-Food & Beverage_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5312,0.9462,0.0107,True,False,False,NO_REGION_CLAIM,
+0172_A_man_sips_a_latte_and_a_woman_a_beer_cat-Food & Beverage_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9623,0.9623,False,False,False,CONSISTENT_SYNTHETIC,
+0172_A_man_sips_a_latte_and_a_woman_a_beer_cat-Food & Beverage_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9623,0.9622,False,False,False,CONSISTENT_SYNTHETIC,
+0172_A_man_sips_a_latte_and_a_woman_a_beer_cat-Food & Beverage_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9623,0.9623,False,False,False,CONSISTENT_SYNTHETIC,
+0172_A_man_sips_a_latte_and_a_woman_a_beer_cat-Food & Beverage_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9623,0.9577,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0172_A_man_sips_a_latte_and_a_woman_a_beer_cat-Food & Beverage_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.6562,0.9623,0.0046,True,False,False,NO_REGION_CLAIM,
+0173_a_close-up_of_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9803,0.9803,False,False,False,CONSISTENT_SYNTHETIC,
+0173_a_close-up_of_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9803,0.9799,False,False,False,CONSISTENT_SYNTHETIC,
+0173_a_close-up_of_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9803,0.9803,False,False,False,CONSISTENT_SYNTHETIC,
+0173_a_close-up_of_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Perspective.png,safe_crop_1pct,True,True,True,True,0.981829980532122,1.0,1.0,0.9803,0.981,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0173_a_close-up_of_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.625,0.9803,0.0001,True,False,False,NO_REGION_CLAIM,
+0174_a_green_pepper_to_the_left_of_a_red_pepper_cat-Food & Beverage_chal-Properties & Positioning.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9366,0.9366,False,False,False,CONSISTENT_SYNTHETIC,
+0174_a_green_pepper_to_the_left_of_a_red_pepper_cat-Food & Beverage_chal-Properties & Positioning.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9366,0.9416,False,False,False,CONSISTENT_SYNTHETIC,
+0174_a_green_pepper_to_the_left_of_a_red_pepper_cat-Food & Beverage_chal-Properties & Positioning.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9366,0.9365,False,False,False,CONSISTENT_SYNTHETIC,
+0174_a_green_pepper_to_the_left_of_a_red_pepper_cat-Food & Beverage_chal-Properties & Positioning.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9366,0.9202,False,False,False,CONSISTENT_SYNTHETIC,left
+0174_a_green_pepper_to_the_left_of_a_red_pepper_cat-Food & Beverage_chal-Properties & Positioning.png,clean_negative,False,True,False,,,1.0,0.4062,0.9366,0.0003,True,False,False,NO_REGION_CLAIM,
+0175_three_green_peppers_cat-Food & Beverage_chal-Quantity.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9841,0.9841,False,False,False,CONSISTENT_SYNTHETIC,
+0175_three_green_peppers_cat-Food & Beverage_chal-Quantity.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9841,0.9838,False,False,False,CONSISTENT_SYNTHETIC,
+0175_three_green_peppers_cat-Food & Beverage_chal-Quantity.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9841,0.9841,False,False,False,CONSISTENT_SYNTHETIC,
+0175_three_green_peppers_cat-Food & Beverage_chal-Quantity.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9841,0.98,False,False,False,CONSISTENT_SYNTHETIC,top
+0175_three_green_peppers_cat-Food & Beverage_chal-Quantity.png,clean_negative,False,True,False,,,1.0,0.5312,0.9841,0.0002,True,False,False,NO_REGION_CLAIM,
+0176_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9646,0.9646,False,False,False,CONSISTENT_SYNTHETIC,
+0176_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9646,0.9644,False,False,False,CONSISTENT_SYNTHETIC,
+0176_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9646,0.9647,False,False,False,CONSISTENT_SYNTHETIC,
+0176_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9646,0.965,False,False,False,CONSISTENT_SYNTHETIC,top
+0176_a_long-island_ice_tea_cocktail_cat-Food & Beverage_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.4688,0.9646,0.0002,True,False,False,NO_REGION_CLAIM,
+0177_a_painting_of_the_food_of_china_cat-Food & Beverage_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.949,0.949,False,False,False,CONSISTENT_SYNTHETIC,
+0177_a_painting_of_the_food_of_china_cat-Food & Beverage_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.949,0.9493,False,False,False,CONSISTENT_SYNTHETIC,
+0177_a_painting_of_the_food_of_china_cat-Food & Beverage_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.949,0.9489,False,False,False,CONSISTENT_SYNTHETIC,
+0177_a_painting_of_the_food_of_china_cat-Food & Beverage_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.949,0.9478,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0177_a_painting_of_the_food_of_china_cat-Food & Beverage_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5938,0.949,0.0,True,False,False,NO_REGION_CLAIM,
+0178_Two_cups_of_coffee_one_with_latte_art_of_yin_yang__cat-Food & Beverage_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.7569,0.7569,False,False,False,CONSISTENT_SYNTHETIC,
+0178_Two_cups_of_coffee_one_with_latte_art_of_yin_yang__cat-Food & Beverage_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.7569,0.7377,False,False,False,CONSISTENT_SYNTHETIC,
+0178_Two_cups_of_coffee_one_with_latte_art_of_yin_yang__cat-Food & Beverage_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.7569,0.7576,False,False,False,CONSISTENT_SYNTHETIC,
+0178_Two_cups_of_coffee_one_with_latte_art_of_yin_yang__cat-Food & Beverage_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.7569,0.6967,False,False,False,CONSISTENT_SYNTHETIC,left
+0178_Two_cups_of_coffee_one_with_latte_art_of_yin_yang__cat-Food & Beverage_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.5938,0.7569,0.0003,True,False,False,NO_REGION_CLAIM,
+0179_a_cup_of_boba_cat-Food & Beverage_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9884,0.9884,False,False,False,CONSISTENT_SYNTHETIC,
+0179_a_cup_of_boba_cat-Food & Beverage_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9884,0.9882,False,False,False,CONSISTENT_SYNTHETIC,
+0179_a_cup_of_boba_cat-Food & Beverage_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9884,0.9884,False,False,False,CONSISTENT_SYNTHETIC,
+0179_a_cup_of_boba_cat-Food & Beverage_chal-Basic.png,safe_crop_1pct,True,True,True,True,0.9709090909090909,1.0,1.0,0.9884,0.9882,False,False,False,CONSISTENT_SYNTHETIC,left
+0179_a_cup_of_boba_cat-Food & Beverage_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.375,0.9884,0.0001,True,False,False,NO_REGION_CLAIM,
+0180_a_pineapple_with_one_beer_to_its_left_and_two_beer_cat-Food & Beverage_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9772,0.9772,False,False,False,CONSISTENT_SYNTHETIC,
+0180_a_pineapple_with_one_beer_to_its_left_and_two_beer_cat-Food & Beverage_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9772,0.9769,False,False,False,CONSISTENT_SYNTHETIC,
+0180_a_pineapple_with_one_beer_to_its_left_and_two_beer_cat-Food & Beverage_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9772,0.9772,False,False,False,CONSISTENT_SYNTHETIC,
+0180_a_pineapple_with_one_beer_to_its_left_and_two_beer_cat-Food & Beverage_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9772,0.9714,False,False,False,CONSISTENT_SYNTHETIC,left
+0180_a_pineapple_with_one_beer_to_its_left_and_two_beer_cat-Food & Beverage_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.3125,0.9772,0.0001,True,False,False,NO_REGION_CLAIM,
+0181_milk_pouring_from_a_glass_into_a_bowl_cat-Food & Beverage_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9864,0.9864,False,False,False,CONSISTENT_SYNTHETIC,
+0181_milk_pouring_from_a_glass_into_a_bowl_cat-Food & Beverage_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9864,0.9861,False,False,False,CONSISTENT_SYNTHETIC,
+0181_milk_pouring_from_a_glass_into_a_bowl_cat-Food & Beverage_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9864,0.9863,False,False,False,CONSISTENT_SYNTHETIC,
+0181_milk_pouring_from_a_glass_into_a_bowl_cat-Food & Beverage_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,0.9814432989690721,1.0,1.0,0.9864,0.9807,False,False,False,CONSISTENT_SYNTHETIC,top
+0181_milk_pouring_from_a_glass_into_a_bowl_cat-Food & Beverage_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.4375,0.9864,0.0003,True,False,False,NO_REGION_CLAIM,
+0182_A_bowl_of_soup_that_looks_like_a_monster_with_tofu_cat-Food & Beverage_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9825,0.9825,False,False,False,CONSISTENT_SYNTHETIC,
+0182_A_bowl_of_soup_that_looks_like_a_monster_with_tofu_cat-Food & Beverage_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9825,0.9831,False,False,False,CONSISTENT_SYNTHETIC,
+0182_A_bowl_of_soup_that_looks_like_a_monster_with_tofu_cat-Food & Beverage_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9825,0.9825,False,False,False,CONSISTENT_SYNTHETIC,
+0182_A_bowl_of_soup_that_looks_like_a_monster_with_tofu_cat-Food & Beverage_chal-Imagination.png,safe_crop_1pct,True,True,True,True,0.9741219963031423,1.0,1.0,0.9825,0.9796,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0182_A_bowl_of_soup_that_looks_like_a_monster_with_tofu_cat-Food & Beverage_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5938,0.9825,0.0005,True,False,False,NO_REGION_CLAIM,
+0183_a_plate_that_has_no_bananas_on_it_there_is_a_glass_cat-Food & Beverage_chal-Linguistic Structures.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9866,0.9866,False,False,False,CONSISTENT_SYNTHETIC,
+0183_a_plate_that_has_no_bananas_on_it_there_is_a_glass_cat-Food & Beverage_chal-Linguistic Structures.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9866,0.9861,False,False,False,CONSISTENT_SYNTHETIC,
+0183_a_plate_that_has_no_bananas_on_it_there_is_a_glass_cat-Food & Beverage_chal-Linguistic Structures.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9866,0.9865,False,False,False,CONSISTENT_SYNTHETIC,
+0183_a_plate_that_has_no_bananas_on_it_there_is_a_glass_cat-Food & Beverage_chal-Linguistic Structures.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9866,0.9823,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0183_a_plate_that_has_no_bananas_on_it_there_is_a_glass_cat-Food & Beverage_chal-Linguistic Structures.png,clean_negative,False,True,False,,,1.0,0.5,0.9866,0.0029,True,False,False,NO_REGION_CLAIM,
+0184_a_close-up_of_a_margarita_cat-Food & Beverage_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9691,0.9691,False,False,False,CONSISTENT_SYNTHETIC,
+0184_a_close-up_of_a_margarita_cat-Food & Beverage_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9691,0.9678,False,False,False,CONSISTENT_SYNTHETIC,
+0184_a_close-up_of_a_margarita_cat-Food & Beverage_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9691,0.969,False,False,False,CONSISTENT_SYNTHETIC,
+0184_a_close-up_of_a_margarita_cat-Food & Beverage_chal-Perspective.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9691,0.9642,False,False,False,CONSISTENT_SYNTHETIC,top
+0184_a_close-up_of_a_margarita_cat-Food & Beverage_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.4688,0.9691,0.0002,True,False,False,NO_REGION_CLAIM,
+0185_five_green_peppers_to_the_right_of_two_red_onions_cat-Food & Beverage_chal-Quantity.png,identity_resave,True,True,True,True,1.0,0.9688,0.9688,0.8468,0.8468,False,False,False,CONSISTENT_SYNTHETIC,
+0185_five_green_peppers_to_the_right_of_two_red_onions_cat-Food & Beverage_chal-Quantity.png,jpeg_q90,True,True,True,True,1.0,0.9688,1.0,0.8468,0.8417,False,False,False,CONSISTENT_SYNTHETIC,
+0185_five_green_peppers_to_the_right_of_two_red_onions_cat-Food & Beverage_chal-Quantity.png,resize_90,True,True,True,True,1.0,0.9688,0.9688,0.8468,0.8467,False,False,False,CONSISTENT_SYNTHETIC,
+0185_five_green_peppers_to_the_right_of_two_red_onions_cat-Food & Beverage_chal-Quantity.png,safe_crop_1pct,True,True,True,True,1.0,0.9688,0.9062,0.8468,0.5701,False,False,False,CONSISTENT_SYNTHETIC,left
+0185_five_green_peppers_to_the_right_of_two_red_onions_cat-Food & Beverage_chal-Quantity.png,clean_negative,False,True,False,,,0.9688,0.4688,0.8468,0.0008,True,False,False,NO_REGION_CLAIM,
+0186_slices_of_avocado_on_a_piece_of_toast_cat-Food & Beverage_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9304,0.9304,False,False,False,CONSISTENT_SYNTHETIC,
+0186_slices_of_avocado_on_a_piece_of_toast_cat-Food & Beverage_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9304,0.9298,False,False,False,CONSISTENT_SYNTHETIC,
+0186_slices_of_avocado_on_a_piece_of_toast_cat-Food & Beverage_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9304,0.9302,False,False,False,CONSISTENT_SYNTHETIC,
+0186_slices_of_avocado_on_a_piece_of_toast_cat-Food & Beverage_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,0.9885714285714285,1.0,1.0,0.9304,0.9345,False,False,False,CONSISTENT_SYNTHETIC,right
+0186_slices_of_avocado_on_a_piece_of_toast_cat-Food & Beverage_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.4062,0.9304,0.0007,True,False,False,NO_REGION_CLAIM,
+0187_orange_jello_in_the_shape_of_a_man_cat-Food & Beverage_chal-Style & Format.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.945,0.945,False,False,False,CONSISTENT_SYNTHETIC,
+0187_orange_jello_in_the_shape_of_a_man_cat-Food & Beverage_chal-Style & Format.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.945,0.9445,False,False,False,CONSISTENT_SYNTHETIC,
+0187_orange_jello_in_the_shape_of_a_man_cat-Food & Beverage_chal-Style & Format.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.945,0.945,False,False,False,CONSISTENT_SYNTHETIC,
+0187_orange_jello_in_the_shape_of_a_man_cat-Food & Beverage_chal-Style & Format.png,safe_crop_1pct,True,True,True,True,0.9842150170648464,1.0,1.0,0.945,0.938,False,False,False,CONSISTENT_SYNTHETIC,top
+0187_orange_jello_in_the_shape_of_a_man_cat-Food & Beverage_chal-Style & Format.png,clean_negative,False,True,False,,,1.0,0.5312,0.945,0.0004,True,False,False,NO_REGION_CLAIM,
+0188_A_burger_patty_with_the_bottom_bun_and_lettuce_and_cat-Food & Beverage_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9687,0.9687,False,False,False,CONSISTENT_SYNTHETIC,
+0188_A_burger_patty_with_the_bottom_bun_and_lettuce_and_cat-Food & Beverage_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9687,0.9686,False,False,False,CONSISTENT_SYNTHETIC,
+0188_A_burger_patty_with_the_bottom_bun_and_lettuce_and_cat-Food & Beverage_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9687,0.9689,False,False,False,CONSISTENT_SYNTHETIC,
+0188_A_burger_patty_with_the_bottom_bun_and_lettuce_and_cat-Food & Beverage_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9687,0.9626,False,False,False,CONSISTENT_SYNTHETIC,left
+0188_A_burger_patty_with_the_bottom_bun_and_lettuce_and_cat-Food & Beverage_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.5312,0.9687,0.001,True,False,False,NO_REGION_CLAIM,
+0189_beer_cat-Food & Beverage_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.975,0.975,False,False,False,CONSISTENT_SYNTHETIC,
+0189_beer_cat-Food & Beverage_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.975,0.9746,False,False,False,CONSISTENT_SYNTHETIC,
+0189_beer_cat-Food & Beverage_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.975,0.975,False,False,False,CONSISTENT_SYNTHETIC,
+0189_beer_cat-Food & Beverage_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.975,0.97,False,False,False,CONSISTENT_SYNTHETIC,top
+0189_beer_cat-Food & Beverage_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5,0.975,0.0215,True,False,False,NO_REGION_CLAIM,
+0190_a_glass_of_orange_juice_to_the_right_of_a_plate_wi_cat-Food & Beverage_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9744,0.9744,False,False,False,CONSISTENT_SYNTHETIC,
+0190_a_glass_of_orange_juice_to_the_right_of_a_plate_wi_cat-Food & Beverage_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9744,0.9743,False,False,False,CONSISTENT_SYNTHETIC,
+0190_a_glass_of_orange_juice_to_the_right_of_a_plate_wi_cat-Food & Beverage_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9744,0.9743,False,False,False,CONSISTENT_SYNTHETIC,
+0190_a_glass_of_orange_juice_to_the_right_of_a_plate_wi_cat-Food & Beverage_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9744,0.9681,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0190_a_glass_of_orange_juice_to_the_right_of_a_plate_wi_cat-Food & Beverage_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4062,0.9744,0.0002,True,False,False,NO_REGION_CLAIM,
+0191_a_roast_turkey_being_taken_out_of_the_oven_cat-Food & Beverage_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9641,0.9641,False,False,False,CONSISTENT_SYNTHETIC,
+0191_a_roast_turkey_being_taken_out_of_the_oven_cat-Food & Beverage_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9641,0.9642,False,False,False,CONSISTENT_SYNTHETIC,
+0191_a_roast_turkey_being_taken_out_of_the_oven_cat-Food & Beverage_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9641,0.964,False,False,False,CONSISTENT_SYNTHETIC,
+0191_a_roast_turkey_being_taken_out_of_the_oven_cat-Food & Beverage_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9688,0.9641,0.9586,False,False,False,CONSISTENT_SYNTHETIC,right
+0191_a_roast_turkey_being_taken_out_of_the_oven_cat-Food & Beverage_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.5938,0.9641,0.0002,True,False,False,NO_REGION_CLAIM,
+0192_a_full_pitcher_of_beer_with_an_elephants_trunk_in__cat-Food & Beverage_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.8211,0.8211,False,False,False,CONSISTENT_SYNTHETIC,
+0192_a_full_pitcher_of_beer_with_an_elephants_trunk_in__cat-Food & Beverage_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.8211,0.8206,False,False,False,CONSISTENT_SYNTHETIC,
+0192_a_full_pitcher_of_beer_with_an_elephants_trunk_in__cat-Food & Beverage_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.8211,0.8212,False,False,False,CONSISTENT_SYNTHETIC,
+0192_a_full_pitcher_of_beer_with_an_elephants_trunk_in__cat-Food & Beverage_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.8211,0.8107,False,False,False,CONSISTENT_SYNTHETIC,left
+0192_a_full_pitcher_of_beer_with_an_elephants_trunk_in__cat-Food & Beverage_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.375,0.8211,0.0023,True,False,False,NO_REGION_CLAIM,
+0193_a_close-up_of_an_old-fashioned_cocktail_cat-Food & Beverage_chal-Perspective.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9756,0.9756,False,False,False,CONSISTENT_SYNTHETIC,
+0193_a_close-up_of_an_old-fashioned_cocktail_cat-Food & Beverage_chal-Perspective.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9756,0.8839,False,False,False,CONSISTENT_SYNTHETIC,
+0193_a_close-up_of_an_old-fashioned_cocktail_cat-Food & Beverage_chal-Perspective.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9756,0.9751,False,False,False,CONSISTENT_SYNTHETIC,
+0193_a_close-up_of_an_old-fashioned_cocktail_cat-Food & Beverage_chal-Perspective.png,safe_crop_1pct,True,True,True,True,0.9871244635193133,1.0,1.0,0.9756,0.8835,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0193_a_close-up_of_an_old-fashioned_cocktail_cat-Food & Beverage_chal-Perspective.png,clean_negative,False,True,False,,,1.0,0.5938,0.9756,0.0002,True,False,False,NO_REGION_CLAIM,
+0194_a_plate_with_white_rice_topped_by_cooked_vegetable_cat-Food & Beverage_chal-Simple Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9808,0.9808,False,False,False,CONSISTENT_SYNTHETIC,
+0194_a_plate_with_white_rice_topped_by_cooked_vegetable_cat-Food & Beverage_chal-Simple Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9808,0.9814,False,False,False,CONSISTENT_SYNTHETIC,
+0194_a_plate_with_white_rice_topped_by_cooked_vegetable_cat-Food & Beverage_chal-Simple Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9808,0.9808,False,False,False,CONSISTENT_SYNTHETIC,
+0194_a_plate_with_white_rice_topped_by_cooked_vegetable_cat-Food & Beverage_chal-Simple Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9808,0.9822,False,False,False,CONSISTENT_SYNTHETIC,top
+0194_a_plate_with_white_rice_topped_by_cooked_vegetable_cat-Food & Beverage_chal-Simple Detail.png,clean_negative,False,True,False,,,1.0,0.5938,0.9808,0.0004,True,False,False,NO_REGION_CLAIM,
+0195_Two_cups_of_coffee_one_with_latte_art_of_a_heart_T_cat-Food & Beverage_chal-Writing & Symbols.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9433,0.9433,False,False,False,CONSISTENT_SYNTHETIC,
+0195_Two_cups_of_coffee_one_with_latte_art_of_a_heart_T_cat-Food & Beverage_chal-Writing & Symbols.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9433,0.9406,False,False,False,CONSISTENT_SYNTHETIC,
+0195_Two_cups_of_coffee_one_with_latte_art_of_a_heart_T_cat-Food & Beverage_chal-Writing & Symbols.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9433,0.9428,False,False,False,CONSISTENT_SYNTHETIC,
+0195_Two_cups_of_coffee_one_with_latte_art_of_a_heart_T_cat-Food & Beverage_chal-Writing & Symbols.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.9433,0.9187,False,False,False,CONSISTENT_SYNTHETIC,left
+0195_Two_cups_of_coffee_one_with_latte_art_of_a_heart_T_cat-Food & Beverage_chal-Writing & Symbols.png,clean_negative,False,True,False,,,1.0,0.5,0.9433,0.0001,True,False,False,NO_REGION_CLAIM,
+0196_a_green_pepper_cat-Food & Beverage_chal-Basic.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9371,0.9371,False,False,False,CONSISTENT_SYNTHETIC,
+0196_a_green_pepper_cat-Food & Beverage_chal-Basic.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9371,0.9381,False,False,False,CONSISTENT_SYNTHETIC,
+0196_a_green_pepper_cat-Food & Beverage_chal-Basic.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9371,0.9373,False,False,False,CONSISTENT_SYNTHETIC,
+0196_a_green_pepper_cat-Food & Beverage_chal-Basic.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.875,0.9371,0.9035,False,False,False,CONSISTENT_SYNTHETIC,left
+0196_a_green_pepper_cat-Food & Beverage_chal-Basic.png,clean_negative,False,True,False,,,1.0,0.5312,0.9371,0.2373,True,False,False,NO_REGION_CLAIM,
+0197_a_bottle_of_beer_next_to_an_ashtray_with_a_half-sm_cat-Food & Beverage_chal-Complex.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.986,0.986,False,False,False,CONSISTENT_SYNTHETIC,
+0197_a_bottle_of_beer_next_to_an_ashtray_with_a_half-sm_cat-Food & Beverage_chal-Complex.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.986,0.9857,False,False,False,CONSISTENT_SYNTHETIC,
+0197_a_bottle_of_beer_next_to_an_ashtray_with_a_half-sm_cat-Food & Beverage_chal-Complex.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.986,0.986,False,False,False,CONSISTENT_SYNTHETIC,
+0197_a_bottle_of_beer_next_to_an_ashtray_with_a_half-sm_cat-Food & Beverage_chal-Complex.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.986,0.9814,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0197_a_bottle_of_beer_next_to_an_ashtray_with_a_half-sm_cat-Food & Beverage_chal-Complex.png,clean_negative,False,True,False,,,1.0,0.4375,0.986,0.0001,True,False,False,NO_REGION_CLAIM,
+0198_a_bloody_mary_cocktail_next_to_a_napkin_cat-Food & Beverage_chal-Fine-grained Detail.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.983,0.983,False,False,False,CONSISTENT_SYNTHETIC,
+0198_a_bloody_mary_cocktail_next_to_a_napkin_cat-Food & Beverage_chal-Fine-grained Detail.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.983,0.9825,False,False,False,CONSISTENT_SYNTHETIC,
+0198_a_bloody_mary_cocktail_next_to_a_napkin_cat-Food & Beverage_chal-Fine-grained Detail.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.983,0.983,False,False,False,CONSISTENT_SYNTHETIC,
+0198_a_bloody_mary_cocktail_next_to_a_napkin_cat-Food & Beverage_chal-Fine-grained Detail.png,safe_crop_1pct,True,True,True,True,1.0,1.0,1.0,0.983,0.9799,False,False,False,CONSISTENT_SYNTHETIC,bottom
+0198_a_bloody_mary_cocktail_next_to_a_napkin_cat-Food & Beverage_chal-Fine-grained Detail.png,clean_negative,False,True,False,,,1.0,0.4375,0.983,0.0002,True,False,False,NO_REGION_CLAIM,
+0199_A_bowl_of_soup_that_looks_like_a_monster_spray-pai_cat-Food & Beverage_chal-Imagination.png,identity_resave,True,True,True,True,1.0,1.0,1.0,0.9854,0.9854,False,False,False,CONSISTENT_SYNTHETIC,
+0199_A_bowl_of_soup_that_looks_like_a_monster_spray-pai_cat-Food & Beverage_chal-Imagination.png,jpeg_q90,True,True,True,True,1.0,1.0,1.0,0.9854,0.9842,False,False,False,CONSISTENT_SYNTHETIC,
+0199_A_bowl_of_soup_that_looks_like_a_monster_spray-pai_cat-Food & Beverage_chal-Imagination.png,resize_90,True,True,True,True,1.0,1.0,1.0,0.9854,0.9853,False,False,False,CONSISTENT_SYNTHETIC,
+0199_A_bowl_of_soup_that_looks_like_a_monster_spray-pai_cat-Food & Beverage_chal-Imagination.png,safe_crop_1pct,True,True,True,True,1.0,1.0,0.9375,0.9854,0.9827,False,False,False,CONSISTENT_SYNTHETIC,left
+0199_A_bowl_of_soup_that_looks_like_a_monster_spray-pai_cat-Food & Beverage_chal-Imagination.png,clean_negative,False,True,False,,,1.0,0.5312,0.9854,0.0005,True,False,False,NO_REGION_CLAIM,

@@ -21,18 +21,24 @@ image-level manifest remains cryptographically valid.
 - A size-preserving, exact-mask LaMa inpainting stress test produces 199 silent
   escapes among 200 SDXL assets. The region-aware signal check flags all 199 as
   `WATERMARK_SUPPRESSED`, while every output retains valid C2PA and region data.
+- Across 800 honestly described benign edits, the strict region-aware false-flag
+  rate is 0.5% for PNG re-save, JPEG Q90, and 90% resize, and 1.0% for a
+  geometry-only 1% safe crop. After excluding one source that already fails the
+  no-edit reference audit, the corresponding rates are 0/199, 0/199, 0/199,
+  and 1/199. A paired set of 200 clean negatives has one detector-level false
+  positive, but all 200 receive the final verdict `NO_REGION_CLAIM`.
 
 Precomputed machine-readable results are committed under `results/`, including
-the 10,800 row-level C1 attack and audit records used to derive the position-aware
-statistics and the 200 row-level LaMa audit records. Large model weights,
-generated image corpora, contact sheets, and intermediate images are
-intentionally not stored in Git.
+the 10,800 row-level C1 attack and audit records, the 200 row-level LaMa audit
+records, and 1,000 benign-control/clean-negative audit rows. Large model weights,
+generated image corpora, and intermediate images are intentionally not stored
+in Git. The benign release includes one compact contact sheet for visual audit.
 
 ## Repository layout
 
 ```text
 configs/                         fixed experiment configurations
-experiments/                     regional, position-aware, defense, and inpainting experiments
+experiments/                     regional, position-aware, defense, inpainting, and benign-control experiments
 legacy_pixel_seal/               PixelSeal replication drivers
 manifests/                       C2PA manifest templates
 requirements/                    direct dependencies and reference lock file
@@ -43,7 +49,7 @@ tools/                           release verification and credential helpers
 ckpts/README.md                  model-weight acquisition guide
 data/README.md                   dataset generation and directory guide
 REPRODUCIBILITY.md               claim-to-command-to-artifact mapping
-DESIGN.md                        inpainting threat model and security boundaries
+DESIGN.md                        threat models, controls, and security boundaries
 ```
 
 ## Quick verification (CPU, no model weights)

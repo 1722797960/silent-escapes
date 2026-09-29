@@ -1,0 +1,30 @@
+{
+  "claim_generator": "benign_editor_e2e",
+  "claim_generator_info": [
+    {
+      "name": "benign_editor_e2e",
+      "version": "1.0.0"
+    }
+  ],
+  "format": "image/png",
+  "title": "AI-generated image with a benign edit",
+  "ingredients": [],
+  "assertions": [
+    {
+      "label": "c2pa.actions",
+      "data": {
+        "actions": [
+          {
+            "action": "c2pa.created",
+            "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+            "softwareAgent": "StableDiffusionXL/1.0"
+          },
+          {
+            "action": "c2pa.edited",
+            "softwareAgent": "BenignPhotoEditor/1.0"
+          }
+        ]
+      }
+    }
+  ]
+}

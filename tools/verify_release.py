@@ -46,6 +46,13 @@ def main() -> int:
         "experiments/inpainting_audit_v1.py",
         "experiments/summarize_inpainting_v1.py",
         "experiments/test_inpainting_common_v1.py",
+        "experiments/benign_controls_common_v1.py",
+        "experiments/benign_controls_generate_v1.py",
+        "experiments/benign_controls_resign_v1.py",
+        "experiments/benign_controls_audit_v1.py",
+        "experiments/summarize_benign_controls_v1.py",
+        "experiments/test_benign_controls_common_v1.py",
+        "manifests/manifest_ai_edited.json",
         "results/summary_500.json",
         "results/regional_v2/summary.json",
         "results/regional_v2_pixart/summary.json",
@@ -55,6 +62,10 @@ def main() -> int:
         "results/threshold_sensitivity_v1/threshold_sensitivity.json",
         "results/inpainting_e2e_v1/audit.csv",
         "results/inpainting_e2e_v1/summary.json",
+        "results/benign_controls_v1/audit.csv",
+        "results/benign_controls_v1/audit.json",
+        "results/benign_controls_v1/summary.json",
+        "results/benign_controls_v1/contact_sheet_sample.png",
     ]
     missing = [path for path in required if not (ROOT / path).is_file()]
     if missing:
@@ -132,6 +143,51 @@ def main() -> int:
             f"{len(recovered)}/{len(escaped)}"
         )
 
+    benign = load("results/benign_controls_v1/summary.json")
+    if benign.get("version") != "benign_controls_v1":
+        raise AssertionError("unexpected benign-control result version")
+    benign_by_condition = {
+        row["condition"]: row for row in benign["conditions"]
+    }
+    expected_benign_flags = {
+        "identity_resave": 1,
+        "jpeg_q90": 1,
+        "resize_90": 1,
+        "safe_crop_1pct": 2,
+    }
+    for condition, expected_flags in expected_benign_flags.items():
+        row = benign_by_condition[condition]
+        if int(row["n"]) != 200:
+            raise AssertionError(f"{condition}: expected 200 benign assets")
+        if int(row["manifest_valid"]) != 200:
+            raise AssertionError(f"{condition}: all manifests must validate")
+        if int(row["region_assertion_present"]) != 200:
+            raise AssertionError(f"{condition}: all region assertions must be present")
+        if int(row["payload_hash_ok"]) != 200:
+            raise AssertionError(f"{condition}: all payload hashes must match")
+        observed_flags = int(row["benign_region_false_flag"]["count"])
+        if observed_flags != expected_flags:
+            raise AssertionError(
+                f"{condition}: expected {expected_flags} strict false flags, "
+                f"observed {observed_flags}"
+            )
+    clean = benign_by_condition["clean_negative"]
+    if int(clean["n"]) != 200:
+        raise AssertionError("clean-negative summary must contain 200 assets")
+    if int(clean["clean_detector_false_positive"]["count"]) != 1:
+        raise AssertionError("expected one clean detector false positive")
+    if clean["verdict_counts"] != {"NO_REGION_CLAIM": 200}:
+        raise AssertionError("all clean negatives must end as NO_REGION_CLAIM")
+
+    with (ROOT / "results/benign_controls_v1/audit.csv").open(
+        encoding="utf-8", newline=""
+    ) as handle:
+        benign_rows = list(csv.DictReader(handle))
+    if len(benign_rows) != 1_000:
+        raise AssertionError(
+            f"benign audit: expected 1,000 rows, observed {len(benign_rows)}"
+        )
+
     blocked_suffixes = {".pth", ".pt", ".ckpt", ".safetensors"}
     blocked = [
         str(path.relative_to(ROOT))
@@ -155,6 +211,8 @@ def main() -> int:
     print("  rho=0.4 escape rate:      center 17.0%, mask-aware 55.0%")
     print("  defense flag rates:       91.223%, 92.553%, 93.435%")
     print("  exact-mask inpainting:    199/200 escapes, 199/199 recovered")
+    print("  benign strict flags:      1/200, 1/200, 1/200, 2/200")
+    print("  clean detector/verdict:   1/200 FP, 200/200 NO_REGION_CLAIM")
     return 0
 
 
