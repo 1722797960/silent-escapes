@@ -1,0 +1,60 @@
+{
+  "experiment": "exact-mask LaMa inpainting audit",
+  "n": 200,
+  "invariants": {
+    "manifest_valid": 200,
+    "region_assertion_present": 200,
+    "payload_hash_ok": 200,
+    "geometry_unchanged": 200,
+    "outside_pixels_byte_identical": 200
+  },
+  "baseline_silent_escape": {
+    "count": 199,
+    "total": 200,
+    "rate": 0.995,
+    "wilson95": [
+      0.9722262956021069,
+      0.9991168312843989
+    ]
+  },
+  "region_aware_recovery_among_escapes": {
+    "count": 199,
+    "total": 199,
+    "rate": 1.0,
+    "wilson95": [
+      0.9810617669433649,
+      0.9999999999999999
+    ]
+  },
+  "watermark_suppressed_among_escapes": {
+    "count": 199,
+    "total": 199,
+    "rate": 1.0,
+    "wilson95": [
+      0.9810617669433649,
+      0.9999999999999999
+    ]
+  },
+  "silent_other_among_escapes": {
+    "count": 0,
+    "total": 199,
+    "rate": 0.0,
+    "wilson95": [
+      0.0,
+      0.018938233056634942
+    ]
+  },
+  "overall_attack_flag": {
+    "count": 200,
+    "total": 200,
+    "rate": 1.0,
+    "wilson95": [
+      0.9811546736227335,
+      1.0
+    ]
+  },
+  "median_bit_accuracy_before": 1.0,
+  "median_bit_accuracy_after": 0.5,
+  "median_logit_before": 0.96075,
+  "median_logit_after": 0.0006
+}

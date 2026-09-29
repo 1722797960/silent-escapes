@@ -24,6 +24,7 @@ rates from the committed JSON files. It requires only the Python standard librar
 | End-to-end region-aware defense, PixArt-alpha | same pipeline | `results/defense_e2e_pixart/audit_retention.json` |
 | Defense threshold sensitivity | `experiments/threshold_sensitivity_v1.py` | `results/threshold_sensitivity_v1/threshold_sensitivity.json` |
 | Independent C2PA SDK verification | `experiments/independent_verify.py` | `results/defense_e2e/independent_verification.json` |
+| Exact-mask LaMa inpainting | `experiments/inpainting_lama_v1.py`, `inpainting_resign_v1.py`, `inpainting_audit_v1.py`, `summarize_inpainting_v1.py` | `results/inpainting_e2e_v1/audit.csv`, `summary.json` |
 
 ## 3. Fixed experimental settings
 
@@ -37,6 +38,7 @@ rates from the committed JSON files. It requires only the Python standard librar
 - Region-retention floor: `0.05`
 - Region logit-mean threshold: `0.5`
 - Resize filter: LANCZOS
+- LaMa condition: `big-lama`, exact signed SAM mask, zero dilation
 
 The effective configuration written by each run is retained beside the result
 summary. Historical absolute machine paths have been replaced with repository-
@@ -124,3 +126,32 @@ python experiments/c1_summarize_v1.py --config configs/c1_v1.json
 The mask-aware policy selects the lowest-retention option among four preset edge
 anchors using the signed region mask. It never observes watermark detector output
 or audit verdicts.
+
+## 8. Size-preserving LaMa inpainting
+
+The LaMa source tree and `big-lama` checkpoint are external dependencies. The
+pipeline refuses accidental overwrite by default and records their Git/SHA-256
+identifiers in local run metadata. Generate the inpainted images, carry the same
+region assertion through compliant re-signing, audit them, and produce the
+committed compact artifacts with:
+
+```bash
+python experiments/inpainting_lama_v1.py \
+  --lama-source /path/to/lama/source \
+  --model-dir /path/to/big-lama \
+  --pilot-count 200 \
+  --device cuda:0
+python experiments/inpainting_resign_v1.py \
+  --c2pa-python /path/to/c2pa/python
+python experiments/inpainting_audit_v1.py \
+  --c2pa-python /path/to/c2pa/python \
+  --device cuda:0
+python experiments/summarize_inpainting_v1.py
+```
+
+The reference run uses the exact signed SAM mask with zero dilation. It keeps
+the image at 1024 by 1024 and restores every pixel outside the mask from the
+signed source. The committed `audit.csv` contains all 200 per-asset rows;
+`summary.json` contains the Wilson intervals and headline counts. Raw images,
+contact sheets, checkpoints, and metadata containing machine-local paths are
+excluded from the public release.

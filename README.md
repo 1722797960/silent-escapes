@@ -1,6 +1,6 @@
 # Silent Escapes
 
-**The Granularity Gap Between Localized Watermarks and Image-Level Provenance Manifests**
+**The Granularity Gap Between Localized Watermarks and Region-Agnostic Provenance Audits**
 
 This repository contains the experiment code, configurations, and compact result
 artifacts for *Silent Escapes*. The study examines a cross-layer failure mode in
@@ -18,17 +18,21 @@ image-level manifest remains cryptographically valid.
 - A signed-region assertion and region-aware audit flag 686 of 752 SDXL silent
   escapes (91.2%) and 870 of 940 PixArt-alpha silent escapes (92.6%) at the
   paper's reference thresholds.
+- A size-preserving, exact-mask LaMa inpainting stress test produces 199 silent
+  escapes among 200 SDXL assets. The region-aware signal check flags all 199 as
+  `WATERMARK_SUPPRESSED`, while every output retains valid C2PA and region data.
 
 Precomputed machine-readable results are committed under `results/`, including
 the 10,800 row-level C1 attack and audit records used to derive the position-aware
-statistics. Large model weights, generated image corpora, and intermediate images
-are intentionally not stored in Git.
+statistics and the 200 row-level LaMa audit records. Large model weights,
+generated image corpora, contact sheets, and intermediate images are
+intentionally not stored in Git.
 
 ## Repository layout
 
 ```text
 configs/                         fixed experiment configurations
-experiments/                     regional, position-aware, and defense experiments
+experiments/                     regional, position-aware, defense, and inpainting experiments
 legacy_pixel_seal/               PixelSeal replication drivers
 manifests/                       C2PA manifest templates
 requirements/                    direct dependencies and reference lock file
@@ -39,6 +43,7 @@ tools/                           release verification and credential helpers
 ckpts/README.md                  model-weight acquisition guide
 data/README.md                   dataset generation and directory guide
 REPRODUCIBILITY.md               claim-to-command-to-artifact mapping
+DESIGN.md                        inpainting threat model and security boundaries
 ```
 
 ## Quick verification (CPU, no model weights)
@@ -100,8 +105,10 @@ real identity or production signing credential.
 
 The code evaluates authentication failure modes and defenses in a controlled
 research setting. It does not contain production credentials. The mask-aware
-policy reads the signed region geometry but does not query watermark detections
-or audit verdicts when choosing a crop.
+crop policy reads the signed region geometry but does not query watermark
+detections or audit verdicts. The inpainting condition uses the exact signed SAM
+mask, zero dilation, and byte-identical pixels outside that mask; it is a
+controlled stress test rather than a defense-adaptive attack.
 
 ## License
 

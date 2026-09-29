@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import csv
 import json
 import sys
 from pathlib import Path
@@ -36,8 +37,15 @@ def c1_value(rows: list[dict], method: str, rho: float, field: str) -> float:
 def main() -> int:
     required = [
         "README.md",
+        "DESIGN.md",
         "LICENSE",
         "REPRODUCIBILITY.md",
+        "experiments/inpainting_common_v1.py",
+        "experiments/inpainting_lama_v1.py",
+        "experiments/inpainting_resign_v1.py",
+        "experiments/inpainting_audit_v1.py",
+        "experiments/summarize_inpainting_v1.py",
+        "experiments/test_inpainting_common_v1.py",
         "results/summary_500.json",
         "results/regional_v2/summary.json",
         "results/regional_v2_pixart/summary.json",
@@ -45,6 +53,8 @@ def main() -> int:
         "results/c1_v1/full/audit_rows.jsonl",
         "results/c1_v1/full/summary.json",
         "results/threshold_sensitivity_v1/threshold_sensitivity.json",
+        "results/inpainting_e2e_v1/audit.csv",
+        "results/inpainting_e2e_v1/summary.json",
     ]
     missing = [path for path in required if not (ROOT / path).is_file()]
     if missing:
@@ -87,6 +97,41 @@ def main() -> int:
     close(reference["PixArt-alpha centered"]["escape_flag_rate_pct"], 92.553)
     close(reference["SDXL mask-aware"]["escape_flag_rate_pct"], 93.435)
 
+    inpainting = load("results/inpainting_e2e_v1/summary.json")
+    if int(inpainting["n"]) != 200:
+        raise AssertionError("inpainting summary must contain 200 assets")
+    for invariant, observed in inpainting["invariants"].items():
+        if int(observed) != 200:
+            raise AssertionError(
+                f"inpainting invariant {invariant}: expected 200, observed {observed}"
+            )
+    if int(inpainting["baseline_silent_escape"]["count"]) != 199:
+        raise AssertionError("expected 199 baseline inpainting escapes")
+    if int(inpainting["region_aware_recovery_among_escapes"]["count"]) != 199:
+        raise AssertionError("expected all 199 inpainting escapes to be recovered")
+    close(float(inpainting["median_bit_accuracy_before"]), 1.0)
+    close(float(inpainting["median_bit_accuracy_after"]), 0.5)
+    close(float(inpainting["median_logit_before"]), 0.96075)
+    close(float(inpainting["median_logit_after"]), 0.0006)
+
+    with (ROOT / "results/inpainting_e2e_v1/audit.csv").open(
+        encoding="utf-8", newline=""
+    ) as handle:
+        inpainting_rows = list(csv.DictReader(handle))
+    if len(inpainting_rows) != 200:
+        raise AssertionError(
+            f"inpainting audit: expected 200 rows, observed {len(inpainting_rows)}"
+        )
+    escaped = [row for row in inpainting_rows if row["baseline_audit"] == "SILENT_ESCAPE"]
+    recovered = [
+        row for row in escaped if row["region_aware_audit"] == "WATERMARK_SUPPRESSED"
+    ]
+    if len(escaped) != 199 or len(recovered) != 199:
+        raise AssertionError(
+            f"inpainting audit: expected 199/199 recovered escapes, observed "
+            f"{len(recovered)}/{len(escaped)}"
+        )
+
     blocked_suffixes = {".pth", ".pt", ".ckpt", ".safetensors"}
     blocked = [
         str(path.relative_to(ROOT))
@@ -109,6 +154,7 @@ def main() -> int:
     print("  PixArt-alpha detection:   98.0% -> 51.0% -> 0.5%")
     print("  rho=0.4 escape rate:      center 17.0%, mask-aware 55.0%")
     print("  defense flag rates:       91.223%, 92.553%, 93.435%")
+    print("  exact-mask inpainting:    199/200 escapes, 199/199 recovered")
     return 0
 
 
