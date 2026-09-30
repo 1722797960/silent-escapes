@@ -1,0 +1,53 @@
+{
+  "experiment": "lineage_ablation_v1",
+  "conditions": {
+    "propagated": {
+      "n": 200,
+      "manifest_valid": 200,
+      "pixel_identical": 200,
+      "parent_manifest_validated": 200,
+      "payload_hash_ok": 200,
+      "baseline_silent_escape": 199,
+      "lineage_status": {
+        "CURRENT_ASSERTION": 200
+      },
+      "audit_v3": {
+        "TAMPERED_REGION": 158,
+        "WATERMARK_SUPPRESSED": 39,
+        "SILENT_OTHER": 2,
+        "INTEGRITY_CLASH": 1
+      }
+    },
+    "ancestor-only": {
+      "n": 200,
+      "manifest_valid": 200,
+      "pixel_identical": 200,
+      "parent_manifest_validated": 200,
+      "payload_hash_ok": 200,
+      "baseline_silent_escape": 199,
+      "lineage_status": {
+        "ANCESTOR_ASSERTION": 200
+      },
+      "audit_v3": {
+        "TAMPERED_REGION": 158,
+        "WATERMARK_SUPPRESSED": 39,
+        "SILENT_OTHER": 2,
+        "INTEGRITY_CLASH": 1
+      }
+    },
+    "cut-chain": {
+      "n": 200,
+      "manifest_valid": 200,
+      "pixel_identical": 200,
+      "parent_manifest_validated": 0,
+      "payload_hash_ok": 0,
+      "baseline_silent_escape": 199,
+      "lineage_status": {
+        "PROVENANCE_DISCONTINUITY": 200
+      },
+      "audit_v3": {
+        "PROVENANCE_DISCONTINUITY": 200
+      }
+    }
+  }
+}

@@ -80,6 +80,31 @@ editing or independently calibrate deployment thresholds.
 
 ## Change history
 
+### 2026-09-30 - Add C2PA parent-chain lineage ablation
+
+**Change:** Added `parentOf`/`c2pa.opened` re-signing, recursive recovery of the
+regional assertion from validated ancestor manifests, and a strict
+`PROVENANCE_DISCONTINUITY` policy result for an edited manifest without a parent.
+The three conditions use identical crop-40 pixels and reuse saved WAM metrics.
+
+**Reason:** The original prototype copied the regional assertion into every new
+manifest but did not test an adversary who selectively omitted that assertion.
+The new experiment separates assertion propagation, ancestor recovery, and an
+explicitly severed provenance chain.
+
+**Impact:** Existing regional flag rates are unchanged. Lineage-policy results
+are reported separately because missing ancestry is not the same event as
+geometric region loss or watermark suppression. A fresh-root manifest that makes
+no edit claim remains indistinguishable from genuinely new provenance without
+external trust or deployment policy.
+
+**Trust boundary:** The experiment entry points are local research CLIs. File and
+interpreter paths are supplied by the operator, checked for existence before the
+run, and execute with the operator's existing permissions; they are not remote or
+less-privileged inputs. Child processes use argument arrays with `shell=False`.
+Accordingly, accepting an absolute path is intentional reproducibility behavior,
+not a privilege-crossing path traversal surface.
+
 ### 2026-09-30 - Clarify instance allocation
 
 **Change:** Distinguished the shared host's eight-GPU capacity from the

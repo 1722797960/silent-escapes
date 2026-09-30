@@ -33,6 +33,7 @@ directly measured extension timings are recorded in
 | Exact-mask LaMa inpainting | `experiments/inpainting_lama_v1.py`, `inpainting_resign_v1.py`, `inpainting_audit_v1.py`, `summarize_inpainting_v1.py` | `results/inpainting_e2e_v1/audit.csv`, `summary.json` |
 | Benign edits and clean negatives | `experiments/benign_controls_generate_v1.py`, `benign_controls_resign_v1.py`, `benign_controls_audit_v1.py`, `summarize_benign_controls_v1.py` | `results/benign_controls_v1/audit.csv`, `audit.json`, `summary.json`, `contact_sheet_sample.png` |
 | Honest centered-crop controls | `experiments/benign_centered_crops_v1.py`, `defense_e2e_audit.py`, `recompute_region_retention.py` | `results/benign_centered_crops_v1/audit_honest.csv`, `audit_honest.json`, `summary.json`, `environment.json` |
+| C2PA lineage continuity | `experiments/lineage_ablation_v1.py`, `resign_with_lineage_v1.py`, `read_region_lineage_v1.py` | `results/lineage_ablation_v1/rows.jsonl`, `summary.json`, `summary.md` |
 
 ## 3. Fixed experimental settings
 
@@ -50,6 +51,8 @@ directly measured extension timings are recorded in
 - Benign edits: PNG re-save, JPEG Q90, 90% resize round trip, and a 1% geometry-only safe crop
 - Benign geometric-cost controls: centered 10% and 20% per-side crops
 - Benign sample size: 200 assets per condition plus 200 paired clean negatives
+- Lineage ablation: crop `c = 0.40`; propagated, ancestor-only, and cut-chain
+  manifest topologies; 200 assets per condition
 
 The effective configuration written by each run is retained beside the result
 summary. Historical absolute machine paths have been replaced with repository-
@@ -227,3 +230,25 @@ cropping and 68/200 for 20%; the corresponding baseline-qualified counts are
 14/199 and 67/199. A flag records removed or suppressed signed-region evidence,
 not a judgment that an honest edit was malicious. `environment.json` records the
 reference hardware, software versions, and measured wall-clock times.
+
+## 11. C2PA lineage-continuity ablation
+
+This CPU-only extension reuses the exact decoded pixels and saved WAM metrics
+from the crop-0.40 condition. It changes only manifest topology and signs 200
+assets under each of three conditions.
+
+```bash
+python experiments/lineage_ablation_v1.py \
+  --num-images 200 \
+  --c2pa-python /path/to/c2pa/python
+
+python -m unittest discover -s experiments \
+  -p 'test_lineage_common_v1.py' -v
+```
+
+`propagated` carries both the active assertion and a validated parent;
+`ancestor-only` removes the active assertion and recovers it from the parent;
+`cut-chain` declares an edit but provides neither source. The compact release
+contains 600 per-condition rows and summaries, but excludes the generated
+signed PNGs. `PROVENANCE_DISCONTINUITY` is a strict consumer-policy result and
+is not added to the paper's regional-evidence flag rate.

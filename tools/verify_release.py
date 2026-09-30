@@ -53,6 +53,11 @@ def main() -> int:
         "experiments/summarize_benign_controls_v1.py",
         "experiments/test_benign_controls_common_v1.py",
         "experiments/benign_centered_crops_v1.py",
+        "experiments/lineage_ablation_v1.py",
+        "experiments/lineage_common_v1.py",
+        "experiments/resign_with_lineage_v1.py",
+        "experiments/read_region_lineage_v1.py",
+        "experiments/test_lineage_common_v1.py",
         "manifests/manifest_ai_edited.json",
         "results/summary_500.json",
         "results/regional_v2/summary.json",
@@ -71,6 +76,9 @@ def main() -> int:
         "results/benign_centered_crops_v1/audit_honest.json",
         "results/benign_centered_crops_v1/summary.json",
         "results/benign_centered_crops_v1/environment.json",
+        "results/lineage_ablation_v1/rows.jsonl",
+        "results/lineage_ablation_v1/summary.json",
+        "results/lineage_ablation_v1/summary.md",
     ]
     missing = [path for path in required if not (ROOT / path).is_file()]
     if missing:
@@ -234,6 +242,33 @@ def main() -> int:
     close(float(environment["execution"]["prepare_and_honest_resign_seconds"]), 452.532)
     close(float(environment["execution"]["region_aware_audit_seconds"]), 108.497)
 
+    lineage = load("results/lineage_ablation_v1/summary.json")["conditions"]
+    expected_lineage = {
+        "propagated": (200, 200, "CURRENT_ASSERTION"),
+        "ancestor-only": (200, 200, "ANCESTOR_ASSERTION"),
+        "cut-chain": (200, 0, "PROVENANCE_DISCONTINUITY"),
+    }
+    for condition, (valid, parent_validated, status) in expected_lineage.items():
+        row = lineage[condition]
+        if int(row["n"]) != 200 or int(row["manifest_valid"]) != valid:
+            raise AssertionError(f"{condition}: expected 200 valid manifests")
+        if int(row["pixel_identical"]) != 200:
+            raise AssertionError(f"{condition}: decoded pixels must remain identical")
+        if int(row["parent_manifest_validated"]) != parent_validated:
+            raise AssertionError(f"{condition}: unexpected parent-validation count")
+        if row["lineage_status"] != {status: 200}:
+            raise AssertionError(f"{condition}: unexpected lineage status")
+    if lineage["propagated"]["audit_v3"] != lineage["ancestor-only"]["audit_v3"]:
+        raise AssertionError("propagated and ancestor-only verdicts must match")
+
+    lineage_rows_path = ROOT / "results/lineage_ablation_v1/rows.jsonl"
+    with lineage_rows_path.open(encoding="utf-8") as handle:
+        lineage_rows = [json.loads(line) for line in handle if line.strip()]
+    if len(lineage_rows) != 600:
+        raise AssertionError(
+            f"lineage ablation: expected 600 rows, observed {len(lineage_rows)}"
+        )
+
     blocked_suffixes = {".pth", ".pt", ".ckpt", ".safetensors"}
     blocked = [
         str(path.relative_to(ROOT))
@@ -260,6 +295,7 @@ def main() -> int:
     print("  benign strict flags:      1/200, 1/200, 1/200, 2/200")
     print("  clean detector/verdict:   1/200 FP, 200/200 NO_REGION_CLAIM")
     print("  honest centered crops:    15/200 (10%), 68/200 (20%) flags")
+    print("  lineage continuity:       200/200 ancestor recovery, 200/200 cut-chain flags")
     return 0
 
 

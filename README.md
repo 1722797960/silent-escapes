@@ -32,12 +32,18 @@ image-level manifest remains cryptographically valid.
   (7.5%) and 68/200 (34.0%), respectively. These flags mean that evidence bound
   to the signed region was removed or suppressed; they do not establish
   malicious intent.
+- A 600-manifest C2PA lineage ablation shows that a strict consumer can recover
+  an omitted current assertion from a validated `parentOf` ancestor on 200/200
+  assets. If an edited manifest omits both the assertion and parent link, all
+  200 cases receive `PROVENANCE_DISCONTINUITY`; this policy result is reported
+  separately from the 91.2% regional-evidence flag rate.
 
 Precomputed machine-readable results are committed under `results/`, including
 the 10,800 row-level C1 attack and audit records, the 200 row-level LaMa audit
 records, and 1,400 benign-control/clean-negative audit rows. Large model weights,
-generated image corpora, and intermediate images are intentionally not stored
-in Git. The benign release includes one compact contact sheet for visual audit.
+generated image corpora, intermediate images, and the lineage run's signed PNGs
+are intentionally not stored in Git. The benign release includes one compact
+contact sheet for visual audit.
 
 ## Repository layout
 
