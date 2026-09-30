@@ -1,0 +1,79 @@
+{
+  "experiment": "honest centered-crop controls",
+  "version": "benign_centered_crops_v1",
+  "flag_semantics": "A flag means evidence bound to the signed region was removed or suppressed; it does not establish malicious intent.",
+  "manifest": "honest AI-created plus edited",
+  "reference_operating_point": {
+    "bit_threshold": 0.75,
+    "region_min_retention": 0.05,
+    "logit_mean_min": 0.5
+  },
+  "baseline_failed_images": [
+    "0117_a_laptop_screen_cat-Artifacts_chal-Basic.png"
+  ],
+  "conditions": [
+    {
+      "crop_frac_per_side": 0.1,
+      "n": 200,
+      "manifest_valid": 200,
+      "region_assertion_present": 200,
+      "payload_hash_ok": 200,
+      "strict_false_flag": {
+        "count": 15,
+        "total": 200,
+        "rate": 0.075,
+        "wilson95": [
+          0.04597491718438201,
+          0.12004361023629456
+        ]
+      },
+      "baseline_qualified_false_flag": {
+        "count": 14,
+        "total": 199,
+        "rate": 0.07035175879396985,
+        "wilson95": [
+          0.042366344045329206,
+          0.11461073059127666
+        ]
+      },
+      "verdict_counts": {
+        "WATERMARK_SUPPRESSED": 9,
+        "CONSISTENT_SYNTHETIC": 168,
+        "BENIGN_NO_FLAG": 17,
+        "TAMPERED_REGION": 6
+      }
+    },
+    {
+      "crop_frac_per_side": 0.2,
+      "n": 200,
+      "manifest_valid": 200,
+      "region_assertion_present": 200,
+      "payload_hash_ok": 200,
+      "strict_false_flag": {
+        "count": 68,
+        "total": 200,
+        "rate": 0.34,
+        "wilson95": [
+          0.27791545970908793,
+          0.4081150447316374
+        ]
+      },
+      "baseline_qualified_false_flag": {
+        "count": 67,
+        "total": 199,
+        "rate": 0.33668341708542715,
+        "wilson95": [
+          0.2746687558455675,
+          0.4048839333437856
+        ]
+      },
+      "verdict_counts": {
+        "TAMPERED_REGION": 62,
+        "CONSISTENT_SYNTHETIC": 125,
+        "BENIGN_NO_FLAG": 7,
+        "WATERMARK_SUPPRESSED": 6
+      }
+    }
+  ],
+  "summarize_seconds": 0.013
+}

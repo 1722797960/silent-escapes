@@ -27,10 +27,15 @@ image-level manifest remains cryptographically valid.
   no-edit reference audit, the corresponding rates are 0/199, 0/199, 0/199,
   and 1/199. A paired set of 200 clean negatives has one detector-level false
   positive, but all 200 receive the final verdict `NO_REGION_CLAIM`.
+- Honest centered crops expose the cost of legitimate geometric editing. At
+  10% and 20% removed per side, strict evidence-removal flags rise to 15/200
+  (7.5%) and 68/200 (34.0%), respectively. These flags mean that evidence bound
+  to the signed region was removed or suppressed; they do not establish
+  malicious intent.
 
 Precomputed machine-readable results are committed under `results/`, including
 the 10,800 row-level C1 attack and audit records, the 200 row-level LaMa audit
-records, and 1,000 benign-control/clean-negative audit rows. Large model weights,
+records, and 1,400 benign-control/clean-negative audit rows. Large model weights,
 generated image corpora, and intermediate images are intentionally not stored
 in Git. The benign release includes one compact contact sheet for visual audit.
 
@@ -67,10 +72,17 @@ It does not run neural inference and normally completes in under a second.
 
 Reference environment:
 
-- Python 3.10
+- Ubuntu 22.04.3 LTS; Linux 6.8.0-138; 18 CPU cores; 12 GB RAM
+- 3 x NVIDIA GeForce RTX 3080 Ti (12 GB each); one GPU used per command
+- Python 3.10.8
 - PyTorch 2.6.0 with CUDA 12.4
 - `c2pa-python==0.37.10`
 - WAM (`wam_mit.pth`), SAM ViT-B, and PixelSeal
+
+The honest centered-crop extension took 7 min 32.5 s to prepare and re-sign 400
+assets and 1 min 48.5 s for the region-aware audit on the shared reference host.
+These wall-clock measurements are reproducibility guidance, not a controlled
+performance benchmark.
 
 On the tested Linux/CUDA environment:
 

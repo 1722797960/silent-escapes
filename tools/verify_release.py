@@ -52,6 +52,7 @@ def main() -> int:
         "experiments/benign_controls_audit_v1.py",
         "experiments/summarize_benign_controls_v1.py",
         "experiments/test_benign_controls_common_v1.py",
+        "experiments/benign_centered_crops_v1.py",
         "manifests/manifest_ai_edited.json",
         "results/summary_500.json",
         "results/regional_v2/summary.json",
@@ -66,6 +67,10 @@ def main() -> int:
         "results/benign_controls_v1/audit.json",
         "results/benign_controls_v1/summary.json",
         "results/benign_controls_v1/contact_sheet_sample.png",
+        "results/benign_centered_crops_v1/audit_honest.csv",
+        "results/benign_centered_crops_v1/audit_honest.json",
+        "results/benign_centered_crops_v1/summary.json",
+        "results/benign_centered_crops_v1/environment.json",
     ]
     missing = [path for path in required if not (ROOT / path).is_file()]
     if missing:
@@ -188,6 +193,43 @@ def main() -> int:
             f"benign audit: expected 1,000 rows, observed {len(benign_rows)}"
         )
 
+    centered = load("results/benign_centered_crops_v1/summary.json")
+    if centered.get("version") != "benign_centered_crops_v1":
+        raise AssertionError("unexpected centered-crop control result version")
+    centered_by_crop = {
+        float(row["crop_frac_per_side"]): row for row in centered["conditions"]
+    }
+    expected_centered = {
+        0.1: (15, 14),
+        0.2: (68, 67),
+    }
+    for crop, (strict_flags, qualified_flags) in expected_centered.items():
+        row = centered_by_crop[crop]
+        if int(row["n"]) != 200:
+            raise AssertionError(f"centered {crop}: expected 200 assets")
+        for invariant in ("manifest_valid", "region_assertion_present", "payload_hash_ok"):
+            if int(row[invariant]) != 200:
+                raise AssertionError(f"centered {crop}: invariant {invariant} failed")
+        if int(row["strict_false_flag"]["count"]) != strict_flags:
+            raise AssertionError(f"centered {crop}: unexpected strict flag count")
+        if int(row["baseline_qualified_false_flag"]["count"]) != qualified_flags:
+            raise AssertionError(f"centered {crop}: unexpected qualified flag count")
+
+    with (ROOT / "results/benign_centered_crops_v1/audit_honest.csv").open(
+        encoding="utf-8", newline=""
+    ) as handle:
+        centered_rows = list(csv.DictReader(handle))
+    if len(centered_rows) != 400:
+        raise AssertionError(
+            f"centered-crop audit: expected 400 rows, observed {len(centered_rows)}"
+        )
+
+    environment = load("results/benign_centered_crops_v1/environment.json")
+    if environment["software"]["pytorch"] != "2.6.0+cu124":
+        raise AssertionError("unexpected reference PyTorch version")
+    close(float(environment["execution"]["prepare_and_honest_resign_seconds"]), 452.532)
+    close(float(environment["execution"]["region_aware_audit_seconds"]), 108.497)
+
     blocked_suffixes = {".pth", ".pt", ".ckpt", ".safetensors"}
     blocked = [
         str(path.relative_to(ROOT))
@@ -213,6 +255,7 @@ def main() -> int:
     print("  exact-mask inpainting:    199/200 escapes, 199/199 recovered")
     print("  benign strict flags:      1/200, 1/200, 1/200, 2/200")
     print("  clean detector/verdict:   1/200 FP, 200/200 NO_REGION_CLAIM")
+    print("  honest centered crops:    15/200 (10%), 68/200 (20%) flags")
     return 0
 
 

@@ -1,0 +1,36 @@
+{
+  "captured_at": "2026-09-30",
+  "host": {
+    "os": "Ubuntu 22.04.3 LTS",
+    "kernel": "6.8.0-138-generic",
+    "cpu_cores": 18,
+    "memory_gb": 12,
+    "gpu_count": 3,
+    "gpu_model": "NVIDIA GeForce RTX 3080 Ti",
+    "gpu_memory_mib_each": 12288,
+    "nvidia_driver": "550.120",
+    "nvcc_toolkit": "12.2"
+  },
+  "software": {
+    "python": "3.10.8",
+    "pytorch": "2.6.0+cu124",
+    "pytorch_cuda": "12.4",
+    "cudnn": "9.1.0",
+    "c2pa_python": "0.37.10",
+    "pillow": "12.3.0",
+    "numpy": "2.2.6"
+  },
+  "execution": {
+    "gpu_used": "cuda:0",
+    "multi_gpu": false,
+    "assets_per_condition": 200,
+    "conditions": [
+      "10% per-side centered crop",
+      "20% per-side centered crop"
+    ],
+    "prepare_and_honest_resign_seconds": 452.532,
+    "region_aware_audit_seconds": 108.497,
+    "summarize_seconds": 0.013
+  },
+  "timing_note": "Wall-clock times were measured with the Bash time builtin on the shared host; no other jobs were controlled."
+}

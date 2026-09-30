@@ -80,6 +80,20 @@ editing or independently calibrate deployment thresholds.
 
 ## Change history
 
+### 2026-09-30 - Add honest centered-crop cost controls
+
+**Change:** Re-signed the existing 10% and 20% per-side centered crop pixels
+with an honest AI-created-plus-edited manifest, recomputed retained signed-mask
+area, and released 400 per-asset audit rows plus environment metadata.
+
+**Reason:** Mild, geometry-aware controls favor the defense. These two stronger
+but legitimate edits quantify the audit's explicit cost when signed-region
+evidence is genuinely removed.
+
+**Impact:** Strict flags increase to 15/200 (7.5%) and 68/200 (34.0%). A flag is
+an evidence-removal signal rather than a malicious-intent classifier; attack,
+LaMa, and earlier benign-control results remain unchanged.
+
 ### 2026-09-30 - Publish full benign-control evaluation
 
 **Change:** Added the benign suite at 200 assets per condition, released 1,000

@@ -26,6 +26,7 @@ rates from the committed JSON files. It requires only the Python standard librar
 | Independent C2PA SDK verification | `experiments/independent_verify.py` | `results/defense_e2e/independent_verification.json` |
 | Exact-mask LaMa inpainting | `experiments/inpainting_lama_v1.py`, `inpainting_resign_v1.py`, `inpainting_audit_v1.py`, `summarize_inpainting_v1.py` | `results/inpainting_e2e_v1/audit.csv`, `summary.json` |
 | Benign edits and clean negatives | `experiments/benign_controls_generate_v1.py`, `benign_controls_resign_v1.py`, `benign_controls_audit_v1.py`, `summarize_benign_controls_v1.py` | `results/benign_controls_v1/audit.csv`, `audit.json`, `summary.json`, `contact_sheet_sample.png` |
+| Honest centered-crop controls | `experiments/benign_centered_crops_v1.py`, `defense_e2e_audit.py`, `recompute_region_retention.py` | `results/benign_centered_crops_v1/audit_honest.csv`, `audit_honest.json`, `summary.json`, `environment.json` |
 
 ## 3. Fixed experimental settings
 
@@ -41,7 +42,8 @@ rates from the committed JSON files. It requires only the Python standard librar
 - Resize filter: LANCZOS
 - LaMa condition: `big-lama`, exact signed SAM mask, zero dilation
 - Benign edits: PNG re-save, JPEG Q90, 90% resize round trip, and a 1% geometry-only safe crop
-- Benign sample size: 200 assets per edit plus 200 paired clean negatives
+- Benign geometric-cost controls: centered 10% and 20% per-side crops
+- Benign sample size: 200 assets per condition plus 200 paired clean negatives
 
 The effective configuration written by each run is retained beside the result
 summary. Historical absolute machine paths have been replaced with repository-
@@ -187,3 +189,35 @@ false-positive rate is reported separately from the final audit verdict. The
 public result directory contains all 1,000 per-asset rows, the threshold grid,
 and a compact sample contact sheet, but excludes signed images and machine-local
 run metadata.
+
+## 10. Honest centered-crop controls
+
+This extension reuses the same 200 centered crop-and-resize pixel outputs from
+the attack pipeline, strips the old misleading manifest, and re-signs each image
+with the honest AI-created-plus-edited template. Decoded RGB hashes are checked
+before and after C2PA re-signing, so the comparison changes provenance semantics
+without changing the evaluated pixels.
+
+```bash
+python experiments/benign_centered_crops_v1.py prepare \
+  --c2pa-python /path/to/c2pa/python
+python experiments/defense_e2e_audit.py \
+  --e2e-dir results/benign_centered_crops_v1 \
+  --output-json results/benign_centered_crops_v1/audit.json \
+  --crop-fracs 0.10,0.20 \
+  --device cuda:0
+python experiments/recompute_region_retention.py \
+  --e2e-dir results/benign_centered_crops_v1 \
+  --input-json results/benign_centered_crops_v1/audit.json \
+  --output-json results/benign_centered_crops_v1/audit_retention.json
+python experiments/benign_centered_crops_v1.py summarize
+```
+
+The retained-area recomputation is required: it measures retained signed-mask
+pixels divided by original signed-mask pixels. The older occupancy-style field
+is not the regional-retention metric used by the paper. At the fixed reference
+thresholds, the released result contains 15/200 strict flags for 10% per-side
+cropping and 68/200 for 20%; the corresponding baseline-qualified counts are
+14/199 and 67/199. A flag records removed or suppressed signed-region evidence,
+not a judgment that an honest edit was malicious. `environment.json` records the
+reference hardware, software versions, and measured wall-clock times.
