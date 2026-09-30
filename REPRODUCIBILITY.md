@@ -12,6 +12,12 @@ python tools/verify_release.py
 This validates the curated release structure and recomputes the paper's headline
 rates from the committed JSON files. It requires only the Python standard library.
 
+All reported experiments ran on an instance allocated three NVIDIA GeForce RTX
+3080 Ti GPUs, 18 vCPUs, and 12 GB RAM from a shared eight-GPU host. Individual
+experiment commands used one assigned GPU. The exact software stack and the
+directly measured extension timings are recorded in
+`results/benign_centered_crops_v1/environment.json`.
+
 ## 2. Result map
 
 | Paper component | Experiment entry point | Committed artifact |

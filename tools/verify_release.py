@@ -227,6 +227,10 @@ def main() -> int:
     environment = load("results/benign_centered_crops_v1/environment.json")
     if environment["software"]["pytorch"] != "2.6.0+cu124":
         raise AssertionError("unexpected reference PyTorch version")
+    if int(environment["host"]["gpu_host_total"]) != 8:
+        raise AssertionError("unexpected shared-host GPU count")
+    if int(environment["host"]["gpu_allocated"]) != 3:
+        raise AssertionError("unexpected instance GPU allocation")
     close(float(environment["execution"]["prepare_and_honest_resign_seconds"]), 452.532)
     close(float(environment["execution"]["region_aware_audit_seconds"]), 108.497)
 

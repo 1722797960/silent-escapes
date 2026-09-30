@@ -80,6 +80,18 @@ editing or independently calibrate deployment thresholds.
 
 ## Change history
 
+### 2026-09-30 - Clarify instance allocation
+
+**Change:** Distinguished the shared host's eight-GPU capacity from the
+experiment instance's allocation of three GPUs, 18 vCPUs, and 12 GB RAM; each
+experiment command used one assigned GPU.
+
+**Reason:** Prevent the environment table from conflating physical-host capacity,
+instance-visible resources, and per-command GPU use.
+
+**Impact:** Documentation and environment metadata only; experimental outputs
+and reported metrics are unchanged.
+
 ### 2026-09-30 - Add honest centered-crop cost controls
 
 **Change:** Re-signed the existing 10% and 20% per-side centered crop pixels

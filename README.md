@@ -73,7 +73,8 @@ It does not run neural inference and normally completes in under a second.
 Reference environment:
 
 - Ubuntu 22.04.3 LTS; Linux 6.8.0-138; 18 CPU cores; 12 GB RAM
-- 3 x NVIDIA GeForce RTX 3080 Ti (12 GB each); one GPU used per command
+- Allocation from a shared 8-GPU host: 3 x NVIDIA GeForce RTX 3080 Ti
+  (12 GB each), 18 vCPUs, and 12 GB RAM; one assigned GPU used per command
 - Python 3.10.8
 - PyTorch 2.6.0 with CUDA 12.4
 - `c2pa-python==0.37.10`
