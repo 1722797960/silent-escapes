@@ -14,6 +14,12 @@ performance.
 - `pilot_v1/report.md`: short interpretation note.
 - `sdk_spike_stage3/`: summary and environment for the C2PA action-schema
   round-trip test.
+- `geometry_lie_v1/rows.jsonl`: 84 structured cells from the 14-case declared-
+  geometry stress test, including six explicit not-applicable cells.
+- `geometry_lie_v1/summary.json`: geometry-gate, policy-transition, cache, and
+  adaptive false-box aggregates.
+- `geometry_lie_v1/environment.json` and `report.md`: runtime provenance and a
+  concise interpretation of the stress test.
 
 ## Intentionally omitted
 

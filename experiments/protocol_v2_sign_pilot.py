@@ -86,7 +86,14 @@ def child_actions(request: dict[str, Any], *, with_parent: bool) -> list[dict[st
             "parameters": {"ingredientIds": [PARENT_LABEL]},
         })
     transform = request.get("crop_transform")
-    if transform is not None:
+    if request.get("crop_action_without_transform"):
+        parameters = {"ingredientIds": [PARENT_LABEL]} if with_parent else {}
+        actions.append({
+            "action": "c2pa.cropped",
+            "softwareAgent": "ProtocolV2Editor/1.0",
+            "parameters": parameters,
+        })
+    elif transform is not None:
         parameters: dict[str, Any] = {TRANSFORM_KEY: transform}
         if with_parent:
             parameters["ingredientIds"] = [PARENT_LABEL]

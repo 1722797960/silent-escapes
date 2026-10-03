@@ -1,0 +1,43 @@
+{
+  "experiment": "protocol-v2 declared-geometry stress test",
+  "version": "geometry_lie_v1",
+  "selection_policy": "all 14 protocol-v2 boundary-pilot cases with a real crop transform; not a statistical sample",
+  "case_ids": [
+    "silent-other-left-0000",
+    "silent-other-random-0000",
+    "lineage-ancestor-0000",
+    "lineage-cut-chain-0000",
+    "lineage-propagated-0000",
+    "high-confidence-0001",
+    "full-region-removal-0140",
+    "small-mask-0046",
+    "large-mask-0086",
+    "paired-center-0005",
+    "paired-mask-aware-0005",
+    "signal-suppressed-0000",
+    "tampered-region-0000",
+    "benign-safe-crop-0149"
+  ],
+  "conditions": [
+    "correct",
+    "missing",
+    "out-of-bounds",
+    "shifted",
+    "scaled",
+    "adaptive-high-logit"
+  ],
+  "shift_fraction_of_source": 0.1,
+  "scale_factor": 0.8,
+  "adaptive_grid_points_per_axis": 17,
+  "retention_floor": 0.05,
+  "suppression_threshold": 0.5,
+  "required_matches": 24,
+  "expected_case_count": 14,
+  "expected_row_count": 84,
+  "expected_signed_manifest_count": 78,
+  "full_frame_not_applicable_conditions": [
+    "shifted",
+    "adaptive-high-logit"
+  ],
+  "gpu_inference_allowed": false
+}

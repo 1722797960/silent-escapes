@@ -1,0 +1,21 @@
+{
+  "base_pilot_environment": {
+    "checkpoint_sha256": "90ef232384e023bd63245eb0c131abd69d2afc7b8f17a71ccedceb542bf009e2",
+    "device_requested": "cuda:0",
+    "num_shards": 1,
+    "numpy": "2.2.6",
+    "params_sha256": "d133a504d126b56b3e980add9fc014d718e3635a0f5740d8d6dc3190007fb476",
+    "pillow": "12.3.0",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "python": "3.10.14 (main, May  6 2024, 19:42:50) [GCC 11.2.0]",
+    "shard_id": 0,
+    "torch": "2.5.1+cu124"
+  },
+  "gpu_inference_allowed": false,
+  "gpu_inference_calls": 0,
+  "numpy": "2.2.6",
+  "pillow": "12.3.0",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "python": "3.10.14 (main, May  6 2024, 19:42:50) [GCC 11.2.0]",
+  "torch": "2.5.1+cu124"
+}

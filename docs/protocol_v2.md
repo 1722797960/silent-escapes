@@ -130,9 +130,17 @@ inputs are unchanged.
   continuity rule unless deployment policy requires trusted capture
   credentials or external soft-binding lookup.
 - A malicious editor can lie about crop geometry. The planned test includes a
-  defense-adaptive lie that maps the signed region to a high-logit location;
-  this is reported as an upper-bound attack, not as the same information model
-  as mask-aware cropping.
+  defense-adaptive lie that maps the signed region to a high-logit location.
+  The declared-geometry stress test uses all 14 boundary-pilot cases that have
+  a real crop transform and evaluates correct, missing, out-of-bounds, shifted,
+  scaled, and adaptive-high-logit declarations. Malformed geometry is rejected
+  before evidence classification; syntactically valid but false geometry is
+  measured because a verifier without pre-edit pixels cannot establish its
+  truth. Three full-frame controls cannot be shifted at equal size, so their
+  shifted and adaptive-high-logit cells are explicitly reported as not
+  applicable rather than synthesized with a confounded resize. The adaptive
+  condition is reported as an upper-bound attack, not as the same information
+  model as mask-aware cropping.
 - The regional audit currently requires a detector with per-pixel localization
   output and is validated only with WAM.
 - A missing signed reference is a protocol boundary. It is not silently

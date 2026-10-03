@@ -1,0 +1,69 @@
+{
+  "adaptive_logit_comparisons": 10,
+  "adaptive_logit_gain_max": 0.11131301281498929,
+  "adaptive_logit_gain_mean": 0.017010821452183737,
+  "adaptive_logit_gain_min": -0.16037544268574977,
+  "adaptive_new_silent_other": 0,
+  "adaptive_policy_changes": 4,
+  "case_count": 14,
+  "correct_baseline_comparisons": 14,
+  "correct_baseline_matches": 14,
+  "geometry_gates": {
+    "accepted": 46,
+    "not-applicable": 6,
+    "not-reached": 6,
+    "reject-invalid": 13,
+    "reject-missing": 13
+  },
+  "geometry_statuses": {
+    "invalid": 14,
+    "missing": 14,
+    "not-applicable": 6,
+    "valid": 50
+  },
+  "gpu_inference_calls": 0,
+  "malformed_geometry_challenges": 26,
+  "malformed_geometry_rejected": 26,
+  "not_applicable_count": 6,
+  "pixel_cache_hits": 84,
+  "policy_verdicts_by_condition": {
+    "adaptive-high-logit": {
+      "discontinuity": 1,
+      "integrity-clash": 1,
+      "not-applicable": 3,
+      "review-signal-suppression": 7,
+      "silent-other": 2
+    },
+    "correct": {
+      "discontinuity": 1,
+      "integrity-clash": 3,
+      "review-evidence-removal": 4,
+      "review-signal-suppression": 3,
+      "silent-other": 3
+    },
+    "missing": {
+      "discontinuity": 1,
+      "geometry-rejected": 13
+    },
+    "out-of-bounds": {
+      "discontinuity": 1,
+      "geometry-rejected": 13
+    },
+    "scaled": {
+      "discontinuity": 1,
+      "integrity-clash": 3,
+      "review-evidence-removal": 5,
+      "review-signal-suppression": 4,
+      "silent-other": 1
+    },
+    "shifted": {
+      "discontinuity": 1,
+      "integrity-clash": 1,
+      "not-applicable": 3,
+      "review-evidence-removal": 2,
+      "review-signal-suppression": 7
+    }
+  },
+  "row_count": 84,
+  "signed_manifest_count": 78
+}
