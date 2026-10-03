@@ -1,0 +1,189 @@
+{
+  "experiment": "protocol-v2 boundary pilot",
+  "version": "pilot_v1",
+  "selection_policy": "deliberate boundary and control cases; not a statistical sample",
+  "thresholds": {
+    "wam_payload_bits": 32,
+    "required_matches": 24,
+    "region_retention_floor": 0.05,
+    "suppression_threshold": 0.5
+  },
+  "cases": [
+    {
+      "case_id": "source-failure-identity-0117",
+      "category": "pre_edit_detector_failure",
+      "source": "benign",
+      "selector": {"condition": "identity_resave", "image": "0117_a_laptop_screen_cat-Artifacts_chal-Basic.png"},
+      "manifest_semantics": "ai",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.5312
+    },
+    {
+      "case_id": "clean-negative-boundary-0151",
+      "category": "clean_negative_exact_threshold",
+      "source": "benign",
+      "selector": {"condition": "clean_negative", "image": "0151_light_and_happiness_throughout_and_finding_its_way_cat-Arts_chal-Style & Format.png"},
+      "manifest_semantics": "ai",
+      "topology": "no-region-claim",
+      "expected_old_bit_accuracy": 0.75
+    },
+    {
+      "case_id": "inpainting-boundary-0151",
+      "category": "inpainting_exact_threshold",
+      "source": "inpainting",
+      "selector": {"image": "0151_light_and_happiness_throughout_and_finding_its_way_cat-Arts_chal-Style & Format.png"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.75
+    },
+    {
+      "case_id": "silent-other-left-0000",
+      "category": "silent_other",
+      "source": "c1",
+      "selector": {"attack_id": "0000|left|0.100"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.65625
+    },
+    {
+      "case_id": "silent-other-random-0000",
+      "category": "silent_other",
+      "source": "c1",
+      "selector": {"attack_id": "0000|random|0.300"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.53125
+    },
+    {
+      "case_id": "lineage-ancestor-0000",
+      "category": "ancestor_recovery",
+      "source": "lineage",
+      "selector": {"condition": "ancestor-only", "image": "0000_happiness_cat-Abstract_chal-Basic.png"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.5312
+    },
+    {
+      "case_id": "lineage-cut-chain-0000",
+      "category": "lineage_discontinuity",
+      "source": "lineage",
+      "selector": {"condition": "cut-chain", "image": "0000_happiness_cat-Abstract_chal-Basic.png"},
+      "manifest_semantics": "none",
+      "topology": "cut-chain",
+      "expected_old_bit_accuracy": 0.5312
+    },
+    {
+      "case_id": "lineage-propagated-0000",
+      "category": "current_reference",
+      "source": "lineage",
+      "selector": {"condition": "propagated", "image": "0000_happiness_cat-Abstract_chal-Basic.png"},
+      "manifest_semantics": "none",
+      "topology": "current-reference",
+      "expected_old_bit_accuracy": 0.5312
+    },
+    {
+      "case_id": "high-confidence-0001",
+      "category": "high_confidence_detection",
+      "source": "c1",
+      "selector": {"attack_id": "0001|center|0.000"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 1.0
+    },
+    {
+      "case_id": "full-region-removal-0140",
+      "category": "region_removed",
+      "source": "c1",
+      "selector": {"attack_id": "0140|right|0.400"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.25
+    },
+    {
+      "case_id": "small-mask-0046",
+      "category": "mask_coverage_minimum",
+      "source": "c1",
+      "selector": {"attack_id": "0046|center|0.000"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference"
+    },
+    {
+      "case_id": "large-mask-0086",
+      "category": "mask_coverage_maximum",
+      "source": "c1",
+      "selector": {"attack_id": "0086|center|0.000"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference"
+    },
+    {
+      "case_id": "paired-center-0005",
+      "category": "center_vs_mask_aware",
+      "source": "c1",
+      "selector": {"attack_id": "0005|center|0.400"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 1.0
+    },
+    {
+      "case_id": "paired-mask-aware-0005",
+      "category": "center_vs_mask_aware",
+      "source": "c1",
+      "selector": {"attack_id": "0005|top|0.400", "derived_policy": "mask_aware"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.71875
+    },
+    {
+      "case_id": "signal-suppressed-0000",
+      "category": "signal_suppressed",
+      "source": "c1",
+      "selector": {"attack_id": "0000|center|0.200"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.65625
+    },
+    {
+      "case_id": "tampered-region-0000",
+      "category": "region_removed",
+      "source": "c1",
+      "selector": {"attack_id": "0000|right|0.300"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.5625
+    },
+    {
+      "case_id": "inpainting-typical-0000",
+      "category": "inpainting_signal_removal",
+      "source": "inpainting",
+      "selector": {"image": "0000_happiness_cat-Abstract_chal-Basic.png"},
+      "manifest_semantics": "none",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.5625
+    },
+    {
+      "case_id": "benign-identity-0001",
+      "category": "benign_control",
+      "source": "benign",
+      "selector": {"condition": "identity_resave", "image": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png"},
+      "manifest_semantics": "ai",
+      "topology": "ancestor-reference"
+    },
+    {
+      "case_id": "clean-negative-normal-0001",
+      "category": "clean_negative",
+      "source": "benign",
+      "selector": {"condition": "clean_negative", "image": "0001_A_city_in_4-dimensional_space-time_cat-Abstract_chal-Imagination.png"},
+      "manifest_semantics": "ai",
+      "topology": "no-region-claim"
+    },
+    {
+      "case_id": "benign-safe-crop-0149",
+      "category": "benign_false_flag_boundary",
+      "source": "benign",
+      "selector": {"condition": "safe_crop_1pct", "image": "0149_A_raccoon_wearing_formal_clothes_wearing_a_top_hat_cat-Arts_chal-Complex.png"},
+      "manifest_semantics": "ai",
+      "topology": "ancestor-reference",
+      "expected_old_bit_accuracy": 0.6875
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "python": "3.10.8 (main, Nov 24 2022, 14:13:03) [GCC 11.2.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "c2pa_python": "0.37.10",
+  "pillow": "12.3.0",
+  "cryptography": "50.0.1",
+  "cert_sha256": "d18b9c95d6eca3de4d99b09a91772a485abfcf0dbca6f3304ff0f32d1173e237",
+  "git_metadata_available": false,
+  "gpu_used": false
+}

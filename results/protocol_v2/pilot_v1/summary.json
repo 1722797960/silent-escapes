@@ -1,0 +1,33 @@
+{
+  "case_count": 20,
+  "evidence_states": {
+    "message-detected": 5,
+    "no-reference": 3,
+    "region-removed": 4,
+    "signal-suppressed": 5,
+    "silent-other": 3
+  },
+  "lineage_states": {
+    "ancestor": 16,
+    "current": 1,
+    "discontinuity": 1,
+    "fresh-root": 2
+  },
+  "manifest_valid": 20,
+  "old_bit_count_matches": 16,
+  "pixel_cache_hits": 3,
+  "policy_verdicts": {
+    "consistent-synthetic": 1,
+    "discontinuity": 1,
+    "integrity-clash": 4,
+    "no-reference": 2,
+    "review-evidence-removal": 4,
+    "review-signal-suppression": 5,
+    "silent-other": 3
+  },
+  "reference_states": {
+    "no-reference": 3,
+    "signed-ancestor": 16,
+    "signed-current": 1
+  }
+}

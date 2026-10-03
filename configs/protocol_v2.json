@@ -1,0 +1,78 @@
+{
+  "protocol_version": "2",
+  "region_assertion": {
+    "label": "com.example.region_assertion",
+    "schema_version": "2",
+    "reference_encoding": "ascii-binary",
+    "reference_length": 32,
+    "required_matches": 24,
+    "payload_hash": "sha256(reference_bits_ascii)",
+    "payload_hash_role": "consistency_digest_not_hiding_commitment",
+    "mask_grid": [64, 64]
+  },
+  "crop_transform": {
+    "action": "c2pa.cropped",
+    "parameter_key": "com.example.crop_transform",
+    "schema_version": "1",
+    "coordinate_system": "source-pixel-half-open",
+    "numeric_serialization": "csv-string",
+    "resize_filter": "LANCZOS"
+  },
+  "thresholds": {
+    "wam": {
+      "payload_bits": 32,
+      "legacy_fraction": 0.75,
+      "required_matches": 24
+    },
+    "pixelseal": {
+      "payload_bits": 256,
+      "legacy_fraction": 0.75,
+      "required_matches": 192
+    },
+    "report_matched_fpr": true
+  },
+  "lineage_states": [
+    "current",
+    "ancestor",
+    "discontinuity",
+    "fresh-root",
+    "no-manifest"
+  ],
+  "reference_states": [
+    "signed-current",
+    "signed-ancestor",
+    "oracle-evaluation-only",
+    "no-reference"
+  ],
+  "evidence_states": [
+    "message-detected",
+    "region-removed",
+    "signal-suppressed",
+    "silent-other",
+    "no-reference"
+  ],
+  "semantics_states": [
+    "ai-disclosed-in-chain",
+    "no-ai-disclosure-in-chain",
+    "unknown"
+  ],
+  "policy_verdicts": [
+    "consistent-synthetic",
+    "integrity-clash",
+    "review-evidence-removal",
+    "review-signal-suppression",
+    "discontinuity",
+    "no-reference",
+    "silent-other"
+  ],
+  "cache": {
+    "pixel_key": "sha256(width || height || decoded_rgb_bytes)",
+    "logit_dtype": "float16",
+    "decoded_bits_must_match_exactly": true,
+    "manifest_cache_separate": true
+  },
+  "experiment_oracles_forbidden_in_verifier": [
+    "embed_meta.json",
+    "attack_manifest.jsonl"
+  ]
+}

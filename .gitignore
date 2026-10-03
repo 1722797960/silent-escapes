@@ -44,6 +44,17 @@ results/**/logs/
 *.log.tmp
 tmp/
 
+# Protocol-v2 private/generated artifacts. Public summaries remain tracked.
+results/protocol_v2/**/parents/
+results/protocol_v2/**/pixels/
+results/protocol_v2/**/signed/
+results/protocol_v2/**/requests/
+results/protocol_v2/**/pixel_cache/
+results/protocol_v2/**/manifest_cache/
+results/protocol_v2/**/selected_samples.json
+results/protocol_v2/**/audit_rows.part-*.jsonl
+results/protocol_v2/**/*.png
+
 # Local environment overrides
 .env
 .env.*
