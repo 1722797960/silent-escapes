@@ -1,0 +1,69 @@
+{
+  "case_count": 20,
+  "condition_count": 5,
+  "evidence_invariant_cases": 20,
+  "evidence_states_by_condition": {
+    "cut-chain-fresh-root": {
+      "no-reference": 20
+    },
+    "honest-ancestor-ai-child-omits": {
+      "message-detected": 6,
+      "region-removed": 5,
+      "signal-suppressed": 6,
+      "silent-other": 3
+    },
+    "honest-current-ai": {
+      "message-detected": 6,
+      "region-removed": 5,
+      "signal-suppressed": 6,
+      "silent-other": 3
+    },
+    "issuer-claims-digital-capture": {
+      "message-detected": 6,
+      "region-removed": 5,
+      "signal-suppressed": 6,
+      "silent-other": 3
+    },
+    "issuer-claims-digital-creation": {
+      "message-detected": 6,
+      "region-removed": 5,
+      "signal-suppressed": 6,
+      "silent-other": 3
+    }
+  },
+  "expected_policy_matches": 100,
+  "expected_state_matches": 100,
+  "gpu_inference_calls": 0,
+  "manifest_valid": 100,
+  "pixel_cache_hits": 100,
+  "policy_verdicts_by_condition": {
+    "cut-chain-fresh-root": {
+      "discontinuity": 20
+    },
+    "honest-ancestor-ai-child-omits": {
+      "consistent-synthetic": 6,
+      "review-evidence-removal": 5,
+      "review-signal-suppression": 6,
+      "silent-other": 3
+    },
+    "honest-current-ai": {
+      "consistent-synthetic": 6,
+      "review-evidence-removal": 5,
+      "review-signal-suppression": 6,
+      "silent-other": 3
+    },
+    "issuer-claims-digital-capture": {
+      "integrity-clash": 6,
+      "review-evidence-removal": 5,
+      "review-signal-suppression": 6,
+      "silent-other": 3
+    },
+    "issuer-claims-digital-creation": {
+      "integrity-clash": 6,
+      "review-evidence-removal": 5,
+      "review-signal-suppression": 6,
+      "silent-other": 3
+    }
+  },
+  "row_count": 100
+}

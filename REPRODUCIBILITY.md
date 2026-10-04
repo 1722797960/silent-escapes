@@ -34,6 +34,7 @@ directly measured extension timings are recorded in
 | Benign edits and clean negatives | `experiments/benign_controls_generate_v1.py`, `benign_controls_resign_v1.py`, `benign_controls_audit_v1.py`, `summarize_benign_controls_v1.py` | `results/benign_controls_v1/audit.csv`, `audit.json`, `summary.json`, `contact_sheet_sample.png` |
 | Honest centered-crop controls | `experiments/benign_centered_crops_v1.py`, `defense_e2e_audit.py`, `recompute_region_retention.py` | `results/benign_centered_crops_v1/audit_honest.csv`, `audit_honest.json`, `summary.json`, `environment.json` |
 | C2PA lineage continuity | `experiments/lineage_ablation_v1.py`, `resign_with_lineage_v1.py`, `read_region_lineage_v1.py` | `results/lineage_ablation_v1/rows.jsonl`, `summary.json`, `summary.md` |
+| Protocol-v2 manifest semantics | `protocol_v2_cache_{inventory,warm,finalize}_v1.py`, `protocol_v2_manifest_matrix_{v1,full_v1}.py` | `results/protocol_v2/manifest_matrix_pilot_v2/`, `manifest_matrix_full_v2/`, `full_pixel_cache_v1/warm_full_v1/` |
 
 ## 3. Fixed experimental settings
 
@@ -53,6 +54,9 @@ directly measured extension timings are recorded in
 - Benign sample size: 200 assets per condition plus 200 paired clean negatives
 - Lineage ablation: crop `c = 0.40`; propagated, ancestor-only, and cut-chain
   manifest topologies; 200 assets per condition
+- Protocol-v2 matrix: eight pixel conditions x 200 assets x five manifest
+  conditions; 24/32 integer message-match boundary; detector inference forbidden
+  during manifest and policy evaluation
 
 The effective configuration written by each run is retained beside the result
 summary. Historical absolute machine paths have been replaced with repository-
@@ -252,3 +256,83 @@ python -m unittest discover -s experiments \
 contains 600 per-condition rows and summaries, but excludes the generated
 signed PNGs. `PROVENANCE_DISCONTINUITY` is a strict consumer-policy result and
 is not added to the paper's regional-evidence flag rate.
+
+## 12. Protocol-v2 exact cache and manifest-semantics matrix
+
+Run the unit gates first. The C2PA environment used for signing must provide
+`c2pa-python==0.37.10`, NumPy, Pillow, and PyTorch (PyTorch is used only to
+reproduce the saved-logit interpolation during audit):
+
+```bash
+/path/to/c2pa/python -m unittest discover -s experiments \
+  -p 'test_protocol_v2_*.py' -v
+```
+
+Inventory the eight frozen 200-image datasets, then populate a shared cache in
+three deterministic shards. Set `CUDA_VISIBLE_DEVICES` to a different assigned
+GPU for each shard; every command uses `--device cuda` inside its remapped view.
+
+```bash
+python experiments/protocol_v2_cache_inventory_v1.py \
+  --e2e-root /path/to/experiment/root \
+  --pilot-dir results/protocol_v2/pilot_v1
+
+CUDA_VISIBLE_DEVICES=0 python experiments/protocol_v2_cache_warm_v1.py \
+  --e2e-root /path/to/experiment/root \
+  --base-cache results/protocol_v2/pilot_v1/pixel_cache \
+  --cache-dir results/protocol_v2/full_pixel_cache_v1/cache \
+  --output-dir results/protocol_v2/full_pixel_cache_v1/warm_full_v1 \
+  --wam-repo /path/to/watermark-anything --device cuda \
+  --num-shards 3 --shard-id 0 --resume
+# Repeat with GPU/shard pairs 1/1 and 2/2.
+
+python experiments/protocol_v2_cache_finalize_v1.py \
+  --e2e-root /path/to/experiment/root \
+  --cache-dir results/protocol_v2/full_pixel_cache_v1/cache \
+  --warm-output-dir results/protocol_v2/full_pixel_cache_v1/warm_full_v1
+```
+
+Validate the five semantics on the frozen 20-case boundary selection before the
+full run:
+
+```bash
+/path/to/c2pa/python experiments/protocol_v2_manifest_matrix_v1.py \
+  --config configs/protocol_v2_manifest_matrix.json \
+  --pilot-dir results/protocol_v2/pilot_v1 \
+  --e2e-root /path/to/experiment/root \
+  --output-dir results/protocol_v2/manifest_matrix_pilot_v2 \
+  --c2pa-python /path/to/c2pa/python --resume
+```
+
+For the full matrix, prepare and independently validate the 600 reusable parent
+manifests first. Then run the matrix phase in three deterministic CPU shards and
+finish with the global acceptance summary:
+
+```bash
+/path/to/c2pa/python experiments/protocol_v2_manifest_matrix_full_v1.py \
+  --config configs/protocol_v2_manifest_matrix.json \
+  --e2e-root /path/to/experiment/root \
+  --pixel-cache results/protocol_v2/full_pixel_cache_v1/cache \
+  --output-dir results/protocol_v2/manifest_matrix_full_v2 \
+  --phase parents --resume
+
+/path/to/c2pa/python experiments/protocol_v2_manifest_matrix_full_v1.py \
+  --config configs/protocol_v2_manifest_matrix.json \
+  --e2e-root /path/to/experiment/root \
+  --pixel-cache results/protocol_v2/full_pixel_cache_v1/cache \
+  --output-dir results/protocol_v2/manifest_matrix_full_v2 \
+  --phase matrix --num-shards 3 --shard-id 0 --resume
+# Repeat with shard IDs 1 and 2.
+
+/path/to/c2pa/python experiments/protocol_v2_manifest_matrix_full_v1.py \
+  --config configs/protocol_v2_manifest_matrix.json \
+  --e2e-root /path/to/experiment/root \
+  --pixel-cache results/protocol_v2/full_pixel_cache_v1/cache \
+  --output-dir results/protocol_v2/manifest_matrix_full_v2 \
+  --phase summarize --resume
+```
+
+The acceptance gate requires 8,000 valid manifests, 8,000 exact cache hits,
+8,000 expected lineage/semantics states, 8,000 expected policy decisions, zero
+GPU calls during the matrix, and evidence invariance across the four retained-
+chain conditions for all 1,600 cases.

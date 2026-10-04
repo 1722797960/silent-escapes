@@ -1,0 +1,28 @@
+{
+  "acceptance": {
+    "all_entries_readable": true,
+    "complete_coverage": true,
+    "model_and_checkpoint_match": true
+  },
+  "checkpoint_sha256": "90ef232384e023bd63245eb0c131abd69d2afc7b8f17a71ccedceb542bf009e2",
+  "dataset_counts": {
+    "centered_crop_10pct_per_side": 200,
+    "centered_crop_20pct_per_side": 200,
+    "identity_resave": 200,
+    "jpeg_q90": 200,
+    "lama_inpainting": 200,
+    "mask_aware_crop_rho_0.4": 200,
+    "resize_90": 200,
+    "safe_crop_1pct": 200
+  },
+  "expected_records": 1600,
+  "model_sha256": "d133a504d126b56b3e980add9fc014d718e3635a0f5740d8d6dc3190007fb476",
+  "preprocessing_version": "wam-default-transform-v1",
+  "schema": "protocol-v2-cache-warm-final-summary-1",
+  "status_counts": {
+    "copied-base-cache": 8,
+    "full-cache-hit": 2,
+    "gpu-inference": 1590
+  },
+  "verified_records": 1600
+}

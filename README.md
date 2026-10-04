@@ -37,13 +37,21 @@ image-level manifest remains cryptographically valid.
   assets. If an edited manifest omits both the assertion and parent link, all
   200 cases receive `PROVENANCE_DISCONTINUITY`; this policy result is reported
   separately from the 91.2% regional-evidence flag rate.
+- A full protocol-v2 semantics matrix evaluates 1,600 exact pixel conditions
+  under five independently signed manifest conditions (8,000 rows). All 8,000
+  manifests validate and all 1,600 cases preserve the same regional-evidence
+  state across the four parent-preserving disclosure conditions. The evidence
+  split is 1,167 message detections, 159 removed regions, 230 suppressed
+  signals, and 44 `silent-other` cases; severing lineage yields 1,600
+  `discontinuity` results with no signed reference.
 
 Precomputed machine-readable results are committed under `results/`, including
 the 10,800 row-level C1 attack and audit records, the 200 row-level LaMa audit
-records, and 1,400 benign-control/clean-negative audit rows. Large model weights,
-generated image corpora, intermediate images, and the lineage run's signed PNGs
-are intentionally not stored in Git. The benign release includes one compact
-contact sheet for visual audit.
+records, 1,400 benign-control/clean-negative audit rows, the 8,000-row
+protocol-v2 semantics matrix, and provenance records for its 1,600-entry exact
+pixel cache. Large model weights, detector logits, generated image corpora,
+intermediate images, and signed PNGs are intentionally not stored in Git. The
+benign release includes one compact contact sheet for visual audit.
 
 ## Repository layout
 

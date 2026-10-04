@@ -58,6 +58,15 @@ def main() -> int:
         "experiments/resign_with_lineage_v1.py",
         "experiments/read_region_lineage_v1.py",
         "experiments/test_lineage_common_v1.py",
+        "experiments/protocol_v2_cache_finalize_v1.py",
+        "experiments/protocol_v2_cache_inventory_v1.py",
+        "experiments/protocol_v2_cache_warm_v1.py",
+        "experiments/protocol_v2_manifest_matrix_full_v1.py",
+        "experiments/protocol_v2_manifest_matrix_v1.py",
+        "experiments/test_protocol_v2_cache_warm.py",
+        "experiments/test_protocol_v2_manifest_matrix.py",
+        "experiments/test_protocol_v2_manifest_matrix_full.py",
+        "configs/protocol_v2_manifest_matrix.json",
         "manifests/manifest_ai_edited.json",
         "results/summary_500.json",
         "results/regional_v2/summary.json",
@@ -79,6 +88,14 @@ def main() -> int:
         "results/lineage_ablation_v1/rows.jsonl",
         "results/lineage_ablation_v1/summary.json",
         "results/lineage_ablation_v1/summary.md",
+        "results/protocol_v2/manifest_matrix_pilot_v2/rows.jsonl",
+        "results/protocol_v2/manifest_matrix_pilot_v2/summary.json",
+        "results/protocol_v2/manifest_matrix_full_v2/rows.jsonl",
+        "results/protocol_v2/manifest_matrix_full_v2/summary.json",
+        "results/protocol_v2/manifest_matrix_full_v2/selected_cases.json",
+        "results/protocol_v2/manifest_matrix_full_v2/parent_index.json",
+        "results/protocol_v2/full_pixel_cache_v1/warm_full_v1/rows.jsonl",
+        "results/protocol_v2/full_pixel_cache_v1/warm_full_v1/summary.json",
     ]
     missing = [path for path in required if not (ROOT / path).is_file()]
     if missing:
@@ -106,6 +123,9 @@ def main() -> int:
         "results/c1_v1/pilot/audit_rows.jsonl": 360,
         "results/c1_v1/full/attack_manifest.jsonl": 10_800,
         "results/c1_v1/full/audit_rows.jsonl": 10_800,
+        "results/protocol_v2/manifest_matrix_pilot_v2/rows.jsonl": 100,
+        "results/protocol_v2/manifest_matrix_full_v2/rows.jsonl": 8_000,
+        "results/protocol_v2/full_pixel_cache_v1/warm_full_v1/rows.jsonl": 1_600,
     }
     for relative, expected in expected_jsonl_rows.items():
         with (ROOT / relative).open(encoding="utf-8") as handle:
@@ -269,6 +289,64 @@ def main() -> int:
             f"lineage ablation: expected 600 rows, observed {len(lineage_rows)}"
         )
 
+    protocol_pilot = load(
+        "results/protocol_v2/manifest_matrix_pilot_v2/summary.json"
+    )
+    if int(protocol_pilot["row_count"]) != 100:
+        raise AssertionError("protocol-v2 semantics pilot must contain 100 rows")
+    for field in (
+        "manifest_valid", "pixel_cache_hits", "expected_state_matches",
+        "expected_policy_matches",
+    ):
+        if int(protocol_pilot[field]) != 100:
+            raise AssertionError(f"protocol-v2 pilot acceptance failed: {field}")
+    if int(protocol_pilot["evidence_invariant_cases"]) != 20:
+        raise AssertionError("protocol-v2 pilot evidence must be invariant in 20 cases")
+
+    protocol_full = load(
+        "results/protocol_v2/manifest_matrix_full_v2/summary.json"
+    )
+    if int(protocol_full["case_count"]) != 1_600 or int(protocol_full["row_count"]) != 8_000:
+        raise AssertionError("protocol-v2 full matrix must contain 1,600 cases and 8,000 rows")
+    for field in (
+        "manifest_valid", "pixel_cache_hits", "expected_state_matches",
+        "expected_policy_matches",
+    ):
+        if int(protocol_full[field]) != 8_000:
+            raise AssertionError(f"protocol-v2 full acceptance failed: {field}")
+    if int(protocol_full["gpu_inference_calls"]) != 0:
+        raise AssertionError("protocol-v2 manifest matrix must not invoke the detector")
+    if int(protocol_full["evidence_invariant_cases"]) != 1_600:
+        raise AssertionError("protocol-v2 evidence must be invariant in all 1,600 cases")
+    for condition, counts in protocol_full["evidence_states_by_condition"].items():
+        if condition == "cut-chain-fresh-root":
+            if counts != {"no-reference": 1_600}:
+                raise AssertionError("all cut-chain cases must lose the signed reference")
+        elif counts != {
+            "message-detected": 1_167,
+            "region-removed": 159,
+            "signal-suppressed": 230,
+            "silent-other": 44,
+        }:
+            raise AssertionError(f"unexpected protocol-v2 evidence split: {condition}")
+    if len(protocol_full["datasets"]) != 8:
+        raise AssertionError("protocol-v2 full matrix must contain eight datasets")
+    for dataset, counts in protocol_full["datasets"].items():
+        if counts != {"cases": 200, "rows": 1_000}:
+            raise AssertionError(f"unexpected protocol-v2 dataset coverage: {dataset}")
+    if not all(protocol_full["acceptance"].values()):
+        raise AssertionError("protocol-v2 full matrix acceptance flags must all pass")
+
+    cache_summary = load(
+        "results/protocol_v2/full_pixel_cache_v1/warm_full_v1/summary.json"
+    )
+    if int(cache_summary["expected_records"]) != 1_600:
+        raise AssertionError("protocol-v2 exact cache must expect 1,600 records")
+    if int(cache_summary["verified_records"]) != 1_600:
+        raise AssertionError("protocol-v2 exact cache must verify 1,600 records")
+    if not all(cache_summary["acceptance"].values()):
+        raise AssertionError("protocol-v2 exact-cache acceptance flags must all pass")
+
     blocked_suffixes = {".pth", ".pt", ".ckpt", ".safetensors"}
     blocked = [
         str(path.relative_to(ROOT))
@@ -296,6 +374,7 @@ def main() -> int:
     print("  clean detector/verdict:   1/200 FP, 200/200 NO_REGION_CLAIM")
     print("  honest centered crops:    15/200 (10%), 68/200 (20%) flags")
     print("  lineage continuity:       200/200 ancestor recovery, 200/200 cut-chain flags")
+    print("  protocol-v2 semantics:    8,000/8,000 rows accepted, 1,600/1,600 invariant")
     return 0
 
 

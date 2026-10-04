@@ -49,17 +49,45 @@ def validate_region(region: dict[str, Any]) -> None:
 
 
 def created_action(semantics: str, agent: str) -> dict[str, Any]:
-    if semantics == "ai":
-        source_type = "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia"
-    elif semantics == "none":
-        source_type = "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture"
-    else:
-        raise ValueError(f"unknown manifest semantics: {semantics}")
-    return {
+    """Build a standards-valid source action for a controlled disclosure.
+
+    ``none`` is retained as a compatibility alias for the historical pilot,
+    where it meant an affirmative ``digitalCapture`` claim.  A non-empty
+    de-novo asset cannot validly omit ``digitalSourceType`` under C2PA 2.3;
+    ``omitted`` remains available only to reproduce the archived malformed
+    negative control and must not be used in the v2 matrix.
+    """
+    action: dict[str, Any] = {
         "action": "c2pa.created",
-        "digitalSourceType": source_type,
         "softwareAgent": agent,
     }
+    if semantics == "ai":
+        action["digitalSourceType"] = (
+            "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia"
+        )
+    elif semantics in {"capture", "none"}:
+        action["digitalSourceType"] = (
+            "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture"
+        )
+    elif semantics == "digital-creation":
+        action["digitalSourceType"] = (
+            "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCreation"
+        )
+    elif semantics == "omitted":
+        pass
+    else:
+        raise ValueError(f"unknown manifest semantics: {semantics}")
+    return action
+
+
+def disclosed_source_type(disclosure: str) -> str | None:
+    if disclosure in {"none", "omitted"}:
+        return None
+    if disclosure == "ai":
+        return "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia"
+    if disclosure == "capture":
+        return "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture"
+    raise ValueError(f"unknown child disclosure: {disclosure}")
 
 
 def parent_manifest(title: str, semantics: str, region: dict[str, Any]) -> dict[str, Any]:
@@ -107,6 +135,9 @@ def child_actions(request: dict[str, Any], *, with_parent: bool) -> list[dict[st
             "action": "c2pa.edited",
             "softwareAgent": "ProtocolV2Editor/1.0",
         })
+    disclosure = disclosed_source_type(request.get("child_disclosure", "none"))
+    if disclosure is not None:
+        actions[-1]["digitalSourceType"] = disclosure
     return actions
 
 

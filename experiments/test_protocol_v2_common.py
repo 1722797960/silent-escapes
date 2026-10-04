@@ -43,14 +43,23 @@ class ConfinedPathTests(unittest.TestCase):
 
 
 def manifest(*, region: dict | None = None, parent: str | None = None,
-             ai: bool = False, edited: bool = False) -> dict:
+             ai: bool = False, edited: bool = False, malformed_created: bool = False) -> dict:
     actions = []
     if ai:
         actions.append({
             "action": "c2pa.created",
             "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
         })
-    if edited:
+    elif malformed_created:
+        actions.append({"action": "c2pa.created"})
+    elif parent:
+        actions.append({"action": "c2pa.opened"})
+    else:
+        actions.append({
+            "action": "c2pa.created",
+            "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture",
+        })
+    if edited and not parent:
         actions.append({"action": "c2pa.edited"})
     store = {"c2pa.actions.v2": {"actions": actions}}
     if region is not None:
@@ -122,6 +131,23 @@ class LineageTests(unittest.TestCase):
         resolved = resolve_region_reference(valid, manifest_valid=True)
         self.assertEqual(resolved["state"], "signed-ancestor")
         self.assertEqual(chain_semantics(valid, manifest_valid=True), "ai-disclosed-in-chain")
+
+    def test_malformed_ancestor_action_is_not_accepted_by_hash_alone(self) -> None:
+        manifests = {
+            "child": manifest(parent="parent", edited=True),
+            "parent": manifest(
+                region={"reference_bits": "0" * 32}, malformed_created=True
+            ),
+        }
+        data = detailed("child", manifests, parent_validated=True)
+        resolved = resolve_region_reference(data, manifest_valid=True)
+        self.assertEqual(resolved["state"], "no-reference")
+        self.assertIn("action schema invalid", resolved["errors"][0])
+        self.assertEqual(
+            lineage_state(data, manifest_valid=True, reference_state=resolved["state"]),
+            "invalid-chain",
+        )
+        self.assertEqual(chain_semantics(data, manifest_valid=True), "unknown")
 
     def test_cut_chain_fails_before_reference(self) -> None:
         data = detailed("child", {"child": manifest(edited=True)})

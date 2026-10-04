@@ -14,6 +14,7 @@ from typing import Any
 
 from protocol_v2_common import (
     action_items,
+    chain_action_errors,
     chain_semantics,
     lineage_state,
     parent_manifest_labels,
@@ -190,6 +191,7 @@ def inspect_asset(path: Path) -> dict[str, Any]:
         "region": resolved.get("region"),
         "region_assertion": region_check,
         "chain_semantics": chain_semantics(detailed, manifest_valid=manifest_valid),
+        "chain_action_errors": chain_action_errors(detailed),
         "decoded_rgb_sha256": decoded_rgb_sha256(path),
         "validation_results": detailed.get("validation_results", {}),
     }

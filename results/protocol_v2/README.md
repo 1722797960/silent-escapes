@@ -20,10 +20,21 @@ performance.
   adaptive false-box aggregates.
 - `geometry_lie_v1/environment.json` and `report.md`: runtime provenance and a
   concise interpretation of the stress test.
+- `manifest_matrix_pilot_v2/`: 100 valid rows from the corrected 20-case by
+  five-condition manifest-semantics gate.
+- `manifest_matrix_full_v2/rows.jsonl`: 8,000 independently signed and audited
+  rows spanning eight pixel conditions, 200 assets, and five manifest
+  conditions. `summary.json` contains the global acceptance checks.
+- `manifest_matrix_full_v2/selected_cases.json` and `parent_index.json`:
+  repository-relative pixel selection, geometry, cache keys, and hashes for the
+  600 independently validated reusable parents.
+- `full_pixel_cache_v1/warm_full_v1/`: 1,600 cache-provenance rows plus the
+  final coverage and model/checkpoint-hash acceptance summary. Detector logits
+  themselves are private large artifacts and are not included.
 
 ## Intentionally omitted
 
-Generated signed assets, parent assets, detector caches, partial shard files,
+Generated signed assets, parent assets, detector logits, partial shard files,
 and request files containing machine-local paths are retained in the private
 experiment archive but are not published here. They can be regenerated with
 the scripts and configuration under `experiments/` and `configs/` when the

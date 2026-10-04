@@ -1,0 +1,52 @@
+{
+  "experiment": "protocol-v2 manifest-semantics boundary matrix",
+  "version": "manifest_matrix_pilot_v2",
+  "selection_policy": "the frozen 20-case protocol-v2 boundary pilot",
+  "conditions": [
+    {
+      "id": "honest-current-ai",
+      "topology": "ancestor-reference",
+      "parent_semantics": "ai",
+      "child_disclosure": "ai",
+      "expected_semantics": "ai-disclosed-in-chain",
+      "expected_lineage": "ancestor"
+    },
+    {
+      "id": "honest-ancestor-ai-child-omits",
+      "topology": "ancestor-reference",
+      "parent_semantics": "ai",
+      "child_disclosure": "omitted",
+      "expected_semantics": "ai-disclosed-in-chain",
+      "expected_lineage": "ancestor"
+    },
+    {
+      "id": "issuer-claims-digital-creation",
+      "topology": "ancestor-reference",
+      "parent_semantics": "digital-creation",
+      "child_disclosure": "omitted",
+      "expected_semantics": "no-ai-disclosure-in-chain",
+      "expected_lineage": "ancestor"
+    },
+    {
+      "id": "issuer-claims-digital-capture",
+      "topology": "ancestor-reference",
+      "parent_semantics": "capture",
+      "child_disclosure": "omitted",
+      "expected_semantics": "no-ai-disclosure-in-chain",
+      "expected_lineage": "ancestor"
+    },
+    {
+      "id": "cut-chain-fresh-root",
+      "topology": "cut-chain",
+      "parent_semantics": "capture",
+      "child_disclosure": "omitted",
+      "expected_semantics": "no-ai-disclosure-in-chain",
+      "expected_lineage": "discontinuity"
+    }
+  ],
+  "required_matches": 24,
+  "expected_case_count": 20,
+  "expected_condition_count": 5,
+  "expected_row_count": 100,
+  "gpu_inference_allowed": false
+}

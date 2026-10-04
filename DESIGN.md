@@ -78,7 +78,81 @@ exclude a source only when its no-edit reference audit already fails. These
 edits are intentionally mild and do not estimate false flags for arbitrary user
 editing or independently calibrate deployment thresholds.
 
+## Protocol-v2 signed references and manifest semantics
+
+### Verification order
+
+The protocol separates four decisions that must not be collapsed into one
+verdict. The verifier first checks lineage continuity and reachable-manifest
+action structure, then resolves a signed 32-bit reference from the current or
+nearest validated ancestor manifest. It next classifies regional evidence using
+an integer match boundary (`>=24` of 32 bits), retained signed-mask area, and
+regional detector logits. Only after those gates does it apply disclosure policy
+to the verified manifest chain. `silent-other` remains an explicit evidence
+state rather than being silently accepted.
+
+The reachable chain receives an additional structural check because the C2PA
+SDK can report an ingredient hash match without surfacing a malformed action in
+the embedded parent. A non-empty de-novo `c2pa.created` action must carry a
+`digitalSourceType`; a `c2pa.opened` action must reference a `parentOf`
+ingredient. A failure produces `invalid-chain` and no usable signed reference.
+
+### Controlled manifest conditions
+
+The full matrix keeps decoded pixels fixed and signs each of 1,600 assets under
+five conditions: AI disclosure on both current and parent manifests; AI
+disclosure only in the ancestor while the editing child omits a source type;
+the issuer's misleading `digitalCreation` claim; its misleading
+`digitalCapture` claim; and a fresh-root edit that cuts the parent chain. The
+child omission is standards-valid because `c2pa.opened` does not require a
+`digitalSourceType`. A root `c2pa.created` omission is not used: C2PA 2.3 and the
+tested SDK reject it as malformed.
+
+The two misleading source types are policy inputs, not ground truth inferred by
+the verifier. `digitalCreation` denotes human creation with non-generative
+digital tools, while `digitalCapture` denotes camera-like capture. Both omit the
+true AI origin in this controlled experiment. They are kept separate to avoid
+equating absence of an AI marker with one particular false provenance story.
+
+### Cache and reproducibility boundary
+
+Detector output is cached by a SHA-256 key over decoded RGB dimensions, mode,
+and bytes. Every entry binds the exact WAM params hash, checkpoint hash,
+preprocessing version, decoded bits, and two-dimensional float16 logits.
+Manifest signing and policy evaluation are a separate layer and are forbidden
+from invoking the detector. The completed cache contains 1,600 unique decoded
+pixel arrays from eight 200-image conditions; the semantics matrix makes 8,000
+exact cache hits and zero GPU calls.
+
+The public release includes the cache provenance rows and hashes but excludes
+the logits, signed assets, parents, requests containing machine-local paths,
+and model weights. Consequently, the compact release can verify experimental
+coverage and reported counts, while reproducing per-pixel detector output still
+requires the checkpoint and source assets.
+
 ## Change history
+
+### 2026-10-04 - Freeze protocol-v2 semantics and full matrix
+
+**Change:** Added signed reference bits, integer match decisions, exact decoded-
+pixel caching, reachable-chain action validation, a 20-case boundary matrix,
+and a full 1,600-case by five-condition manifest-semantics evaluation.
+
+**Reason:** A payload hash alone cannot support partial bit matching, detector
+re-execution should not be coupled to manifest schema changes, and an ingredient
+hash match is insufficient evidence that an embedded ancestor's action schema
+is valid.
+
+**Impact:** The full run contains 8,000 valid manifests and preserves regional
+evidence across all four parent-preserving semantic conditions in 1,600/1,600
+cases. Changing disclosure semantics changes the policy label for detected
+messages but not the detector evidence. Cutting lineage removes the signed
+reference in 1,600/1,600 cases.
+
+**Decision basis:** The original `c2pa.created`-without-source condition was
+retained only as an archived malformed preflight. The valid matrix replaces it
+with the IPTC `digitalCreation` source type and independently verifies every
+prepared parent before child signing.
 
 ### 2026-09-30 - Add C2PA parent-chain lineage ablation
 

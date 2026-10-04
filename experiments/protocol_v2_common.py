@@ -76,6 +76,43 @@ def has_edit_action(manifest: dict[str, Any]) -> bool:
     return any(item.get("action") in EDIT_ACTIONS for item in action_items(manifest))
 
 
+def manifest_action_errors(manifest: dict[str, Any]) -> list[str]:
+    """Check the protocol-critical C2PA 2.3 action invariants.
+
+    SDK ingredient validation can establish a parent-manifest hash match
+    without surfacing a malformed action inside that embedded parent.  The
+    protocol therefore validates the reachable chain structure explicitly.
+    """
+    actions = action_items(manifest)
+    if not actions:
+        return ["actions assertion is missing or empty"]
+    starters = [
+        index
+        for index, item in enumerate(actions)
+        if item.get("action") in {"c2pa.created", "c2pa.opened"}
+    ]
+    errors: list[str] = []
+    if starters != [0]:
+        errors.append("the action sequence must begin with exactly one c2pa.created or c2pa.opened")
+        return errors
+    first = actions[0]
+    if first.get("action") == "c2pa.created" and not first.get("digitalSourceType"):
+        errors.append("c2pa.created is missing digitalSourceType")
+    if first.get("action") == "c2pa.opened" and not parent_manifest_labels(manifest):
+        errors.append("c2pa.opened is missing a parentOf ingredient")
+    return errors
+
+
+def chain_action_errors(detailed: dict[str, Any]) -> dict[str, list[str]]:
+    graph = reachable_manifests(detailed)
+    manifests = detailed.get("manifests", {})
+    return {
+        label: errors
+        for label in graph["nodes"]
+        if (errors := manifest_action_errors(manifests[label]))
+    }
+
+
 def parent_validation_succeeded(detailed: dict[str, Any]) -> bool:
     results = detailed.get("validation_results", {})
     for delta in results.get("ingredientDeltas", []):
@@ -129,6 +166,15 @@ def resolve_region_reference(
             "errors": ["manifest is not valid", *graph["errors"]],
         }
     manifests = detailed.get("manifests", {})
+    action_errors = chain_action_errors(detailed)
+    if action_errors:
+        return {
+            "state": "no-reference",
+            "manifest": None,
+            "depth": None,
+            "region": None,
+            "errors": [f"reachable manifest action schema invalid: {action_errors}", *graph["errors"]],
+        }
     hits = []
     for label in graph["nodes"]:
         region = manifests[label].get("assertion_store", {}).get(REGION_LABEL)
@@ -177,6 +223,8 @@ def lineage_state(
     active = graph["active"]
     if not manifest_valid or active is None:
         return "no-manifest"
+    if chain_action_errors(detailed):
+        return "invalid-chain"
     if reference_state == "signed-current":
         return "current"
     if reference_state == "signed-ancestor":
@@ -191,7 +239,7 @@ def chain_semantics(detailed: dict[str, Any], *, manifest_valid: bool) -> str:
     if not manifest_valid:
         return "unknown"
     graph = reachable_manifests(detailed)
-    if graph["active"] is None or graph["errors"]:
+    if graph["active"] is None or graph["errors"] or chain_action_errors(detailed):
         return "unknown"
     manifests = detailed.get("manifests", {})
     for label in graph["nodes"]:
@@ -245,8 +293,10 @@ def classify_evidence(
 
 
 def policy_verdict(*, lineage: str, evidence: str, semantics: str) -> str:
-    if lineage in {"discontinuity", "no-manifest"}:
-        return "discontinuity" if lineage == "discontinuity" else "no-reference"
+    if lineage in {"discontinuity", "invalid-chain", "no-manifest"}:
+        if lineage == "discontinuity":
+            return "discontinuity"
+        return "invalid-chain" if lineage == "invalid-chain" else "no-reference"
     if evidence == "no-reference":
         return "no-reference"
     if evidence == "message-detected":
