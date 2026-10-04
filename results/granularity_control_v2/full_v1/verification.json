@@ -1,0 +1,24 @@
+{
+  "schema": "granularity-control-verification-1",
+  "passed": true,
+  "config_version": "granularity_control_v2",
+  "images": 200,
+  "marked_rows_per_condition": 1800,
+  "marked_conditions": [
+    "subject_region",
+    "random_compact_equal_area",
+    "fullframe_native",
+    "fullframe_energy_matched"
+  ],
+  "clean_rows": 200,
+  "checks": {
+    "unique_ids": true,
+    "integer_threshold": true,
+    "crop_geometry_equal": true,
+    "subject_cache_exact": true,
+    "subject_rgb_hash": true,
+    "energy_match_tolerance": true,
+    "random_area_exact": true,
+    "summary_finite": true
+  }
+}

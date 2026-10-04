@@ -15,6 +15,10 @@ image-level manifest remains cryptographically valid.
 - A fixed-area, position-aware stress test shows that crop placement matters: at
   40% removed area, the center policy yields a 17.0% escape rate while the
   mask-aware policy yields 55.0%.
+- A paired WAM spatial-support control separates localization from generic crop
+  fragility. At 80% removed area, escape is 55.0% for SAM subject regions,
+  18.5% for compact equal-area regions, 0.5% for native full-frame embedding,
+  and 27.0% for a full-frame control matched to the regional 42.46-dB PSNR.
 - A signed-region assertion and region-aware audit flag 686 of 752 SDXL silent
   escapes (91.2%) and 870 of 940 PixArt-alpha silent escapes (92.6%) at the
   paper's reference thresholds.
@@ -47,7 +51,8 @@ image-level manifest remains cryptographically valid.
 
 Precomputed machine-readable results are committed under `results/`, including
 the 10,800 row-level C1 attack and audit records, the 200 row-level LaMa audit
-records, 1,400 benign-control/clean-negative audit rows, the 8,000-row
+records, 7,200 paired WAM support-severity rows plus 200 clean references,
+1,400 benign-control/clean-negative audit rows, the 8,000-row
 protocol-v2 semantics matrix, and provenance records for its 1,600-entry exact
 pixel cache. Large model weights, detector logits, generated image corpora,
 intermediate images, and signed PNGs are intentionally not stored in Git. The

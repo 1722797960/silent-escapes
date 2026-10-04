@@ -1,0 +1,22 @@
+{
+  "experiment": "WAM granularity controls",
+  "version": "granularity_control_v1",
+  "num_images": 200,
+  "pilot_num_images": 20,
+  "removed_area_fractions": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+  "conditions": [
+    "subject_region",
+    "random_translated_region",
+    "fullframe_native",
+    "fullframe_energy_matched"
+  ],
+  "random_seed": 20260928,
+  "message_bits": 32,
+  "matched_bits_threshold": 24,
+  "bootstrap_resamples": 2000,
+  "resize_filter": "LANCZOS",
+  "subject_source": "results/defense_e2e/watermarked_unsigned",
+  "c1_cache": "results/c1_v1/full/audit_rows.jsonl",
+  "energy_match_relative_tolerance": 0.005,
+  "design_note": "All marked conditions share the same image-specific 32-bit message and the same WAM candidate perturbation. Only the spatial support or full-frame perturbation scale changes."
+}

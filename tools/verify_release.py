@@ -34,6 +34,15 @@ def c1_value(rows: list[dict], method: str, rho: float, field: str) -> float:
     return float(row[field])
 
 
+def granularity_value(rows: list[dict], condition: str, rho: float, field: str) -> float:
+    row = next(
+        item
+        for item in rows
+        if item["condition"] == condition and float(item["rho"]) == rho
+    )
+    return float(row[field])
+
+
 def main() -> int:
     required = [
         "README.md",
@@ -66,6 +75,13 @@ def main() -> int:
         "experiments/test_protocol_v2_cache_warm.py",
         "experiments/test_protocol_v2_manifest_matrix.py",
         "experiments/test_protocol_v2_manifest_matrix_full.py",
+        "experiments/granularity_control_common_v1.py",
+        "experiments/granularity_control_embed_v1.py",
+        "experiments/granularity_control_detect_v1.py",
+        "experiments/granularity_control_summarize_v1.py",
+        "experiments/verify_granularity_control_v1.py",
+        "experiments/test_granularity_control_v1.py",
+        "configs/granularity_control_v2.json",
         "configs/protocol_v2_manifest_matrix.json",
         "manifests/manifest_ai_edited.json",
         "results/summary_500.json",
@@ -74,6 +90,18 @@ def main() -> int:
         "results/c1_v1/full/attack_manifest.jsonl",
         "results/c1_v1/full/audit_rows.jsonl",
         "results/c1_v1/full/summary.json",
+        "results/granularity_control_v2/full_v1/config_effective.json",
+        "results/granularity_control_v2/full_v1/embed_rows.jsonl",
+        "results/granularity_control_v2/full_v1/detection_subject_region.jsonl",
+        "results/granularity_control_v2/full_v1/detection_random_compact_equal_area.jsonl",
+        "results/granularity_control_v2/full_v1/detection_fullframe_native.jsonl",
+        "results/granularity_control_v2/full_v1/detection_fullframe_energy_matched.jsonl",
+        "results/granularity_control_v2/full_v1/detection_clean_reference.jsonl",
+        "results/granularity_control_v2/full_v1/summary.json",
+        "results/granularity_control_v2/full_v1/summary.csv",
+        "results/granularity_control_v2/full_v1/verification.json",
+        "results/granularity_control_v2/full_v1/fig_granularity_control.pdf",
+        "results/granularity_control_v2/full_v1/fig_granularity_control.png",
         "results/threshold_sensitivity_v1/threshold_sensitivity.json",
         "results/inpainting_e2e_v1/audit.csv",
         "results/inpainting_e2e_v1/summary.json",
@@ -118,11 +146,41 @@ def main() -> int:
     close(c1_value(c1, "center", 0.4, "escape_rate_pct"), 17.0)
     close(c1_value(c1, "mask_aware", 0.4, "escape_rate_pct"), 55.0)
 
+    granularity = load("results/granularity_control_v2/full_v1/summary.json")
+    granularity_rows = granularity["summary"]
+    close(granularity_value(granularity_rows, "subject_region", 0.8, "escape_rate_pct"), 55.0)
+    close(granularity_value(granularity_rows, "random_compact_equal_area", 0.8, "escape_rate_pct"), 18.5)
+    close(granularity_value(granularity_rows, "fullframe_native", 0.8, "escape_rate_pct"), 0.5)
+    close(granularity_value(granularity_rows, "fullframe_energy_matched", 0.8, "escape_rate_pct"), 27.0)
+    close(float(granularity["quality"]["subject_region"]["mean_psnr_db"]), 42.4615, 1e-4)
+    close(float(granularity["quality"]["fullframe_energy_matched"]["mean_psnr_db"]), 42.4615, 1e-4)
+    if int(granularity["embedding_validation"]["subject_rgb_hash_matches"]) != 200:
+        raise AssertionError("granularity control must match all 200 subject hashes")
+    if int(granularity["embedding_validation"]["random_area_matches"]) != 200:
+        raise AssertionError("granularity control must match all 200 random-region areas")
+    if int(granularity["embedding_validation"]["random_wrap_count"]) != 0:
+        raise AssertionError("granularity control random regions must not wrap")
+
+    granularity_verification = load(
+        "results/granularity_control_v2/full_v1/verification.json"
+    )
+    failed_checks = [
+        key for key, value in granularity_verification["checks"].items() if value is not True
+    ]
+    if failed_checks:
+        raise AssertionError(f"granularity verification failed: {failed_checks}")
+
     expected_jsonl_rows = {
         "results/c1_v1/pilot/attack_manifest.jsonl": 360,
         "results/c1_v1/pilot/audit_rows.jsonl": 360,
         "results/c1_v1/full/attack_manifest.jsonl": 10_800,
         "results/c1_v1/full/audit_rows.jsonl": 10_800,
+        "results/granularity_control_v2/full_v1/embed_rows.jsonl": 200,
+        "results/granularity_control_v2/full_v1/detection_subject_region.jsonl": 1_800,
+        "results/granularity_control_v2/full_v1/detection_random_compact_equal_area.jsonl": 1_800,
+        "results/granularity_control_v2/full_v1/detection_fullframe_native.jsonl": 1_800,
+        "results/granularity_control_v2/full_v1/detection_fullframe_energy_matched.jsonl": 1_800,
+        "results/granularity_control_v2/full_v1/detection_clean_reference.jsonl": 200,
         "results/protocol_v2/manifest_matrix_pilot_v2/rows.jsonl": 100,
         "results/protocol_v2/manifest_matrix_full_v2/rows.jsonl": 8_000,
         "results/protocol_v2/full_pixel_cache_v1/warm_full_v1/rows.jsonl": 1_600,
@@ -368,6 +426,7 @@ def main() -> int:
     print("  SDXL regional detection: 99.0% -> 62.5% -> 0.5%")
     print("  PixArt-alpha detection:   98.0% -> 51.0% -> 0.5%")
     print("  rho=0.4 escape rate:      center 17.0%, mask-aware 55.0%")
+    print("  rho=0.8 support control:  subject 55.0%, compact 18.5%, full 0.5%, matched 27.0%")
     print("  defense flag rates:       91.223%, 92.553%, 93.435%")
     print("  exact-mask inpainting:    199/200 escapes, 199/199 recovered")
     print("  benign strict flags:      1/200, 1/200, 1/200, 2/200")

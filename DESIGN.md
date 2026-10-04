@@ -1,5 +1,44 @@
 # Experiment Design Notes
 
+## Paired WAM spatial-support control (`granularity_control_v2`)
+
+### Measurement goal
+
+This experiment asks whether the regional escape curve is caused by generic
+WAM crop fragility or by the spatial support of the signal. It reuses the same
+200 images, image-specific 32-bit messages, and candidate WAM perturbations
+across four support conditions: the original SAM subject region, a compact
+equal-area region at a deterministic random location, native full frame, and a
+full-frame perturbation scaled per image to match the subject-region total MSE
+after uint8 quantization.
+
+### Controls and invariants
+
+- Every marked condition contains 200 images and the same nine centered
+  removed-area levels, `rho = 0.0, 0.1, ..., 0.8`.
+- Detection uses the integer boundary `matched_bits >= 24` rather than a
+  floating-point comparison with 0.75.
+- The compact control has exactly the same foreground-pixel count as its paired
+  SAM mask, is contiguous and near-square, is placed without wraparound, and
+  uses seed `20260928`.
+- The energy-matched full-frame condition must match the subject-region MSE to
+  within 0.5% per image after 8-bit quantization; the observed maximum relative
+  error is 0.349%.
+- Subject-region detections are imported from the frozen C1 center-crop cache
+  and verified against all 200 marked-image SHA-256 values.
+- A separate 200-image clean-reference condition estimates detector FPR and is
+  not mixed into marked-image robustness rates.
+
+### Interpretation boundary
+
+Native full-frame WAM nearly eliminates escapes under this crop grid, while the
+equal-PSNR full-frame control reduces severe-crop escape without eliminating it.
+The compact equal-area control changes shape and compactness as well as
+location, so it is a same-area spatial-support geometry control, not a pure
+position ablation. The experiment quantifies the cost of localization and
+support geometry; it does not claim that every region shape or every crop
+severity behaves identically.
+
 ## LaMa exact-mask inpainting (`inpainting_e2e_v1`)
 
 ### Threat model
@@ -131,6 +170,21 @@ coverage and reported counts, while reproducing per-pixel detector output still
 requires the checkpoint and source assets.
 
 ## Change history
+
+### 2026-10-05 - Add paired WAM spatial-support control
+
+**Change:** Added four paired support conditions across nine removed-area
+levels, a 200-image clean-reference check, per-image energy matching, summary
+plots, and machine-checkable verification gates.
+
+**Reason:** Separate the granularity effect from generic WAM crop fragility and
+from the lower total distortion of a localized embedding.
+
+**Impact:** At `rho=0.80`, escape is 55.0% for SAM subject support, 18.5% for
+compact equal-area support, 0.5% for native full frame, and 27.0% for the
+equal-PSNR full-frame control. The control strengthens the causal interpretation
+while preserving the limitation that compact equal-area support changes shape
+as well as location.
 
 ### 2026-10-04 - Freeze protocol-v2 semantics and full matrix
 

@@ -26,6 +26,7 @@ directly measured extension timings are recorded in
 | SDXL regional escape curve | `experiments/regional_v2.py` | `results/regional_v2/summary.json` |
 | PixArt-alpha regional escape curve | `experiments/regional_v2.py` | `results/regional_v2_pixart/summary.json` |
 | Fixed-area position-aware stress test | `experiments/c1_attack_suite_v1.py`, `c1_audit_v1.py`, `c1_summarize_v1.py` | `results/c1_v1/full/{attack_manifest,audit_rows}.jsonl`, `summary.json` |
+| Paired WAM spatial-support control | `experiments/granularity_control_{embed,detect,summarize}_v1.py`, `verify_granularity_control_v1.py` | `results/granularity_control_v2/full_v1/{embed_rows,detection_*,summary,verification}.*`, `fig_granularity_control.{pdf,png}` |
 | End-to-end region-aware defense, SDXL | `experiments/defense_e2e_run.py`, then `recompute_region_retention.py` | `results/defense_e2e/audit_retention.json` |
 | End-to-end region-aware defense, PixArt-alpha | same pipeline | `results/defense_e2e_pixart/audit_retention.json` |
 | Defense threshold sensitivity | `experiments/threshold_sensitivity_v1.py` | `results/threshold_sensitivity_v1/threshold_sensitivity.json` |
@@ -43,6 +44,8 @@ directly measured extension timings are recorded in
 - SAM model: ViT-B
 - Position-aware crop areas: `rho = 0.0, 0.1, ..., 0.8`
 - Crop policies: center, four edge anchors, random, and mask-aware
+- Spatial-support control: SAM subject, compact exact-area random, native full
+  frame, and per-image MSE-matched full frame; shared message and WAM candidate
 - Random seed: `20260928`
 - Bootstrap resamples: 2,000
 - Region-retention floor: `0.05`
@@ -66,6 +69,12 @@ The full C1 release contains 10,800 attack rows and 10,800 corresponding audit
 rows. The pilot contains 360 rows of each type. The mask-aware policy is derived
 from the four recorded edge-anchor alternatives rather than stored as a seventh
 independent crop, so these counts are expected.
+
+The full spatial-support control contains 7,200 marked condition-severity rows
+(four conditions x 200 images x nine levels) and 200 clean-reference rows.
+`verification.json` checks counts, unique row IDs, integer thresholding,
+subject-cache hash equality, per-image energy matching, exact random-region
+area, no wraparound, finite summaries, and shared crop geometry.
 
 ## 4. Dataset preparation
 
@@ -145,7 +154,41 @@ The mask-aware policy selects the lowest-retention option among four preset edge
 anchors using the signed region mask. It never observes watermark detector output
 or audit verdicts.
 
-## 8. Size-preserving LaMa inpainting
+## 8. Paired WAM spatial-support control
+
+Run the deterministic unit gates, embed the three newly generated support
+conditions, import the frozen subject-region C1 cache, detect all conditions,
+then summarize and verify:
+
+```bash
+python -m unittest discover -s experiments -p 'test_granularity_control_v1.py' -v
+python experiments/granularity_control_embed_v1.py \
+  --config configs/granularity_control_v2.json \
+  --output-dir results/granularity_control_v2/full_v1 --device cuda
+python experiments/granularity_control_detect_v1.py \
+  --config configs/granularity_control_v2.json \
+  --experiment-dir results/granularity_control_v2/full_v1 \
+  --condition subject_region --import-c1
+for condition in random_compact_equal_area fullframe_native fullframe_energy_matched clean_reference; do
+  python experiments/granularity_control_detect_v1.py \
+    --config configs/granularity_control_v2.json \
+    --experiment-dir results/granularity_control_v2/full_v1 \
+    --condition "$condition" --device cuda
+done
+python experiments/granularity_control_summarize_v1.py \
+  --config configs/granularity_control_v2.json \
+  --experiment-dir results/granularity_control_v2/full_v1
+python experiments/verify_granularity_control_v1.py \
+  --config configs/granularity_control_v2.json \
+  --experiment-dir results/granularity_control_v2/full_v1
+```
+
+The public result directory contains compact row-level detector outputs and
+summaries, not generated images or model weights. The subject cache provenance
+is stored as a repository-relative path so the release does not expose a host
+filesystem layout.
+
+## 9. Size-preserving LaMa inpainting
 
 The LaMa source tree and `big-lama` checkpoint are external dependencies. The
 pipeline refuses accidental overwrite by default and records their Git/SHA-256
@@ -174,7 +217,7 @@ signed source. The committed `audit.csv` contains all 200 per-asset rows;
 contact sheets, checkpoints, and metadata containing machine-local paths are
 excluded from the public release.
 
-## 9. Benign edits and clean negatives
+## 10. Benign edits and clean negatives
 
 Generate four honestly described edits for each of the 200 watermarked assets,
 plus 200 paired unwatermarked controls. Then re-sign, audit, and summarize them:
@@ -203,7 +246,7 @@ public result directory contains all 1,000 per-asset rows, the threshold grid,
 and a compact sample contact sheet, but excludes signed images and machine-local
 run metadata.
 
-## 10. Honest centered-crop controls
+## 11. Honest centered-crop controls
 
 This extension reuses the same 200 centered crop-and-resize pixel outputs from
 the attack pipeline, strips the old misleading manifest, and re-signs each image
@@ -235,7 +278,7 @@ cropping and 68/200 for 20%; the corresponding baseline-qualified counts are
 not a judgment that an honest edit was malicious. `environment.json` records the
 reference hardware, software versions, and measured wall-clock times.
 
-## 11. C2PA lineage-continuity ablation
+## 12. C2PA lineage-continuity ablation
 
 This CPU-only extension reuses the exact decoded pixels and saved WAM metrics
 from the crop-0.40 condition. It changes only manifest topology and signs 200
@@ -257,7 +300,7 @@ contains 600 per-condition rows and summaries, but excludes the generated
 signed PNGs. `PROVENANCE_DISCONTINUITY` is a strict consumer-policy result and
 is not added to the paper's regional-evidence flag rate.
 
-## 12. Protocol-v2 exact cache and manifest-semantics matrix
+## 13. Protocol-v2 exact cache and manifest-semantics matrix
 
 Run the unit gates first. The C2PA environment used for signing must provide
 `c2pa-python==0.37.10`, NumPy, Pillow, and PyTorch (PyTorch is used only to
