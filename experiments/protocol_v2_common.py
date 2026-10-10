@@ -20,6 +20,7 @@ AI_SOURCE_MARKERS = (
     "compositedWithTrainedAlgorithmicMedia",
 )
 EDIT_ACTIONS = {"c2pa.opened", "c2pa.edited", "c2pa.cropped"}
+EDITOR_TRUST_STATES = {"trusted-editor", "untrusted-editor"}
 
 
 def confined_path(
@@ -305,7 +306,40 @@ def policy_verdict(*, lineage: str, evidence: str, semantics: str) -> str:
         return "review-evidence-removal"
     if evidence == "signal-suppressed":
         return "review-signal-suppression"
+    if evidence == "not-evaluated-untrusted-geometry":
+        return "review-untrusted-geometry"
+    if evidence == "not-evaluated-invalid-geometry":
+        return "geometry-rejected"
     return "silent-other"
+
+
+def geometry_trust_gate(
+    *,
+    geometry_gate: str,
+    cropped_action_count: int,
+    editor_trust: str,
+) -> str:
+    """Apply deployment trust only after structural geometry validation.
+
+    C2PA signature validity and action-schema validity do not establish that a
+    transform is truthful.  A deployment may therefore consume a valid crop
+    transform only when the signing editor is authorized by local policy.
+    Malformed geometry remains a schema rejection and takes precedence over
+    editor trust.  Non-crop operations do not require this gate.
+    """
+    if cropped_action_count < 0:
+        raise ValueError("cropped_action_count cannot be negative")
+    if editor_trust not in EDITOR_TRUST_STATES:
+        raise ValueError(f"unknown editor trust state: {editor_trust}")
+    if geometry_gate in {"reject-invalid", "reject-missing"}:
+        return "schema-rejected"
+    if geometry_gate in {"not-reached", "not-applicable"}:
+        return "not-reached"
+    if cropped_action_count == 0:
+        return "not-applicable"
+    if geometry_gate != "accepted":
+        raise ValueError(f"unknown geometry gate state: {geometry_gate}")
+    return "trusted" if editor_trust == "trusted-editor" else "review-untrusted"
 
 
 def audit_protocol_v2(

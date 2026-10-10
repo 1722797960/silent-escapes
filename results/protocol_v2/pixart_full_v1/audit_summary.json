@@ -1,0 +1,163 @@
+{
+  "acceptance_passed": true,
+  "audit_rows_sha256": "c492aa4a657189e34a48572abf31834198fc342ce12b60c0603a497709dfa5a0",
+  "cases": 1800,
+  "crop_parameter": "fraction removed from each side",
+  "escapes": 940,
+  "evidence": {
+    "message-detected": 860,
+    "region-removed": 627,
+    "signal-suppressed": 242,
+    "silent-other": 71
+  },
+  "gpu_inference_calls": 0,
+  "integer_count_matches": 1800,
+  "per_crop": {
+    "0.00": {
+      "cases": 200,
+      "escapes": 4,
+      "evidence": {
+        "message-detected": 196,
+        "signal-suppressed": 2,
+        "silent-other": 2
+      },
+      "reviews": 2,
+      "untrusted_policy": {
+        "integrity-clash": 196,
+        "review-signal-suppression": 2,
+        "silent-other": 2
+      }
+    },
+    "0.05": {
+      "cases": 200,
+      "escapes": 39,
+      "evidence": {
+        "message-detected": 161,
+        "region-removed": 5,
+        "signal-suppressed": 25,
+        "silent-other": 9
+      },
+      "reviews": 30,
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.10": {
+      "cases": 200,
+      "escapes": 66,
+      "evidence": {
+        "message-detected": 134,
+        "region-removed": 8,
+        "signal-suppressed": 46,
+        "silent-other": 12
+      },
+      "reviews": 54,
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.15": {
+      "cases": 200,
+      "escapes": 78,
+      "evidence": {
+        "message-detected": 122,
+        "region-removed": 26,
+        "signal-suppressed": 45,
+        "silent-other": 7
+      },
+      "reviews": 71,
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.20": {
+      "cases": 200,
+      "escapes": 98,
+      "evidence": {
+        "message-detected": 102,
+        "region-removed": 55,
+        "signal-suppressed": 31,
+        "silent-other": 12
+      },
+      "reviews": 86,
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.25": {
+      "cases": 200,
+      "escapes": 128,
+      "evidence": {
+        "message-detected": 72,
+        "region-removed": 91,
+        "signal-suppressed": 26,
+        "silent-other": 11
+      },
+      "reviews": 117,
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.30": {
+      "cases": 200,
+      "escapes": 151,
+      "evidence": {
+        "message-detected": 49,
+        "region-removed": 126,
+        "signal-suppressed": 18,
+        "silent-other": 7
+      },
+      "reviews": 144,
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.35": {
+      "cases": 200,
+      "escapes": 177,
+      "evidence": {
+        "message-detected": 23,
+        "region-removed": 148,
+        "signal-suppressed": 20,
+        "silent-other": 9
+      },
+      "reviews": 168,
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.40": {
+      "cases": 200,
+      "escapes": 199,
+      "evidence": {
+        "message-detected": 1,
+        "region-removed": 168,
+        "signal-suppressed": 29,
+        "silent-other": 2
+      },
+      "reviews": 197,
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    }
+  },
+  "schema": "protocol-v2-pixart-full-audit-1",
+  "script_sha256": "1e00a432fcd37df00f100dfe507df7d3ac478d2a4f43b90cb996f6a9b3279f53",
+  "selected_cases_sha256": "967c2693b7d32ae73e718880d8916b298a16668b330abf55d9d909d23ed4d2ea",
+  "trusted_editor_review_rate": 0.924468085106383,
+  "trusted_editor_reviews": 869,
+  "trusted_editor_silent": 71,
+  "trusted_policy": {
+    "integrity-clash": 860,
+    "review-evidence-removal": 627,
+    "review-signal-suppression": 242,
+    "silent-other": 71
+  },
+  "untrusted_policy": {
+    "integrity-clash": 196,
+    "review-signal-suppression": 2,
+    "review-untrusted-geometry": 1600,
+    "silent-other": 2
+  },
+  "valid_manifests": 1800
+}

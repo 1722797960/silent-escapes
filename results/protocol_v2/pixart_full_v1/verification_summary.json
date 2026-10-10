@@ -1,0 +1,12 @@
+{
+  "acceptance_passed": true,
+  "audit_rows_sha256": "c492aa4a657189e34a48572abf31834198fc342ce12b60c0603a497709dfa5a0",
+  "cases": 1800,
+  "evidence_changes_due_to_quantization": 0,
+  "gpu_inference_calls": 0,
+  "max_logit_quantization_error": 0.000244140625,
+  "max_region_mean_difference": 0.00010484457015991211,
+  "script_sha256": "1e00a432fcd37df00f100dfe507df7d3ac478d2a4f43b90cb996f6a9b3279f53",
+  "signed_assets_reopened": 1800,
+  "verification_rows_sha256": "e7e481d4238544a2a7d6628f788cfa8c56c1de8f716496d35dbde58f4eb4c258"
+}

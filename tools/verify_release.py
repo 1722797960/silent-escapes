@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -15,6 +16,14 @@ ROOT = Path(__file__).resolve().parents[1]
 def load(relative: str):
     with (ROOT / relative).open(encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def sha256(relative: str) -> str:
+    digest = hashlib.sha256()
+    with (ROOT / relative).open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
 def close(actual: float, expected: float, tolerance: float = 1e-3) -> None:
@@ -46,9 +55,11 @@ def granularity_value(rows: list[dict], condition: str, rho: float, field: str) 
 def main() -> int:
     required = [
         "README.md",
+        "DATA.md",
         "DESIGN.md",
         "LICENSE",
         "REPRODUCIBILITY.md",
+        "SECURITY.md",
         "experiments/inpainting_common_v1.py",
         "experiments/inpainting_lama_v1.py",
         "experiments/inpainting_resign_v1.py",
@@ -72,6 +83,18 @@ def main() -> int:
         "experiments/protocol_v2_cache_warm_v1.py",
         "experiments/protocol_v2_manifest_matrix_full_v1.py",
         "experiments/protocol_v2_manifest_matrix_v1.py",
+        "experiments/protocol_v2_main_curve_cache_v2.py",
+        "experiments/protocol_v2_main_curve_full_v2.py",
+        "experiments/protocol_v2_sdxl_derived_v1.py",
+        "experiments/protocol_v2_pixart_full_v1.py",
+        "experiments/protocol_v2_pixart_full_audit_v1.py",
+        "experiments/protocol_v2_pixart_derived_v1.py",
+        "experiments/protocol_v2_c1_full_v1.py",
+        "experiments/protocol_v2_c1_full_audit_v1.py",
+        "experiments/protocol_v2_c1_full_verify_v1.py",
+        "experiments/protocol_v2_c1_full_derived_v1.py",
+        "experiments/protocol_v2_geometry_lie_full_v1.py",
+        "experiments/protocol_v2_geometry_trust_ablation_v1.py",
         "experiments/test_protocol_v2_cache_warm.py",
         "experiments/test_protocol_v2_manifest_matrix.py",
         "experiments/test_protocol_v2_manifest_matrix_full.py",
@@ -83,6 +106,11 @@ def main() -> int:
         "experiments/test_granularity_control_v1.py",
         "configs/granularity_control_v2.json",
         "configs/protocol_v2_manifest_matrix.json",
+        "configs/protocol_v2_main_curve_full_v2.json",
+        "configs/protocol_v2_pixart_full_v1.json",
+        "configs/protocol_v2_c1_full_v1.json",
+        "configs/protocol_v2_geometry_lie_full.json",
+        "configs/protocol_v2_geometry_trust_ablation.json",
         "manifests/manifest_ai_edited.json",
         "results/summary_500.json",
         "results/regional_v2/summary.json",
@@ -124,6 +152,23 @@ def main() -> int:
         "results/protocol_v2/manifest_matrix_full_v2/parent_index.json",
         "results/protocol_v2/full_pixel_cache_v1/warm_full_v1/rows.jsonl",
         "results/protocol_v2/full_pixel_cache_v1/warm_full_v1/summary.json",
+        "results/protocol_v2/main_curve_full_v2/full_v1/rows.jsonl",
+        "results/protocol_v2/main_curve_full_v2/full_v1/summary.json",
+        "results/protocol_v2/main_curve_full_v2/full_v1/report.md",
+        "results/protocol_v2/sdxl_derived_v1/rows.json",
+        "results/protocol_v2/sdxl_derived_v1/summary.json",
+        "results/protocol_v2/pixart_full_v1/audit_rows.jsonl",
+        "results/protocol_v2/pixart_full_v1/audit_summary.json",
+        "results/protocol_v2/pixart_full_v1/verification_rows.jsonl",
+        "results/protocol_v2/pixart_derived_v1/rows.json",
+        "results/protocol_v2/pixart_derived_v1/summary.json",
+        "results/protocol_v2/c1_full_v1/audit_summary.json",
+        "results/protocol_v2/c1_full_v1/derived/mask_aware_rows.json",
+        "results/protocol_v2/c1_full_v1/derived/summary.json",
+        "results/protocol_v2/geometry_lie_full_v1/rows.jsonl",
+        "results/protocol_v2/geometry_lie_full_v1/summary.json",
+        "results/protocol_v2/geometry_trust_ablation_v1/rows.jsonl",
+        "results/protocol_v2/geometry_trust_ablation_v1/summary.json",
     ]
     missing = [path for path in required if not (ROOT / path).is_file()]
     if missing:
@@ -184,6 +229,11 @@ def main() -> int:
         "results/protocol_v2/manifest_matrix_pilot_v2/rows.jsonl": 100,
         "results/protocol_v2/manifest_matrix_full_v2/rows.jsonl": 8_000,
         "results/protocol_v2/full_pixel_cache_v1/warm_full_v1/rows.jsonl": 1_600,
+        "results/protocol_v2/main_curve_full_v2/full_v1/rows.jsonl": 1_800,
+        "results/protocol_v2/pixart_full_v1/audit_rows.jsonl": 1_800,
+        "results/protocol_v2/pixart_full_v1/verification_rows.jsonl": 1_800,
+        "results/protocol_v2/geometry_lie_full_v1/rows.jsonl": 2_400,
+        "results/protocol_v2/geometry_trust_ablation_v1/rows.jsonl": 4_800,
     }
     for relative, expected in expected_jsonl_rows.items():
         with (ROOT / relative).open(encoding="utf-8") as handle:
@@ -405,6 +455,110 @@ def main() -> int:
     if not all(cache_summary["acceptance"].values()):
         raise AssertionError("protocol-v2 exact-cache acceptance flags must all pass")
 
+    sdxl_v2 = load("results/protocol_v2/main_curve_full_v2/full_v1/summary.json")
+    if int(sdxl_v2["case_count"]) != 1_800 or int(sdxl_v2["manifest_valid"]) != 1_800:
+        raise AssertionError("SDXL protocol-v2 curve must contain 1,800 valid manifests")
+    if int(sdxl_v2["escapes"]) != 752:
+        raise AssertionError("SDXL protocol-v2 curve must preserve 752 decoder escapes")
+    if int(sdxl_v2["reviewed_escapes_trusted_editor"]) != 684:
+        raise AssertionError("SDXL protocol-v2 curve must review 684 escapes")
+    close(float(sdxl_v2["escape_review_rate_trusted_editor"]), 684 / 752)
+    if int(sdxl_v2["gpu_inference_calls"]) != 0 or not all(
+        sdxl_v2["acceptance"].values()
+    ):
+        raise AssertionError("SDXL protocol-v2 acceptance gates must all pass")
+
+    sdxl_derived = load("results/protocol_v2/sdxl_derived_v1/summary.json")
+    if len(load("results/protocol_v2/sdxl_derived_v1/rows.json")) != 1_800:
+        raise AssertionError("SDXL derived release must contain 1,800 rows")
+    if sdxl_derived["source_rows_sha256"] != sha256(
+        "results/protocol_v2/main_curve_full_v2/full_v1/rows.jsonl"
+    ):
+        raise AssertionError("SDXL derived rows are not bound to the released full curve")
+    if sdxl_derived["script_sha256"] != sha256(
+        "experiments/protocol_v2_sdxl_derived_v1.py"
+    ):
+        raise AssertionError("SDXL derived summary script hash does not match the release")
+    if int(sdxl_derived["default"]["reviewed_escapes"]) != 684:
+        raise AssertionError("SDXL derived reference point must review 684 escapes")
+
+    pixart_v2 = load("results/protocol_v2/pixart_full_v1/audit_summary.json")
+    if int(pixart_v2["cases"]) != 1_800 or int(pixart_v2["valid_manifests"]) != 1_800:
+        raise AssertionError("PixArt protocol-v2 curve must contain 1,800 valid manifests")
+    if int(pixart_v2["escapes"]) != 940 or int(pixart_v2["trusted_editor_reviews"]) != 869:
+        raise AssertionError("PixArt protocol-v2 curve must preserve 940 escapes and 869 reviews")
+    close(float(pixart_v2["trusted_editor_review_rate"]), 869 / 940)
+    if pixart_v2["audit_rows_sha256"] != sha256(
+        "results/protocol_v2/pixart_full_v1/audit_rows.jsonl"
+    ):
+        raise AssertionError("PixArt audit summary is not bound to the released rows")
+    if pixart_v2["script_sha256"] != sha256(
+        "experiments/protocol_v2_pixart_full_audit_v1.py"
+    ):
+        raise AssertionError("PixArt audit summary script hash does not match the release")
+    if int(pixart_v2["gpu_inference_calls"]) != 0 or not pixart_v2["acceptance_passed"]:
+        raise AssertionError("PixArt protocol-v2 acceptance gates must all pass")
+
+    pixart_derived = load("results/protocol_v2/pixart_derived_v1/summary.json")
+    if len(load("results/protocol_v2/pixart_derived_v1/rows.json")) != 1_800:
+        raise AssertionError("PixArt derived release must contain 1,800 rows")
+    if pixart_derived["source_rows_sha256"] != pixart_v2["audit_rows_sha256"]:
+        raise AssertionError("PixArt derived rows are not bound to the released audit")
+    if pixart_derived["script_sha256"] != sha256(
+        "experiments/protocol_v2_pixart_derived_v1.py"
+    ):
+        raise AssertionError("PixArt derived summary script hash does not match the release")
+    if int(pixart_derived["default"]["reviewed_escapes"]) != 869:
+        raise AssertionError("PixArt derived reference point must review 869 escapes")
+
+    c1_v2 = load("results/protocol_v2/c1_full_v1/audit_summary.json")
+    c1_derived = load("results/protocol_v2/c1_full_v1/derived/summary.json")
+    if int(c1_v2["records"]) != 10_800 or int(c1_v2["valid_manifests"]) != 10_800:
+        raise AssertionError("C1 protocol-v2 audit must cover 10,800 valid manifests")
+    if int(c1_v2["escapes"]) != 2_774 or int(c1_v2["reviews"]) != 2_017:
+        raise AssertionError("C1 protocol-v2 headline counts changed")
+    if len(load("results/protocol_v2/c1_full_v1/derived/mask_aware_rows.json")) != 1_800:
+        raise AssertionError("C1 release must contain 1,800 derived mask-aware rows")
+    if not c1_v2["acceptance_passed"] or not c1_derived["acceptance_passed"]:
+        raise AssertionError("C1 protocol-v2 acceptance gates must pass")
+    if c1_v2["script_sha256"] != sha256(
+        "experiments/protocol_v2_c1_full_audit_v1.py"
+    ) or c1_derived["script_sha256"] != sha256(
+        "experiments/protocol_v2_c1_full_derived_v1.py"
+    ):
+        raise AssertionError("C1 result script hashes do not match the release")
+
+    geometry = load("results/protocol_v2/geometry_lie_full_v1/summary.json")
+    if int(geometry["case_count"]) != 400 or int(geometry["row_count"]) != 2_400:
+        raise AssertionError("geometry stress test must contain 400 cases and 2,400 rows")
+    if int(geometry["manifest_valid"]) != 2_400 or int(geometry["pixel_cache_hits"]) != 2_400:
+        raise AssertionError("geometry stress rows must all validate and hit the exact cache")
+    if int(geometry["gpu_inference_calls"]) != 0 or not all(
+        geometry["acceptance"].values()
+    ):
+        raise AssertionError("geometry stress acceptance gates must all pass")
+
+    trust = load("results/protocol_v2/geometry_trust_ablation_v1/summary.json")
+    if int(trust["input_row_count"]) != 2_400 or int(trust["output_row_count"]) != 4_800:
+        raise AssertionError("editor-trust ablation must contain 2,400 inputs and 4,800 outputs")
+    if trust["input_rows_sha256"] != sha256(
+        "results/protocol_v2/geometry_lie_full_v1/rows.jsonl"
+    ):
+        raise AssertionError("editor-trust ablation is not bound to the geometry rows")
+    if not all(trust["acceptance"].values()):
+        raise AssertionError("editor-trust acceptance gates must all pass")
+    trusted = trust["trust_conditions"]["trusted-editor"]
+    untrusted = trust["trust_conditions"]["untrusted-editor"]
+    if int(trusted["raw_review_evasions"]["successes"]) != 4:
+        raise AssertionError("trusted-editor boundary must retain four adaptive evasions")
+    if int(untrusted["trust_gated_review_evasions"]["successes"]) != 0:
+        raise AssertionError("untrusted-editor trust gate must close all measured review evasions")
+    if untrusted["geometry_trust_gates"] != {
+        "review-untrusted": 1_600,
+        "schema-rejected": 800,
+    }:
+        raise AssertionError("unexpected untrusted-editor geometry gate split")
+
     blocked_suffixes = {".pth", ".pt", ".ckpt", ".safetensors"}
     blocked = [
         str(path.relative_to(ROOT))
@@ -427,13 +581,16 @@ def main() -> int:
     print("  PixArt-alpha detection:   98.0% -> 51.0% -> 0.5%")
     print("  rho=0.4 escape rate:      center 17.0%, mask-aware 55.0%")
     print("  rho=0.8 support control:  subject 55.0%, compact 18.5%, full 0.5%, matched 27.0%")
-    print("  defense flag rates:       91.223%, 92.553%, 93.435%")
+    print("  legacy known-transform:   SDXL 686/752, PixArt 870/940")
+    print("  protocol-v2 review rates: SDXL 684/752 (91.0%), PixArt 869/940 (92.4%)")
     print("  exact-mask inpainting:    199/200 escapes, 199/199 recovered")
     print("  benign strict flags:      1/200, 1/200, 1/200, 2/200")
     print("  clean detector/verdict:   1/200 FP, 200/200 NO_REGION_CLAIM")
     print("  honest centered crops:    15/200 (10%), 68/200 (20%) flags")
     print("  lineage continuity:       200/200 ancestor recovery, 200/200 cut-chain flags")
     print("  protocol-v2 semantics:    8,000/8,000 rows accepted, 1,600/1,600 invariant")
+    print("  protocol-v2 C1:           10,800 valid rows, 2,017/2,774 escapes reviewed")
+    print("  geometry/trust boundary:  2,400 stress rows, 4,800 policy rows")
     return 0
 
 

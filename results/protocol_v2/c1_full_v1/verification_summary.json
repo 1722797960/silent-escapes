@@ -1,0 +1,28 @@
+{
+  "acceptance_passed": true,
+  "bindings": {
+    "audit_rows.jsonl": "224d8ea3ff070c32f413f72cdef126b5dac8f7ca0e0a454570459955537939e3",
+    "audit_summary.json": "4710d66c7b76294d33adfc6199250fb307978b744d8ad80da442564a319cf563",
+    "selected_cases.json": "5a98115b435c6165b6f006ac378a015bd2dda7c79f8c07252e83182dc8cad379",
+    "unique_pixels.json": "cf2a6e3d7968bc97b12813e90257d68a24f608e9e7f53e57455c8dde798ff48e",
+    "warm_rows.jsonl": "c2879773fdcc4962d1b9acff18a88c6d0547978947e0aa5a618d91496a95008c",
+    "warm_summary.json": "4ed9447d37ff317edbcfeba17934b03eee37ba174df1af0cdbc98c8e5ebf7dca"
+  },
+  "cases": 10800,
+  "decoded_bits_identical": 10800,
+  "environment": {
+    "Pillow": "12.3.0",
+    "c2pa-python": "0.37.10",
+    "numpy": "2.2.6",
+    "torch": "2.6.0+cu124"
+  },
+  "gpu_inference_calls": 0,
+  "max_quantization_error": 0.000244140625,
+  "max_rerun_cache_error": 0.0,
+  "quantization_classification_changes": 0,
+  "rerun_cache_classification_changes": 0,
+  "script_sha256": "10532c12e57d2672ae2c487e4fa6fa55fd0a815c6d9a06b658cace905bb71f42",
+  "signed_assets_reopened": 10800,
+  "unique_pixels": 9800,
+  "verification_rows_sha256": "441047d83334bd95089555b8da09b6c65acac40fe21919274235d837082fe193"
+}

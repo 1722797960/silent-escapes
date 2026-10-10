@@ -1,0 +1,22 @@
+{
+  "schema": "protocol-v2-main-curve-full-config-1",
+  "dataset": "sdxl-centered-nine-level",
+  "expected_images": 200,
+  "expected_rhos": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+  "expected_cases": 1800,
+  "required_matches": 24,
+  "retention_floor": 0.05,
+  "suppression_threshold": 0.5,
+  "manifest_condition": {
+    "id": "issuer-claims-digital-capture",
+    "topology": "ancestor-reference",
+    "parent_semantics": "capture",
+    "child_disclosure": "omitted"
+  },
+  "editor_trust_conditions": ["trusted-editor", "untrusted-editor"],
+  "full_acceptance": {
+    "expected_escapes": 752,
+    "expected_reviewed_escapes": 686,
+    "expected_silent_other": 66
+  }
+}

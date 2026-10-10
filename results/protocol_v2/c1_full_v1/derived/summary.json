@@ -1,0 +1,2773 @@
+{
+  "acceptance_passed": true,
+  "audit_rows_sha256": "224d8ea3ff070c32f413f72cdef126b5dac8f7ca0e0a454570459955537939e3",
+  "base_records": 10800,
+  "gpu_inference_calls": 0,
+  "mask_aware_derived_records": 1800,
+  "mask_aware_is_independent_cohort": false,
+  "paired_center_vs_mask_aware": {
+    "0.0": {
+      "difference": 0.0,
+      "estimand": "mask-aware escape rate minus center escape rate",
+      "paired_source_bootstrap_interval95": [
+        0.0,
+        0.0
+      ],
+      "replicates": 2000,
+      "seed": 20261006,
+      "sources": 200
+    },
+    "0.1": {
+      "difference": -0.005,
+      "estimand": "mask-aware escape rate minus center escape rate",
+      "paired_source_bootstrap_interval95": [
+        -0.03,
+        0.02
+      ],
+      "replicates": 2000,
+      "seed": 20261006,
+      "sources": 200
+    },
+    "0.2": {
+      "difference": 0.215,
+      "estimand": "mask-aware escape rate minus center escape rate",
+      "paired_source_bootstrap_interval95": [
+        0.16,
+        0.275
+      ],
+      "replicates": 2000,
+      "seed": 20261006,
+      "sources": 200
+    },
+    "0.3": {
+      "difference": 0.285,
+      "estimand": "mask-aware escape rate minus center escape rate",
+      "paired_source_bootstrap_interval95": [
+        0.22487500000000002,
+        0.35
+      ],
+      "replicates": 2000,
+      "seed": 20261006,
+      "sources": 200
+    },
+    "0.4": {
+      "difference": 0.38,
+      "estimand": "mask-aware escape rate minus center escape rate",
+      "paired_source_bootstrap_interval95": [
+        0.315,
+        0.45
+      ],
+      "replicates": 2000,
+      "seed": 20261006,
+      "sources": 200
+    },
+    "0.5": {
+      "difference": 0.435,
+      "estimand": "mask-aware escape rate minus center escape rate",
+      "paired_source_bootstrap_interval95": [
+        0.37,
+        0.505
+      ],
+      "replicates": 2000,
+      "seed": 20261006,
+      "sources": 200
+    },
+    "0.6": {
+      "difference": 0.375,
+      "estimand": "mask-aware escape rate minus center escape rate",
+      "paired_source_bootstrap_interval95": [
+        0.305,
+        0.445
+      ],
+      "replicates": 2000,
+      "seed": 20261006,
+      "sources": 200
+    },
+    "0.7": {
+      "difference": 0.42,
+      "estimand": "mask-aware escape rate minus center escape rate",
+      "paired_source_bootstrap_interval95": [
+        0.345,
+        0.5
+      ],
+      "replicates": 2000,
+      "seed": 20261006,
+      "sources": 200
+    },
+    "0.8": {
+      "difference": 0.42,
+      "estimand": "mask-aware escape rate minus center escape rate",
+      "paired_source_bootstrap_interval95": [
+        0.345,
+        0.5
+      ],
+      "replicates": 2000,
+      "seed": 20261006,
+      "sources": 200
+    }
+  },
+  "per_method_rho": {
+    "bottom|0.0": {
+      "escape_rate_wilson95": {
+        "high": 0.0357217617161768,
+        "low": 0.0027466581335444384,
+        "rate": 0.01,
+        "successes": 2,
+        "total": 200
+      },
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.02777370439789293,
+        "low": 0.0008831687156009814,
+        "rate": 0.005,
+        "successes": 1,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9054687942657693,
+        "low": 0.09453120573423074,
+        "rate": 0.5,
+        "successes": 1,
+        "total": 2
+      },
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "bottom|0.1": {
+      "escape_rate_wilson95": {
+        "high": 0.10801907929906895,
+        "low": 0.03837635464915299,
+        "rate": 0.065,
+        "successes": 13,
+        "total": 200
+      },
+      "escapes": 13,
+      "evidence": {
+        "message-detected": 187,
+        "region-removed": 1,
+        "signal-suppressed": 3,
+        "silent-other": 9
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.050287086905826436,
+        "low": 0.0078044264163494685,
+        "rate": 0.02,
+        "successes": 4,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.5763065681945096,
+        "low": 0.12680703655710515,
+        "rate": 0.3076923076923077,
+        "successes": 4,
+        "total": 13
+      },
+      "reviews": 4,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 187,
+        "review-evidence-removal": 1,
+        "review-signal-suppression": 3,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.2": {
+      "escape_rate_wilson95": {
+        "high": 0.21160690592342077,
+        "low": 0.11139636927689314,
+        "rate": 0.155,
+        "successes": 31,
+        "total": 200
+      },
+      "escapes": 31,
+      "evidence": {
+        "message-detected": 169,
+        "region-removed": 14,
+        "signal-suppressed": 7,
+        "silent-other": 10
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.1551803199112304,
+        "low": 0.06970748792681017,
+        "rate": 0.105,
+        "successes": 21,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8143057343364082,
+        "low": 0.5014100930808565,
+        "rate": 0.6774193548387096,
+        "successes": 21,
+        "total": 31
+      },
+      "reviews": 21,
+      "silent_other": 10,
+      "trusted_policy": {
+        "integrity-clash": 169,
+        "review-evidence-removal": 14,
+        "review-signal-suppression": 7,
+        "silent-other": 10
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.3": {
+      "escape_rate_wilson95": {
+        "high": 0.2716461685990246,
+        "low": 0.15928412069979,
+        "rate": 0.21,
+        "successes": 42,
+        "total": 200
+      },
+      "escapes": 42,
+      "evidence": {
+        "message-detected": 158,
+        "region-removed": 31,
+        "signal-suppressed": 2,
+        "silent-other": 9
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.2226578153905955,
+        "low": 0.11996855328217307,
+        "rate": 0.165,
+        "successes": 33,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8829420012399697,
+        "low": 0.6406015468367708,
+        "rate": 0.7857142857142857,
+        "successes": 33,
+        "total": 42
+      },
+      "reviews": 33,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 158,
+        "review-evidence-removal": 31,
+        "review-signal-suppression": 2,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.4": {
+      "escape_rate_wilson95": {
+        "high": 0.3511534602960517,
+        "low": 0.22695003004617292,
+        "rate": 0.285,
+        "successes": 57,
+        "total": 200
+      },
+      "escapes": 57,
+      "evidence": {
+        "message-detected": 143,
+        "region-removed": 43,
+        "signal-suppressed": 2,
+        "silent-other": 12
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.2877412323566053,
+        "low": 0.17262369715089126,
+        "rate": 0.225,
+        "successes": 45,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8752545169696542,
+        "low": 0.6671387891680949,
+        "rate": 0.7894736842105263,
+        "successes": 45,
+        "total": 57
+      },
+      "reviews": 45,
+      "silent_other": 12,
+      "trusted_policy": {
+        "integrity-clash": 143,
+        "review-evidence-removal": 43,
+        "review-signal-suppression": 2,
+        "silent-other": 12
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.5": {
+      "escape_rate_wilson95": {
+        "high": 0.42858471833996925,
+        "low": 0.2966919730456654,
+        "rate": 0.36,
+        "successes": 72,
+        "total": 200
+      },
+      "escapes": 72,
+      "evidence": {
+        "message-detected": 128,
+        "region-removed": 56,
+        "signal-suppressed": 3,
+        "silent-other": 13
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.36158714524618774,
+        "low": 0.23613943856849148,
+        "rate": 0.295,
+        "successes": 59,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.891331834899801,
+        "low": 0.7151965826080176,
+        "rate": 0.8194444444444444,
+        "successes": 59,
+        "total": 72
+      },
+      "reviews": 59,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 128,
+        "review-evidence-removal": 56,
+        "review-signal-suppression": 3,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.6": {
+      "escape_rate_wilson95": {
+        "high": 0.45400132779753916,
+        "low": 0.32033309726923215,
+        "rate": 0.385,
+        "successes": 77,
+        "total": 200
+      },
+      "escapes": 77,
+      "evidence": {
+        "message-detected": 123,
+        "region-removed": 66,
+        "signal-suppressed": 2,
+        "silent-other": 9
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.4081150447316374,
+        "low": 0.27791545970908793,
+        "rate": 0.34,
+        "successes": 68,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.937274379943506,
+        "low": 0.7925491643206027,
+        "rate": 0.8831168831168831,
+        "successes": 68,
+        "total": 77
+      },
+      "reviews": 68,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 123,
+        "review-evidence-removal": 66,
+        "review-signal-suppression": 2,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.7": {
+      "escape_rate_wilson95": {
+        "high": 0.5440260398531525,
+        "low": 0.4069162264657108,
+        "rate": 0.475,
+        "successes": 95,
+        "total": 200
+      },
+      "escapes": 95,
+      "evidence": {
+        "message-detected": 105,
+        "region-removed": 76,
+        "signal-suppressed": 5,
+        "silent-other": 14
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.47420289918661307,
+        "low": 0.3393777128250677,
+        "rate": 0.405,
+        "successes": 81,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9101391934638322,
+        "low": 0.7677140150925396,
+        "rate": 0.8526315789473684,
+        "successes": 81,
+        "total": 95
+      },
+      "reviews": 81,
+      "silent_other": 14,
+      "trusted_policy": {
+        "integrity-clash": 105,
+        "review-evidence-removal": 76,
+        "review-signal-suppression": 5,
+        "silent-other": 14
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.8": {
+      "escape_rate_wilson95": {
+        "high": 0.9097179772033067,
+        "low": 0.8163364812775159,
+        "rate": 0.87,
+        "successes": 174,
+        "total": 200
+      },
+      "escapes": 174,
+      "evidence": {
+        "message-detected": 26,
+        "region-removed": 90,
+        "signal-suppressed": 11,
+        "silent-other": 73
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.5735415464009526,
+        "low": 0.43627000033527485,
+        "rate": 0.505,
+        "successes": 101,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.6512704132578164,
+        "low": 0.5061731895200408,
+        "rate": 0.5804597701149425,
+        "successes": 101,
+        "total": 174
+      },
+      "reviews": 101,
+      "silent_other": 73,
+      "trusted_policy": {
+        "integrity-clash": 26,
+        "review-evidence-removal": 90,
+        "review-signal-suppression": 11,
+        "silent-other": 73
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.0": {
+      "escape_rate_wilson95": {
+        "high": 0.0357217617161768,
+        "low": 0.0027466581335444384,
+        "rate": 0.01,
+        "successes": 2,
+        "total": 200
+      },
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.02777370439789293,
+        "low": 0.0008831687156009814,
+        "rate": 0.005,
+        "successes": 1,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9054687942657693,
+        "low": 0.09453120573423074,
+        "rate": 0.5,
+        "successes": 1,
+        "total": 2
+      },
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "center|0.1": {
+      "escape_rate_wilson95": {
+        "high": 0.12004361023629456,
+        "low": 0.04597491718438201,
+        "rate": 0.075,
+        "successes": 15,
+        "total": 200
+      },
+      "escapes": 15,
+      "evidence": {
+        "message-detected": 185,
+        "signal-suppressed": 3,
+        "silent-other": 12
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.04316572879269026,
+        "low": 0.00511423779325831,
+        "rate": 0.015,
+        "successes": 3,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.45185448715169363,
+        "low": 0.07047549346981563,
+        "rate": 0.2,
+        "successes": 3,
+        "total": 15
+      },
+      "reviews": 3,
+      "silent_other": 12,
+      "trusted_policy": {
+        "integrity-clash": 185,
+        "review-signal-suppression": 3,
+        "silent-other": 12
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.2": {
+      "escape_rate_wilson95": {
+        "high": 0.12004361023629456,
+        "low": 0.04597491718438201,
+        "rate": 0.075,
+        "successes": 15,
+        "total": 200
+      },
+      "escapes": 15,
+      "evidence": {
+        "message-detected": 185,
+        "signal-suppressed": 4,
+        "silent-other": 11
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.050287086905826436,
+        "low": 0.0078044264163494685,
+        "rate": 0.02,
+        "successes": 4,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.5195043405598057,
+        "low": 0.10897453325692374,
+        "rate": 0.26666666666666666,
+        "successes": 4,
+        "total": 15
+      },
+      "reviews": 4,
+      "silent_other": 11,
+      "trusted_policy": {
+        "integrity-clash": 185,
+        "review-signal-suppression": 4,
+        "silent-other": 11
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.3": {
+      "escape_rate_wilson95": {
+        "high": 0.1609269099730149,
+        "low": 0.07377244460125303,
+        "rate": 0.11,
+        "successes": 22,
+        "total": 200
+      },
+      "escapes": 22,
+      "evidence": {
+        "message-detected": 178,
+        "region-removed": 2,
+        "signal-suppressed": 7,
+        "silent-other": 13
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.0832967040018196,
+        "low": 0.023852543001492997,
+        "rate": 0.045,
+        "successes": 9,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.6126518152368488,
+        "low": 0.2325581619647187,
+        "rate": 0.4090909090909091,
+        "successes": 9,
+        "total": 22
+      },
+      "reviews": 9,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 178,
+        "review-evidence-removal": 2,
+        "review-signal-suppression": 7,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.4": {
+      "escape_rate_wilson95": {
+        "high": 0.22815883628312625,
+        "low": 0.12427907912586969,
+        "rate": 0.17,
+        "successes": 34,
+        "total": 200
+      },
+      "escapes": 34,
+      "evidence": {
+        "message-detected": 166,
+        "region-removed": 12,
+        "signal-suppressed": 5,
+        "silent-other": 17
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.13189587071565567,
+        "low": 0.05374575017747561,
+        "rate": 0.085,
+        "successes": 17,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.659306743543175,
+        "low": 0.34069325645682497,
+        "rate": 0.5,
+        "successes": 17,
+        "total": 34
+      },
+      "reviews": 17,
+      "silent_other": 17,
+      "trusted_policy": {
+        "integrity-clash": 166,
+        "review-evidence-removal": 12,
+        "review-signal-suppression": 5,
+        "silent-other": 17
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.5": {
+      "escape_rate_wilson95": {
+        "high": 0.3196292582045472,
+        "low": 0.1996049517203135,
+        "rate": 0.255,
+        "successes": 51,
+        "total": 200
+      },
+      "escapes": 51,
+      "evidence": {
+        "message-detected": 149,
+        "region-removed": 24,
+        "signal-suppressed": 8,
+        "silent-other": 19
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.21714070162067106,
+        "low": 0.1156741203158702,
+        "rate": 0.16,
+        "successes": 32,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.7467948053373558,
+        "low": 0.4902521346885088,
+        "rate": 0.6274509803921569,
+        "successes": 32,
+        "total": 51
+      },
+      "reviews": 32,
+      "silent_other": 19,
+      "trusted_policy": {
+        "integrity-clash": 149,
+        "review-evidence-removal": 24,
+        "review-signal-suppression": 8,
+        "silent-other": 19
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.6": {
+      "escape_rate_wilson95": {
+        "high": 0.42858471833996925,
+        "low": 0.2966919730456654,
+        "rate": 0.36,
+        "successes": 72,
+        "total": 200
+      },
+      "escapes": 72,
+      "evidence": {
+        "message-detected": 128,
+        "region-removed": 45,
+        "signal-suppressed": 13,
+        "silent-other": 14
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.3563747810077731,
+        "low": 0.23154025607067882,
+        "rate": 0.29,
+        "successes": 58,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8804852062054944,
+        "low": 0.6996724105411147,
+        "rate": 0.8055555555555556,
+        "successes": 58,
+        "total": 72
+      },
+      "reviews": 58,
+      "silent_other": 14,
+      "trusted_policy": {
+        "integrity-clash": 128,
+        "review-evidence-removal": 45,
+        "review-signal-suppression": 13,
+        "silent-other": 14
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.7": {
+      "escape_rate_wilson95": {
+        "high": 0.5092832466534134,
+        "low": 0.37297819251185865,
+        "rate": 0.44,
+        "successes": 88,
+        "total": 200
+      },
+      "escapes": 88,
+      "evidence": {
+        "message-detected": 112,
+        "region-removed": 78,
+        "signal-suppressed": 5,
+        "silent-other": 5
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.4842608509865596,
+        "low": 0.34894285449757567,
+        "rate": 0.415,
+        "successes": 83,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9754889720261908,
+        "low": 0.8738006734299275,
+        "rate": 0.9431818181818182,
+        "successes": 83,
+        "total": 88
+      },
+      "reviews": 83,
+      "silent_other": 5,
+      "trusted_policy": {
+        "integrity-clash": 112,
+        "review-evidence-removal": 78,
+        "review-signal-suppression": 5,
+        "silent-other": 5
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.8": {
+      "escape_rate_wilson95": {
+        "high": 0.6173593159775166,
+        "low": 0.48075615138475697,
+        "rate": 0.55,
+        "successes": 110,
+        "total": 200
+      },
+      "escapes": 110,
+      "evidence": {
+        "message-detected": 90,
+        "region-removed": 98,
+        "signal-suppressed": 6,
+        "silent-other": 6
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.588208336216767,
+        "low": 0.4510378507281424,
+        "rate": 0.52,
+        "successes": 104,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9747641729488964,
+        "low": 0.8860821392400117,
+        "rate": 0.9454545454545454,
+        "successes": 104,
+        "total": 110
+      },
+      "reviews": 104,
+      "silent_other": 6,
+      "trusted_policy": {
+        "integrity-clash": 90,
+        "review-evidence-removal": 98,
+        "review-signal-suppression": 6,
+        "silent-other": 6
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.0": {
+      "escape_rate_wilson95": {
+        "high": 0.0357217617161768,
+        "low": 0.0027466581335444384,
+        "rate": 0.01,
+        "successes": 2,
+        "total": 200
+      },
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.02777370439789293,
+        "low": 0.0008831687156009814,
+        "rate": 0.005,
+        "successes": 1,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9054687942657693,
+        "low": 0.09453120573423074,
+        "rate": 0.5,
+        "successes": 1,
+        "total": 2
+      },
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "left|0.1": {
+      "escape_rate_wilson95": {
+        "high": 0.0957869987723084,
+        "low": 0.03098534170345884,
+        "rate": 0.055,
+        "successes": 11,
+        "total": 200
+      },
+      "escapes": 11,
+      "evidence": {
+        "message-detected": 189,
+        "region-removed": 3,
+        "signal-suppressed": 1,
+        "silent-other": 7
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.050287086905826436,
+        "low": 0.0078044264163494685,
+        "rate": 0.02,
+        "successes": 4,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.6461988254921511,
+        "low": 0.15166471095367573,
+        "rate": 0.36363636363636365,
+        "successes": 4,
+        "total": 11
+      },
+      "reviews": 4,
+      "silent_other": 7,
+      "trusted_policy": {
+        "integrity-clash": 189,
+        "review-evidence-removal": 3,
+        "review-signal-suppression": 1,
+        "silent-other": 7
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.2": {
+      "escape_rate_wilson95": {
+        "high": 0.1436016116481994,
+        "low": 0.06166310271738653,
+        "rate": 0.095,
+        "successes": 19,
+        "total": 200
+      },
+      "escapes": 19,
+      "evidence": {
+        "message-detected": 181,
+        "region-removed": 7,
+        "signal-suppressed": 6,
+        "silent-other": 6
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.10801907929906895,
+        "low": 0.03837635464915299,
+        "rate": 0.065,
+        "successes": 13,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8463562091220773,
+        "low": 0.46010407675327475,
+        "rate": 0.6842105263157895,
+        "successes": 13,
+        "total": 19
+      },
+      "reviews": 13,
+      "silent_other": 6,
+      "trusted_policy": {
+        "integrity-clash": 181,
+        "review-evidence-removal": 7,
+        "review-signal-suppression": 6,
+        "silent-other": 6
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.3": {
+      "escape_rate_wilson95": {
+        "high": 0.18366351872248407,
+        "low": 0.0902820227966932,
+        "rate": 0.13,
+        "successes": 26,
+        "total": 200
+      },
+      "escapes": 26,
+      "evidence": {
+        "message-detected": 174,
+        "region-removed": 15,
+        "signal-suppressed": 3,
+        "silent-other": 8
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.13776571876716542,
+        "low": 0.05768744886219316,
+        "rate": 0.09,
+        "successes": 18,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8349868440453624,
+        "low": 0.5001174167780164,
+        "rate": 0.6923076923076923,
+        "successes": 18,
+        "total": 26
+      },
+      "reviews": 18,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 174,
+        "review-evidence-removal": 15,
+        "review-signal-suppression": 3,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.4": {
+      "escape_rate_wilson95": {
+        "high": 0.2445706276115175,
+        "low": 0.13730192800616042,
+        "rate": 0.185,
+        "successes": 37,
+        "total": 200
+      },
+      "escapes": 37,
+      "evidence": {
+        "message-detected": 163,
+        "region-removed": 24,
+        "signal-suppressed": 5,
+        "silent-other": 8
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.20048667530781522,
+        "low": 0.10289350642004402,
+        "rate": 0.145,
+        "successes": 29,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8861348800661442,
+        "low": 0.6280485160803084,
+        "rate": 0.7837837837837838,
+        "successes": 29,
+        "total": 37
+      },
+      "reviews": 29,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 163,
+        "review-evidence-removal": 24,
+        "review-signal-suppression": 5,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.5": {
+      "escape_rate_wilson95": {
+        "high": 0.32490745602534116,
+        "low": 0.20413830063574687,
+        "rate": 0.26,
+        "successes": 52,
+        "total": 200
+      },
+      "escapes": 52,
+      "evidence": {
+        "message-detected": 148,
+        "region-removed": 36,
+        "signal-suppressed": 3,
+        "silent-other": 13
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.25544044374612745,
+        "low": 0.1460552053440051,
+        "rate": 0.195,
+        "successes": 39,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8476684613640423,
+        "low": 0.6179354205740265,
+        "rate": 0.75,
+        "successes": 39,
+        "total": 52
+      },
+      "reviews": 39,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 148,
+        "review-evidence-removal": 36,
+        "review-signal-suppression": 3,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.6": {
+      "escape_rate_wilson95": {
+        "high": 0.3563747810077731,
+        "low": 0.23154025607067882,
+        "rate": 0.29,
+        "successes": 58,
+        "total": 200
+      },
+      "escapes": 58,
+      "evidence": {
+        "message-detected": 142,
+        "region-removed": 43,
+        "signal-suppressed": 4,
+        "silent-other": 11
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.29841368882762537,
+        "low": 0.18157433415232588,
+        "rate": 0.235,
+        "successes": 47,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8906574833887974,
+        "low": 0.6914762612950077,
+        "rate": 0.8103448275862069,
+        "successes": 47,
+        "total": 58
+      },
+      "reviews": 47,
+      "silent_other": 11,
+      "trusted_policy": {
+        "integrity-clash": 142,
+        "review-evidence-removal": 43,
+        "review-signal-suppression": 4,
+        "silent-other": 11
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.7": {
+      "escape_rate_wilson95": {
+        "high": 0.46916327960737997,
+        "low": 0.33460578566807336,
+        "rate": 0.4,
+        "successes": 80,
+        "total": 200
+      },
+      "escapes": 80,
+      "evidence": {
+        "message-detected": 120,
+        "region-removed": 56,
+        "signal-suppressed": 6,
+        "silent-other": 18
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.37717177566258037,
+        "low": 0.2499894483607809,
+        "rate": 0.31,
+        "successes": 62,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8526679265915337,
+        "low": 0.6721321021639265,
+        "rate": 0.775,
+        "successes": 62,
+        "total": 80
+      },
+      "reviews": 62,
+      "silent_other": 18,
+      "trusted_policy": {
+        "integrity-clash": 120,
+        "review-evidence-removal": 56,
+        "review-signal-suppression": 6,
+        "silent-other": 18
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.8": {
+      "escape_rate_wilson95": {
+        "high": 0.8273763028491088,
+        "low": 0.7122587676433947,
+        "rate": 0.775,
+        "successes": 155,
+        "total": 200
+      },
+      "escapes": 155,
+      "evidence": {
+        "message-detected": 45,
+        "region-removed": 76,
+        "signal-suppressed": 14,
+        "silent-other": 65
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.5192438486152432,
+        "low": 0.3826406840224836,
+        "rate": 0.45,
+        "successes": 90,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.6554579389549344,
+        "low": 0.5019317009137154,
+        "rate": 0.5806451612903226,
+        "successes": 90,
+        "total": 155
+      },
+      "reviews": 90,
+      "silent_other": 65,
+      "trusted_policy": {
+        "integrity-clash": 45,
+        "review-evidence-removal": 76,
+        "review-signal-suppression": 14,
+        "silent-other": 65
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "mask-aware|0.0": {
+      "escape_rate_wilson95": {
+        "high": 0.0357217617161768,
+        "low": 0.0027466581335444384,
+        "rate": 0.01,
+        "successes": 2,
+        "total": 200
+      },
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.02777370439789293,
+        "low": 0.0008831687156009814,
+        "rate": 0.005,
+        "successes": 1,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9054687942657693,
+        "low": 0.09453120573423074,
+        "rate": 0.5,
+        "successes": 1,
+        "total": 2
+      },
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "mask-aware|0.1": {
+      "escape_rate_wilson95": {
+        "high": 0.11405480885610647,
+        "low": 0.042152171828342806,
+        "rate": 0.07,
+        "successes": 14,
+        "total": 200
+      },
+      "escapes": 14,
+      "evidence": {
+        "message-detected": 186,
+        "region-removed": 5,
+        "signal-suppressed": 3,
+        "silent-other": 6
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.07693206820093293,
+        "low": 0.020405632066152306,
+        "rate": 0.04,
+        "successes": 8,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.7861920109552588,
+        "low": 0.3259064457965074,
+        "rate": 0.5714285714285714,
+        "successes": 8,
+        "total": 14
+      },
+      "reviews": 8,
+      "silent_other": 6,
+      "trusted_policy": {
+        "integrity-clash": 186,
+        "review-evidence-removal": 5,
+        "review-signal-suppression": 3,
+        "silent-other": 6
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "mask-aware|0.2": {
+      "escape_rate_wilson95": {
+        "high": 0.3563747810077731,
+        "low": 0.23154025607067882,
+        "rate": 0.29,
+        "successes": 58,
+        "total": 200
+      },
+      "escapes": 58,
+      "evidence": {
+        "message-detected": 142,
+        "region-removed": 31,
+        "signal-suppressed": 14,
+        "silent-other": 13
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.2877412323566053,
+        "low": 0.17262369715089126,
+        "rate": 0.225,
+        "successes": 45,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8640633938859026,
+        "low": 0.653388823610813,
+        "rate": 0.7758620689655172,
+        "successes": 45,
+        "total": 58
+      },
+      "reviews": 45,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 142,
+        "review-evidence-removal": 31,
+        "review-signal-suppression": 14,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "mask-aware|0.3": {
+      "escape_rate_wilson95": {
+        "high": 0.46411650840714636,
+        "low": 0.32984101013207967,
+        "rate": 0.395,
+        "successes": 79,
+        "total": 200
+      },
+      "escapes": 79,
+      "evidence": {
+        "message-detected": 121,
+        "region-removed": 69,
+        "signal-suppressed": 5,
+        "silent-other": 5
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.4387737007594981,
+        "low": 0.30612608409859116,
+        "rate": 0.37,
+        "successes": 74,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9726651351199317,
+        "low": 0.8602511483722118,
+        "rate": 0.9367088607594937,
+        "successes": 74,
+        "total": 79
+      },
+      "reviews": 74,
+      "silent_other": 5,
+      "trusted_policy": {
+        "integrity-clash": 121,
+        "review-evidence-removal": 69,
+        "review-signal-suppression": 5,
+        "silent-other": 5
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "mask-aware|0.4": {
+      "escape_rate_wilson95": {
+        "high": 0.6173593159775166,
+        "low": 0.48075615138475697,
+        "rate": 0.55,
+        "successes": 110,
+        "total": 200
+      },
+      "escapes": 110,
+      "evidence": {
+        "message-detected": 90,
+        "region-removed": 97,
+        "signal-suppressed": 5,
+        "silent-other": 8
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.5784372166878682,
+        "low": 0.44118587678458643,
+        "rate": 0.51,
+        "successes": 102,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9626895792934052,
+        "low": 0.863020148724527,
+        "rate": 0.9272727272727272,
+        "successes": 102,
+        "total": 110
+      },
+      "reviews": 102,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 90,
+        "review-evidence-removal": 97,
+        "review-signal-suppression": 5,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "mask-aware|0.5": {
+      "escape_rate_wilson95": {
+        "high": 0.750010551639219,
+        "low": 0.6228282243374195,
+        "rate": 0.69,
+        "successes": 138,
+        "total": 200
+      },
+      "escapes": 138,
+      "evidence": {
+        "message-detected": 62,
+        "region-removed": 133,
+        "signal-suppressed": 1,
+        "silent-other": 4
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.7314257412939605,
+        "low": 0.602166847737769,
+        "rate": 0.67,
+        "successes": 134,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.988671584157744,
+        "low": 0.927844652215267,
+        "rate": 0.9710144927536232,
+        "successes": 134,
+        "total": 138
+      },
+      "reviews": 134,
+      "silent_other": 4,
+      "trusted_policy": {
+        "integrity-clash": 62,
+        "review-evidence-removal": 133,
+        "review-signal-suppression": 1,
+        "silent-other": 4
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "mask-aware|0.6": {
+      "escape_rate_wilson95": {
+        "high": 0.7913184585289088,
+        "low": 0.6698242380737758,
+        "rate": 0.735,
+        "successes": 147,
+        "total": 200
+      },
+      "escapes": 147,
+      "evidence": {
+        "message-detected": 53,
+        "region-removed": 142,
+        "signal-suppressed": 2,
+        "silent-other": 3
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.7776311022605097,
+        "low": 0.6540769541334929,
+        "rate": 0.72,
+        "successes": 144,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9930354866654815,
+        "low": 0.9417207872552534,
+        "rate": 0.9795918367346939,
+        "successes": 144,
+        "total": 147
+      },
+      "reviews": 144,
+      "silent_other": 3,
+      "trusted_policy": {
+        "integrity-clash": 53,
+        "review-evidence-removal": 142,
+        "review-signal-suppression": 2,
+        "silent-other": 3
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "mask-aware|0.7": {
+      "escape_rate_wilson95": {
+        "high": 0.9013301736654437,
+        "low": 0.8051011913429243,
+        "rate": 0.86,
+        "successes": 172,
+        "total": 200
+      },
+      "escapes": 172,
+      "evidence": {
+        "message-detected": 28,
+        "region-removed": 165,
+        "silent-other": 7
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.8713948493372666,
+        "low": 0.7663556885175099,
+        "rate": 0.825,
+        "successes": 165,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9801485033044198,
+        "low": 0.9183881731975246,
+        "rate": 0.9593023255813954,
+        "successes": 165,
+        "total": 172
+      },
+      "reviews": 165,
+      "silent_other": 7,
+      "trusted_policy": {
+        "integrity-clash": 28,
+        "review-evidence-removal": 165,
+        "silent-other": 7
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "mask-aware|0.8": {
+      "escape_rate_wilson95": {
+        "high": 0.9861796856598887,
+        "low": 0.9361057075454807,
+        "rate": 0.97,
+        "successes": 194,
+        "total": 200
+      },
+      "escapes": 194,
+      "evidence": {
+        "message-detected": 6,
+        "region-removed": 178,
+        "signal-suppressed": 3,
+        "silent-other": 13
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.9383368972826135,
+        "low": 0.8563983883518006,
+        "rate": 0.905,
+        "successes": 181,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9604240306512298,
+        "low": 0.8887407551394989,
+        "rate": 0.9329896907216495,
+        "successes": 181,
+        "total": 194
+      },
+      "reviews": 181,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 6,
+        "review-evidence-removal": 178,
+        "review-signal-suppression": 3,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.0": {
+      "escape_rate_wilson95": {
+        "high": 0.0357217617161768,
+        "low": 0.0027466581335444384,
+        "rate": 0.01,
+        "successes": 2,
+        "total": 200
+      },
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.02777370439789293,
+        "low": 0.0008831687156009814,
+        "rate": 0.005,
+        "successes": 1,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9054687942657693,
+        "low": 0.09453120573423074,
+        "rate": 0.5,
+        "successes": 1,
+        "total": 2
+      },
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "random|0.1": {
+      "escape_rate_wilson95": {
+        "high": 0.10801907929906895,
+        "low": 0.03837635464915299,
+        "rate": 0.065,
+        "successes": 13,
+        "total": 200
+      },
+      "escapes": 13,
+      "evidence": {
+        "message-detected": 187,
+        "signal-suppressed": 3,
+        "silent-other": 10
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.04316572879269026,
+        "low": 0.00511423779325831,
+        "rate": 0.015,
+        "successes": 3,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.5025637594672749,
+        "low": 0.08179528718498569,
+        "rate": 0.23076923076923078,
+        "successes": 3,
+        "total": 13
+      },
+      "reviews": 3,
+      "silent_other": 10,
+      "trusted_policy": {
+        "integrity-clash": 187,
+        "review-signal-suppression": 3,
+        "silent-other": 10
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.2": {
+      "escape_rate_wilson95": {
+        "high": 0.1494058124327174,
+        "low": 0.06567044866909588,
+        "rate": 0.1,
+        "successes": 20,
+        "total": 200
+      },
+      "escapes": 20,
+      "evidence": {
+        "message-detected": 180,
+        "region-removed": 2,
+        "signal-suppressed": 6,
+        "silent-other": 12
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.07693206820093293,
+        "low": 0.020405632066152306,
+        "rate": 0.04,
+        "successes": 8,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.6134184992377469,
+        "low": 0.21880653237281705,
+        "rate": 0.4,
+        "successes": 8,
+        "total": 20
+      },
+      "reviews": 8,
+      "silent_other": 12,
+      "trusted_policy": {
+        "integrity-clash": 180,
+        "review-evidence-removal": 2,
+        "review-signal-suppression": 6,
+        "silent-other": 12
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.3": {
+      "escape_rate_wilson95": {
+        "high": 0.20048667530781522,
+        "low": 0.10289350642004402,
+        "rate": 0.145,
+        "successes": 29,
+        "total": 200
+      },
+      "escapes": 29,
+      "evidence": {
+        "message-detected": 171,
+        "region-removed": 6,
+        "signal-suppressed": 5,
+        "silent-other": 18
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.0957869987723084,
+        "low": 0.03098534170345884,
+        "rate": 0.055,
+        "successes": 11,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.5599745579401147,
+        "low": 0.2268802210080984,
+        "rate": 0.3793103448275862,
+        "successes": 11,
+        "total": 29
+      },
+      "reviews": 11,
+      "silent_other": 18,
+      "trusted_policy": {
+        "integrity-clash": 171,
+        "review-evidence-removal": 6,
+        "review-signal-suppression": 5,
+        "silent-other": 18
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.4": {
+      "escape_rate_wilson95": {
+        "high": 0.23911475028724882,
+        "low": 0.13294625859420173,
+        "rate": 0.18,
+        "successes": 36,
+        "total": 200
+      },
+      "escapes": 36,
+      "evidence": {
+        "message-detected": 164,
+        "region-removed": 17,
+        "signal-suppressed": 11,
+        "silent-other": 8
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.1948988086570756,
+        "low": 0.09866982633455634,
+        "rate": 0.14,
+        "successes": 28,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8828366802420353,
+        "low": 0.6191529705388181,
+        "rate": 0.7777777777777778,
+        "successes": 28,
+        "total": 36
+      },
+      "reviews": 28,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 164,
+        "review-evidence-removal": 17,
+        "review-signal-suppression": 11,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.5": {
+      "escape_rate_wilson95": {
+        "high": 0.3511534602960517,
+        "low": 0.22695003004617292,
+        "rate": 0.285,
+        "successes": 57,
+        "total": 200
+      },
+      "escapes": 57,
+      "evidence": {
+        "message-detected": 143,
+        "region-removed": 31,
+        "signal-suppressed": 8,
+        "silent-other": 18
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.25544044374612745,
+        "low": 0.1460552053440051,
+        "rate": 0.195,
+        "successes": 39,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.7899571236117475,
+        "low": 0.5552022530213656,
+        "rate": 0.6842105263157895,
+        "successes": 39,
+        "total": 57
+      },
+      "reviews": 39,
+      "silent_other": 18,
+      "trusted_policy": {
+        "integrity-clash": 143,
+        "review-evidence-removal": 31,
+        "review-signal-suppression": 8,
+        "silent-other": 18
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.6": {
+      "escape_rate_wilson95": {
+        "high": 0.38751898434113546,
+        "low": 0.25926533315468053,
+        "rate": 0.32,
+        "successes": 64,
+        "total": 200
+      },
+      "escapes": 64,
+      "evidence": {
+        "message-detected": 136,
+        "region-removed": 52,
+        "signal-suppressed": 4,
+        "silent-other": 8
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.3459230458665071,
+        "low": 0.22236889773949026,
+        "rate": 0.28,
+        "successes": 56,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9352775733666955,
+        "low": 0.7722543817887005,
+        "rate": 0.875,
+        "successes": 56,
+        "total": 64
+      },
+      "reviews": 56,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 136,
+        "review-evidence-removal": 52,
+        "review-signal-suppression": 4,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.7": {
+      "escape_rate_wilson95": {
+        "high": 0.4132441074094632,
+        "low": 0.2825979437674894,
+        "rate": 0.345,
+        "successes": 69,
+        "total": 200
+      },
+      "escapes": 69,
+      "evidence": {
+        "message-detected": 131,
+        "region-removed": 61,
+        "signal-suppressed": 6,
+        "silent-other": 2
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.40297808792033485,
+        "low": 0.2732408697841632,
+        "rate": 0.335,
+        "successes": 67,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9920147973076358,
+        "low": 0.9003341623693445,
+        "rate": 0.9710144927536232,
+        "successes": 67,
+        "total": 69
+      },
+      "reviews": 67,
+      "silent_other": 2,
+      "trusted_policy": {
+        "integrity-clash": 131,
+        "review-evidence-removal": 61,
+        "review-signal-suppression": 6,
+        "silent-other": 2
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.8": {
+      "escape_rate_wilson95": {
+        "high": 0.5588141232154135,
+        "low": 0.42156278331213176,
+        "rate": 0.49,
+        "successes": 98,
+        "total": 200
+      },
+      "escapes": 98,
+      "evidence": {
+        "message-detected": 102,
+        "region-removed": 86,
+        "signal-suppressed": 3,
+        "silent-other": 9
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.5142669758719658,
+        "low": 0.3778060100295335,
+        "rate": 0.445,
+        "successes": 89,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9509307848544166,
+        "low": 0.8346039170870685,
+        "rate": 0.9081632653061225,
+        "successes": 89,
+        "total": 98
+      },
+      "reviews": 89,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 102,
+        "review-evidence-removal": 86,
+        "review-signal-suppression": 3,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.0": {
+      "escape_rate_wilson95": {
+        "high": 0.0357217617161768,
+        "low": 0.0027466581335444384,
+        "rate": 0.01,
+        "successes": 2,
+        "total": 200
+      },
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.02777370439789293,
+        "low": 0.0008831687156009814,
+        "rate": 0.005,
+        "successes": 1,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9054687942657693,
+        "low": 0.09453120573423074,
+        "rate": 0.5,
+        "successes": 1,
+        "total": 2
+      },
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "right|0.1": {
+      "escape_rate_wilson95": {
+        "high": 0.07693206820093293,
+        "low": 0.020405632066152306,
+        "rate": 0.04,
+        "successes": 8,
+        "total": 200
+      },
+      "escapes": 8,
+      "evidence": {
+        "message-detected": 192,
+        "signal-suppressed": 1,
+        "silent-other": 7
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.02777370439789293,
+        "low": 0.0008831687156009814,
+        "rate": 0.005,
+        "successes": 1,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.4708881822128535,
+        "low": 0.02241749145005667,
+        "rate": 0.125,
+        "successes": 1,
+        "total": 8
+      },
+      "reviews": 1,
+      "silent_other": 7,
+      "trusted_policy": {
+        "integrity-clash": 192,
+        "review-signal-suppression": 1,
+        "silent-other": 7
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.2": {
+      "escape_rate_wilson95": {
+        "high": 0.12004361023629456,
+        "low": 0.04597491718438201,
+        "rate": 0.075,
+        "successes": 15,
+        "total": 200
+      },
+      "escapes": 15,
+      "evidence": {
+        "message-detected": 185,
+        "region-removed": 5,
+        "signal-suppressed": 2,
+        "silent-other": 8
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.07047061152229073,
+        "low": 0.017055542008567192,
+        "rate": 0.035,
+        "successes": 7,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.698830199745016,
+        "low": 0.24809535365737387,
+        "rate": 0.4666666666666667,
+        "successes": 7,
+        "total": 15
+      },
+      "reviews": 7,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 185,
+        "review-evidence-removal": 5,
+        "review-signal-suppression": 2,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.3": {
+      "escape_rate_wilson95": {
+        "high": 0.18929138370752552,
+        "low": 0.09446570454787906,
+        "rate": 0.135,
+        "successes": 27,
+        "total": 200
+      },
+      "escapes": 27,
+      "evidence": {
+        "message-detected": 173,
+        "region-removed": 12,
+        "signal-suppressed": 3,
+        "silent-other": 12
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.12004361023629456,
+        "low": 0.04597491718438201,
+        "rate": 0.075,
+        "successes": 15,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.72414141822977,
+        "low": 0.3731302451322448,
+        "rate": 0.5555555555555556,
+        "successes": 15,
+        "total": 27
+      },
+      "reviews": 15,
+      "silent_other": 12,
+      "trusted_policy": {
+        "integrity-clash": 173,
+        "review-evidence-removal": 12,
+        "review-signal-suppression": 3,
+        "silent-other": 12
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.4": {
+      "escape_rate_wilson95": {
+        "high": 0.2445706276115175,
+        "low": 0.13730192800616042,
+        "rate": 0.185,
+        "successes": 37,
+        "total": 200
+      },
+      "escapes": 37,
+      "evidence": {
+        "message-detected": 163,
+        "region-removed": 20,
+        "signal-suppressed": 2,
+        "silent-other": 15
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.1609269099730149,
+        "low": 0.07377244460125303,
+        "rate": 0.11,
+        "successes": 22,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.7365348180798572,
+        "low": 0.43485964730229365,
+        "rate": 0.5945945945945946,
+        "successes": 22,
+        "total": 37
+      },
+      "reviews": 22,
+      "silent_other": 15,
+      "trusted_policy": {
+        "integrity-clash": 163,
+        "review-evidence-removal": 20,
+        "review-signal-suppression": 2,
+        "silent-other": 15
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.5": {
+      "escape_rate_wilson95": {
+        "high": 0.30904243556203415,
+        "low": 0.1905686808903718,
+        "rate": 0.245,
+        "successes": 49,
+        "total": 200
+      },
+      "escapes": 49,
+      "evidence": {
+        "message-detected": 151,
+        "region-removed": 25,
+        "signal-suppressed": 3,
+        "silent-other": 21
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.1948988086570756,
+        "low": 0.09866982633455634,
+        "rate": 0.14,
+        "successes": 28,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.699766809211184,
+        "low": 0.4327049309001736,
+        "rate": 0.5714285714285714,
+        "successes": 28,
+        "total": 49
+      },
+      "reviews": 28,
+      "silent_other": 21,
+      "trusted_policy": {
+        "integrity-clash": 151,
+        "review-evidence-removal": 25,
+        "review-signal-suppression": 3,
+        "silent-other": 21
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.6": {
+      "escape_rate_wilson95": {
+        "high": 0.3196292582045472,
+        "low": 0.1996049517203135,
+        "rate": 0.255,
+        "successes": 51,
+        "total": 200
+      },
+      "escapes": 51,
+      "evidence": {
+        "message-detected": 149,
+        "region-removed": 30,
+        "signal-suppressed": 8,
+        "silent-other": 13
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.25001238707599854,
+        "low": 0.14167171527790676,
+        "rate": 0.19,
+        "successes": 38,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.844542318434177,
+        "low": 0.6113171816155626,
+        "rate": 0.7450980392156863,
+        "successes": 38,
+        "total": 51
+      },
+      "reviews": 38,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 149,
+        "review-evidence-removal": 30,
+        "review-signal-suppression": 8,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.7": {
+      "escape_rate_wilson95": {
+        "high": 0.44385696301021843,
+        "low": 0.31085436858409826,
+        "rate": 0.375,
+        "successes": 75,
+        "total": 200
+      },
+      "escapes": 75,
+      "evidence": {
+        "message-detected": 125,
+        "region-removed": 51,
+        "signal-suppressed": 6,
+        "silent-other": 18
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.3511534602960517,
+        "low": 0.22695003004617292,
+        "rate": 0.285,
+        "successes": 57,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8424512633999708,
+        "low": 0.6522123385089702,
+        "rate": 0.76,
+        "successes": 57,
+        "total": 75
+      },
+      "reviews": 57,
+      "silent_other": 18,
+      "trusted_policy": {
+        "integrity-clash": 125,
+        "review-evidence-removal": 51,
+        "review-signal-suppression": 6,
+        "silent-other": 18
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.8": {
+      "escape_rate_wilson95": {
+        "high": 0.8583282847220932,
+        "low": 0.7499876129240015,
+        "rate": 0.81,
+        "successes": 162,
+        "total": 200
+      },
+      "escapes": 162,
+      "evidence": {
+        "message-detected": 38,
+        "region-removed": 73,
+        "signal-suppressed": 19,
+        "silent-other": 70
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.5291771081104667,
+        "low": 0.39233051799971463,
+        "rate": 0.46,
+        "successes": 92,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.6417375400812267,
+        "low": 0.4909192765944283,
+        "rate": 0.5679012345679012,
+        "successes": 92,
+        "total": 162
+      },
+      "reviews": 92,
+      "silent_other": 70,
+      "trusted_policy": {
+        "integrity-clash": 38,
+        "review-evidence-removal": 73,
+        "review-signal-suppression": 19,
+        "silent-other": 70
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.0": {
+      "escape_rate_wilson95": {
+        "high": 0.0357217617161768,
+        "low": 0.0027466581335444384,
+        "rate": 0.01,
+        "successes": 2,
+        "total": 200
+      },
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.02777370439789293,
+        "low": 0.0008831687156009814,
+        "rate": 0.005,
+        "successes": 1,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9054687942657693,
+        "low": 0.09453120573423074,
+        "rate": 0.5,
+        "successes": 1,
+        "total": 2
+      },
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "top|0.1": {
+      "escape_rate_wilson95": {
+        "high": 0.0832967040018196,
+        "low": 0.023852543001492997,
+        "rate": 0.045,
+        "successes": 9,
+        "total": 200
+      },
+      "escapes": 9,
+      "evidence": {
+        "message-detected": 191,
+        "region-removed": 1,
+        "signal-suppressed": 2,
+        "silent-other": 6
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.04316572879269026,
+        "low": 0.00511423779325831,
+        "rate": 0.015,
+        "successes": 3,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.6457978644196036,
+        "low": 0.1205838183869109,
+        "rate": 0.3333333333333333,
+        "successes": 3,
+        "total": 9
+      },
+      "reviews": 3,
+      "silent_other": 6,
+      "trusted_policy": {
+        "integrity-clash": 191,
+        "review-evidence-removal": 1,
+        "review-signal-suppression": 2,
+        "silent-other": 6
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.2": {
+      "escape_rate_wilson95": {
+        "high": 0.1609269099730149,
+        "low": 0.07377244460125303,
+        "rate": 0.11,
+        "successes": 22,
+        "total": 200
+      },
+      "escapes": 22,
+      "evidence": {
+        "message-detected": 178,
+        "region-removed": 5,
+        "signal-suppressed": 8,
+        "silent-other": 9
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.10801907929906895,
+        "low": 0.03837635464915299,
+        "rate": 0.065,
+        "successes": 13,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.7674418380352814,
+        "low": 0.3873481847631513,
+        "rate": 0.5909090909090909,
+        "successes": 13,
+        "total": 22
+      },
+      "reviews": 13,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 178,
+        "review-evidence-removal": 5,
+        "review-signal-suppression": 8,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.3": {
+      "escape_rate_wilson95": {
+        "high": 0.2226578153905955,
+        "low": 0.11996855328217307,
+        "rate": 0.165,
+        "successes": 33,
+        "total": 200
+      },
+      "escapes": 33,
+      "evidence": {
+        "message-detected": 167,
+        "region-removed": 25,
+        "signal-suppressed": 2,
+        "silent-other": 6
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.18929138370752552,
+        "low": 0.09446570454787906,
+        "rate": 0.135,
+        "successes": 27,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9138923179105933,
+        "low": 0.6561176836533009,
+        "rate": 0.8181818181818182,
+        "successes": 27,
+        "total": 33
+      },
+      "reviews": 27,
+      "silent_other": 6,
+      "trusted_policy": {
+        "integrity-clash": 167,
+        "review-evidence-removal": 25,
+        "review-signal-suppression": 2,
+        "silent-other": 6
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.4": {
+      "escape_rate_wilson95": {
+        "high": 0.2877412323566053,
+        "low": 0.17262369715089126,
+        "rate": 0.225,
+        "successes": 45,
+        "total": 200
+      },
+      "escapes": 45,
+      "evidence": {
+        "message-detected": 155,
+        "region-removed": 34,
+        "signal-suppressed": 4,
+        "silent-other": 7
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.25001238707599854,
+        "low": 0.14167171527790676,
+        "rate": 0.19,
+        "successes": 38,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9225457651524174,
+        "low": 0.7121609112760374,
+        "rate": 0.8444444444444444,
+        "successes": 38,
+        "total": 45
+      },
+      "reviews": 38,
+      "silent_other": 7,
+      "trusted_policy": {
+        "integrity-clash": 155,
+        "review-evidence-removal": 34,
+        "review-signal-suppression": 4,
+        "silent-other": 7
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.5": {
+      "escape_rate_wilson95": {
+        "high": 0.3926801488397004,
+        "low": 0.2639157153923429,
+        "rate": 0.325,
+        "successes": 65,
+        "total": 200
+      },
+      "escapes": 65,
+      "evidence": {
+        "message-detected": 135,
+        "region-removed": 50,
+        "signal-suppressed": 6,
+        "silent-other": 9
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.3459230458665071,
+        "low": 0.22236889773949026,
+        "rate": 0.28,
+        "successes": 56,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.9254090959684629,
+        "low": 0.7573190275365485,
+        "rate": 0.8615384615384616,
+        "successes": 56,
+        "total": 65
+      },
+      "reviews": 56,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 135,
+        "review-evidence-removal": 50,
+        "review-signal-suppression": 6,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.6": {
+      "escape_rate_wilson95": {
+        "high": 0.45400132779753916,
+        "low": 0.32033309726923215,
+        "rate": 0.385,
+        "successes": 77,
+        "total": 200
+      },
+      "escapes": 77,
+      "evidence": {
+        "message-detected": 123,
+        "region-removed": 65,
+        "signal-suppressed": 4,
+        "silent-other": 8
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.4132441074094632,
+        "low": 0.2825979437674894,
+        "rate": 0.345,
+        "successes": 69,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.946407076352419,
+        "low": 0.8081562490731851,
+        "rate": 0.8961038961038961,
+        "successes": 69,
+        "total": 77
+      },
+      "reviews": 69,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 123,
+        "review-evidence-removal": 65,
+        "review-signal-suppression": 4,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.7": {
+      "escape_rate_wilson95": {
+        "high": 0.6221939899704665,
+        "low": 0.4857330241280342,
+        "rate": 0.555,
+        "successes": 111,
+        "total": 200
+      },
+      "escapes": 111,
+      "evidence": {
+        "message-detected": 89,
+        "region-removed": 83,
+        "signal-suppressed": 9,
+        "silent-other": 19
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.5291771081104667,
+        "low": 0.39233051799971463,
+        "rate": 0.46,
+        "successes": 92,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.8875905323585285,
+        "low": 0.7480684077980693,
+        "rate": 0.8288288288288288,
+        "successes": 92,
+        "total": 111
+      },
+      "reviews": 92,
+      "silent_other": 19,
+      "trusted_policy": {
+        "integrity-clash": 89,
+        "review-evidence-removal": 83,
+        "review-signal-suppression": 9,
+        "silent-other": 19
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.8": {
+      "escape_rate_wilson95": {
+        "high": 0.9501594141102401,
+        "low": 0.874010511732856,
+        "rate": 0.92,
+        "successes": 184,
+        "total": 200
+      },
+      "escapes": 184,
+      "evidence": {
+        "message-detected": 16,
+        "region-removed": 111,
+        "signal-suppressed": 17,
+        "silent-other": 56
+      },
+      "evidence_review_rate_wilson95": {
+        "high": 0.7033080269543346,
+        "low": 0.5714152816600309,
+        "rate": 0.64,
+        "successes": 128,
+        "total": 200
+      },
+      "records": 200,
+      "review_given_escape_wilson95": {
+        "high": 0.7575736789464674,
+        "low": 0.6257282845925204,
+        "rate": 0.6956521739130435,
+        "successes": 128,
+        "total": 184
+      },
+      "reviews": 128,
+      "silent_other": 56,
+      "trusted_policy": {
+        "integrity-clash": 16,
+        "review-evidence-removal": 111,
+        "review-signal-suppression": 17,
+        "silent-other": 56
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    }
+  },
+  "pooled_review_interval": {
+    "clusters": 200,
+    "estimand": "pooled reviewed escapes divided by pooled escapes",
+    "interval95": [
+      0.6960969865168677,
+      0.7581463977282819
+    ],
+    "method": "source-image cluster bootstrap percentile",
+    "replicates": 2000,
+    "seed": 20261006,
+    "valid_replicates": 2000
+  },
+  "script_sha256": "57137d2e00883b6599d3232b1e3e471990c165471d674a4d155c8e2be5cdd155",
+  "signing_calls": 0,
+  "transitions": {
+    "changed_records": 0,
+    "changes": [],
+    "matrix": {
+      "message-detected -> message-detected": 8026,
+      "region-removed -> region-removed": 1741,
+      "signal-suppressed -> signal-suppressed": 276,
+      "silent-other -> silent-other": 757
+    }
+  },
+  "unique_pixels": 9800,
+  "verification_summary_sha256": "f8eaf1d188a9ade4145a61a0e1ffb3e44277e6fe150e85f7a769826bdf5addaf"
+}

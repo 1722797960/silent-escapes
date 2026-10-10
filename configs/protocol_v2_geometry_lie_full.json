@@ -1,0 +1,34 @@
+{
+  "experiment": "protocol-v2 full declared-geometry stress test",
+  "version": "geometry_lie_full_v1",
+  "selection_policy": "all 200 SDXL assets in each of the frozen centered-crop-20pct and mask-aware-rho-0.4 cohorts",
+  "datasets": [
+    "centered_crop_20pct_per_side",
+    "mask_aware_crop_rho_0.4"
+  ],
+  "conditions": [
+    "correct",
+    "missing",
+    "out-of-bounds",
+    "shifted",
+    "scaled",
+    "adaptive-high-logit"
+  ],
+  "manifest_condition": "issuer-claims-digital-capture",
+  "topology": "ancestor-reference",
+  "parent_semantics": "capture",
+  "child_disclosure": "omitted",
+  "shift_fraction_of_source": 0.1,
+  "scale_factor": 0.8,
+  "adaptive_grid_points_per_axis": 17,
+  "retention_floor": 0.05,
+  "suppression_threshold": 0.5,
+  "required_matches": 24,
+  "wilson_confidence": 0.95,
+  "expected_per_dataset": 200,
+  "expected_dataset_count": 2,
+  "expected_case_count": 400,
+  "expected_condition_count": 6,
+  "expected_row_count": 2400,
+  "gpu_inference_allowed": false
+}

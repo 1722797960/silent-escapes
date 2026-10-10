@@ -1,0 +1,16 @@
+{
+  "experiment": "protocol-v2 geometry editor-trust policy ablation",
+  "version": "geometry_trust_ablation_v1",
+  "input_schema": "protocol-v2-geometry-lie-full-summary-1",
+  "editor_trust_conditions": [
+    "trusted-editor",
+    "untrusted-editor"
+  ],
+  "expected_input_rows": 2400,
+  "expected_output_rows": 4800,
+  "expected_valid_geometry_rows_per_trust_condition": 1600,
+  "expected_schema_rejected_rows_per_trust_condition": 800,
+  "expected_raw_adaptive_review_evasions": 4,
+  "gpu_inference_allowed": false,
+  "manifest_signing_allowed": false
+}

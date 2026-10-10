@@ -87,8 +87,11 @@ credential theft: all credentials are self-signed research keys.
 ### Measurement goal
 
 This experiment separates two costs that should not be conflated. The **benign
-region false-flag rate** is the fraction of honestly described, watermarked
-benign edits that receive `TAMPERED_REGION` or `WATERMARK_SUPPRESSED`. The
+region evidence-review rate** is the fraction of honestly described,
+watermarked benign edits that lose signed-region evidence or suppress the
+regional signal. The historical implementation labels were `TAMPERED_REGION`
+and `WATERMARK_SUPPRESSED`; protocol v2 separates evidence states from policy
+verdicts. The
 **clean detector false-positive rate** is measured separately on paired,
 unwatermarked images with an honest AI manifest and no regional-watermark
 assertion.
@@ -169,7 +172,56 @@ and model weights. Consequently, the compact release can verify experimental
 coverage and reported counts, while reproducing per-pixel detector output still
 requires the checkpoint and source assets.
 
+## Protocol-v2 full migration and geometry trust
+
+### Full-curve semantics
+
+The SDXL and PixArt full migrations preserve the frozen source images, cropped
+pixels, decoder outputs, messages, checkpoints, and thresholds. They replace
+the experimental oracle reference and known transform with reference bits and
+source-pixel half-open crop geometry parsed from a validated current or
+ancestor manifest. Mapping to the 64-by-64 detector grid uses intersecting-cell
+floor/ceil bounds and a fixed-grid regional-logit sample.
+
+This changes evidence labels without changing the attack corpus: SDXL reviews
+move from 686/752 to 684/752 and PixArt from 870/940 to 869/940. The new counts
+are the deployable protocol-v2 results. The old counts remain useful only as a
+historical known-transform comparison.
+
+### Geometry and editor trust boundary
+
+A C2PA signature authenticates the issuer and bytes; it does not prove that a
+declared crop box is truthful. The full stress test therefore evaluates
+correct, missing, invalid, shifted, scaled, and detector-adaptive declarations.
+Structurally invalid or missing crop geometry is rejected before pixel evidence
+is consumed. A syntactically valid lie cannot be disproved without pre-edit
+pixels or an external trust policy.
+
+The policy ablation consequently has two explicit modes. `trusted-editor`
+consumes valid declared geometry and measures the raw attack boundary.
+`untrusted-editor` does not consume it and routes valid crop declarations to
+`review-untrusted-geometry`. The latter closes the measured adaptive evasions
+but can route every untrusted crop to review; it is a deployment-bound cost,
+not a cryptographic guarantee or an automatic high-volume solution.
+
 ## Change history
+
+### 2026-10-10 - Publish full protocol-v2 migration and trust boundary
+
+**Change:** Added full SDXL, PixArt, and position-aware C1 protocol-v2 entry
+points and compact row-level outputs; added the 2,400-row declared-geometry
+stress test and 4,800-row editor-trust policy ablation; updated the release
+verifier to recompute the deployable review counts.
+
+**Reason:** The earlier public package exposed the protocol-v2 semantics matrix
+but still reported legacy known-transform defense counts. The paper now uses
+signed-chain reference and geometry semantics throughout its headline defense
+results.
+
+**Impact:** The public headline rates become 684/752 (91.0%) for SDXL and
+869/940 (92.4%) for PixArt. No source pixels, attacks, messages, checkpoints,
+or detector thresholds changed. The release now also makes the untrusted-editor
+all-review boundary machine-checkable.
 
 ### 2026-10-05 - Add paired WAM spatial-support control
 

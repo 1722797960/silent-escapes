@@ -1,0 +1,1420 @@
+{
+  "acceptance": {
+    "correct_baseline_matches": true,
+    "gpu_inference_calls": true,
+    "manifest_valid": true,
+    "missing_and_invalid_rejected": true,
+    "pixel_cache_hits": true,
+    "row_count": true
+  },
+  "case_count": 400,
+  "condition_count": 6,
+  "conditions": {
+    "adaptive-high-logit": {
+      "count": 400,
+      "evidence_changes": {
+        "high": 0.4436873442676285,
+        "low": 0.3483102375425738,
+        "rate": 0.395,
+        "successes": 158,
+        "total": 400
+      },
+      "evidence_transitions": {
+        "message-detected": {
+          "message-detected": 215
+        },
+        "region-removed": {
+          "signal-suppressed": 152,
+          "silent-other": 1
+        },
+        "signal-suppressed": {
+          "signal-suppressed": 14,
+          "silent-other": 3
+        },
+        "silent-other": {
+          "signal-suppressed": 2,
+          "silent-other": 13
+        }
+      },
+      "geometry_gates": {
+        "accepted": 400
+      },
+      "logit_gain_count": 400,
+      "logit_gain_max": 0.5133014280106036,
+      "logit_gain_mean": -0.017177779954009036,
+      "logit_gain_min": -0.43437418937683103,
+      "manifest_valid": 400,
+      "new_silent_other": {
+        "high": 0.025426564652619582,
+        "low": 0.003895483794990993,
+        "rate": 0.01,
+        "successes": 4,
+        "total": 400
+      },
+      "pixel_cache_hits": 400,
+      "policy_changes": {
+        "high": 0.4436873442676285,
+        "low": 0.3483102375425738,
+        "rate": 0.395,
+        "successes": 158,
+        "total": 400
+      },
+      "policy_transitions": {
+        "integrity-clash": {
+          "integrity-clash": 215
+        },
+        "review-evidence-removal": {
+          "review-signal-suppression": 152,
+          "silent-other": 1
+        },
+        "review-signal-suppression": {
+          "review-signal-suppression": 14,
+          "silent-other": 3
+        },
+        "silent-other": {
+          "review-signal-suppression": 2,
+          "silent-other": 13
+        }
+      },
+      "review_to_non_review": {
+        "high": 0.025426564652619582,
+        "low": 0.003895483794990993,
+        "rate": 0.01,
+        "successes": 4,
+        "total": 400
+      },
+      "review_to_silent_other": {
+        "high": 0.025426564652619582,
+        "low": 0.003895483794990993,
+        "rate": 0.01,
+        "successes": 4,
+        "total": 400
+      }
+    },
+    "correct": {
+      "count": 400,
+      "evidence_changes": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "evidence_transitions": {
+        "message-detected": {
+          "message-detected": 215
+        },
+        "region-removed": {
+          "region-removed": 153
+        },
+        "signal-suppressed": {
+          "signal-suppressed": 17
+        },
+        "silent-other": {
+          "silent-other": 15
+        }
+      },
+      "geometry_gates": {
+        "accepted": 400
+      },
+      "logit_gain_count": 400,
+      "logit_gain_max": 0.0,
+      "logit_gain_mean": 0.0,
+      "logit_gain_min": 0.0,
+      "manifest_valid": 400,
+      "new_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "pixel_cache_hits": 400,
+      "policy_changes": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "policy_transitions": {
+        "integrity-clash": {
+          "integrity-clash": 215
+        },
+        "review-evidence-removal": {
+          "review-evidence-removal": 153
+        },
+        "review-signal-suppression": {
+          "review-signal-suppression": 17
+        },
+        "silent-other": {
+          "silent-other": 15
+        }
+      },
+      "review_to_non_review": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "review_to_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      }
+    },
+    "missing": {
+      "count": 400,
+      "evidence_changes": {
+        "high": 1.0,
+        "low": 0.9904877056657034,
+        "rate": 1.0,
+        "successes": 400,
+        "total": 400
+      },
+      "evidence_transitions": {
+        "message-detected": {
+          "not-evaluated-invalid-geometry": 215
+        },
+        "region-removed": {
+          "not-evaluated-invalid-geometry": 153
+        },
+        "signal-suppressed": {
+          "not-evaluated-invalid-geometry": 17
+        },
+        "silent-other": {
+          "not-evaluated-invalid-geometry": 15
+        }
+      },
+      "geometry_gates": {
+        "reject-missing": 400
+      },
+      "logit_gain_count": 0,
+      "logit_gain_max": null,
+      "logit_gain_mean": null,
+      "logit_gain_min": null,
+      "manifest_valid": 400,
+      "new_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "pixel_cache_hits": 400,
+      "policy_changes": {
+        "high": 1.0,
+        "low": 0.9904877056657034,
+        "rate": 1.0,
+        "successes": 400,
+        "total": 400
+      },
+      "policy_transitions": {
+        "integrity-clash": {
+          "geometry-rejected": 215
+        },
+        "review-evidence-removal": {
+          "geometry-rejected": 153
+        },
+        "review-signal-suppression": {
+          "geometry-rejected": 17
+        },
+        "silent-other": {
+          "geometry-rejected": 15
+        }
+      },
+      "review_to_non_review": {
+        "high": 0.4739324629095902,
+        "low": 0.3774943812405543,
+        "rate": 0.425,
+        "successes": 170,
+        "total": 400
+      },
+      "review_to_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      }
+    },
+    "out-of-bounds": {
+      "count": 400,
+      "evidence_changes": {
+        "high": 1.0,
+        "low": 0.9904877056657034,
+        "rate": 1.0,
+        "successes": 400,
+        "total": 400
+      },
+      "evidence_transitions": {
+        "message-detected": {
+          "not-evaluated-invalid-geometry": 215
+        },
+        "region-removed": {
+          "not-evaluated-invalid-geometry": 153
+        },
+        "signal-suppressed": {
+          "not-evaluated-invalid-geometry": 17
+        },
+        "silent-other": {
+          "not-evaluated-invalid-geometry": 15
+        }
+      },
+      "geometry_gates": {
+        "reject-invalid": 400
+      },
+      "logit_gain_count": 0,
+      "logit_gain_max": null,
+      "logit_gain_mean": null,
+      "logit_gain_min": null,
+      "manifest_valid": 400,
+      "new_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "pixel_cache_hits": 400,
+      "policy_changes": {
+        "high": 1.0,
+        "low": 0.9904877056657034,
+        "rate": 1.0,
+        "successes": 400,
+        "total": 400
+      },
+      "policy_transitions": {
+        "integrity-clash": {
+          "geometry-rejected": 215
+        },
+        "review-evidence-removal": {
+          "geometry-rejected": 153
+        },
+        "review-signal-suppression": {
+          "geometry-rejected": 17
+        },
+        "silent-other": {
+          "geometry-rejected": 15
+        }
+      },
+      "review_to_non_review": {
+        "high": 0.4739324629095902,
+        "low": 0.3774943812405543,
+        "rate": 0.425,
+        "successes": 170,
+        "total": 400
+      },
+      "review_to_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      }
+    },
+    "scaled": {
+      "count": 400,
+      "evidence_changes": {
+        "high": 0.09353521417463759,
+        "low": 0.04474048189620036,
+        "rate": 0.065,
+        "successes": 26,
+        "total": 400
+      },
+      "evidence_transitions": {
+        "message-detected": {
+          "message-detected": 215
+        },
+        "region-removed": {
+          "region-removed": 153
+        },
+        "signal-suppressed": {
+          "region-removed": 13,
+          "signal-suppressed": 4
+        },
+        "silent-other": {
+          "region-removed": 13,
+          "silent-other": 2
+        }
+      },
+      "geometry_gates": {
+        "accepted": 400
+      },
+      "logit_gain_count": 400,
+      "logit_gain_max": 0.320558345863566,
+      "logit_gain_mean": -0.10081398431361518,
+      "logit_gain_min": -0.9280400594075521,
+      "manifest_valid": 400,
+      "new_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "pixel_cache_hits": 400,
+      "policy_changes": {
+        "high": 0.09353521417463759,
+        "low": 0.04474048189620036,
+        "rate": 0.065,
+        "successes": 26,
+        "total": 400
+      },
+      "policy_transitions": {
+        "integrity-clash": {
+          "integrity-clash": 215
+        },
+        "review-evidence-removal": {
+          "review-evidence-removal": 153
+        },
+        "review-signal-suppression": {
+          "review-evidence-removal": 13,
+          "review-signal-suppression": 4
+        },
+        "silent-other": {
+          "review-evidence-removal": 13,
+          "silent-other": 2
+        }
+      },
+      "review_to_non_review": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "review_to_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      }
+    },
+    "shifted": {
+      "count": 400,
+      "evidence_changes": {
+        "high": 0.22598577160107902,
+        "low": 0.15000697382952777,
+        "rate": 0.185,
+        "successes": 74,
+        "total": 400
+      },
+      "evidence_transitions": {
+        "message-detected": {
+          "message-detected": 215
+        },
+        "region-removed": {
+          "region-removed": 99,
+          "signal-suppressed": 54
+        },
+        "signal-suppressed": {
+          "region-removed": 5,
+          "signal-suppressed": 12
+        },
+        "silent-other": {
+          "region-removed": 5,
+          "signal-suppressed": 10
+        }
+      },
+      "geometry_gates": {
+        "accepted": 400
+      },
+      "logit_gain_count": 400,
+      "logit_gain_max": 0.5587039274327895,
+      "logit_gain_mean": -0.24570711479817534,
+      "logit_gain_min": -0.9748928768965267,
+      "manifest_valid": 400,
+      "new_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "pixel_cache_hits": 400,
+      "policy_changes": {
+        "high": 0.22598577160107902,
+        "low": 0.15000697382952777,
+        "rate": 0.185,
+        "successes": 74,
+        "total": 400
+      },
+      "policy_transitions": {
+        "integrity-clash": {
+          "integrity-clash": 215
+        },
+        "review-evidence-removal": {
+          "review-evidence-removal": 99,
+          "review-signal-suppression": 54
+        },
+        "review-signal-suppression": {
+          "review-evidence-removal": 5,
+          "review-signal-suppression": 12
+        },
+        "silent-other": {
+          "review-evidence-removal": 5,
+          "review-signal-suppression": 10
+        }
+      },
+      "review_to_non_review": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      },
+      "review_to_silent_other": {
+        "high": 0.009512294334296508,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 400
+      }
+    }
+  },
+  "correct_baseline_matches": 400,
+  "datasets": {
+    "centered_crop_20pct_per_side": {
+      "case_count": 200,
+      "conditions": {
+        "adaptive-high-logit": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 0.36158714524618774,
+            "low": 0.23613943856849148,
+            "rate": 0.295,
+            "successes": 59,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "message-detected": 125
+            },
+            "region-removed": {
+              "signal-suppressed": 56
+            },
+            "signal-suppressed": {
+              "signal-suppressed": 9,
+              "silent-other": 3
+            },
+            "silent-other": {
+              "silent-other": 7
+            }
+          },
+          "geometry_gates": {
+            "accepted": 200
+          },
+          "logit_gain_count": 200,
+          "logit_gain_max": 0.5133014280106036,
+          "logit_gain_mean": 0.015636976798027124,
+          "logit_gain_min": -0.35067628713754506,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.04316572879269026,
+            "low": 0.00511423779325831,
+            "rate": 0.015,
+            "successes": 3,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 0.36158714524618774,
+            "low": 0.23613943856849148,
+            "rate": 0.295,
+            "successes": 59,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 125
+            },
+            "review-evidence-removal": {
+              "review-signal-suppression": 56
+            },
+            "review-signal-suppression": {
+              "review-signal-suppression": 9,
+              "silent-other": 3
+            },
+            "silent-other": {
+              "silent-other": 7
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.04316572879269026,
+            "low": 0.00511423779325831,
+            "rate": 0.015,
+            "successes": 3,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.04316572879269026,
+            "low": 0.00511423779325831,
+            "rate": 0.015,
+            "successes": 3,
+            "total": 200
+          }
+        },
+        "correct": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "message-detected": 125
+            },
+            "region-removed": {
+              "region-removed": 56
+            },
+            "signal-suppressed": {
+              "signal-suppressed": 12
+            },
+            "silent-other": {
+              "silent-other": 7
+            }
+          },
+          "geometry_gates": {
+            "accepted": 200
+          },
+          "logit_gain_count": 200,
+          "logit_gain_max": 0.0,
+          "logit_gain_mean": 0.0,
+          "logit_gain_min": 0.0,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 125
+            },
+            "review-evidence-removal": {
+              "review-evidence-removal": 56
+            },
+            "review-signal-suppression": {
+              "review-signal-suppression": 12
+            },
+            "silent-other": {
+              "silent-other": 7
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        },
+        "missing": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 1.0,
+            "low": 0.9811546736227335,
+            "rate": 1.0,
+            "successes": 200,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "not-evaluated-invalid-geometry": 125
+            },
+            "region-removed": {
+              "not-evaluated-invalid-geometry": 56
+            },
+            "signal-suppressed": {
+              "not-evaluated-invalid-geometry": 12
+            },
+            "silent-other": {
+              "not-evaluated-invalid-geometry": 7
+            }
+          },
+          "geometry_gates": {
+            "reject-missing": 200
+          },
+          "logit_gain_count": 0,
+          "logit_gain_max": null,
+          "logit_gain_mean": null,
+          "logit_gain_min": null,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 1.0,
+            "low": 0.9811546736227335,
+            "rate": 1.0,
+            "successes": 200,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "geometry-rejected": 125
+            },
+            "review-evidence-removal": {
+              "geometry-rejected": 56
+            },
+            "review-signal-suppression": {
+              "geometry-rejected": 12
+            },
+            "silent-other": {
+              "geometry-rejected": 7
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.4081150447316374,
+            "low": 0.27791545970908793,
+            "rate": 0.34,
+            "successes": 68,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        },
+        "out-of-bounds": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 1.0,
+            "low": 0.9811546736227335,
+            "rate": 1.0,
+            "successes": 200,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "not-evaluated-invalid-geometry": 125
+            },
+            "region-removed": {
+              "not-evaluated-invalid-geometry": 56
+            },
+            "signal-suppressed": {
+              "not-evaluated-invalid-geometry": 12
+            },
+            "silent-other": {
+              "not-evaluated-invalid-geometry": 7
+            }
+          },
+          "geometry_gates": {
+            "reject-invalid": 200
+          },
+          "logit_gain_count": 0,
+          "logit_gain_max": null,
+          "logit_gain_mean": null,
+          "logit_gain_min": null,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 1.0,
+            "low": 0.9811546736227335,
+            "rate": 1.0,
+            "successes": 200,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "geometry-rejected": 125
+            },
+            "review-evidence-removal": {
+              "geometry-rejected": 56
+            },
+            "review-signal-suppression": {
+              "geometry-rejected": 12
+            },
+            "silent-other": {
+              "geometry-rejected": 7
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.4081150447316374,
+            "low": 0.27791545970908793,
+            "rate": 0.34,
+            "successes": 68,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        },
+        "scaled": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 0.12598948826714396,
+            "low": 0.049840585889759974,
+            "rate": 0.08,
+            "successes": 16,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "message-detected": 125
+            },
+            "region-removed": {
+              "region-removed": 56
+            },
+            "signal-suppressed": {
+              "region-removed": 9,
+              "signal-suppressed": 3
+            },
+            "silent-other": {
+              "region-removed": 7
+            }
+          },
+          "geometry_gates": {
+            "accepted": 200
+          },
+          "logit_gain_count": 200,
+          "logit_gain_max": 0.320558345863566,
+          "logit_gain_mean": -0.10412108052380667,
+          "logit_gain_min": -0.8040465560613894,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 0.12598948826714396,
+            "low": 0.049840585889759974,
+            "rate": 0.08,
+            "successes": 16,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 125
+            },
+            "review-evidence-removal": {
+              "review-evidence-removal": 56
+            },
+            "review-signal-suppression": {
+              "review-evidence-removal": 9,
+              "review-signal-suppression": 3
+            },
+            "silent-other": {
+              "review-evidence-removal": 7
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        },
+        "shifted": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 0.23911475028724882,
+            "low": 0.13294625859420173,
+            "rate": 0.18,
+            "successes": 36,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "message-detected": 125
+            },
+            "region-removed": {
+              "region-removed": 32,
+              "signal-suppressed": 24
+            },
+            "signal-suppressed": {
+              "region-removed": 5,
+              "signal-suppressed": 7
+            },
+            "silent-other": {
+              "region-removed": 5,
+              "signal-suppressed": 2
+            }
+          },
+          "geometry_gates": {
+            "accepted": 200
+          },
+          "logit_gain_count": 200,
+          "logit_gain_max": 0.5587039274327895,
+          "logit_gain_mean": -0.30601075760333174,
+          "logit_gain_min": -0.9748928768965267,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 0.23911475028724882,
+            "low": 0.13294625859420173,
+            "rate": 0.18,
+            "successes": 36,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 125
+            },
+            "review-evidence-removal": {
+              "review-evidence-removal": 32,
+              "review-signal-suppression": 24
+            },
+            "review-signal-suppression": {
+              "review-evidence-removal": 5,
+              "review-signal-suppression": 7
+            },
+            "silent-other": {
+              "review-evidence-removal": 5,
+              "review-signal-suppression": 2
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        }
+      },
+      "row_count": 1200
+    },
+    "mask_aware_crop_rho_0.4": {
+      "case_count": 200,
+      "conditions": {
+        "adaptive-high-logit": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 0.5637299996647251,
+            "low": 0.4264584535990475,
+            "rate": 0.495,
+            "successes": 99,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "message-detected": 90
+            },
+            "region-removed": {
+              "signal-suppressed": 96,
+              "silent-other": 1
+            },
+            "signal-suppressed": {
+              "signal-suppressed": 5
+            },
+            "silent-other": {
+              "signal-suppressed": 2,
+              "silent-other": 6
+            }
+          },
+          "geometry_gates": {
+            "accepted": 200
+          },
+          "logit_gain_count": 200,
+          "logit_gain_max": 0.14540747990683903,
+          "logit_gain_mean": -0.0499925367060452,
+          "logit_gain_min": -0.43437418937683103,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.02777370439789293,
+            "low": 0.0008831687156009814,
+            "rate": 0.005,
+            "successes": 1,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 0.5637299996647251,
+            "low": 0.4264584535990475,
+            "rate": 0.495,
+            "successes": 99,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 90
+            },
+            "review-evidence-removal": {
+              "review-signal-suppression": 96,
+              "silent-other": 1
+            },
+            "review-signal-suppression": {
+              "review-signal-suppression": 5
+            },
+            "silent-other": {
+              "review-signal-suppression": 2,
+              "silent-other": 6
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.02777370439789293,
+            "low": 0.0008831687156009814,
+            "rate": 0.005,
+            "successes": 1,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.02777370439789293,
+            "low": 0.0008831687156009814,
+            "rate": 0.005,
+            "successes": 1,
+            "total": 200
+          }
+        },
+        "correct": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "message-detected": 90
+            },
+            "region-removed": {
+              "region-removed": 97
+            },
+            "signal-suppressed": {
+              "signal-suppressed": 5
+            },
+            "silent-other": {
+              "silent-other": 8
+            }
+          },
+          "geometry_gates": {
+            "accepted": 200
+          },
+          "logit_gain_count": 200,
+          "logit_gain_max": 0.0,
+          "logit_gain_mean": 0.0,
+          "logit_gain_min": 0.0,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 90
+            },
+            "review-evidence-removal": {
+              "review-evidence-removal": 97
+            },
+            "review-signal-suppression": {
+              "review-signal-suppression": 5
+            },
+            "silent-other": {
+              "silent-other": 8
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        },
+        "missing": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 1.0,
+            "low": 0.9811546736227335,
+            "rate": 1.0,
+            "successes": 200,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "not-evaluated-invalid-geometry": 90
+            },
+            "region-removed": {
+              "not-evaluated-invalid-geometry": 97
+            },
+            "signal-suppressed": {
+              "not-evaluated-invalid-geometry": 5
+            },
+            "silent-other": {
+              "not-evaluated-invalid-geometry": 8
+            }
+          },
+          "geometry_gates": {
+            "reject-missing": 200
+          },
+          "logit_gain_count": 0,
+          "logit_gain_max": null,
+          "logit_gain_mean": null,
+          "logit_gain_min": null,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 1.0,
+            "low": 0.9811546736227335,
+            "rate": 1.0,
+            "successes": 200,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "geometry-rejected": 90
+            },
+            "review-evidence-removal": {
+              "geometry-rejected": 97
+            },
+            "review-signal-suppression": {
+              "geometry-rejected": 5
+            },
+            "silent-other": {
+              "geometry-rejected": 8
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.5784372166878682,
+            "low": 0.44118587678458643,
+            "rate": 0.51,
+            "successes": 102,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        },
+        "out-of-bounds": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 1.0,
+            "low": 0.9811546736227335,
+            "rate": 1.0,
+            "successes": 200,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "not-evaluated-invalid-geometry": 90
+            },
+            "region-removed": {
+              "not-evaluated-invalid-geometry": 97
+            },
+            "signal-suppressed": {
+              "not-evaluated-invalid-geometry": 5
+            },
+            "silent-other": {
+              "not-evaluated-invalid-geometry": 8
+            }
+          },
+          "geometry_gates": {
+            "reject-invalid": 200
+          },
+          "logit_gain_count": 0,
+          "logit_gain_max": null,
+          "logit_gain_mean": null,
+          "logit_gain_min": null,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 1.0,
+            "low": 0.9811546736227335,
+            "rate": 1.0,
+            "successes": 200,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "geometry-rejected": 90
+            },
+            "review-evidence-removal": {
+              "geometry-rejected": 97
+            },
+            "review-signal-suppression": {
+              "geometry-rejected": 5
+            },
+            "silent-other": {
+              "geometry-rejected": 8
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.5784372166878682,
+            "low": 0.44118587678458643,
+            "rate": 0.51,
+            "successes": 102,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        },
+        "scaled": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 0.08957814813877599,
+            "low": 0.02738264560076393,
+            "rate": 0.05,
+            "successes": 10,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "message-detected": 90
+            },
+            "region-removed": {
+              "region-removed": 97
+            },
+            "signal-suppressed": {
+              "region-removed": 4,
+              "signal-suppressed": 1
+            },
+            "silent-other": {
+              "region-removed": 6,
+              "silent-other": 2
+            }
+          },
+          "geometry_gates": {
+            "accepted": 200
+          },
+          "logit_gain_count": 200,
+          "logit_gain_max": 0.18648296449242574,
+          "logit_gain_mean": -0.0975068881034237,
+          "logit_gain_min": -0.9280400594075521,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 0.08957814813877599,
+            "low": 0.02738264560076393,
+            "rate": 0.05,
+            "successes": 10,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 90
+            },
+            "review-evidence-removal": {
+              "review-evidence-removal": 97
+            },
+            "review-signal-suppression": {
+              "review-evidence-removal": 4,
+              "review-signal-suppression": 1
+            },
+            "silent-other": {
+              "review-evidence-removal": 6,
+              "silent-other": 2
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        },
+        "shifted": {
+          "count": 200,
+          "evidence_changes": {
+            "high": 0.25001238707599854,
+            "low": 0.14167171527790676,
+            "rate": 0.19,
+            "successes": 38,
+            "total": 200
+          },
+          "evidence_transitions": {
+            "message-detected": {
+              "message-detected": 90
+            },
+            "region-removed": {
+              "region-removed": 67,
+              "signal-suppressed": 30
+            },
+            "signal-suppressed": {
+              "signal-suppressed": 5
+            },
+            "silent-other": {
+              "signal-suppressed": 8
+            }
+          },
+          "geometry_gates": {
+            "accepted": 200
+          },
+          "logit_gain_count": 200,
+          "logit_gain_max": 0.02315196841528966,
+          "logit_gain_mean": -0.1854034719930189,
+          "logit_gain_min": -0.7034765681051048,
+          "manifest_valid": 200,
+          "new_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "pixel_cache_hits": 200,
+          "policy_changes": {
+            "high": 0.25001238707599854,
+            "low": 0.14167171527790676,
+            "rate": 0.19,
+            "successes": 38,
+            "total": 200
+          },
+          "policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 90
+            },
+            "review-evidence-removal": {
+              "review-evidence-removal": 67,
+              "review-signal-suppression": 30
+            },
+            "review-signal-suppression": {
+              "review-signal-suppression": 5
+            },
+            "silent-other": {
+              "review-signal-suppression": 8
+            }
+          },
+          "review_to_non_review": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          },
+          "review_to_silent_other": {
+            "high": 0.018845326377266575,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 200
+          }
+        }
+      },
+      "row_count": 1200
+    }
+  },
+  "gpu_inference_calls": 0,
+  "manifest_valid": 2400,
+  "pixel_cache_hits": 2400,
+  "row_count": 2400,
+  "schema": "protocol-v2-geometry-lie-full-summary-1"
+}

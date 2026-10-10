@@ -1,0 +1,793 @@
+{
+  "acceptance": {
+    "gpu_inference_calls_zero": true,
+    "manifest_signing_calls_zero": true,
+    "raw_adaptive_evasions_preserved": true,
+    "schema_rejection_precedes_trust": true,
+    "trusted_preserves_raw": true,
+    "untrusted_review_evasions_zero": true,
+    "untrusted_valid_is_fail_closed": true
+  },
+  "datasets": {
+    "centered_crop_20pct_per_side": {
+      "trusted-editor": {
+        "evidence_states": {
+          "message-detected": 500,
+          "not-evaluated-invalid-geometry": 400,
+          "region-removed": 170,
+          "signal-suppressed": 113,
+          "silent-other": 17
+        },
+        "geometry_trust_gates": {
+          "schema-rejected": 400,
+          "trusted": 800
+        },
+        "pixel_evidence_consumed": 800,
+        "policy_verdicts": {
+          "geometry-rejected": 400,
+          "integrity-clash": 500,
+          "review-evidence-removal": 170,
+          "review-signal-suppression": 113,
+          "silent-other": 17
+        },
+        "raw_review_evasions": {
+          "high": 0.007324463700332479,
+          "low": 0.0008505818993887718,
+          "rate": 0.0025,
+          "successes": 3,
+          "total": 1200
+        },
+        "raw_to_gated_policy_transitions": {
+          "geometry-rejected": {
+            "geometry-rejected": 400
+          },
+          "integrity-clash": {
+            "integrity-clash": 500
+          },
+          "review-evidence-removal": {
+            "review-evidence-removal": 170
+          },
+          "review-signal-suppression": {
+            "review-signal-suppression": 113
+          },
+          "silent-other": {
+            "silent-other": 17
+          }
+        },
+        "row_count": 1200,
+        "trust_gated_review_evasions": {
+          "high": 0.007324463700332479,
+          "low": 0.0008505818993887718,
+          "rate": 0.0025,
+          "successes": 3,
+          "total": 1200
+        }
+      },
+      "untrusted-editor": {
+        "evidence_states": {
+          "not-evaluated-invalid-geometry": 400,
+          "not-evaluated-untrusted-geometry": 800
+        },
+        "geometry_trust_gates": {
+          "review-untrusted": 800,
+          "schema-rejected": 400
+        },
+        "pixel_evidence_consumed": 0,
+        "policy_verdicts": {
+          "geometry-rejected": 400,
+          "review-untrusted-geometry": 800
+        },
+        "raw_review_evasions": {
+          "high": 0.007324463700332479,
+          "low": 0.0008505818993887718,
+          "rate": 0.0025,
+          "successes": 3,
+          "total": 1200
+        },
+        "raw_to_gated_policy_transitions": {
+          "geometry-rejected": {
+            "geometry-rejected": 400
+          },
+          "integrity-clash": {
+            "review-untrusted-geometry": 500
+          },
+          "review-evidence-removal": {
+            "review-untrusted-geometry": 170
+          },
+          "review-signal-suppression": {
+            "review-untrusted-geometry": 113
+          },
+          "silent-other": {
+            "review-untrusted-geometry": 17
+          }
+        },
+        "row_count": 1200,
+        "trust_gated_review_evasions": {
+          "high": 0.003191000602734924,
+          "low": 0.0,
+          "rate": 0.0,
+          "successes": 0,
+          "total": 1200
+        }
+      }
+    },
+    "mask_aware_crop_rho_0.4": {
+      "trusted-editor": {
+        "evidence_states": {
+          "message-detected": 360,
+          "not-evaluated-invalid-geometry": 400,
+          "region-removed": 271,
+          "signal-suppressed": 152,
+          "silent-other": 17
+        },
+        "geometry_trust_gates": {
+          "schema-rejected": 400,
+          "trusted": 800
+        },
+        "pixel_evidence_consumed": 800,
+        "policy_verdicts": {
+          "geometry-rejected": 400,
+          "integrity-clash": 360,
+          "review-evidence-removal": 271,
+          "review-signal-suppression": 152,
+          "silent-other": 17
+        },
+        "raw_review_evasions": {
+          "high": 0.0047052299901332185,
+          "low": 0.00014711894493048142,
+          "rate": 0.0008333333333333334,
+          "successes": 1,
+          "total": 1200
+        },
+        "raw_to_gated_policy_transitions": {
+          "geometry-rejected": {
+            "geometry-rejected": 400
+          },
+          "integrity-clash": {
+            "integrity-clash": 360
+          },
+          "review-evidence-removal": {
+            "review-evidence-removal": 271
+          },
+          "review-signal-suppression": {
+            "review-signal-suppression": 152
+          },
+          "silent-other": {
+            "silent-other": 17
+          }
+        },
+        "row_count": 1200,
+        "trust_gated_review_evasions": {
+          "high": 0.0047052299901332185,
+          "low": 0.00014711894493048142,
+          "rate": 0.0008333333333333334,
+          "successes": 1,
+          "total": 1200
+        }
+      },
+      "untrusted-editor": {
+        "evidence_states": {
+          "not-evaluated-invalid-geometry": 400,
+          "not-evaluated-untrusted-geometry": 800
+        },
+        "geometry_trust_gates": {
+          "review-untrusted": 800,
+          "schema-rejected": 400
+        },
+        "pixel_evidence_consumed": 0,
+        "policy_verdicts": {
+          "geometry-rejected": 400,
+          "review-untrusted-geometry": 800
+        },
+        "raw_review_evasions": {
+          "high": 0.0047052299901332185,
+          "low": 0.00014711894493048142,
+          "rate": 0.0008333333333333334,
+          "successes": 1,
+          "total": 1200
+        },
+        "raw_to_gated_policy_transitions": {
+          "geometry-rejected": {
+            "geometry-rejected": 400
+          },
+          "integrity-clash": {
+            "review-untrusted-geometry": 360
+          },
+          "review-evidence-removal": {
+            "review-untrusted-geometry": 271
+          },
+          "review-signal-suppression": {
+            "review-untrusted-geometry": 152
+          },
+          "silent-other": {
+            "review-untrusted-geometry": 17
+          }
+        },
+        "row_count": 1200,
+        "trust_gated_review_evasions": {
+          "high": 0.003191000602734924,
+          "low": 0.0,
+          "rate": 0.0,
+          "successes": 0,
+          "total": 1200
+        }
+      }
+    }
+  },
+  "gpu_inference_calls": 0,
+  "input_row_count": 2400,
+  "input_rows_sha256": "375f502a336ea3f0378126515d935e44e74775112b7e079e83cbae9d8713fa08",
+  "manifest_signing_calls": 0,
+  "output_row_count": 4800,
+  "schema": "protocol-v2-geometry-trust-ablation-summary-1",
+  "trust_conditions": {
+    "trusted-editor": {
+      "evidence_states": {
+        "message-detected": 860,
+        "not-evaluated-invalid-geometry": 800,
+        "region-removed": 441,
+        "signal-suppressed": 265,
+        "silent-other": 34
+      },
+      "geometry_conditions": {
+        "adaptive-high-logit": {
+          "evidence_states": {
+            "message-detected": 215,
+            "signal-suppressed": 168,
+            "silent-other": 17
+          },
+          "geometry_trust_gates": {
+            "trusted": 400
+          },
+          "pixel_evidence_consumed": 400,
+          "policy_verdicts": {
+            "integrity-clash": 215,
+            "review-signal-suppression": 168,
+            "silent-other": 17
+          },
+          "raw_review_evasions": {
+            "high": 0.025426564652619582,
+            "low": 0.003895483794990993,
+            "rate": 0.01,
+            "successes": 4,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 215
+            },
+            "review-signal-suppression": {
+              "review-signal-suppression": 168
+            },
+            "silent-other": {
+              "silent-other": 17
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.025426564652619582,
+            "low": 0.003895483794990993,
+            "rate": 0.01,
+            "successes": 4,
+            "total": 400
+          }
+        },
+        "correct": {
+          "evidence_states": {
+            "message-detected": 215,
+            "region-removed": 153,
+            "signal-suppressed": 17,
+            "silent-other": 15
+          },
+          "geometry_trust_gates": {
+            "trusted": 400
+          },
+          "pixel_evidence_consumed": 400,
+          "policy_verdicts": {
+            "integrity-clash": 215,
+            "review-evidence-removal": 153,
+            "review-signal-suppression": 17,
+            "silent-other": 15
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 215
+            },
+            "review-evidence-removal": {
+              "review-evidence-removal": 153
+            },
+            "review-signal-suppression": {
+              "review-signal-suppression": 17
+            },
+            "silent-other": {
+              "silent-other": 15
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        },
+        "missing": {
+          "evidence_states": {
+            "not-evaluated-invalid-geometry": 400
+          },
+          "geometry_trust_gates": {
+            "schema-rejected": 400
+          },
+          "pixel_evidence_consumed": 0,
+          "policy_verdicts": {
+            "geometry-rejected": 400
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "geometry-rejected": {
+              "geometry-rejected": 400
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        },
+        "out-of-bounds": {
+          "evidence_states": {
+            "not-evaluated-invalid-geometry": 400
+          },
+          "geometry_trust_gates": {
+            "schema-rejected": 400
+          },
+          "pixel_evidence_consumed": 0,
+          "policy_verdicts": {
+            "geometry-rejected": 400
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "geometry-rejected": {
+              "geometry-rejected": 400
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        },
+        "scaled": {
+          "evidence_states": {
+            "message-detected": 215,
+            "region-removed": 179,
+            "signal-suppressed": 4,
+            "silent-other": 2
+          },
+          "geometry_trust_gates": {
+            "trusted": 400
+          },
+          "pixel_evidence_consumed": 400,
+          "policy_verdicts": {
+            "integrity-clash": 215,
+            "review-evidence-removal": 179,
+            "review-signal-suppression": 4,
+            "silent-other": 2
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 215
+            },
+            "review-evidence-removal": {
+              "review-evidence-removal": 179
+            },
+            "review-signal-suppression": {
+              "review-signal-suppression": 4
+            },
+            "silent-other": {
+              "silent-other": 2
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        },
+        "shifted": {
+          "evidence_states": {
+            "message-detected": 215,
+            "region-removed": 109,
+            "signal-suppressed": 76
+          },
+          "geometry_trust_gates": {
+            "trusted": 400
+          },
+          "pixel_evidence_consumed": 400,
+          "policy_verdicts": {
+            "integrity-clash": 215,
+            "review-evidence-removal": 109,
+            "review-signal-suppression": 76
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "integrity-clash": {
+              "integrity-clash": 215
+            },
+            "review-evidence-removal": {
+              "review-evidence-removal": 109
+            },
+            "review-signal-suppression": {
+              "review-signal-suppression": 76
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        }
+      },
+      "geometry_trust_gates": {
+        "schema-rejected": 800,
+        "trusted": 1600
+      },
+      "pixel_evidence_consumed": 1600,
+      "policy_verdicts": {
+        "geometry-rejected": 800,
+        "integrity-clash": 860,
+        "review-evidence-removal": 441,
+        "review-signal-suppression": 265,
+        "silent-other": 34
+      },
+      "raw_review_evasions": {
+        "high": 0.00427773741960101,
+        "low": 0.0006483190710393717,
+        "rate": 0.0016666666666666668,
+        "successes": 4,
+        "total": 2400
+      },
+      "raw_to_gated_policy_transitions": {
+        "geometry-rejected": {
+          "geometry-rejected": 800
+        },
+        "integrity-clash": {
+          "integrity-clash": 860
+        },
+        "review-evidence-removal": {
+          "review-evidence-removal": 441
+        },
+        "review-signal-suppression": {
+          "review-signal-suppression": 265
+        },
+        "silent-other": {
+          "silent-other": 34
+        }
+      },
+      "row_count": 2400,
+      "trust_gated_review_evasions": {
+        "high": 0.00427773741960101,
+        "low": 0.0006483190710393717,
+        "rate": 0.0016666666666666668,
+        "successes": 4,
+        "total": 2400
+      }
+    },
+    "untrusted-editor": {
+      "evidence_states": {
+        "not-evaluated-invalid-geometry": 800,
+        "not-evaluated-untrusted-geometry": 1600
+      },
+      "geometry_conditions": {
+        "adaptive-high-logit": {
+          "evidence_states": {
+            "not-evaluated-untrusted-geometry": 400
+          },
+          "geometry_trust_gates": {
+            "review-untrusted": 400
+          },
+          "pixel_evidence_consumed": 0,
+          "policy_verdicts": {
+            "review-untrusted-geometry": 400
+          },
+          "raw_review_evasions": {
+            "high": 0.025426564652619582,
+            "low": 0.003895483794990993,
+            "rate": 0.01,
+            "successes": 4,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "integrity-clash": {
+              "review-untrusted-geometry": 215
+            },
+            "review-signal-suppression": {
+              "review-untrusted-geometry": 168
+            },
+            "silent-other": {
+              "review-untrusted-geometry": 17
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        },
+        "correct": {
+          "evidence_states": {
+            "not-evaluated-untrusted-geometry": 400
+          },
+          "geometry_trust_gates": {
+            "review-untrusted": 400
+          },
+          "pixel_evidence_consumed": 0,
+          "policy_verdicts": {
+            "review-untrusted-geometry": 400
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "integrity-clash": {
+              "review-untrusted-geometry": 215
+            },
+            "review-evidence-removal": {
+              "review-untrusted-geometry": 153
+            },
+            "review-signal-suppression": {
+              "review-untrusted-geometry": 17
+            },
+            "silent-other": {
+              "review-untrusted-geometry": 15
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        },
+        "missing": {
+          "evidence_states": {
+            "not-evaluated-invalid-geometry": 400
+          },
+          "geometry_trust_gates": {
+            "schema-rejected": 400
+          },
+          "pixel_evidence_consumed": 0,
+          "policy_verdicts": {
+            "geometry-rejected": 400
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "geometry-rejected": {
+              "geometry-rejected": 400
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        },
+        "out-of-bounds": {
+          "evidence_states": {
+            "not-evaluated-invalid-geometry": 400
+          },
+          "geometry_trust_gates": {
+            "schema-rejected": 400
+          },
+          "pixel_evidence_consumed": 0,
+          "policy_verdicts": {
+            "geometry-rejected": 400
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "geometry-rejected": {
+              "geometry-rejected": 400
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        },
+        "scaled": {
+          "evidence_states": {
+            "not-evaluated-untrusted-geometry": 400
+          },
+          "geometry_trust_gates": {
+            "review-untrusted": 400
+          },
+          "pixel_evidence_consumed": 0,
+          "policy_verdicts": {
+            "review-untrusted-geometry": 400
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "integrity-clash": {
+              "review-untrusted-geometry": 215
+            },
+            "review-evidence-removal": {
+              "review-untrusted-geometry": 179
+            },
+            "review-signal-suppression": {
+              "review-untrusted-geometry": 4
+            },
+            "silent-other": {
+              "review-untrusted-geometry": 2
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        },
+        "shifted": {
+          "evidence_states": {
+            "not-evaluated-untrusted-geometry": 400
+          },
+          "geometry_trust_gates": {
+            "review-untrusted": 400
+          },
+          "pixel_evidence_consumed": 0,
+          "policy_verdicts": {
+            "review-untrusted-geometry": 400
+          },
+          "raw_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          },
+          "raw_to_gated_policy_transitions": {
+            "integrity-clash": {
+              "review-untrusted-geometry": 215
+            },
+            "review-evidence-removal": {
+              "review-untrusted-geometry": 109
+            },
+            "review-signal-suppression": {
+              "review-untrusted-geometry": 76
+            }
+          },
+          "row_count": 400,
+          "trust_gated_review_evasions": {
+            "high": 0.009512294334296508,
+            "low": 0.0,
+            "rate": 0.0,
+            "successes": 0,
+            "total": 400
+          }
+        }
+      },
+      "geometry_trust_gates": {
+        "review-untrusted": 1600,
+        "schema-rejected": 800
+      },
+      "pixel_evidence_consumed": 0,
+      "policy_verdicts": {
+        "geometry-rejected": 800,
+        "review-untrusted-geometry": 1600
+      },
+      "raw_review_evasions": {
+        "high": 0.00427773741960101,
+        "low": 0.0006483190710393717,
+        "rate": 0.0016666666666666668,
+        "successes": 4,
+        "total": 2400
+      },
+      "raw_to_gated_policy_transitions": {
+        "geometry-rejected": {
+          "geometry-rejected": 800
+        },
+        "integrity-clash": {
+          "review-untrusted-geometry": 860
+        },
+        "review-evidence-removal": {
+          "review-untrusted-geometry": 441
+        },
+        "review-signal-suppression": {
+          "review-untrusted-geometry": 265
+        },
+        "silent-other": {
+          "review-untrusted-geometry": 34
+        }
+      },
+      "row_count": 2400,
+      "trust_gated_review_evasions": {
+        "high": 0.001598049990609079,
+        "low": 0.0,
+        "rate": 0.0,
+        "successes": 0,
+        "total": 2400
+      }
+    }
+  }
+}

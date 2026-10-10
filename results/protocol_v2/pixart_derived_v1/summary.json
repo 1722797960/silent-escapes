@@ -1,0 +1,410 @@
+{
+  "ablations": [
+    {
+      "c040_escapes": 199,
+      "c040_reviewed": 144,
+      "condition": "bbox-only",
+      "escapes": 940,
+      "review_ci95_pct": [
+        39.848940639476226,
+        46.16565971883707
+      ],
+      "review_rate_pct": 42.97872340425532,
+      "reviewed_escapes": 404
+    },
+    {
+      "c040_escapes": 199,
+      "c040_reviewed": 168,
+      "condition": "bitmap-retention-only",
+      "escapes": 940,
+      "review_ci95_pct": [
+        63.62677428222649,
+        69.64152486542221
+      ],
+      "review_rate_pct": 66.70212765957447,
+      "reviewed_escapes": 627
+    },
+    {
+      "c040_escapes": 199,
+      "c040_reviewed": 197,
+      "condition": "bitmap-plus-signal",
+      "escapes": 940,
+      "review_ci95_pct": [
+        90.57940551054241,
+        93.96869232329091
+      ],
+      "review_rate_pct": 92.44680851063829,
+      "reviewed_escapes": 869
+    }
+  ],
+  "crop_parameter": "per-side c, not removed-area rho",
+  "default": {
+    "assets": 1800,
+    "escapes": 940,
+    "evidence_counts": {
+      "message-detected": 860,
+      "region-removed": 627,
+      "signal-suppressed": 242,
+      "silent-other": 71
+    },
+    "no_edit_assets": 200,
+    "no_edit_review_ci95_pct": [
+      0.27466581335444384,
+      3.5721761716176803
+    ],
+    "no_edit_reviews": 2,
+    "retention_floor": 0.05,
+    "review_ci95_pct": [
+      90.57940551054241,
+      93.96869232329091
+    ],
+    "review_rate_pct": 92.44680851063829,
+    "reviewed_escapes": 869,
+    "suppression_threshold": 0.5
+  },
+  "gpu_inference_calls": 0,
+  "grid": [
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 526,
+        "signal-suppressed": 282,
+        "silent-other": 132
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.01,
+      "review_ci95_pct": [
+        83.5897952145019,
+        88.03240295049976
+      ],
+      "review_rate_pct": 85.95744680851064,
+      "reviewed_escapes": 808,
+      "suppression_threshold": 0.3
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 526,
+        "signal-suppressed": 315,
+        "silent-other": 99
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.01,
+      "review_ci95_pct": [
+        87.34253984633223,
+        91.27235813951278
+      ],
+      "review_rate_pct": 89.46808510638297,
+      "reviewed_escapes": 841,
+      "suppression_threshold": 0.5
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 526,
+        "signal-suppressed": 356,
+        "silent-other": 58
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.01,
+      "review_ci95_pct": [
+        92.10603074958046,
+        95.19676701367598
+      ],
+      "review_rate_pct": 93.82978723404256,
+      "reviewed_escapes": 882,
+      "suppression_threshold": 0.7
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 627,
+        "signal-suppressed": 217,
+        "silent-other": 96
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.05,
+      "review_ci95_pct": [
+        87.68665546153808,
+        91.56394250801996
+      ],
+      "review_rate_pct": 89.7872340425532,
+      "reviewed_escapes": 844,
+      "suppression_threshold": 0.3
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 627,
+        "signal-suppressed": 242,
+        "silent-other": 71
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.05,
+      "review_ci95_pct": [
+        90.57940551054241,
+        93.96869232329091
+      ],
+      "review_rate_pct": 92.44680851063829,
+      "reviewed_escapes": 869,
+      "suppression_threshold": 0.5
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 627,
+        "signal-suppressed": 275,
+        "silent-other": 38
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.05,
+      "review_ci95_pct": [
+        94.5000433288584,
+        97.04075432581827
+      ],
+      "review_rate_pct": 95.95744680851064,
+      "reviewed_escapes": 902,
+      "suppression_threshold": 0.7
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 695,
+        "signal-suppressed": 171,
+        "silent-other": 74
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.1,
+      "review_ci95_pct": [
+        90.22957601421851,
+        93.68282183590179
+      ],
+      "review_rate_pct": 92.12765957446808,
+      "reviewed_escapes": 866,
+      "suppression_threshold": 0.3
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 695,
+        "signal-suppressed": 191,
+        "silent-other": 54
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.1,
+      "review_ci95_pct": [
+        92.57979701514697,
+        95.57060072639352
+      ],
+      "review_rate_pct": 94.25531914893617,
+      "reviewed_escapes": 886,
+      "suppression_threshold": 0.5
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 695,
+        "signal-suppressed": 217,
+        "silent-other": 28
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.1,
+      "review_ci95_pct": [
+        95.72859911693187,
+        97.93119848345488
+      ],
+      "review_rate_pct": 97.02127659574468,
+      "reviewed_escapes": 912,
+      "suppression_threshold": 0.7
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 757,
+        "signal-suppressed": 131,
+        "silent-other": 52
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.2,
+      "review_ci95_pct": [
+        92.81750428167477,
+        95.75669344900776
+      ],
+      "review_rate_pct": 94.46808510638297,
+      "reviewed_escapes": 888,
+      "suppression_threshold": 0.3
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 757,
+        "signal-suppressed": 144,
+        "silent-other": 39
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.2,
+      "review_ci95_pct": [
+        94.37860564975013,
+        96.95029201035553
+      ],
+      "review_rate_pct": 95.85106382978724,
+      "reviewed_escapes": 901,
+      "suppression_threshold": 0.5
+    },
+    {
+      "assets": 1800,
+      "escapes": 940,
+      "evidence_counts": {
+        "message-detected": 860,
+        "region-removed": 757,
+        "signal-suppressed": 163,
+        "silent-other": 20
+      },
+      "no_edit_assets": 200,
+      "no_edit_review_ci95_pct": [
+        0.27466581335444384,
+        3.5721761716176803
+      ],
+      "no_edit_reviews": 2,
+      "retention_floor": 0.2,
+      "review_ci95_pct": [
+        96.73648793837708,
+        98.61850961857779
+      ],
+      "review_rate_pct": 97.87234042553192,
+      "reviewed_escapes": 920,
+      "suppression_threshold": 0.7
+    }
+  ],
+  "interval_scope": "row-level Wilson; repeated source images are not cluster-adjusted",
+  "legacy_recompute_script_sha256": "4a575f6674a32e0df983f150de420ef6ff1c72fedce92235c96c84f0d669639f",
+  "legacy_reconstruction_sha256": "ba8cb143d8e56ba5042f54b029c631a111fed8758fc896d0a2791729bf2eea89",
+  "pixel_cache_hits": 1800,
+  "schema": "protocol-v2-pixart-derived-1",
+  "script_sha256": "7fac1791dbc0eb636e8f4d80ece9606261fef9903476c9ae3a1aa5816cf8eb24",
+  "signed_chain_checks": 1800,
+  "signing_calls": 0,
+  "source_rows_sha256": "c492aa4a657189e34a48572abf31834198fc342ce12b60c0603a497709dfa5a0",
+  "transitions": {
+    "changed_evidence": 30,
+    "legacy_reviews": 870,
+    "matrix": [
+      {
+        "count": 860,
+        "from": "message-detected",
+        "to": "message-detected"
+      },
+      {
+        "count": 627,
+        "from": "region-removed",
+        "to": "region-removed"
+      },
+      {
+        "count": 21,
+        "from": "region-removed",
+        "to": "signal-suppressed"
+      },
+      {
+        "count": 5,
+        "from": "region-removed",
+        "to": "silent-other"
+      },
+      {
+        "count": 217,
+        "from": "signal-suppressed",
+        "to": "signal-suppressed"
+      },
+      {
+        "count": 4,
+        "from": "silent-other",
+        "to": "signal-suppressed"
+      },
+      {
+        "count": 66,
+        "from": "silent-other",
+        "to": "silent-other"
+      }
+    ],
+    "review_to_silent": 5,
+    "silent_to_review": 4,
+    "v2_reviews": 869
+  },
+  "trust_condition": "trusted-editor"
+}

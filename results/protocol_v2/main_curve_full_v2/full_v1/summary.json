@@ -1,0 +1,248 @@
+{
+  "acceptance": {
+    "escape_partition": true,
+    "expected_escapes": true,
+    "gpu_inference_zero": true,
+    "manifest_valid": true,
+    "pixel_cache_hits": true,
+    "state_checks": true
+  },
+  "case_count": 1800,
+  "crop_parameter": "fraction removed from each side",
+  "escape_review_rate_trusted_editor": 0.9095744680851063,
+  "escapes": 752,
+  "evidence_changed_from_legacy": 24,
+  "gpu_inference_calls": 0,
+  "legacy_evidence_transitions": [
+    {
+      "count": 1048,
+      "legacy": "message-detected",
+      "v2": "message-detected"
+    },
+    {
+      "count": 578,
+      "legacy": "region-removed",
+      "v2": "region-removed"
+    },
+    {
+      "count": 14,
+      "legacy": "region-removed",
+      "v2": "signal-suppressed"
+    },
+    {
+      "count": 6,
+      "legacy": "region-removed",
+      "v2": "silent-other"
+    },
+    {
+      "count": 88,
+      "legacy": "signal-suppressed",
+      "v2": "signal-suppressed"
+    },
+    {
+      "count": 4,
+      "legacy": "silent-other",
+      "v2": "signal-suppressed"
+    },
+    {
+      "count": 62,
+      "legacy": "silent-other",
+      "v2": "silent-other"
+    }
+  ],
+  "legacy_reviewed_escapes": 686,
+  "manifest_valid": 1800,
+  "per_crop": {
+    "0.00": {
+      "assets": 200,
+      "escapes": 2,
+      "raw_evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "trusted_policy_verdicts": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy_verdicts": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "0.05": {
+      "assets": 200,
+      "escapes": 12,
+      "raw_evidence": {
+        "message-detected": 188,
+        "signal-suppressed": 4,
+        "silent-other": 8
+      },
+      "trusted_policy_verdicts": {
+        "integrity-clash": 188,
+        "review-signal-suppression": 4,
+        "silent-other": 8
+      },
+      "untrusted_policy_verdicts": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.10": {
+      "assets": 200,
+      "escapes": 32,
+      "raw_evidence": {
+        "message-detected": 168,
+        "region-removed": 6,
+        "signal-suppressed": 9,
+        "silent-other": 17
+      },
+      "trusted_policy_verdicts": {
+        "integrity-clash": 168,
+        "review-evidence-removal": 6,
+        "review-signal-suppression": 9,
+        "silent-other": 17
+      },
+      "untrusted_policy_verdicts": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.15": {
+      "assets": 200,
+      "escapes": 51,
+      "raw_evidence": {
+        "message-detected": 149,
+        "region-removed": 24,
+        "signal-suppressed": 14,
+        "silent-other": 13
+      },
+      "trusted_policy_verdicts": {
+        "integrity-clash": 149,
+        "review-evidence-removal": 24,
+        "review-signal-suppression": 14,
+        "silent-other": 13
+      },
+      "untrusted_policy_verdicts": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.20": {
+      "assets": 200,
+      "escapes": 75,
+      "raw_evidence": {
+        "message-detected": 125,
+        "region-removed": 56,
+        "signal-suppressed": 12,
+        "silent-other": 7
+      },
+      "trusted_policy_verdicts": {
+        "integrity-clash": 125,
+        "review-evidence-removal": 56,
+        "review-signal-suppression": 12,
+        "silent-other": 7
+      },
+      "untrusted_policy_verdicts": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.25": {
+      "assets": 200,
+      "escapes": 99,
+      "raw_evidence": {
+        "message-detected": 101,
+        "region-removed": 90,
+        "signal-suppressed": 4,
+        "silent-other": 5
+      },
+      "trusted_policy_verdicts": {
+        "integrity-clash": 101,
+        "review-evidence-removal": 90,
+        "review-signal-suppression": 4,
+        "silent-other": 5
+      },
+      "untrusted_policy_verdicts": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.30": {
+      "assets": 200,
+      "escapes": 119,
+      "raw_evidence": {
+        "message-detected": 81,
+        "region-removed": 111,
+        "signal-suppressed": 1,
+        "silent-other": 7
+      },
+      "trusted_policy_verdicts": {
+        "integrity-clash": 81,
+        "review-evidence-removal": 111,
+        "review-signal-suppression": 1,
+        "silent-other": 7
+      },
+      "untrusted_policy_verdicts": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.35": {
+      "assets": 200,
+      "escapes": 163,
+      "raw_evidence": {
+        "message-detected": 37,
+        "region-removed": 138,
+        "signal-suppressed": 18,
+        "silent-other": 7
+      },
+      "trusted_policy_verdicts": {
+        "integrity-clash": 37,
+        "review-evidence-removal": 138,
+        "review-signal-suppression": 18,
+        "silent-other": 7
+      },
+      "untrusted_policy_verdicts": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "0.40": {
+      "assets": 200,
+      "escapes": 199,
+      "raw_evidence": {
+        "message-detected": 1,
+        "region-removed": 153,
+        "signal-suppressed": 43,
+        "silent-other": 3
+      },
+      "trusted_policy_verdicts": {
+        "integrity-clash": 1,
+        "review-evidence-removal": 153,
+        "review-signal-suppression": 43,
+        "silent-other": 3
+      },
+      "untrusted_policy_verdicts": {
+        "review-untrusted-geometry": 200
+      }
+    }
+  },
+  "pixel_cache_hits": 1800,
+  "raw_evidence": {
+    "message-detected": 1048,
+    "region-removed": 578,
+    "signal-suppressed": 106,
+    "silent-other": 68
+  },
+  "reviewed_escapes_trusted_editor": 684,
+  "schema": "protocol-v2-per-side-main-curve-full-summary-2",
+  "silent_other_trusted_editor": 68,
+  "trusted_policy_verdicts": {
+    "integrity-clash": 1048,
+    "review-evidence-removal": 578,
+    "review-signal-suppression": 106,
+    "silent-other": 68
+  },
+  "untrusted_policy_verdicts": {
+    "integrity-clash": 198,
+    "review-signal-suppression": 1,
+    "review-untrusted-geometry": 1600,
+    "silent-other": 1
+  }
+}

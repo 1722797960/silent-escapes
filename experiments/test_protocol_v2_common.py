@@ -11,6 +11,7 @@ from protocol_v2_common import (
     chain_semantics,
     confined_path,
     contains_forbidden_oracle_path,
+    geometry_trust_gate,
     lineage_state,
     matching_bit_count,
     resolve_region_reference,
@@ -111,6 +112,45 @@ class BitDecisionTests(unittest.TestCase):
         )
         self.assertEqual(result["evidence"], "silent-other")
         self.assertEqual(result["policy_verdict"], "silent-other")
+
+
+class GeometryTrustTests(unittest.TestCase):
+    def test_trusted_crop_can_reach_pixel_evidence(self) -> None:
+        self.assertEqual(
+            geometry_trust_gate(
+                geometry_gate="accepted", cropped_action_count=1,
+                editor_trust="trusted-editor",
+            ),
+            "trusted",
+        )
+
+    def test_untrusted_valid_crop_is_fail_closed(self) -> None:
+        self.assertEqual(
+            geometry_trust_gate(
+                geometry_gate="accepted", cropped_action_count=1,
+                editor_trust="untrusted-editor",
+            ),
+            "review-untrusted",
+        )
+
+    def test_schema_rejection_precedes_editor_trust(self) -> None:
+        for gate in ("reject-missing", "reject-invalid"):
+            self.assertEqual(
+                geometry_trust_gate(
+                    geometry_gate=gate, cropped_action_count=1,
+                    editor_trust="untrusted-editor",
+                ),
+                "schema-rejected",
+            )
+
+    def test_non_crop_does_not_require_editor_trust(self) -> None:
+        self.assertEqual(
+            geometry_trust_gate(
+                geometry_gate="accepted", cropped_action_count=0,
+                editor_trust="untrusted-editor",
+            ),
+            "not-applicable",
+        )
 
 
 class LineageTests(unittest.TestCase):

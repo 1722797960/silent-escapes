@@ -1,0 +1,8 @@
+{
+  "Pillow": "12.3.0",
+  "c2pa-python": "0.37.10",
+  "gpu_inference_calls": 0,
+  "numpy": "2.2.6",
+  "torch": "2.6.0+cu124",
+  "wall_seconds_current_session": 2052.4748825191054
+}

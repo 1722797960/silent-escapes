@@ -1,0 +1,1167 @@
+{
+  "acceptance_passed": true,
+  "audit_rows_sha256": "224d8ea3ff070c32f413f72cdef126b5dac8f7ca0e0a454570459955537939e3",
+  "crop_parameter": "removed area rho; not per-side c",
+  "escapes": 2774,
+  "evidence": {
+    "message-detected": 8026,
+    "region-removed": 1741,
+    "signal-suppressed": 276,
+    "silent-other": 757
+  },
+  "gpu_inference_calls": 0,
+  "integer_count_matches": 10800,
+  "legacy_to_v2": {
+    "INTEGRITY_CLASH -> message-detected": 8026,
+    "SILENT_OTHER -> silent-other": 757,
+    "TAMPERED_REGION -> region-removed": 1741,
+    "WATERMARK_SUPPRESSED -> signal-suppressed": 276
+  },
+  "per_method_rho": {
+    "bottom|0.0": {
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "records": 200,
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "bottom|0.1": {
+      "escapes": 13,
+      "evidence": {
+        "message-detected": 187,
+        "region-removed": 1,
+        "signal-suppressed": 3,
+        "silent-other": 9
+      },
+      "records": 200,
+      "reviews": 4,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 187,
+        "review-evidence-removal": 1,
+        "review-signal-suppression": 3,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.2": {
+      "escapes": 31,
+      "evidence": {
+        "message-detected": 169,
+        "region-removed": 14,
+        "signal-suppressed": 7,
+        "silent-other": 10
+      },
+      "records": 200,
+      "reviews": 21,
+      "silent_other": 10,
+      "trusted_policy": {
+        "integrity-clash": 169,
+        "review-evidence-removal": 14,
+        "review-signal-suppression": 7,
+        "silent-other": 10
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.3": {
+      "escapes": 42,
+      "evidence": {
+        "message-detected": 158,
+        "region-removed": 31,
+        "signal-suppressed": 2,
+        "silent-other": 9
+      },
+      "records": 200,
+      "reviews": 33,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 158,
+        "review-evidence-removal": 31,
+        "review-signal-suppression": 2,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.4": {
+      "escapes": 57,
+      "evidence": {
+        "message-detected": 143,
+        "region-removed": 43,
+        "signal-suppressed": 2,
+        "silent-other": 12
+      },
+      "records": 200,
+      "reviews": 45,
+      "silent_other": 12,
+      "trusted_policy": {
+        "integrity-clash": 143,
+        "review-evidence-removal": 43,
+        "review-signal-suppression": 2,
+        "silent-other": 12
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.5": {
+      "escapes": 72,
+      "evidence": {
+        "message-detected": 128,
+        "region-removed": 56,
+        "signal-suppressed": 3,
+        "silent-other": 13
+      },
+      "records": 200,
+      "reviews": 59,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 128,
+        "review-evidence-removal": 56,
+        "review-signal-suppression": 3,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.6": {
+      "escapes": 77,
+      "evidence": {
+        "message-detected": 123,
+        "region-removed": 66,
+        "signal-suppressed": 2,
+        "silent-other": 9
+      },
+      "records": 200,
+      "reviews": 68,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 123,
+        "review-evidence-removal": 66,
+        "review-signal-suppression": 2,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.7": {
+      "escapes": 95,
+      "evidence": {
+        "message-detected": 105,
+        "region-removed": 76,
+        "signal-suppressed": 5,
+        "silent-other": 14
+      },
+      "records": 200,
+      "reviews": 81,
+      "silent_other": 14,
+      "trusted_policy": {
+        "integrity-clash": 105,
+        "review-evidence-removal": 76,
+        "review-signal-suppression": 5,
+        "silent-other": 14
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "bottom|0.8": {
+      "escapes": 174,
+      "evidence": {
+        "message-detected": 26,
+        "region-removed": 90,
+        "signal-suppressed": 11,
+        "silent-other": 73
+      },
+      "records": 200,
+      "reviews": 101,
+      "silent_other": 73,
+      "trusted_policy": {
+        "integrity-clash": 26,
+        "review-evidence-removal": 90,
+        "review-signal-suppression": 11,
+        "silent-other": 73
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.0": {
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "records": 200,
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "center|0.1": {
+      "escapes": 15,
+      "evidence": {
+        "message-detected": 185,
+        "signal-suppressed": 3,
+        "silent-other": 12
+      },
+      "records": 200,
+      "reviews": 3,
+      "silent_other": 12,
+      "trusted_policy": {
+        "integrity-clash": 185,
+        "review-signal-suppression": 3,
+        "silent-other": 12
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.2": {
+      "escapes": 15,
+      "evidence": {
+        "message-detected": 185,
+        "signal-suppressed": 4,
+        "silent-other": 11
+      },
+      "records": 200,
+      "reviews": 4,
+      "silent_other": 11,
+      "trusted_policy": {
+        "integrity-clash": 185,
+        "review-signal-suppression": 4,
+        "silent-other": 11
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.3": {
+      "escapes": 22,
+      "evidence": {
+        "message-detected": 178,
+        "region-removed": 2,
+        "signal-suppressed": 7,
+        "silent-other": 13
+      },
+      "records": 200,
+      "reviews": 9,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 178,
+        "review-evidence-removal": 2,
+        "review-signal-suppression": 7,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.4": {
+      "escapes": 34,
+      "evidence": {
+        "message-detected": 166,
+        "region-removed": 12,
+        "signal-suppressed": 5,
+        "silent-other": 17
+      },
+      "records": 200,
+      "reviews": 17,
+      "silent_other": 17,
+      "trusted_policy": {
+        "integrity-clash": 166,
+        "review-evidence-removal": 12,
+        "review-signal-suppression": 5,
+        "silent-other": 17
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.5": {
+      "escapes": 51,
+      "evidence": {
+        "message-detected": 149,
+        "region-removed": 24,
+        "signal-suppressed": 8,
+        "silent-other": 19
+      },
+      "records": 200,
+      "reviews": 32,
+      "silent_other": 19,
+      "trusted_policy": {
+        "integrity-clash": 149,
+        "review-evidence-removal": 24,
+        "review-signal-suppression": 8,
+        "silent-other": 19
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.6": {
+      "escapes": 72,
+      "evidence": {
+        "message-detected": 128,
+        "region-removed": 45,
+        "signal-suppressed": 13,
+        "silent-other": 14
+      },
+      "records": 200,
+      "reviews": 58,
+      "silent_other": 14,
+      "trusted_policy": {
+        "integrity-clash": 128,
+        "review-evidence-removal": 45,
+        "review-signal-suppression": 13,
+        "silent-other": 14
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.7": {
+      "escapes": 88,
+      "evidence": {
+        "message-detected": 112,
+        "region-removed": 78,
+        "signal-suppressed": 5,
+        "silent-other": 5
+      },
+      "records": 200,
+      "reviews": 83,
+      "silent_other": 5,
+      "trusted_policy": {
+        "integrity-clash": 112,
+        "review-evidence-removal": 78,
+        "review-signal-suppression": 5,
+        "silent-other": 5
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "center|0.8": {
+      "escapes": 110,
+      "evidence": {
+        "message-detected": 90,
+        "region-removed": 98,
+        "signal-suppressed": 6,
+        "silent-other": 6
+      },
+      "records": 200,
+      "reviews": 104,
+      "silent_other": 6,
+      "trusted_policy": {
+        "integrity-clash": 90,
+        "review-evidence-removal": 98,
+        "review-signal-suppression": 6,
+        "silent-other": 6
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.0": {
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "records": 200,
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "left|0.1": {
+      "escapes": 11,
+      "evidence": {
+        "message-detected": 189,
+        "region-removed": 3,
+        "signal-suppressed": 1,
+        "silent-other": 7
+      },
+      "records": 200,
+      "reviews": 4,
+      "silent_other": 7,
+      "trusted_policy": {
+        "integrity-clash": 189,
+        "review-evidence-removal": 3,
+        "review-signal-suppression": 1,
+        "silent-other": 7
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.2": {
+      "escapes": 19,
+      "evidence": {
+        "message-detected": 181,
+        "region-removed": 7,
+        "signal-suppressed": 6,
+        "silent-other": 6
+      },
+      "records": 200,
+      "reviews": 13,
+      "silent_other": 6,
+      "trusted_policy": {
+        "integrity-clash": 181,
+        "review-evidence-removal": 7,
+        "review-signal-suppression": 6,
+        "silent-other": 6
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.3": {
+      "escapes": 26,
+      "evidence": {
+        "message-detected": 174,
+        "region-removed": 15,
+        "signal-suppressed": 3,
+        "silent-other": 8
+      },
+      "records": 200,
+      "reviews": 18,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 174,
+        "review-evidence-removal": 15,
+        "review-signal-suppression": 3,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.4": {
+      "escapes": 37,
+      "evidence": {
+        "message-detected": 163,
+        "region-removed": 24,
+        "signal-suppressed": 5,
+        "silent-other": 8
+      },
+      "records": 200,
+      "reviews": 29,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 163,
+        "review-evidence-removal": 24,
+        "review-signal-suppression": 5,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.5": {
+      "escapes": 52,
+      "evidence": {
+        "message-detected": 148,
+        "region-removed": 36,
+        "signal-suppressed": 3,
+        "silent-other": 13
+      },
+      "records": 200,
+      "reviews": 39,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 148,
+        "review-evidence-removal": 36,
+        "review-signal-suppression": 3,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.6": {
+      "escapes": 58,
+      "evidence": {
+        "message-detected": 142,
+        "region-removed": 43,
+        "signal-suppressed": 4,
+        "silent-other": 11
+      },
+      "records": 200,
+      "reviews": 47,
+      "silent_other": 11,
+      "trusted_policy": {
+        "integrity-clash": 142,
+        "review-evidence-removal": 43,
+        "review-signal-suppression": 4,
+        "silent-other": 11
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.7": {
+      "escapes": 80,
+      "evidence": {
+        "message-detected": 120,
+        "region-removed": 56,
+        "signal-suppressed": 6,
+        "silent-other": 18
+      },
+      "records": 200,
+      "reviews": 62,
+      "silent_other": 18,
+      "trusted_policy": {
+        "integrity-clash": 120,
+        "review-evidence-removal": 56,
+        "review-signal-suppression": 6,
+        "silent-other": 18
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "left|0.8": {
+      "escapes": 155,
+      "evidence": {
+        "message-detected": 45,
+        "region-removed": 76,
+        "signal-suppressed": 14,
+        "silent-other": 65
+      },
+      "records": 200,
+      "reviews": 90,
+      "silent_other": 65,
+      "trusted_policy": {
+        "integrity-clash": 45,
+        "review-evidence-removal": 76,
+        "review-signal-suppression": 14,
+        "silent-other": 65
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.0": {
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "records": 200,
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "random|0.1": {
+      "escapes": 13,
+      "evidence": {
+        "message-detected": 187,
+        "signal-suppressed": 3,
+        "silent-other": 10
+      },
+      "records": 200,
+      "reviews": 3,
+      "silent_other": 10,
+      "trusted_policy": {
+        "integrity-clash": 187,
+        "review-signal-suppression": 3,
+        "silent-other": 10
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.2": {
+      "escapes": 20,
+      "evidence": {
+        "message-detected": 180,
+        "region-removed": 2,
+        "signal-suppressed": 6,
+        "silent-other": 12
+      },
+      "records": 200,
+      "reviews": 8,
+      "silent_other": 12,
+      "trusted_policy": {
+        "integrity-clash": 180,
+        "review-evidence-removal": 2,
+        "review-signal-suppression": 6,
+        "silent-other": 12
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.3": {
+      "escapes": 29,
+      "evidence": {
+        "message-detected": 171,
+        "region-removed": 6,
+        "signal-suppressed": 5,
+        "silent-other": 18
+      },
+      "records": 200,
+      "reviews": 11,
+      "silent_other": 18,
+      "trusted_policy": {
+        "integrity-clash": 171,
+        "review-evidence-removal": 6,
+        "review-signal-suppression": 5,
+        "silent-other": 18
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.4": {
+      "escapes": 36,
+      "evidence": {
+        "message-detected": 164,
+        "region-removed": 17,
+        "signal-suppressed": 11,
+        "silent-other": 8
+      },
+      "records": 200,
+      "reviews": 28,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 164,
+        "review-evidence-removal": 17,
+        "review-signal-suppression": 11,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.5": {
+      "escapes": 57,
+      "evidence": {
+        "message-detected": 143,
+        "region-removed": 31,
+        "signal-suppressed": 8,
+        "silent-other": 18
+      },
+      "records": 200,
+      "reviews": 39,
+      "silent_other": 18,
+      "trusted_policy": {
+        "integrity-clash": 143,
+        "review-evidence-removal": 31,
+        "review-signal-suppression": 8,
+        "silent-other": 18
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.6": {
+      "escapes": 64,
+      "evidence": {
+        "message-detected": 136,
+        "region-removed": 52,
+        "signal-suppressed": 4,
+        "silent-other": 8
+      },
+      "records": 200,
+      "reviews": 56,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 136,
+        "review-evidence-removal": 52,
+        "review-signal-suppression": 4,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.7": {
+      "escapes": 69,
+      "evidence": {
+        "message-detected": 131,
+        "region-removed": 61,
+        "signal-suppressed": 6,
+        "silent-other": 2
+      },
+      "records": 200,
+      "reviews": 67,
+      "silent_other": 2,
+      "trusted_policy": {
+        "integrity-clash": 131,
+        "review-evidence-removal": 61,
+        "review-signal-suppression": 6,
+        "silent-other": 2
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "random|0.8": {
+      "escapes": 98,
+      "evidence": {
+        "message-detected": 102,
+        "region-removed": 86,
+        "signal-suppressed": 3,
+        "silent-other": 9
+      },
+      "records": 200,
+      "reviews": 89,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 102,
+        "review-evidence-removal": 86,
+        "review-signal-suppression": 3,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.0": {
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "records": 200,
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "right|0.1": {
+      "escapes": 8,
+      "evidence": {
+        "message-detected": 192,
+        "signal-suppressed": 1,
+        "silent-other": 7
+      },
+      "records": 200,
+      "reviews": 1,
+      "silent_other": 7,
+      "trusted_policy": {
+        "integrity-clash": 192,
+        "review-signal-suppression": 1,
+        "silent-other": 7
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.2": {
+      "escapes": 15,
+      "evidence": {
+        "message-detected": 185,
+        "region-removed": 5,
+        "signal-suppressed": 2,
+        "silent-other": 8
+      },
+      "records": 200,
+      "reviews": 7,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 185,
+        "review-evidence-removal": 5,
+        "review-signal-suppression": 2,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.3": {
+      "escapes": 27,
+      "evidence": {
+        "message-detected": 173,
+        "region-removed": 12,
+        "signal-suppressed": 3,
+        "silent-other": 12
+      },
+      "records": 200,
+      "reviews": 15,
+      "silent_other": 12,
+      "trusted_policy": {
+        "integrity-clash": 173,
+        "review-evidence-removal": 12,
+        "review-signal-suppression": 3,
+        "silent-other": 12
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.4": {
+      "escapes": 37,
+      "evidence": {
+        "message-detected": 163,
+        "region-removed": 20,
+        "signal-suppressed": 2,
+        "silent-other": 15
+      },
+      "records": 200,
+      "reviews": 22,
+      "silent_other": 15,
+      "trusted_policy": {
+        "integrity-clash": 163,
+        "review-evidence-removal": 20,
+        "review-signal-suppression": 2,
+        "silent-other": 15
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.5": {
+      "escapes": 49,
+      "evidence": {
+        "message-detected": 151,
+        "region-removed": 25,
+        "signal-suppressed": 3,
+        "silent-other": 21
+      },
+      "records": 200,
+      "reviews": 28,
+      "silent_other": 21,
+      "trusted_policy": {
+        "integrity-clash": 151,
+        "review-evidence-removal": 25,
+        "review-signal-suppression": 3,
+        "silent-other": 21
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.6": {
+      "escapes": 51,
+      "evidence": {
+        "message-detected": 149,
+        "region-removed": 30,
+        "signal-suppressed": 8,
+        "silent-other": 13
+      },
+      "records": 200,
+      "reviews": 38,
+      "silent_other": 13,
+      "trusted_policy": {
+        "integrity-clash": 149,
+        "review-evidence-removal": 30,
+        "review-signal-suppression": 8,
+        "silent-other": 13
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.7": {
+      "escapes": 75,
+      "evidence": {
+        "message-detected": 125,
+        "region-removed": 51,
+        "signal-suppressed": 6,
+        "silent-other": 18
+      },
+      "records": 200,
+      "reviews": 57,
+      "silent_other": 18,
+      "trusted_policy": {
+        "integrity-clash": 125,
+        "review-evidence-removal": 51,
+        "review-signal-suppression": 6,
+        "silent-other": 18
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "right|0.8": {
+      "escapes": 162,
+      "evidence": {
+        "message-detected": 38,
+        "region-removed": 73,
+        "signal-suppressed": 19,
+        "silent-other": 70
+      },
+      "records": 200,
+      "reviews": 92,
+      "silent_other": 70,
+      "trusted_policy": {
+        "integrity-clash": 38,
+        "review-evidence-removal": 73,
+        "review-signal-suppression": 19,
+        "silent-other": 70
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.0": {
+      "escapes": 2,
+      "evidence": {
+        "message-detected": 198,
+        "signal-suppressed": 1,
+        "silent-other": 1
+      },
+      "records": 200,
+      "reviews": 1,
+      "silent_other": 1,
+      "trusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      },
+      "untrusted_policy": {
+        "integrity-clash": 198,
+        "review-signal-suppression": 1,
+        "silent-other": 1
+      }
+    },
+    "top|0.1": {
+      "escapes": 9,
+      "evidence": {
+        "message-detected": 191,
+        "region-removed": 1,
+        "signal-suppressed": 2,
+        "silent-other": 6
+      },
+      "records": 200,
+      "reviews": 3,
+      "silent_other": 6,
+      "trusted_policy": {
+        "integrity-clash": 191,
+        "review-evidence-removal": 1,
+        "review-signal-suppression": 2,
+        "silent-other": 6
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.2": {
+      "escapes": 22,
+      "evidence": {
+        "message-detected": 178,
+        "region-removed": 5,
+        "signal-suppressed": 8,
+        "silent-other": 9
+      },
+      "records": 200,
+      "reviews": 13,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 178,
+        "review-evidence-removal": 5,
+        "review-signal-suppression": 8,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.3": {
+      "escapes": 33,
+      "evidence": {
+        "message-detected": 167,
+        "region-removed": 25,
+        "signal-suppressed": 2,
+        "silent-other": 6
+      },
+      "records": 200,
+      "reviews": 27,
+      "silent_other": 6,
+      "trusted_policy": {
+        "integrity-clash": 167,
+        "review-evidence-removal": 25,
+        "review-signal-suppression": 2,
+        "silent-other": 6
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.4": {
+      "escapes": 45,
+      "evidence": {
+        "message-detected": 155,
+        "region-removed": 34,
+        "signal-suppressed": 4,
+        "silent-other": 7
+      },
+      "records": 200,
+      "reviews": 38,
+      "silent_other": 7,
+      "trusted_policy": {
+        "integrity-clash": 155,
+        "review-evidence-removal": 34,
+        "review-signal-suppression": 4,
+        "silent-other": 7
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.5": {
+      "escapes": 65,
+      "evidence": {
+        "message-detected": 135,
+        "region-removed": 50,
+        "signal-suppressed": 6,
+        "silent-other": 9
+      },
+      "records": 200,
+      "reviews": 56,
+      "silent_other": 9,
+      "trusted_policy": {
+        "integrity-clash": 135,
+        "review-evidence-removal": 50,
+        "review-signal-suppression": 6,
+        "silent-other": 9
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.6": {
+      "escapes": 77,
+      "evidence": {
+        "message-detected": 123,
+        "region-removed": 65,
+        "signal-suppressed": 4,
+        "silent-other": 8
+      },
+      "records": 200,
+      "reviews": 69,
+      "silent_other": 8,
+      "trusted_policy": {
+        "integrity-clash": 123,
+        "review-evidence-removal": 65,
+        "review-signal-suppression": 4,
+        "silent-other": 8
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.7": {
+      "escapes": 111,
+      "evidence": {
+        "message-detected": 89,
+        "region-removed": 83,
+        "signal-suppressed": 9,
+        "silent-other": 19
+      },
+      "records": 200,
+      "reviews": 92,
+      "silent_other": 19,
+      "trusted_policy": {
+        "integrity-clash": 89,
+        "review-evidence-removal": 83,
+        "review-signal-suppression": 9,
+        "silent-other": 19
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    },
+    "top|0.8": {
+      "escapes": 184,
+      "evidence": {
+        "message-detected": 16,
+        "region-removed": 111,
+        "signal-suppressed": 17,
+        "silent-other": 56
+      },
+      "records": 200,
+      "reviews": 128,
+      "silent_other": 56,
+      "trusted_policy": {
+        "integrity-clash": 16,
+        "review-evidence-removal": 111,
+        "review-signal-suppression": 17,
+        "silent-other": 56
+      },
+      "untrusted_policy": {
+        "review-untrusted-geometry": 200
+      }
+    }
+  },
+  "records": 10800,
+  "reviews": 2017,
+  "schema": "protocol-v2-c1-full-audit-1",
+  "script_sha256": "16e7cb13e9231a6bb9f467ce693715ebef56f7cd9d190e20afa47b8338dc3b0f",
+  "selected_cases_sha256": "5a98115b435c6165b6f006ac378a015bd2dda7c79f8c07252e83182dc8cad379",
+  "silent_other": 757,
+  "trusted_policy": {
+    "integrity-clash": 8026,
+    "review-evidence-removal": 1741,
+    "review-signal-suppression": 276,
+    "silent-other": 757
+  },
+  "untrusted_policy": {
+    "integrity-clash": 1188,
+    "review-signal-suppression": 6,
+    "review-untrusted-geometry": 9600,
+    "silent-other": 6
+  },
+  "valid_manifests": 10800
+}

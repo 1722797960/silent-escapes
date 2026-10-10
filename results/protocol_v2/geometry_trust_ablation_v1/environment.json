@@ -1,0 +1,9 @@
+{
+  "gpu_inference_allowed": false,
+  "gpu_inference_calls": 0,
+  "manifest_signing_allowed": false,
+  "manifest_signing_calls": 0,
+  "numpy": "2.5.0",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.13.11 (tags/v3.13.11:6278944, Dec  5 2025, 16:26:58) [MSC v.1944 64 bit (AMD64)]"
+}

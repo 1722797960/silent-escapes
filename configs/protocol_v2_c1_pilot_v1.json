@@ -1,0 +1,14 @@
+{
+  "schema": "protocol-v2-c1-pilot-config-1",
+  "pilot_cases": 20,
+  "max_inference_calls": 20,
+  "required_matches": 24,
+  "retention_floor": 0.05,
+  "suppression_threshold": 0.5,
+  "crop_parameter": "removed area rho; not per-side c",
+  "inference_policy": "rerun all selected cases; preserve existing caches",
+  "inventory_rows_sha256": "426367a5415222baf1f616dae10895094cd1f33a9fea65587212c837d45fd8ec",
+  "inventory_summary_sha256": "afd2fbb5abdde09cbe43d9bfe44d25673a2d5ddf7d16294b70f87577ec309d10",
+  "manifest_condition": "issuer-claims-digital-capture",
+  "editor_trust_conditions": ["trusted-editor", "untrusted-editor"]
+}

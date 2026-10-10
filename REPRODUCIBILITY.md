@@ -36,6 +36,11 @@ directly measured extension timings are recorded in
 | Honest centered-crop controls | `experiments/benign_centered_crops_v1.py`, `defense_e2e_audit.py`, `recompute_region_retention.py` | `results/benign_centered_crops_v1/audit_honest.csv`, `audit_honest.json`, `summary.json`, `environment.json` |
 | C2PA lineage continuity | `experiments/lineage_ablation_v1.py`, `resign_with_lineage_v1.py`, `read_region_lineage_v1.py` | `results/lineage_ablation_v1/rows.jsonl`, `summary.json`, `summary.md` |
 | Protocol-v2 manifest semantics | `protocol_v2_cache_{inventory,warm,finalize}_v1.py`, `protocol_v2_manifest_matrix_{v1,full_v1}.py` | `results/protocol_v2/manifest_matrix_pilot_v2/`, `manifest_matrix_full_v2/`, `full_pixel_cache_v1/warm_full_v1/` |
+| Protocol-v2 SDXL centered curve | `protocol_v2_main_curve_cache_v2.py`, `protocol_v2_main_curve_full_v2.py`, `protocol_v2_sdxl_derived_v1.py` | `results/protocol_v2/main_curve_full_v2/full_v1/`, `sdxl_derived_v1/` |
+| Protocol-v2 PixArt centered curve | `protocol_v2_pixart_{full_v1,full_audit_v1,derived_v1}.py` | `results/protocol_v2/pixart_full_v1/`, `pixart_derived_v1/` |
+| Protocol-v2 position-aware C1 grid | `protocol_v2_c1_{full_v1,full_audit_v1,full_verify_v1,full_derived_v1}.py` | `results/protocol_v2/c1_full_v1/` |
+| Declared-geometry stress test | `protocol_v2_geometry_lie_full_v1.py` | `results/protocol_v2/geometry_lie_full_v1/` |
+| Editor-trust policy ablation | `protocol_v2_geometry_trust_ablation_v1.py` | `results/protocol_v2/geometry_trust_ablation_v1/` |
 
 ## 3. Fixed experimental settings
 
@@ -60,6 +65,10 @@ directly measured extension timings are recorded in
 - Protocol-v2 matrix: eight pixel conditions x 200 assets x five manifest
   conditions; 24/32 integer message-match boundary; detector inference forbidden
   during manifest and policy evaluation
+- Protocol-v2 review point: 5% signed-region retention floor and 0.5 regional
+  logit-mean threshold; signed crop coordinates use source-pixel half-open boxes
+- Geometry trust: structurally valid crop geometry is consumed only under the
+  `trusted-editor` policy; untrusted valid geometry is routed to review
 
 The effective configuration written by each run is retained beside the result
 summary. Historical absolute machine paths have been replaced with repository-
@@ -379,3 +388,64 @@ The acceptance gate requires 8,000 valid manifests, 8,000 exact cache hits,
 8,000 expected lineage/semantics states, 8,000 expected policy decisions, zero
 GPU calls during the matrix, and evidence invariance across the four retained-
 chain conditions for all 1,600 cases.
+
+## 14. Full protocol-v2 migration and geometry boundary
+
+The SDXL and PixArt migrations reuse the frozen pixels and detector outputs;
+only signing, manifest parsing, geometry mapping, and policy evaluation are
+re-run. Therefore the decoder-escape denominators remain 752 and 940. At the
+reference operating point, 684 SDXL escapes (91.0%) and 869 PixArt escapes
+(92.4%) enter evidence review. The change from the legacy 686/752 and 870/940
+counts is caused by signed half-open pixel geometry and fixed-grid logit
+sampling, not by new assets or additional neural inference.
+
+Run all protocol-v2 unit gates before a full migration:
+
+```bash
+/path/to/c2pa/python -m unittest discover -s experiments \
+  -p 'test_protocol_v2_*.py' -v
+```
+
+The staged entry points expose resumable phases. The SDXL curve uses
+`protocol_v2_main_curve_cache_v2.py` for inventory/warm/finalize, followed by
+`protocol_v2_main_curve_full_v2.py` for parents/matrix/summarize and
+`protocol_v2_sdxl_derived_v1.py` for threshold and ablation tables. PixArt uses:
+
+```bash
+python experiments/protocol_v2_pixart_full_v1.py --phase freeze
+CUDA_VISIBLE_DEVICES=0 python experiments/protocol_v2_pixart_full_v1.py \
+  --phase warm --device cuda:0 --resume
+/path/to/c2pa/python experiments/protocol_v2_pixart_full_audit_v1.py \
+  --phase audit --resume
+/path/to/c2pa/python experiments/protocol_v2_pixart_full_audit_v1.py \
+  --phase verify --resume
+/path/to/c2pa/python experiments/protocol_v2_pixart_derived_v1.py
+```
+
+The position-aware C1 migration uses its frozen configuration and four stages:
+
+```bash
+python experiments/protocol_v2_c1_full_v1.py --phase freeze
+CUDA_VISIBLE_DEVICES=0 python experiments/protocol_v2_c1_full_v1.py \
+  --phase warm --device cuda:0 --resume
+/path/to/c2pa/python experiments/protocol_v2_c1_full_audit_v1.py --resume
+/path/to/c2pa/python experiments/protocol_v2_c1_full_verify_v1.py --resume
+/path/to/c2pa/python experiments/protocol_v2_c1_full_derived_v1.py
+```
+
+For the declared-geometry experiment, prepare parents, run the six-condition
+matrix, and summarize with `protocol_v2_geometry_lie_full_v1.py`. The released
+run contains 400 cases and 2,400 rows. Then apply both editor-trust policies
+without signing or GPU inference:
+
+```bash
+/path/to/c2pa/python experiments/protocol_v2_geometry_trust_ablation_v1.py \
+  --input-rows results/protocol_v2/geometry_lie_full_v1/rows.jsonl \
+  --output-dir results/protocol_v2/geometry_trust_ablation_v1
+```
+
+The trust ablation emits 4,800 policy rows. Under `trusted-editor`, four of 400
+detector-adaptive false declarations move reviewed cases to `silent-other`.
+Under `untrusted-editor`, valid crop declarations are not consumed and all are
+routed to `review-untrusted-geometry`. This is a measured deployment boundary,
+not proof that a signed geometry declaration is truthful.

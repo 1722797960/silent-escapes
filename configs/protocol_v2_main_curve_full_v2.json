@@ -1,0 +1,26 @@
+{
+  "schema": "protocol-v2-main-curve-full-config-2",
+  "dataset": "sdxl-centered-per-side-nine-level",
+  "crop_parameter": "fraction removed from each side",
+  "expected_images": 200,
+  "expected_crops": [0.0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4],
+  "expected_cases": 1800,
+  "required_matches": 24,
+  "retention_floor": 0.05,
+  "suppression_threshold": 0.5,
+  "manifest_condition": {
+    "id": "issuer-claims-digital-capture",
+    "topology": "ancestor-reference",
+    "parent_semantics": "capture",
+    "child_disclosure": "omitted"
+  },
+  "editor_trust_conditions": ["trusted-editor", "untrusted-editor"],
+  "full_acceptance": {
+    "expected_escapes": 752
+  },
+  "legacy_comparison": {
+    "reviewed_escapes": 686,
+    "silent_other": 66,
+    "role": "diagnostic only; v2 geometry uses floor/ceil from signed pixel coordinates"
+  }
+}

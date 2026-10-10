@@ -1,0 +1,10 @@
+{
+  "c2pa": "0.37.10",
+  "gpu_inference_allowed": false,
+  "gpu_inference_calls": 0,
+  "numpy": "2.2.6",
+  "pillow": "12.3.0",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "python": "3.10.8 (main, Nov 24 2022, 14:13:03) [GCC 11.2.0]",
+  "torch": "2.6.0+cu124"
+}

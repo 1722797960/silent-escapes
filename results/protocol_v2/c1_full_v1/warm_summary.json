@@ -1,0 +1,19 @@
+{
+  "acceptance_passed": true,
+  "all_integer_counts_match": true,
+  "device": "cuda:0",
+  "environment": {
+    "Pillow": "12.3.0",
+    "numpy": "2.2.6",
+    "torch": "2.5.1+cu124"
+  },
+  "inference_starts_sha256": "2566782beff9f976ee2effe9aba81d23858220582dfcdf84b3fdf221e9191c5e",
+  "new_cache_entries": 7788,
+  "new_inference_calls": 9780,
+  "pilot_raw_reused": 20,
+  "preserved_initial_cache_entries": 2012,
+  "script_sha256": "ff731f9f4df6ae3258a11f56ec1c5a0fc92a5012d9a6d15ff4d614771fa09767",
+  "unique_pixels": 9800,
+  "wall_seconds_current_session": 7048.631602897076,
+  "warm_rows_sha256": "c2879773fdcc4962d1b9acff18a88c6d0547978947e0aa5a618d91496a95008c"
+}

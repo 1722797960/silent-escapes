@@ -1,0 +1,13 @@
+{
+  "schema": "protocol-v2-pixart-pilot-config-1",
+  "dataset": "PixArt-alpha per-side centered crop",
+  "pilot_cases": 20,
+  "expected_full_cases": 1800,
+  "expected_full_escapes": 940,
+  "required_matches": 24,
+  "retention_floor": 0.05,
+  "suppression_threshold": 0.5,
+  "crop_parameter": "fraction removed from each side c",
+  "manifest_condition": "issuer-claims-digital-capture",
+  "editor_trust_conditions": ["trusted-editor", "untrusted-editor"]
+}

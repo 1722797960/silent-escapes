@@ -19,18 +19,23 @@ image-level manifest remains cryptographically valid.
   fragility. At 80% removed area, escape is 55.0% for SAM subject regions,
   18.5% for compact equal-area regions, 0.5% for native full-frame embedding,
   and 27.0% for a full-frame control matched to the regional 42.46-dB PSNR.
-- A signed-region assertion and region-aware audit flag 686 of 752 SDXL silent
-  escapes (91.2%) and 870 of 940 PixArt-alpha silent escapes (92.6%) at the
-  paper's reference thresholds.
+- Under protocol v2, a signed-region assertion, signed 32-bit reference, and
+  manifest-declared crop geometry route 684 of 752 SDXL silent escapes (91.0%)
+  and 869 of 940 PixArt-alpha silent escapes (92.4%) to evidence review at the
+  paper's reference thresholds. These counts reuse the same pixels as the
+  legacy evaluation; the small change comes from deployable signed-geometry
+  semantics, not additional attacks or detector inference.
 - A size-preserving, exact-mask LaMa inpainting stress test produces 199 silent
-  escapes among 200 SDXL assets. The region-aware signal check flags all 199 as
-  `WATERMARK_SUPPRESSED`, while every output retains valid C2PA and region data.
-- Across 800 honestly described benign edits, the strict region-aware false-flag
-  rate is 0.5% for PNG re-save, JPEG Q90, and 90% resize, and 1.0% for a
+  escapes among 200 SDXL assets. The region-aware signal check routes all 199
+  to signal-suppression review, while every output retains valid C2PA and
+  region data.
+- Across 800 honestly described benign edits, the strict region-aware evidence-
+  review rate is 0.5% for PNG re-save, JPEG Q90, and 90% resize, and 1.0% for a
   geometry-only 1% safe crop. After excluding one source that already fails the
   no-edit reference audit, the corresponding rates are 0/199, 0/199, 0/199,
   and 1/199. A paired set of 200 clean negatives has one detector-level false
-  positive, but all 200 receive the final verdict `NO_REGION_CLAIM`.
+  positive; all 200 have no signed region claim, so this detector statistic is
+  reported separately from the watermarked-edit evidence-review rate.
 - Honest centered crops expose the cost of legitimate geometric editing. At
   10% and 20% removed per side, strict evidence-removal flags rise to 15/200
   (7.5%) and 68/200 (34.0%), respectively. These flags mean that evidence bound
@@ -40,7 +45,7 @@ image-level manifest remains cryptographically valid.
   an omitted current assertion from a validated `parentOf` ancestor on 200/200
   assets. If an edited manifest omits both the assertion and parent link, all
   200 cases receive `PROVENANCE_DISCONTINUITY`; this policy result is reported
-  separately from the 91.2% regional-evidence flag rate.
+  separately from the 91.0% SDXL regional-evidence review rate.
 - A full protocol-v2 semantics matrix evaluates 1,600 exact pixel conditions
   under five independently signed manifest conditions (8,000 rows). All 8,000
   manifests validate and all 1,600 cases preserve the same regional-evidence
@@ -48,15 +53,24 @@ image-level manifest remains cryptographically valid.
   split is 1,167 message detections, 159 removed regions, 230 suppressed
   signals, and 44 `silent-other` cases; severing lineage yields 1,600
   `discontinuity` results with no signed reference.
+- Full protocol-v2 migration covers the 1,800-row SDXL and 1,800-row PixArt
+  centered-crop curves plus the 10,800-row position-aware C1 grid. The verifier
+  consumes signed-chain reference bits and geometry without GPU inference.
+- A 2,400-row declared-geometry stress test records four review evasions among
+  400 detector-adaptive declarations. A 4,800-row editor-trust ablation shows
+  the deployment boundary explicitly: valid crop geometry from an untrusted
+  editor is not consumed and is routed to `review-untrusted-geometry`.
 
 Precomputed machine-readable results are committed under `results/`, including
 the 10,800 row-level C1 attack and audit records, the 200 row-level LaMa audit
 records, 7,200 paired WAM support-severity rows plus 200 clean references,
 1,400 benign-control/clean-negative audit rows, the 8,000-row
-protocol-v2 semantics matrix, and provenance records for its 1,600-entry exact
-pixel cache. Large model weights, detector logits, generated image corpora,
-intermediate images, and signed PNGs are intentionally not stored in Git. The
-benign release includes one compact contact sheet for visual audit.
+protocol-v2 semantics matrix, full SDXL/PixArt signed-chain audits, the C1
+derived analysis, the full declared-geometry stress test, the editor-trust
+ablation, and provenance records for the 1,600-entry exact pixel cache. Large
+model weights, detector logits, generated image corpora, intermediate images,
+and signed PNGs are intentionally not stored in Git. The benign release
+includes one compact contact sheet for visual audit.
 
 ## Repository layout
 
