@@ -37,9 +37,9 @@ image-level manifest remains cryptographically valid.
   positive; all 200 have no signed region claim, so this detector statistic is
   reported separately from the watermarked-edit evidence-review rate.
 - Honest centered crops expose the cost of legitimate geometric editing. At
-  10% and 20% removed per side, strict evidence-removal flags rise to 15/200
-  (7.5%) and 68/200 (34.0%), respectively. These flags mean that evidence bound
-  to the signed region was removed or suppressed; they do not establish
+  10% and 20% removed per side, strict evidence-review verdicts rise to 15/200
+  (7.5%) and 68/200 (34.0%), respectively. These verdicts mean that evidence
+  bound to the signed region was removed or suppressed; they do not establish
   malicious intent.
 - A 600-manifest C2PA lineage ablation shows that a strict consumer can recover
   an omitted current assertion from a validated `parentOf` ancestor on 200/200

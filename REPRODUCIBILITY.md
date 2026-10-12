@@ -307,7 +307,7 @@ python -m unittest discover -s experiments \
 `cut-chain` declares an edit but provides neither source. The compact release
 contains 600 per-condition rows and summaries, but excludes the generated
 signed PNGs. `PROVENANCE_DISCONTINUITY` is a strict consumer-policy result and
-is not added to the paper's regional-evidence flag rate.
+is not added to the paper's regional evidence-review rate.
 
 ## 13. Protocol-v2 exact cache and manifest-semantics matrix
 
